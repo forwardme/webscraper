@@ -1,0 +1,1560 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage"" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/data-visualization-with/9781491920565/ch05.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="2870136"
+  data-user-uuid="fee1bd59-4e02-48a4-a7b4-152ec4c157ac"
+  data-username="flankpeter"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/04/2018"
+
+
+  data-archive="9781491920565"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch05.html"
+  data-epub-title="Data Visualization with Python and JavaScript" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage"" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/data-visualization-with/9781491920565/ch05.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="2870136"
+  data-user-uuid="fee1bd59-4e02-48a4-a7b4-152ec4c157ac"
+  data-username="flankpeter"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/04/2018"
+
+
+  data-archive="9781491920565"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch05.html"
+  data-epub-title="Data Visualization with Python and JavaScript" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781491920565"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>5. Getting Data off the Web with Python - Data Visualization with Python and JavaScript</title><link rel="stylesheet" href="/static/CACHE/css/a04cd81b09cd.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.ef38b0457d7b.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    @charset "utf-8";#sbo-rt-content html,#sbo-rt-content div,#sbo-rt-content div,#sbo-rt-content span,#sbo-rt-content applet,#sbo-rt-content object,#sbo-rt-content iframe,#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5,#sbo-rt-content h6,#sbo-rt-content p,#sbo-rt-content blockquote,#sbo-rt-content pre,#sbo-rt-content a,#sbo-rt-content abbr,#sbo-rt-content acronym,#sbo-rt-content address,#sbo-rt-content big,#sbo-rt-content cite,#sbo-rt-content code,#sbo-rt-content del,#sbo-rt-content dfn,#sbo-rt-content em,#sbo-rt-content img,#sbo-rt-content ins,#sbo-rt-content kbd,#sbo-rt-content q,#sbo-rt-content s,#sbo-rt-content samp,#sbo-rt-content small,#sbo-rt-content strike,#sbo-rt-content strong,#sbo-rt-content sub,#sbo-rt-content sup,#sbo-rt-content tt,#sbo-rt-content var,#sbo-rt-content b,#sbo-rt-content u,#sbo-rt-content i,#sbo-rt-content center,#sbo-rt-content dl,#sbo-rt-content dt,#sbo-rt-content dd,#sbo-rt-content ol,#sbo-rt-content ul,#sbo-rt-content li,#sbo-rt-content fieldset,#sbo-rt-content form,#sbo-rt-content label,#sbo-rt-content legend,#sbo-rt-content table,#sbo-rt-content caption,#sbo-rt-content tdiv,#sbo-rt-content tfoot,#sbo-rt-content thead,#sbo-rt-content tr,#sbo-rt-content th,#sbo-rt-content td,#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content canvas,#sbo-rt-content details,#sbo-rt-content embed,#sbo-rt-content figure,#sbo-rt-content figcaption,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content output,#sbo-rt-content ruby,#sbo-rt-content section,#sbo-rt-content summary,#sbo-rt-content time,#sbo-rt-content mark,#sbo-rt-content audio,#sbo-rt-content video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content details,#sbo-rt-content figcaption,#sbo-rt-content figure,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content section{display:block}#sbo-rt-content div{line-height:1}#sbo-rt-content ol,#sbo-rt-content ul{list-style:none}#sbo-rt-content blockquote,#sbo-rt-content q{quotes:none}#sbo-rt-content blockquote:before,#sbo-rt-content blockquote:after,#sbo-rt-content q:before,#sbo-rt-content q:after{content:none}#sbo-rt-content table{border-collapse:collapse;border-spacing:0}@page{margin:5px !important}#sbo-rt-content p{margin:10px 0 0;line-height:125%;text-align:left}#sbo-rt-content p.byline{text-align:left;margin:-33px auto 35px;font-style:italic;font-weight:bold}#sbo-rt-content div.preface p+p.byline{margin:1em 0 0}#sbo-rt-content div.preface p.byline+p.byline{margin:0}#sbo-rt-content div.sect1>p.byline{margin:-.25em 0 1em}#sbo-rt-content div.sect1>p.byline+p.byline{margin-top:-1em}#sbo-rt-content em{font-style:italic;font-family:inherit}#sbo-rt-content em strong,#sbo-rt-content strong em{font-weight:bold;font-style:italic;font-family:inherit}#sbo-rt-content strong,#sbo-rt-content span.bold{font-weight:bold}#sbo-rt-content em.replaceable{font-style:italic}#sbo-rt-content strong.userinput{font-weight:bold;font-style:normal}#sbo-rt-content span.bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content a.ulink,#sbo-rt-content a.xref,#sbo-rt-content a.email,#sbo-rt-content a.link,#sbo-rt-content a{text-decoration:none;color:#8e0012}#sbo-rt-content span.lineannotation{font-style:italic;color:#a62a2a;font-family:serif}#sbo-rt-content span.underline{text-decoration:underline}#sbo-rt-content span.strikethrough{text-decoration:line-through}#sbo-rt-content span.smallcaps{font-variant:small-caps}#sbo-rt-content span.cursor{background:#000;color:#fff}#sbo-rt-content span.smaller{font-size:75%}#sbo-rt-content .boxedtext,#sbo-rt-content .keycap{border-style:solid;border-width:1px;border-color:#000;padding:1px}#sbo-rt-content span.gray50{color:#7F7F7F;}#sbo-rt-content h1,#sbo-rt-content div.toc-title,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5{-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;font-weight:bold;text-align:left;page-break-after:avoid !important;font-family:sans-serif,"DejaVuSans"}#sbo-rt-content div.toc-title{font-size:1.5em;margin-top:20px !important;margin-bottom:30px !important}#sbo-rt-content section[data-type="sect1"] h1{font-size:1.3em;color:#8e0012;margin:40px 0 8px 0}#sbo-rt-content section[data-type="sect2"] h2{font-size:1.1em;margin:30px 0 8px 0 !important}#sbo-rt-content section[data-type="sect3"] h3{font-size:1em;color:#555;margin:20px 0 8px 0 !important}#sbo-rt-content section[data-type="sect4"] h4{font-size:1em;font-weight:normal;font-style:italic;margin:15px 0 6px 0 !important}#sbo-rt-content section[data-type="chapter"]>div>h1,#sbo-rt-content section[data-type="preface"]>div>h1,#sbo-rt-content section[data-type="appendix"]>div>h1,#sbo-rt-content section[data-type="glossary"]>div>h1,#sbo-rt-content section[data-type="bibliography"]>div>h1,#sbo-rt-content section[data-type="index"]>div>h1{font-size:2em;line-height:1;margin-bottom:50px;color:#000;padding-bottom:10px;border-bottom:1px solid #000}#sbo-rt-content span.label,#sbo-rt-content span.keep-together{font-size:inherit;font-weight:inherit}#sbo-rt-content div[data-type="part"] h1{font-size:2em;text-align:center;margin-top:0 !important;margin-bottom:50px;padding:50px 0 10px 0;border-bottom:1px solid #000}#sbo-rt-content img.width-ninety{width:90%}#sbo-rt-content img{max-width:95%;margin:0 auto;padding:0}#sbo-rt-content div.figure{background-color:transparent;text-align:center !important;margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content figure{margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content div.figure h6{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding-top:10px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.informalfigure{text-align:center !important;padding:5px 0 !important}#sbo-rt-content div.sidebar{margin:15px 0 10px 0 !important;border:1px solid #DCDCDC;background-color:#F7F7F7;padding:15px !important;page-break-inside:avoid}#sbo-rt-content aside[data-type="sidebar"]{margin:15px 0 10px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar-title,#sbo-rt-content aside[data-type="sidebar"] h5{font-weight:bold;font-size:1em;font-family:sans-serif;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar ol,#sbo-rt-content div.sidebar ul,#sbo-rt-content aside[data-type="sidebar"] ol,#sbo-rt-content aside[data-type="sidebar"] ul{margin-left:1.25em !important}#sbo-rt-content div.sidebar div.figure p.title,#sbo-rt-content aside[data-type="sidebar"] figcaption,#sbo-rt-content div.sidebar div.informalfigure div.caption{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding:5px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.sidebar div.tip,#sbo-rt-content div.sidebar div[data-type="tip"],#sbo-rt-content div.sidebar div.note,#sbo-rt-content div.sidebar div[data-type="note"],#sbo-rt-content div.sidebar div.warning,#sbo-rt-content div.sidebar div[data-type="warning"],#sbo-rt-content div.sidebar div[data-type="caution"],#sbo-rt-content div.sidebar div[data-type="important"]{margin:20px auto 20px auto !important;font-size:90%;width:85%}#sbo-rt-content aside[data-type="sidebar"] p.byline{font-size:90%;font-weight:bold;font-style:italic;text-align:center;text-indent:0;margin:5px auto 6px;page-break-after:avoid}#sbo-rt-content pre{white-space:pre-wrap;font-family:"Ubuntu Mono",monospace;margin:25px 0 25px 20px;font-size:85%;display:block;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content div.note pre.programlisting,#sbo-rt-content div.tip pre.programlisting,#sbo-rt-content div.warning pre.programlisting,#sbo-rt-content div.caution pre.programlisting,#sbo-rt-content div.important pre.programlisting{margin-bottom:0}#sbo-rt-content code{font-family:"Ubuntu Mono",monospace;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content code strong em,#sbo-rt-content code em strong,#sbo-rt-content pre em strong,#sbo-rt-content pre strong em,#sbo-rt-content strong code em code,#sbo-rt-content em code strong code,#sbo-rt-content span.bolditalic code{font-weight:bold;font-style:italic;font-family:"Ubuntu Mono BoldItal",monospace}#sbo-rt-content code em,#sbo-rt-content em code,#sbo-rt-content pre em,#sbo-rt-content em.replaceable{font-family:"Ubuntu Mono Ital",monospace;font-style:italic}#sbo-rt-content code strong,#sbo-rt-content strong code,#sbo-rt-content pre strong,#sbo-rt-content strong.userinput{font-family:"Ubuntu Mono Bold",monospace;font-weight:bold}#sbo-rt-content div[data-type="example"]{margin:10px 0 15px 0 !important}#sbo-rt-content div[data-type="example"] h1,#sbo-rt-content div[data-type="example"] h2,#sbo-rt-content div[data-type="example"] h3,#sbo-rt-content div[data-type="example"] h4,#sbo-rt-content div[data-type="example"] h5,#sbo-rt-content div[data-type="example"] h6{font-style:italic;font-weight:normal;text-align:left !important;text-transform:none !important;font-family:serif !important;margin:10px 0 5px 0 !important;border-bottom:1px solid #000}#sbo-rt-content li pre.example{padding:10px 0 !important}#sbo-rt-content div[data-type="example"] pre[data-type="programlisting"],#sbo-rt-content div[data-type="example"] pre[data-type="screen"]{margin:0}#sbo-rt-content section[data-type="titlepage"]>div>h1{font-size:2em;margin:50px 0 10px 0 !important;line-height:1;text-align:center}#sbo-rt-content section[data-type="titlepage"] h2,#sbo-rt-content section[data-type="titlepage"] p.subtitle,#sbo-rt-content section[data-type="titlepage"] p[data-type="subtitle"]{font-size:1.3em;font-weight:normal;text-align:center;margin-top:.5em;color:#555}#sbo-rt-content section[data-type="titlepage"]>div>h2[data-type="author"],#sbo-rt-content section[data-type="titlepage"] p.author{font-size:1.3em;font-family:serif !important;font-weight:bold;margin:50px 0 !important;text-align:center}#sbo-rt-content section[data-type="titlepage"] p.edition{text-align:center;text-transform:uppercase;margin-top:2em}#sbo-rt-content div.book div.titlepage div.publishername{margin-top:60%;margin-bottom:20px;text-align:center;font-size:1.25em}#sbo-rt-content div.book div.titlepage div.locations p{margin:0;text-align:center}#sbo-rt-content div.book div.titlepage div.locations p.cities{font-size:80%;text-align:center;margin-top:5px}#sbo-rt-content section.preface[title="Dedication"]>div.titlepage h2.title{text-align:center;text-transform:uppercase;font-size:1.5em;margin-top:50px;margin-bottom:50px}#sbo-rt-content ul.stafflist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.stafflist li{list-style-type:none;padding:5px 0}#sbo-rt-content ul.printings li{list-style-type:none}#sbo-rt-content section.preface[title="Dedication"] p{font-style:italic;text-align:center}#sbo-rt-content div.colophon h1.title{font-size:1.3em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon h2.subtitle{margin:0 !important;color:#000;font-family:serif !important;font-size:1em;font-weight:normal}#sbo-rt-content div.colophon div.author h3.author{font-size:1.1em;font-family:serif !important;margin:10px 0 0 !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h4,#sbo-rt-content div.colophon div.editor h3.editor{color:#000;font-size:.8em;margin:15px 0 0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h3.editor{font-size:.8em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.publisher{margin-top:10px}#sbo-rt-content div.colophon div.publisher p,#sbo-rt-content div.colophon div.publisher span.publishername{margin:0;font-size:.8em}#sbo-rt-content div.legalnotice p,#sbo-rt-content div.timestamp p{font-size:.8em}#sbo-rt-content div.timestamp p{margin-top:10px}#sbo-rt-content div.colophon[title="About the Author"] h1.title,#sbo-rt-content div.colophon[title="Colophon"] h1.title{font-size:1.5em;margin:0 !important;font-family:sans-serif !important}#sbo-rt-content section.chapter div.titlepage div.author{margin:10px 0 10px 0}#sbo-rt-content section.chapter div.titlepage div.author div.affiliation{font-style:italic}#sbo-rt-content div.attribution{margin:5px 0 0 50px !important}#sbo-rt-content h3.author span.orgname{display:none}#sbo-rt-content div.epigraph{margin:10px 0 10px 20px !important;page-break-inside:avoid;font-size:90%}#sbo-rt-content div.epigraph p{font-style:italic}#sbo-rt-content blockquote,#sbo-rt-content div.blockquote{margin:10px !important;page-break-inside:avoid;font-size:95%}#sbo-rt-content blockquote p,#sbo-rt-content div.blockquote p{font-style:italic;margin:.75em 0 0 !important}#sbo-rt-content blockquote div.attribution,#sbo-rt-content blockquote p[data-type="attribution"]{margin:5px 0 10px 30px !important;text-align:right;width:80%}#sbo-rt-content blockquote div.attribution p,#sbo-rt-content blockquote p[data-type="attribution"]{font-style:normal;margin-top:5px}#sbo-rt-content blockquote div.attribution p:before,#sbo-rt-content blockquote p[data-type="attribution"]:before{font-style:normal;content:"—";-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none}#sbo-rt-content p.right{text-align:right;margin:0}#sbo-rt-content div[data-type="footnotes"]{border-top:1px solid black;margin-top:1.5em}#sbo-rt-content sub,#sbo-rt-content sup{font-size:75%;line-height:0;position:relative}#sbo-rt-content sup{top:-.5em}#sbo-rt-content sub{bottom:-.25em}#sbo-rt-content div.refentry p.refname{font-size:1em;font-family:sans-serif,"DejaVuSans";font-weight:bold;margin-bottom:5px;overflow:auto;width:100%}#sbo-rt-content div.refentry{width:100%;display:block;margin-top:2em}#sbo-rt-content div.refsynopsisdiv{display:block;clear:both}#sbo-rt-content div.refentry header{page-break-inside:avoid !important;display:block;break-inside:avoid !important;padding-top:0;border-bottom:1px solid #000}#sbo-rt-content div.refsect1 h6{font-size:.9em;font-family:sans-serif,"DejaVuSans";font-weight:bold}#sbo-rt-content div.refsect1{margin-top:3em}#sbo-rt-content dt{padding-top:10px !important;padding-bottom:0 !important}#sbo-rt-content dd{margin-left:1.5em !important;margin-bottom:.25em}#sbo-rt-content dd,#sbo-rt-content li{text-align:left}#sbo-rt-content ul{list-style-type:disc}#sbo-rt-content ul ul{list-style-type:square}#sbo-rt-content ul ul ul{list-style-type:circle}#sbo-rt-content ol{list-style-type:decimal}#sbo-rt-content ol ol{list-style-type:lower-alpha}#sbo-rt-content ol ol ol{list-style-type:lower-roman}#sbo-rt-content ol ul{list-style-type:disc}#sbo-rt-content ol ul ol{list-style-type:decimal}#sbo-rt-content ul ol{list-style-type:decimal}#sbo-rt-content ul ol ul{list-style-type:disc}#sbo-rt-content ol,#sbo-rt-content ul{list-style-position:outside;margin:15px 0 15px 1.25em}#sbo-rt-content ol li,#sbo-rt-content ul li{margin:.5em 0 .65em;line-height:125%}#sbo-rt-content div.orderedlistalpha{list-style-type:upper-alpha}#sbo-rt-content table.simplelist,#sbo-rt-content ul.simplelist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.simplelist li{list-style-type:none;padding:5px 0}#sbo-rt-content table.simplelist td{border:none}#sbo-rt-content table.simplelist tr{border-bottom:none}#sbo-rt-content table.simplelist tr:nth-of-type(even){background-color:transparent}#sbo-rt-content dl.calloutlist p:first-child{margin-top:-25px !important}#sbo-rt-content dl.calloutlist dd{padding-left:0;margin-top:-25px}#sbo-rt-content dl.calloutlist img,#sbo-rt-content a.co img{padding:0}#sbo-rt-content div.toc ol{margin-top:8px !important;margin-bottom:8px !important;margin-left:0 !important;padding-left:0 !important}#sbo-rt-content div.toc ol ol{margin-left:30px !important;padding-left:0 !important}#sbo-rt-content div.toc ol li{list-style-type:none}#sbo-rt-content div.toc a{color:#8e0012}#sbo-rt-content div.toc ol a{font-size:1em;font-weight:bold}#sbo-rt-content div.toc ol>li>ol a{font-weight:bold;font-size:1em}#sbo-rt-content div.toc ol>li>ol>li>ol a{text-decoration:none;font-weight:normal;font-size:1em}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"],#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{margin:30px !important;font-size:90%;padding:10px 8px 20px 8px !important;page-break-inside:avoid}#sbo-rt-content div.tip ol,#sbo-rt-content div.tip ul,#sbo-rt-content div[data-type="tip"] ol,#sbo-rt-content div[data-type="tip"] ul,#sbo-rt-content div.note ol,#sbo-rt-content div.note ul,#sbo-rt-content div[data-type="note"] ol,#sbo-rt-content div[data-type="note"] ul,#sbo-rt-content div.warning ol,#sbo-rt-content div.warning ul,#sbo-rt-content div[data-type="warning"] ol,#sbo-rt-content div[data-type="warning"] ul,#sbo-rt-content div[data-type="caution"] ol,#sbo-rt-content div[data-type="caution"] ul,#sbo-rt-content div[data-type="important"] ol,#sbo-rt-content div[data-type="important"] ul{margin-left:1.5em !important}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"]{border:1px solid #BEBEBE;background-color:transparent}#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{border:1px solid #BC8F8F}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="note"] h1,#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1,#sbo-rt-content div[data-type="important"] h6{font-weight:bold;font-size:110%;font-family:sans-serif !important;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px !important}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div[data-type="note"] h1{color:#737373}#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="important"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1{color:#C67171}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note,#sbo-rt-content div.safarienabled{background-color:transparent;margin:8px 0 0 !important;border:0 solid #BEBEBE;font-size:100%;padding:0 !important;page-break-inside:avoid}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note h3,#sbo-rt-content div.safarienabled h6{display:none}#sbo-rt-content div.table,#sbo-rt-content table{margin:15px 0 30px 0 !important;max-width:95%;border:none !important;background:none;display:table !important}#sbo-rt-content div.table,#sbo-rt-content div.informaltable,#sbo-rt-content table{page-break-inside:avoid}#sbo-rt-content tr,#sbo-rt-content tr td{border-bottom:1px solid #c3c3c3}#sbo-rt-content thead td,#sbo-rt-content thead th{border-bottom:#9d9d9d 1px solid !important;border-top:#9d9d9d 1px solid !important}#sbo-rt-content tr:nth-of-type(even){background-color:#f1f6fc}#sbo-rt-content thead{font-family:sans-serif;font-weight:bold}#sbo-rt-content td,#sbo-rt-content th{display:table-cell;padding:.3em;text-align:left;vertical-align:middle;font-size:80%}#sbo-rt-content div.informaltable table{margin:10px auto !important}#sbo-rt-content div.informaltable table tr{border-bottom:none}#sbo-rt-content div.informaltable table tr:nth-of-type(even){background-color:transparent}#sbo-rt-content div.informaltable td,#sbo-rt-content div.informaltable th{border:#9d9d9d 1px solid}#sbo-rt-content div.table-title,#sbo-rt-content table caption{font-weight:normal;font-style:italic;font-family:serif;font-size:1em;margin:10px 0 10px 0 !important;padding:0;page-break-after:avoid;text-align:left !important}#sbo-rt-content table code{font-size:smaller}#sbo-rt-content div.equation,#sbo-rt-content div[data-type="equation"]{margin:10px 0 15px 0 !important}#sbo-rt-content div.equation-title,#sbo-rt-content div[data-type="equation"] h5{font-style:italic;font-weight:normal;font-family:serif !important;font-size:90%;margin:20px 0 10px 0 !important;page-break-after:avoid}#sbo-rt-content div.equation-contents{margin-left:20px}#sbo-rt-content span.inlinemediaobject{height:.85em;display:inline-block;margin-bottom:.2em}#sbo-rt-content span.inlinemediaobject img{margin:0;height:.85em}#sbo-rt-content div.informalequation{margin:20px 0 20px 20px;width:75%}#sbo-rt-content div.informalequation img{width:75%}#sbo-rt-content div.index{text-indent:0}#sbo-rt-content div.index li{line-height:140%}#sbo-rt-content div.index a.indexterm{color:#8e0012}#sbo-rt-content div.index ul,#sbo-rt-content div[data-type="index"] ul{list-style-type:none;padding-left:0;margin-left:0}#sbo-rt-content div.index ul li{padding-left:0;margin-left:0}#sbo-rt-content div.index ul li ul li{margin-left:1em}#sbo-rt-content code.boolean,#sbo-rt-content .navy{color:rgb(0,0,128);}#sbo-rt-content code.character,#sbo-rt-content .olive{color:rgb(128,128,0);}#sbo-rt-content code.comment,#sbo-rt-content .blue{color:rgb(0,0,255);}#sbo-rt-content code.conditional,#sbo-rt-content .limegreen{color:rgb(50,205,50);}#sbo-rt-content code.constant,#sbo-rt-content .darkorange{color:rgb(255,140,0);}#sbo-rt-content code.debug,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.define,#sbo-rt-content .darkgoldenrod,#sbo-rt-content .gold{color:rgb(184,134,11);}#sbo-rt-content code.delimiter,#sbo-rt-content .dimgray{color:rgb(105,105,105);}#sbo-rt-content code.error,#sbo-rt-content .red{color:rgb(255,0,0);}#sbo-rt-content code.exception,#sbo-rt-content .salmon{color:rgb(250,128,11);}#sbo-rt-content code.float,#sbo-rt-content .steelblue{color:rgb(70,130,180);}#sbo-rt-content pre code.function,#sbo-rt-content .green{color:rgb(0,128,0);}#sbo-rt-content code.identifier,#sbo-rt-content .royalblue{color:rgb(65,105,225);}#sbo-rt-content code.ignore,#sbo-rt-content .gray{color:rgb(128,128,128);}#sbo-rt-content code.include,#sbo-rt-content .purple{color:rgb(128,0,128);}#sbo-rt-content code.keyword,#sbo-rt-content .sienna{color:rgb(160,82,45);}#sbo-rt-content code.label,#sbo-rt-content .deeppink{color:rgb(255,20,147);}#sbo-rt-content code.macro,#sbo-rt-content .orangered{color:rgb(255,69,0);}#sbo-rt-content code.number,#sbo-rt-content .brown{color:rgb(165,42,42);}#sbo-rt-content code.operator,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.preCondit,#sbo-rt-content .teal{color:rgb(0,128,128);}#sbo-rt-content code.preProc,#sbo-rt-content .fuschia{color:rgb(255,0,255);}#sbo-rt-content code.repeat,#sbo-rt-content .indigo{color:rgb(75,0,130);}#sbo-rt-content code.special,#sbo-rt-content .saddlebrown{color:rgb(139,69,19);}#sbo-rt-content code.specialchar,#sbo-rt-content .magenta{color:rgb(255,0,255);}#sbo-rt-content code.specialcomment,#sbo-rt-content .seagreen{color:rgb(46,139,87);}#sbo-rt-content code.statement,#sbo-rt-content .forestgreen{color:rgb(34,139,34);}#sbo-rt-content code.storageclass,#sbo-rt-content .plum{color:rgb(221,160,221);}#sbo-rt-content code.string,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.structure,#sbo-rt-content .chocolate{color:rgb(210,106,30);}#sbo-rt-content code.tag,#sbo-rt-content .darkcyan{color:rgb(0,139,139);}#sbo-rt-content code.todo,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.type,#sbo-rt-content .mediumslateblue{color:rgb(123,104,238);}#sbo-rt-content code.typedef,#sbo-rt-content .darkgreen{color:rgb(0,100,0);}#sbo-rt-content code.underlined{text-decoration:underline;}#sbo-rt-content pre code.hll{background-color:#ffc}#sbo-rt-content pre code.c{color:#09F;font-style:italic}#sbo-rt-content pre code.err{color:#A00}#sbo-rt-content pre code.k{color:#069;font-weight:bold}#sbo-rt-content pre code.o{color:#555}#sbo-rt-content pre code.cm{color:#35586C;font-style:italic}#sbo-rt-content pre code.cp{color:#099}#sbo-rt-content pre code.c1{color:#35586C;font-style:italic}#sbo-rt-content pre code.cs{color:#35586C;font-weight:bold;font-style:italic}#sbo-rt-content pre code.gd{background-color:#FCC}#sbo-rt-content pre code.ge{font-style:italic}#sbo-rt-content pre code.gr{color:#F00}#sbo-rt-content pre code.gh{color:#030;font-weight:bold}#sbo-rt-content pre code.gi{background-color:#CFC}#sbo-rt-content pre code.go{color:#000}#sbo-rt-content pre code.gp{color:#009;font-weight:bold}#sbo-rt-content pre code.gs{font-weight:bold}#sbo-rt-content pre code.gu{color:#030;font-weight:bold}#sbo-rt-content pre code.gt{color:#9C6}#sbo-rt-content pre code.kc{color:#069;font-weight:bold}#sbo-rt-content pre code.kd{color:#069;font-weight:bold}#sbo-rt-content pre code.kn{color:#069;font-weight:bold}#sbo-rt-content pre code.kp{color:#069}#sbo-rt-content pre code.kr{color:#069;font-weight:bold}#sbo-rt-content pre code.kt{color:#078;font-weight:bold}#sbo-rt-content pre code.m{color:#F60}#sbo-rt-content pre code.s{color:#C30}#sbo-rt-content pre code.na{color:#309}#sbo-rt-content pre code.nb{color:#366}#sbo-rt-content pre code.nc{color:#0A8;font-weight:bold}#sbo-rt-content pre code.no{color:#360}#sbo-rt-content pre code.nd{color:#99F}#sbo-rt-content pre code.ni{color:#999;font-weight:bold}#sbo-rt-content pre code.ne{color:#C00;font-weight:bold}#sbo-rt-content pre code.nf{color:#C0F}#sbo-rt-content pre code.nl{color:#99F}#sbo-rt-content pre code.nn{color:#0CF;font-weight:bold}#sbo-rt-content pre code.nt{color:#309;font-weight:bold}#sbo-rt-content pre code.nv{color:#033}#sbo-rt-content pre code.ow{color:#000;font-weight:bold}#sbo-rt-content pre code.w{color:#bbb}#sbo-rt-content pre code.mf{color:#F60}#sbo-rt-content pre code.mh{color:#F60}#sbo-rt-content pre code.mi{color:#F60}#sbo-rt-content pre code.mo{color:#F60}#sbo-rt-content pre code.sb{color:#C30}#sbo-rt-content pre code.sc{color:#C30}#sbo-rt-content pre code.sd{color:#C30;font-style:italic}#sbo-rt-content pre code.s2{color:#C30}#sbo-rt-content pre code.se{color:#C30;font-weight:bold}#sbo-rt-content pre code.sh{color:#C30}#sbo-rt-content pre code.si{color:#A00}#sbo-rt-content pre code.sx{color:#C30}#sbo-rt-content pre code.sr{color:#3AA}#sbo-rt-content pre code.s1{color:#C30}#sbo-rt-content pre code.ss{color:#A60}#sbo-rt-content pre code.bp{color:#366}#sbo-rt-content pre code.vc{color:#033}#sbo-rt-content pre code.vg{color:#033}#sbo-rt-content pre code.vi{color:#033}#sbo-rt-content pre code.il{color:#F60}#sbo-rt-content pre code.g{color:#050}#sbo-rt-content pre code.l{color:#C60}#sbo-rt-content pre code.l{color:#F90}#sbo-rt-content pre code.n{color:#008}#sbo-rt-content pre code.nx{color:#008}#sbo-rt-content pre code.py{color:#96F}#sbo-rt-content pre code.p{color:#000}#sbo-rt-content pre code.x{color:#F06}#sbo-rt-content div.blockquote_sampler_toc{width:95%;margin:5px 5px 5px 10px !important}#sbo-rt-content div{font-family:serif;text-align:left}#sbo-rt-content .gray-background,#sbo-rt-content .reverse-video{background:#2E2E2E;color:#FFF}#sbo-rt-content .light-gray-background{background:#A0A0A0}#sbo-rt-content .preserve-whitespace{white-space:pre-wrap}#sbo-rt-content span.gray{color:#4C4C4C}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781491920565/chapter/ch05.html",
+          "book_id": "9781491920565",
+          "chapter_uri": "ch05.html",
+          "position": 0,
+          "user_uuid": "fee1bd59-4e02-48a4-a7b4-152ec4c157ac",
+          "next_chapter_uri": "/library/view/data-visualization-with/9781491920565/ch06.html"
+        
+      },
+      title: "Data Visualization with Python and JavaScript",
+      author_list: "Kyran Dale",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.js"></script><script>
+    
+      
+       window.PUBLIC_ANNOTATIONS = false;
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "https://www.safaribooksonline.com/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://www.safaribooksonline.com/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch05.html"/><meta name="description" content=" Chapter 5. Getting Data off the Web with Python A fundamental part of the data visualizer’s skill set is getting the right dataset in as clean a form as ... "><meta property="og:title" content="5. Getting Data off the Web with Python" /><meta itemprop="isPartOf" content="/library/view/data-visualization-with/9781491920565/" /><meta itemprop="name" content="5. Getting Data off the Web with Python" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch05.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781491920565/" /><meta property="og:description" itemprop="description" content=" Chapter 5. Getting Data off the Web with Python A fundamental part of the data visualizer’s skill set is getting the right dataset in as clean a form as ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="O&#39;Reilly Media, Inc." /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781491920510" /><meta property="og:book:author" itemprop="author" content="Kyran Dale" /><meta property="og:book:tag" itemprop="about" content="JavaScript" /><meta property="og:book:tag" itemprop="about" content="Python" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><script>
+    window.ENABLE_BOWERBIRD_COLLECTIONS = true;
+  </script><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': 'fee1bd59-4e02-48a4-a7b4-152ec4c157ac' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', 'fee1bd59-4e02-48a4-a7b4-152ec4c157ac');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.e2e622a103f9.js"></script><script defer src="/static/js/build/reader.84feb506aa44.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+                 Playlists
+              </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/fee1bd59-4e02-48a4-a7b4-152ec4c157ac/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.safaribooksonline.com/public/support" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">6</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.safaribooksonline.com/public/support" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Data Visualization with Python and JavaScript
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781491920565/chapter/ch05.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch05.html&text=Data%20Visualization%20with%20Python%20and%20JavaScript&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch05.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch05.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 5.%20Getting%20Data%20off%20the%20Web%20with%20Python&body=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch05.html%0D%0Afrom Data%20Visualization%20with%20Python%20and%20JavaScript%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.893631b34e7a.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/part02.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">II. Getting Your Data</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch06.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">6. Heavyweight Scraping with Scrapy</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><section data-type="chapter" epub:type="chapter" data-pdf-bookmark="Chapter 5. Getting Data off the Web with Python"><div class="chapter" id="chapter_getting_data">
+<h1><span class="label">Chapter 5. </span>Getting Data off the Web <span class="keep-together">with Python</span></h1>
+
+
+<p><a data-type="indexterm" data-primary="data collection" data-secondary="approaches to" id="idm140319433145456"></a>A fundamental part of the data visualizer’s skill set is getting the right dataset in as clean a form as possible. And more often than not these days, this involves getting it off the Web. There are various ways you can do this, and Python provides some great libraries that make sucking up the data easy.</p>
+
+<p>The main ways to get data off the Web are:</p>
+
+<ul>
+<li>
+<p>Get a raw data file in a recognized data format (e.g., JSON or CSV) over HTTP</p>
+</li>
+<li>
+<p>Use a dedicated API to get the data</p>
+</li>
+<li>
+<p>Scrape the data by getting web pages via HTTP and parsing them locally for the required data</p>
+</li>
+</ul>
+
+<p>This chapter will deal with these ways in turn, but first let’s get acquainted with the best Python HTTP library out there: <code>requests</code>.</p>
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Getting Web Data with the requests Library"><div class="sect1" id="http_requests">
+<h1>Getting Web Data with the requests Library</h1>
+
+<p><a data-type="indexterm" data-primary="data collection" data-secondary="requests library for" id="DCpythreq5"></a><a data-type="indexterm" data-primary="Python" data-secondary="requests library" id="Prequests5"></a><a data-type="indexterm" data-primary="requests library" data-secondary="benefits of" id="idm140319433135216"></a>As we saw in <a data-type="xref" href="ch04.html#chapter_webdev101">Chapter 4</a>, the files that are used by web browsers to construct web pages are communicated via the Hypertext Transfer Protocol (HTTP), first developed by <a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">Tim Berners-Lee</a>. Getting web content in order to parse it for data involves making HTTP requests.</p>
+
+<p>Negotiating HTTP requests is a vital part of any general-purpose language, but getting web pages with Python used to be a rather irksome affair. The venerable <code>urllib2</code> library was hardly user-friendly, with a very clunky API. <a href="http://docs.python-requests.org/en/latest/"><code>requests</code></a>, courtesy of Kennith Reitz, changed that, making HTTP a relative breeze and fast establishing itself as the go-to Python HTTP library.</p>
+
+<p><code>requests</code> <a data-type="indexterm" data-primary="requests library" data-secondary="downloading/installing" id="idm140319433129472"></a>is not part of the Python standard library<sup><a data-type="noteref" id="idm140319433128336-marker" href="ch05.html#idm140319433128336">1</a></sup> but is part of the <a href="http://docs.continuum.io/anaconda/pkg-docs">Anaconda package</a> (see <a data-type="xref" href="ch01.html#chapter_install">Chapter 1</a>). If you’re not using Anaconda, the following <code>pip</code> command should do the job:</p>
+
+<pre data-type="programlisting" data-code-language="bash"><code class="nv">$ </code>pip install requests
+Downloading/unpacking requests
+...
+Cleaning up...</pre>
+
+<p>If you’re using a Python version prior to 2.7.9, then using <code>requests</code> may generate some <a href="https://en.wikipedia.org/wiki/SSL">Secure Sockets Layer (SSL)</a> warnings. Upgrading to newer SSL libraries should fix this:<sup><a data-type="noteref" id="idm140319433033952-marker" href="ch05.html#idm140319433033952">2</a></sup></p>
+
+<pre data-type="programlisting" data-code-language="bash"><code class="nv">$ </code>pip install --upgrade ndg-httpsclient</pre>
+
+<p>Now that you have <code>requests</code> installed, you’re ready to perform the first task mentioned at the beginning of this chapter and grab some raw data files off the Web.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Getting Data Files with requests"><div class="sect1" id="idm140319432965072">
+<h1>Getting Data Files with requests</h1>
+
+<p><a data-type="indexterm" data-primary="requests library" data-secondary="getting data files with" id="RLdatafiles5"></a>A Python interpreter session is a good way to put <code>requests</code>  through its paces, so find a friendly local command line, fire up IPython, and import <code>requests</code>:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="err">$</code> <code class="n">ipython</code>
+<code class="n">Python</code> <code class="mf">2.7</code><code class="o">.</code><code class="mi">5</code><code class="o">+</code> <code class="p">(</code><code class="n">default</code><code class="p">,</code> <code class="n">Feb</code> <code class="mi">27</code> <code class="mi">2014</code><code class="p">,</code> <code class="mi">19</code><code class="p">:</code><code class="mi">37</code><code class="p">:</code><code class="mi">08</code><code class="p">)</code>
+<code class="o">...</code>
+
+<code class="n">In</code> <code class="p">[</code><code class="mi">1</code><code class="p">]:</code> <code class="kn">import</code> <code class="nn">requests</code></pre>
+
+<p>To demonstrate, let’s use the library to download a Wikipedia page. We use the  <code>requests</code> library’s <code>get</code> method to get the page and, by convention, assign the result to a <code>response</code> object.</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">response</code> <code class="o">=</code> <code class="n">requests</code><code class="o">.</code><code class="n">get</code><code class="p">(</code>\
+<code class="s2">"https://en.wikipedia.org/wiki/Nobel_Prize"</code><code class="p">)</code></pre>
+
+<p>Let’s use Python’s <a href="https://docs.python.org/3/library/functions.html#dir"><code>dir</code></a> method to get a list of the <code>response</code> object’s attributes:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="nb">dir</code><code class="p">(</code><code class="n">response</code><code class="p">)</code>
+<code class="n">Out</code><code class="p">:</code>
+<code class="o">...</code>
+ <code class="s1">'content'</code><code class="p">,</code>
+ <code class="s1">'cookies'</code><code class="p">,</code>
+ <code class="s1">'elapsed'</code><code class="p">,</code>
+ <code class="s1">'encoding'</code><code class="p">,</code>
+ <code class="s1">'headers'</code><code class="p">,</code>
+ <code class="o">...</code>
+ <code class="s1">'iter_content'</code><code class="p">,</code>
+ <code class="s1">'iter_lines'</code><code class="p">,</code>
+ <code class="s1">'json'</code><code class="p">,</code>
+ <code class="s1">'links'</code><code class="p">,</code>
+ <code class="o">...</code>
+ <code class="s1">'status_code'</code><code class="p">,</code>
+ <code class="s1">'text'</code><code class="p">,</code>
+ <code class="s1">'url'</code><code class="p">]</code></pre>
+
+<p>Most of these attributes are self-explanatory and together provide a lot of information about the HTTP response generated. You’ll use a small subset of these attributes generally. Firstly, let’s check the status of the response:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">response</code><code class="o">.</code><code class="n">status_code</code>
+<code class="n">Out</code><code class="p">:</code> <code class="mi">200</code></pre>
+
+<p><a data-type="indexterm" data-primary="HTTP (Hypertext Transfer Protocol)" data-secondary="status codes" id="idm140319433016128"></a>As all good minimal web developers know, 200 is the <a href="https://en.wikipedia.org/wiki/List_of_HTTP_status_codes">HTTP status code</a> for OK, indicating a successful transaction. Other than 200, the most common codes are:</p>
+<dl>
+<dt>401 (Unauthorized)</dt>
+<dd>
+<p>Attempting unauthorized access</p>
+</dd>
+<dt>400 (Bad Request)</dt>
+<dd>
+<p>Trying to access the web server incorrectly</p>
+</dd>
+<dt>403 (Forbidden)</dt>
+<dd>
+<p>Similar to 401 but no login opportunity was available</p>
+</dd>
+<dt>404 (Not Found)</dt>
+<dd>
+<p>Trying to access a web page that doesn’t exist</p>
+</dd>
+<dt>500 (Internal Server Error)</dt>
+<dd>
+<p>A general-purpose, catch-all error</p>
+</dd>
+</dl>
+
+<p>So, for example, if we made a spelling mistake with our request, asking to see the <code>SNoble_Prize</code> page, we’d get a 404 (Not Found) error:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">not_found_response</code> <code class="o">=</code> <code class="n">requests</code><code class="o">.</code><code class="n">get</code><code class="p">(</code>\
+<code class="s2">"http://en.wikipedia.org/wiki/SNobel_Prize"</code><code class="p">)</code>
+<code class="n">not_found_response</code><code class="o">.</code><code class="n">status_code</code>
+<code class="n">Out</code><code class="p">:</code> <code class="mi">404</code></pre>
+
+<p>With our 200 OK response, from the correctly spelled request, let’s look at some of the info returned. A quick overview can be had with the <code>headers</code> property:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">response</code><code class="o">.</code><code class="n">headers</code>
+<code class="n">Out</code><code class="p">:</code> <code class="p">{</code>
+  <code class="s1">'X-Client-IP'</code><code class="p">:</code> <code class="s1">'104.238.169.128'</code><code class="p">,</code>
+  <code class="s1">'Content-Length'</code><code class="p">:</code> <code class="s1">'65820'</code><code class="p">,</code> <code class="o">...</code>
+  <code class="s1">'Content-Encoding'</code><code class="p">:</code> <code class="s1">'gzip'</code><code class="p">,</code> <code class="o">...</code>
+  <code class="s1">'Last-Modified'</code><code class="p">:</code> <code class="s1">'Sun, 15 Nov 2015 17:14:09 GMT'</code><code class="p">,</code> <code class="o">...</code>
+  <code class="s1">'Date'</code><code class="p">:</code> <code class="s1">'Mon, 23 Nov 2015 21:33:52 GMT'</code><code class="p">,</code>
+  <code class="s1">'Content-Type'</code><code class="p">:</code> <code class="s1">'text/html; charset=UTF-8'</code><code class="o">...</code>
+  <code class="p">}</code></pre>
+
+<p>This shows, among other things, that the page returned was gzip-encoded and 65 KB in size with <code>Content-Type</code> of <code>text/html</code>, encoded with Unicode UTF-8.</p>
+
+<p>Since we know text has been returned, we can use the <code>text</code> property of the response to see what it is:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">response</code><code class="o">.</code><code class="n">text</code>
+<code class="n">Out</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'&lt;!DOCTYPE html&gt;</code><code class="se">\n</code><code class="s1">&lt;html lang="en"</code>
+<code class="nb">dir</code><code class="o">=</code><code class="s2">"ltr"</code> <code class="n">class</code><code class="o">=</code><code class="s2">"client-nojs"</code><code class="o">&gt;</code>\<code class="n">n</code><code class="o">&lt;</code><code class="n">head</code><code class="o">&gt;</code>\<code class="n">n</code><code class="o">&lt;</code><code class="n">meta</code> <code class="n">charset</code><code class="o">=</code><code class="s2">"UTF-8"</code>
+<code class="o">/&gt;</code>\<code class="n">n</code><code class="o">&lt;</code><code class="n">title</code><code class="o">&gt;</code><code class="n">Nobel</code> <code class="n">Prize</code> <code class="o">-</code> <code class="n">Wikipedia</code><code class="p">,</code> <code class="n">the</code> <code class="n">free</code>
+<code class="n">encyclopedia</code><code class="o">&lt;/</code><code class="n">title</code><code class="o">&gt;</code>\<code class="n">n</code><code class="o">&lt;</code><code class="n">script</code><code class="o">&gt;</code><code class="n">document</code><code class="o">.</code><code class="n">documentElement</code><code class="o">...</code> <code class="o">=</code></pre>
+
+<p>This shows that we do indeed have our Wikipedia HTML page, with some inline JavaScript. As we’ll see in <a data-type="xref" href="#get_data_scraping">“Scraping Data”</a>, in order to make sense of this content, we’ll need a parser to read the HTML and provide the content blocks.</p>
+
+<p><code>requests</code> can be a convenient way of getting web data into your program or Python session. For example, we can grab one of the datasets from the huge <a href="https://data.gov">US government catalog</a>, which often has the choice of various file formats (e.g., JSON or CSV). Picking randomly, here’s the data from a 2006–2010 study on food affordability, in JSON format. Note that we check that it has been fetched correctly, with a <code>status_code</code> of <code>200</code>:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">response</code> <code class="o">=</code> <code class="n">requests</code><code class="o">.</code><code class="n">get</code><code class="p">(</code>
+<code class="s2">"https://chhs.data.ca.gov/api/views/pbxw-hhq8/rows.json?</code><code class="se">\</code>
+<code class="s2">accessType=DOWNLOAD"</code><code class="p">)</code>
+
+<code class="n">response</code><code class="o">.</code><code class="n">status_code</code>
+<code class="n">Out</code><code class="p">:</code> <code class="mi">200</code></pre>
+<div data-type="warning" epub:type="warning"><h6>Warning</h6>
+<p>Unfortunately, access to datasets from <em>data.gov</em> is a little unreliable. If the example dataset shown is not available, I recommend choosing another and making sure you can access its data using requests.</p>
+</div>
+
+<p>For JSON data, <code>requests</code> has a convenience method, allowing us to access the response data as a Python dictionary. This contains meta-data and a list of data items:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">data</code> <code class="o">=</code> <code class="n">response</code><code class="o">.</code><code class="n">json</code><code class="p">()</code>
+<code class="n">data</code><code class="o">.</code><code class="n">keys</code><code class="p">()</code>
+<code class="n">Out</code><code class="p">:</code>
+<code class="p">[</code><code class="s-Affix">u</code><code class="s1">'meta'</code><code class="p">,</code> <code class="s-Affix">u</code><code class="s1">'data'</code><code class="p">]</code>
+
+<code class="n">data</code><code class="p">[</code><code class="s1">'meta'</code><code class="p">][</code><code class="s1">'view'</code><code class="p">][</code><code class="s1">'description'</code><code class="p">]</code>
+<code class="n">Out</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'This table contains data on the average cost of a</code>
+<code class="n">market</code> <code class="n">basket</code> <code class="n">of</code> <code class="n">nutritious</code> <code class="n">food</code> <code class="n">items</code> <code class="n">relative</code> <code class="n">to</code> <code class="n">income</code> <code class="k">for</code>
+<code class="n">female</code><code class="o">-</code><code class="n">headed</code> <code class="n">households</code> <code class="k">with</code> <code class="n">children</code><code class="p">,</code> <code class="k">for</code> <code class="n">California</code><code class="p">,</code> <code class="n">its</code>
+<code class="n">regions</code><code class="p">,</code> <code class="n">counties</code><code class="p">,</code> <code class="ow">and</code> <code class="n">cities</code><code class="o">/</code><code class="n">towns</code><code class="o">.</code>  <code class="n">The</code> <code class="n">ratio</code> <code class="n">uses</code> <code class="n">data</code> <code class="kn">from</code>
+<code class="nn">the</code> <code class="nn">U.S.</code> <code class="nn">Department</code> <code class="nn">of</code> <code class="nn">Agriculture...</code>
+
+<code class="n">data</code><code class="p">[</code><code class="s1">'data'</code><code class="p">][</code><code class="mi">0</code><code class="p">]</code>
+<code class="n">Out</code><code class="p">:</code>
+<code class="p">[</code><code class="mi">1</code><code class="p">,</code>
+ <code class="s-Affix">u</code><code class="s1">'4303993D-76F7-4A5C-914E-FDEA4EAB67BA'</code><code class="p">,</code>
+ <code class="o">...</code>
+ <code class="s-Affix">u</code><code class="s1">'Food affordability for female-headed household with</code>
+ <code class="n">children</code> <code class="n">under</code> <code class="mi">18</code> <code class="n">years</code><code class="s1">',</code>
+ <code class="s-Affix">u</code><code class="s1">'2006-2010'</code><code class="p">,</code>
+ <code class="s-Affix">u</code><code class="s1">'1'</code><code class="p">,</code>
+ <code class="s-Affix">u</code><code class="s1">'AIAN'</code><code class="p">,</code>
+ <code class="s-Affix">u</code><code class="s1">'CA'</code><code class="p">,</code>
+ <code class="s-Affix">u</code><code class="s1">'06'</code><code class="p">,</code>
+ <code class="s-Affix">u</code><code class="s1">'California'</code><code class="p">,</code> <code class="o">...</code></pre>
+
+<p>Now that we’ve grabbed a raw page and a JSON file off the Web, let’s see how to use <code>requests</code> to consume a web data API.<a data-type="indexterm" data-primary="" data-startref="RLdatafiles5" id="idm140319432601008"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Using Python to Consume Data from a Web API"><div class="sect1" id="getting_data_webapis">
+<h1>Using Python to Consume Data from a Web API</h1>
+
+<p><a data-type="indexterm" data-primary="data collection" data-secondary="from  Web APIs" id="DCconsume5"></a><a data-type="indexterm" data-primary="Web APIs" data-secondary="consuming data from" id="WAPIconsume5"></a><a data-type="indexterm" data-primary="Python" data-secondary="consuming data from Web APIs with" id="Pconsume5"></a>If the data file you need isn’t on the Web, there may well be an Application Programming Interface (API) serving the data you need. Using this will involve making a request to the appropriate server to retrieve your data in a fixed format or one you get to specify in the request.</p>
+
+<p>The most popular data formats for web APIs are JSON and XML, though a number of esoteric formats exist. For the purposes of the JavaScripting data visualizer, JavaScript Object Notation (JSON) is obviously preferred (see <a data-type="xref" href="ch04.html#sect_data">“Data”</a>). Lucky for us, it is also starting to predominate.</p>
+
+<p><a data-type="indexterm" data-primary="Web APIs" data-secondary="types of" id="idm140319432445456"></a><a data-type="indexterm" data-primary="HTTP (Hypertext Transfer Protocol)" data-secondary="verbs" id="HTTPverbs5"></a>There are different approaches to creating a web API, and for a few years there was a little war of the architectures among the three main types of APIs inhabiting the Web:</p>
+<dl>
+<dt><a href="https://en.wikipedia.org/wiki/Representational_state_transfer">REST</a></dt>
+<dd>
+<p><a data-type="indexterm" data-primary="REST (Representational State Transfer)" id="idm140319432440992"></a>Short for REpresentational State Transfer, using a combination of HTTP verbs (GET, POST, etc.) and Uniform Resource Identifiers (URIs; e.g., <em>/user/kyran</em>) to access, create, and adapt data.</p>
+</dd>
+<dt><a href="https://en.wikipedia.org/wiki/XML-RPC">XML-RPC</a></dt>
+<dd>
+<p><a data-type="indexterm" data-primary="XML-RPC APIs" id="idm140319432438000"></a>A remote procedure call (RPC) protocol using XML encoding and HTTP transport.</p>
+</dd>
+<dt><a href="https://en.wikipedia.org/wiki/SOAP">SOAP</a></dt>
+<dd>
+<p><a data-type="indexterm" data-primary="SOAP (Simple Object Access Protocol)" id="idm140319432435600"></a>Short for Simple Object Access Protocol, using XML and HTTP.</p>
+</dd>
+</dl>
+
+<p>This battle seems to be resolving in a victory for <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">RESTful APIs</a>, and this is a very good thing. Quite apart from RESTful APIs being more elegant, and easier to use and implement (see <a data-type="xref" href="ch12.html#sect_flask_restful">“A Simple RESTful API with Flask”</a>), some standardization here makes it much more likely that you will recognize and quickly adapt to a new API that comes your way. Ideally, you will be able to reuse existing code.</p>
+
+<p>Most access and manipulation of remote data can be summed up by the acronym CRUD (create, retrieve, update, delete), originally coined to describe all the major functions implemented in relational databases. HTTP provides CRUD counterparts with the POST, GET, PUT, and DELETE verbs and the REST abstraction builds on this use of these verbs, acting on a <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">Universal Resource Identifier (URI)</a>.</p>
+
+<p>Discussions about what is and isn’t a proper RESTful interface can get quite involved,
+but essentially the URI (e.g., <em><a href="http://example.com/api/items/2"><em class="hyperlink">http://example.com/api/items/2</em></a></em>) should contain all the information required in order to perform a CRUD operation. The particular operation (e.g., GET or DELETE) is specified by the HTTP verb. This excludes architectures such as SOAP, which place stateful information in metadata on the requests header. Imagine the URI as the virtual address of the data and CRUD all the operations you can perform on it.</p>
+
+<p>As data visualizers keen to lay our hands on some interesting datasets, we are avid consumers here, so our HTTP verb of choice is GET and the examples that follow will focus on the fetching of data with various well-known web APIs. Hopefully, some patterns will emerge.</p>
+
+<p>Although the two constraints of stateless URIs and the use of the CRUD verbs is a nice constraint on the shape of RESTful APIs, there still manage to be many variants on the theme.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Using a RESTful Web API with requests"><div class="sect2" id="idm140319432427392">
+<h2>Using a RESTful Web API with requests</h2>
+
+<p><code>requests</code> <a data-type="indexterm" data-primary="requests library" data-secondary="RESTful Web APIs and" id="RLrestful5"></a>has a fair number of bells and whistles based around the main HTTP request verbs. For a good overview, see <a href="http://docs.python-requests.org/en/latest/user/quickstart/">the requests quickstart</a>. For the purposes of getting data, you’ll use GET and POST pretty much exclusively, with GET being by a long way the most used verb. POST allows you to emulate web forms, including login details, field values, etc. in the request. For those occasions where you find yourself driving a web form with, for example, lots of options selectors, <code>requests</code> makes automation with POST easy. GET covers pretty much everything else, including the ubiquitous
+<a href="http://bit.ly/1a1kVX5">RESTful APIs</a>, which provide an increasing amount of the well-formed data available on the Web.</p>
+
+<p>Let’s look at a more complicated use of <code>requests</code>, getting a URL with arguments. The <a href="http://bit.ly/1WRjrKI">Organisation for Economic Cooperation and Development (OECD)</a> provides some <a href="https://data.oecd.org/">useful datasets on its site</a>. These datasets provide mainly economic measures and statistics for the member countries of the OECD, and such data can form the basis of many interesting visualizations. The OECD provides a few of its own, such as one <a href="http://www.oecd.org/statistics/compare-your-country.htm">allowing you to compare your country</a> with others in the OECD.</p>
+
+<p>The OECD web API is described <a href="https://data.oecd.org/api/sdmx-json-documentation/">here</a>, and queries are constructed with the dataset name (dsname) and some dot-separated dimensions, each of which can be a number of <code>+</code> separated values. The URL can also take standard HTTP parameters initiated by a <code>?</code> and separated by <code>&amp;</code>:</p>
+
+<pre data-type="programlisting">&lt;root_url&gt;/&lt;dsname&gt;/&lt;dim 1&gt;.&lt;dim 2&gt;...&lt;dim n&gt;
+/all?param1=foo&amp;param2=baa..
+&lt;dim 1&gt; = 'AUS'+'AUT'+'BEL'...</pre>
+
+<p>So the following is a valid URL:</p>
+
+<pre data-type="programlisting">http://stats.oecd.org/sdmx-json/data/QNA   <a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-1"><img src="1.png" alt="1" width="12" height="12"></a>
+    /AUS+AUT.GDP+B1_GE.CUR+VOBARSA.Q       <a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-2" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-2"><img src="2.png" alt="2" width="12" height="12"></a>
+    /all?startTime=2009-Q2&amp;endTime=2011-Q4 <a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-3" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-3"><img src="3.png" alt="3" width="12" height="12"></a></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Specifies the QNA (Quarterly National Accounts) dataset.</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-2" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Four dimensions, by location, subject, measure, and frequency.</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-3" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO1-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>Data from the second quarter of 2009 to the fourth quarter of 2011.</p></dd>
+</dl>
+
+<p>Let’s construct a little Python function to query the OECD’s API (<a data-type="xref" href="#oecd_request">Example 5-1</a>).</p>
+<div id="oecd_request" data-type="example">
+<h5><span class="label">Example 5-1. </span>Making a URL for the OECD API</h5>
+
+<pre data-type="programlisting" data-code-language="python" class="less_space"><code class="n">OECD_ROOT_URL</code><code> </code><code class="o">=</code><code> </code><code class="s1">'</code><code class="s1">http://stats.oecd.org/sdmx-json/data</code><code class="s1">'</code><code>
+</code><code>
+</code><code class="k">def</code><code> </code><code class="nf">make_OECD_request</code><code class="p">(</code><code class="n">dsname</code><code class="p">,</code><code> </code><code class="n">dimensions</code><code class="p">,</code><code> </code><code class="n">params</code><code class="o">=</code><code class="bp">None</code><code class="p">,</code><code> </code><code>\
+</code><code class="n">root_dir</code><code class="o">=</code><code class="n">OECD_ROOT_URL</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>    </code><code class="sd">""" Make a URL for the OECD API and return a response """</code><code>
+</code><code>
+</code><code>    </code><code class="k">if</code><code> </code><code class="ow">not</code><code> </code><code class="n">params</code><code class="p">:</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>        </code><code class="n">params</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="p">}</code><code>
+</code><code>
+</code><code>    </code><code class="n">dim_args</code><code> </code><code class="o">=</code><code> </code><code class="p">[</code><code class="s1">'</code><code class="s1">+</code><code class="s1">'</code><code class="o">.</code><code class="n">join</code><code class="p">(</code><code class="n">d</code><code class="p">)</code><code> </code><code class="k">for</code><code> </code><code class="n">d</code><code> </code><code class="ow">in</code><code> </code><code class="n">dimensions</code><code class="p">]</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-2" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code>    </code><code class="n">dim_str</code><code> </code><code class="o">=</code><code> </code><code class="s1">'</code><code class="s1">.</code><code class="s1">'</code><code class="o">.</code><code class="n">join</code><code class="p">(</code><code class="n">dim_args</code><code class="p">)</code><code>
+</code><code>
+</code><code>    </code><code class="n">url</code><code> </code><code class="o">=</code><code> </code><code class="n">root_dir</code><code> </code><code class="o">+</code><code> </code><code class="s1">'</code><code class="s1">/</code><code class="s1">'</code><code> </code><code class="o">+</code><code> </code><code class="n">dsname</code><code> </code><code class="o">+</code><code> </code><code class="s1">'</code><code class="s1">/</code><code class="s1">'</code><code> </code><code class="o">+</code><code> </code><code class="n">dim_str</code><code> </code><code class="o">+</code><code> </code><code class="s1">'</code><code class="s1">/all</code><code class="s1">'</code><code>
+</code><code>    </code><code class="k">print</code><code class="p">(</code><code class="s1">'</code><code class="s1">Requesting URL: </code><code class="s1">'</code><code> </code><code class="o">+</code><code> </code><code class="n">url</code><code class="p">)</code><code>
+</code><code>    </code><code class="k">return</code><code> </code><code class="n">requests</code><code class="o">.</code><code class="n">get</code><code class="p">(</code><code class="n">url</code><code class="p">,</code><code> </code><code class="n">params</code><code class="o">=</code><code class="n">params</code><code class="p">)</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-3" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-3"><img src="3.png" alt="3" width="12" height="12"></a></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>You shouldn’t use mutable values, such as <code>{}</code>, for Python function defaults. See <a href="http://docs.python-guide.org/en/latest/writing/gotchas/">here</a> for an explanation of this gotcha.</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-2" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>We first use a Python list comprehension and the <code>join</code> method to  create a list of dimensions, with members concatenated with plus signs (e.g., [<em>USA+AUS</em>, … ]).  <code>join</code> is then used again to concatenate the members of <code>dim_str</code> with periods.</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-3" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO2-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>Note that <code>requests</code>’ <code>get</code> can take a parameter dictionary as its second argument, using it to make the URL query string.</p></dd>
+</dl></div>
+
+<p>We can use this function like so, to grab economic data for the USA and Australia from 2009 to 2010:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">response</code> <code class="o">=</code> <code class="n">make_OECD_request</code><code class="p">(</code><code class="s1">'QNA'</code><code class="p">,</code>
+    <code class="p">((</code><code class="s1">'USA'</code><code class="p">,</code> <code class="s1">'AUS'</code><code class="p">),(</code><code class="s1">'GDP'</code><code class="p">,</code> <code class="s1">'B1_GE'</code><code class="p">),(</code><code class="s1">'CUR'</code><code class="p">,</code> <code class="s1">'VOBARSA'</code><code class="p">),</code> <code class="p">(</code><code class="s1">'Q'</code><code class="p">)),</code>
+    <code class="p">{</code><code class="s1">'startTime'</code><code class="p">:</code><code class="s1">'2009-Q1'</code><code class="p">,</code> <code class="s1">'endTime'</code><code class="p">:</code><code class="s1">'2010-Q1'</code><code class="p">})</code></pre>
+
+<pre data-type="programlisting">Requesting URL: http://stats.oecd.org/sdmx-json/data/QNA/
+    USA+AUS.GDP+B1_GE.CUR+VOBARSA.Q/all</pre>
+
+<p>Now, to look at the data, we just check that the response is OK and have a look at the dictionary keys:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="k">if</code> <code class="n">response</code><code class="o">.</code><code class="n">status_code</code> <code class="o">==</code> <code class="mi">200</code><code class="p">:</code>
+   <code class="n">json</code> <code class="o">=</code> <code class="n">response</code><code class="o">.</code><code class="n">json</code><code class="p">()</code>
+   <code class="n">json</code><code class="o">.</code><code class="n">keys</code><code class="p">()</code>
+<code class="n">Out</code><code class="p">:</code> <code class="p">[</code><code class="s-Affix">u</code><code class="s1">'header'</code><code class="p">,</code> <code class="s-Affix">u</code><code class="s1">'dataSets'</code><code class="p">,</code> <code class="s-Affix">u</code><code class="s1">'structure'</code><code class="p">]</code></pre>
+
+<p>The resulting JSON data is in the <a href="https://en.wikipedia.org/wiki/SDMX">SDMX</a> format, designed to facilitate the communication of statistical data. It’s not the most intuitive format around, but it’s often the case that datasets have a less than ideal structure. The good news is that Python is a great language for knocking data into shape. For Python’s <a href="http://pandas.pydata.org/">Pandas library</a> (see <a data-type="xref" href="ch08.html#chapter_intro_to_pandas">Chapter 8</a>), there is <a href="https://pypi.python.org/pypi/pandaSDMX">pandaSDMX</a>, which currently handles the XML-based format.</p>
+
+<p>The OECD API is essentially RESTful with all of the query being contained in the URL and the HTTP verb GET specifying a fetch operation. If a specialized Python library isn’t available to use the API (e.g., Tweepy for Twitter), then you’ll probably end up writing something like <a data-type="xref" href="#oecd_request">Example 5-1</a>. <code>requests</code> is a very friendly, well-designed library and can cope with pretty much all the manipulations required to use a web API.<a data-type="indexterm" data-primary="" data-startref="HTTPverbs5" id="idm140319431980512"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Getting Country Data for the Nobel Dataviz"><div class="sect2" id="country_data">
+<h2>Getting Country Data for the Nobel Dataviz</h2>
+
+<p>There are some national statistics that will come in handy for the Nobel Prize visualization we’re using our toolchain to build. Population sizes, three-letter international codes (e.g., GDR, USA), and geographic centers are potentially useful when you are visualizing an international prize and its distribution.  <a href="https://restcountries.eu/">REST countries</a> is a handy RESTful web resource with various international stats. Let’s use it to grab some data.</p>
+
+<p>Requests to REST countries take the following form:</p>
+
+<pre data-type="programlisting">https://restcountries.eu/rest/v1/&lt;field&gt;/&lt;name&gt;?&lt;params&gt;</pre>
+
+<p>As with the OECD API (see <a data-type="xref" href="#oecd_request">Example 5-1</a>), we can make a simple calling function to allow easy access to the API’s data, like so:</p>
+
+<pre data-type="programlisting" data-code-language="python" class="less_space"><code class="n">REST_EU_ROOT_URL</code><code> </code><code class="o">=</code><code> </code><code class="s2">"</code><code class="s2">http://restcountries.eu/rest/v1</code><code class="s2">"</code><code>
+</code><code>
+</code><code class="k">def</code><code> </code><code class="nf">REST_country_request</code><code class="p">(</code><code class="n">field</code><code class="o">=</code><code class="s1">'</code><code class="s1">all</code><code class="s1">'</code><code class="p">,</code><code> </code><code class="n">name</code><code class="o">=</code><code class="bp">None</code><code class="p">,</code><code> </code><code class="n">params</code><code class="o">=</code><code class="bp">None</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>
+</code><code>    </code><code class="n">headers</code><code class="o">=</code><code class="p">{</code><code class="s1">'</code><code class="s1">User-Agent</code><code class="s1">'</code><code class="p">:</code><code> </code><code class="s1">'</code><code class="s1">Mozilla/5.0</code><code class="s1">'</code><code class="p">}</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO3-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO3-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>
+</code><code>    </code><code class="k">if</code><code> </code><code class="ow">not</code><code> </code><code class="n">params</code><code class="p">:</code><code>
+</code><code>        </code><code class="n">params</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="p">}</code><code>
+</code><code>
+</code><code>    </code><code class="k">if</code><code> </code><code class="n">field</code><code> </code><code class="o">==</code><code> </code><code class="s1">'</code><code class="s1">all</code><code class="s1">'</code><code class="p">:</code><code>
+</code><code>        </code><code class="k">return</code><code> </code><code class="n">requests</code><code class="o">.</code><code class="n">get</code><code class="p">(</code><code class="n">REST_EU_ROOT_URL</code><code> </code><code class="o">+</code><code> </code><code class="s1">'</code><code class="s1">/all</code><code class="s1">'</code><code class="p">)</code><code>
+</code><code>
+</code><code>    </code><code class="n">url</code><code> </code><code class="o">=</code><code> </code><code class="s1">'</code><code class="si">%s</code><code class="s1">/</code><code class="si">%s</code><code class="s1">/</code><code class="si">%s</code><code class="s1">'</code><code class="o">%</code><code class="p">(</code><code class="n">REST_EU_ROOT_URL</code><code class="p">,</code><code> </code><code class="n">field</code><code class="p">,</code><code> </code><code class="n">name</code><code class="p">)</code><code>
+</code><code>    </code><code class="k">print</code><code class="p">(</code><code class="s1">'</code><code class="s1">Requesting URL: </code><code class="s1">'</code><code> </code><code class="o">+</code><code> </code><code class="n">url</code><code class="p">)</code><code>
+</code><code>    </code><code class="n">response</code><code> </code><code class="o">=</code><code> </code><code class="n">requests</code><code class="o">.</code><code class="n">get</code><code class="p">(</code><code class="n">url</code><code class="p">,</code><code> </code><code class="n">params</code><code class="o">=</code><code class="n">params</code><code class="p">,</code><code> </code><code class="n">headers</code><code class="o">=</code><code class="n">headers</code><code class="p">)</code><code>
+</code><code>
+</code><code>    </code><code class="k">if</code><code> </code><code class="ow">not</code><code> </code><code class="n">response</code><code class="o">.</code><code class="n">status_code</code><code> </code><code class="o">==</code><code> </code><code class="mi">200</code><code class="p">:</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO3-2" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO3-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code>        </code><code class="k">raise</code><code> </code><code class="ne">Exception</code><code class="p">(</code><code class="s1">'</code><code class="s1">Request failed with status code </code><code class="s1">'</code><code> </code><code>\
+</code><code>        </code><code class="o">+</code><code> </code><code class="nb">str</code><code class="p">(</code><code class="n">response</code><code class="o">.</code><code class="n">status_code</code><code class="p">)</code><code class="p">)</code><code>
+</code><code>
+</code><code>    </code><code class="k">return</code><code> </code><code class="n">response</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO3-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO3-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>It’s usually a good idea to specify a valid <code>User-Agent</code> in the header of your request. Some sites will reject the request <span class="keep-together">otherwise</span>.</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO3-2" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO3-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Before returning the response, make sure it has an OK (200) HTTP code; otherwise, raise an exception with a helpful <span class="keep-together">message</span>.</p></dd>
+</dl>
+
+<p>With the <code>REST_country_request</code> function in hand, let’s get a list of all the countries using the US dollar as currency:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">response</code> <code class="o">=</code> <code class="n">REST_country_request</code><code class="p">(</code><code class="s1">'currency'</code><code class="p">,</code> <code class="s1">'usd'</code><code class="p">)</code>
+<code class="n">response</code><code class="o">.</code><code class="n">json</code><code class="p">()</code>
+<code class="n">Out</code><code class="p">:</code>
+<code class="p">[{</code><code class="s-Affix">u</code><code class="s1">'alpha2Code'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'AS'</code><code class="p">,</code>
+  <code class="s-Affix">u</code><code class="s1">'alpha3Code'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'ASM'</code><code class="p">,</code>
+  <code class="s-Affix">u</code><code class="s1">'altSpellings'</code><code class="p">:</code> <code class="p">[</code><code class="s-Affix">u</code><code class="s1">'AS'</code><code class="p">,</code>
+  <code class="o">...</code>
+  <code class="s-Affix">u</code><code class="s1">'capital'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Pago Pago'</code><code class="p">,</code>
+  <code class="s-Affix">u</code><code class="s1">'currencies'</code><code class="p">:</code> <code class="p">[</code><code class="s-Affix">u</code><code class="s1">'USD'</code><code class="p">],</code>
+  <code class="s-Affix">u</code><code class="s1">'demonym'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'American Samoan'</code><code class="p">,</code>
+  <code class="o">...</code>
+  <code class="s-Affix">u</code><code class="s1">'latlng'</code><code class="p">:</code> <code class="p">[</code><code class="mf">12.15</code><code class="p">,</code> <code class="o">-</code><code class="mf">68.266667</code><code class="p">],</code>
+  <code class="s-Affix">u</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Bonaire'</code><code class="p">,</code>
+  <code class="o">...</code>
+  <code class="s-Affix">u</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'British Indian Ocean Territory'</code><code class="p">,</code>
+  <code class="o">...</code>
+  <code class="s-Affix">u</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'United States Minor Outlying Islands'</code><code class="p">,</code>
+  <code class="o">...</code></pre>
+
+<p>The full dataset at REST countries is pretty small, so for convenience we’ll make a copy and store it locally to MongoDB and our <em>nobel-prize</em> database using the <code>get_mongo_database</code> method from <a data-type="xref" href="ch03.html#data_mongodb">“MongoDB”</a>:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">db_nobel</code> <code class="o">=</code> <code class="n">get_mongo_database</code><code class="p">(</code><code class="s1">'nobel_prize'</code><code class="p">)</code>
+<code class="n">col</code> <code class="o">=</code> <code class="n">db_nobel</code><code class="p">[</code><code class="s1">'country_data'</code><code class="p">]</code> <code class="c1"># country data collection</code>
+
+<code class="c1"># Get all the RESTful country-data</code>
+<code class="n">response</code> <code class="o">=</code> <code class="n">REST_country_request</code><code class="p">()</code>
+<code class="c1"># Insert the JSON-objects straight to our collection</code>
+<code class="n">col</code><code class="o">.</code><code class="n">insert</code><code class="p">(</code><code class="n">response</code><code class="o">.</code><code class="n">json</code><code class="p">())</code>
+<code class="n">Out</code><code class="p">:</code>
+<code class="p">[</code><code class="n">ObjectId</code><code class="p">(</code><code class="s1">'5665a1ef26a7110b79e88d49'</code><code class="p">),</code>
+ <code class="n">ObjectId</code><code class="p">(</code><code class="s1">'5665a1ef26a7110b79e88d4a'</code><code class="p">),</code>
+ <code class="o">...</code></pre>
+
+<p>With our country data inserted into its MongoDB collection, let’s again find all the countries using the US dollar as currency:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">res</code> <code class="o">=</code> <code class="n">col</code><code class="o">.</code><code class="n">find</code><code class="p">({</code><code class="s1">'currencies'</code><code class="p">:{</code><code class="s1">'$in'</code><code class="p">:[</code><code class="s1">'USD'</code><code class="p">]}})</code>
+<code class="nb">list</code><code class="p">(</code><code class="n">res</code><code class="p">)</code>
+<code class="n">Out</code><code class="p">:</code>
+<code class="p">[{</code><code class="s-Affix">u</code><code class="s1">'_id'</code><code class="p">:</code> <code class="n">ObjectId</code><code class="p">(</code><code class="s1">'5665a1ef26a7110b79e88d4d'</code><code class="p">),</code>
+  <code class="s-Affix">u</code><code class="s1">'alpha2Code'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'AS'</code><code class="p">,</code>
+  <code class="s-Affix">u</code><code class="s1">'alpha3Code'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'ASM'</code><code class="p">,</code>
+  <code class="s-Affix">u</code><code class="s1">'altSpellings'</code><code class="p">:</code> <code class="p">[</code><code class="s-Affix">u</code><code class="s1">'AS'</code><code class="p">,</code>
+  <code class="o">...</code>
+  <code class="s-Affix">u</code><code class="s1">'currencies'</code><code class="p">:</code> <code class="p">[</code><code class="s-Affix">u</code><code class="s1">'USD'</code><code class="p">],</code>
+  <code class="s-Affix">u</code><code class="s1">'demonym'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'American Samoan'</code><code class="p">,</code>
+  <code class="s-Affix">u</code><code class="s1">'languages'</code><code class="p">:</code> <code class="p">[</code><code class="s-Affix">u</code><code class="s1">'en'</code><code class="p">,</code> <code class="s-Affix">u</code><code class="s1">'sm'</code><code class="p">],</code>
+  <code class="o">...</code></pre>
+
+<p>Now that we’ve rolled a couple of our own API consumers, let’s take a look at some dedicated libraries that wrap some of the larger web APIs in an easy-to-use form.<a data-type="indexterm" data-primary="" data-startref="DCpythreq5" id="idm140319431506048"></a><a data-type="indexterm" data-primary="" data-startref="Prequests5" id="idm140319431603536"></a><a data-type="indexterm" data-primary="" data-startref="DCconsume5" id="idm140319431602736"></a><a data-type="indexterm" data-primary="" data-startref="WAPIconsume5" id="idm140319431601792"></a><a data-type="indexterm" data-primary="" data-startref="Pconsume5" id="idm140319431600848"></a><a data-type="indexterm" data-primary="" data-startref="RLrestful5" id="idm140319431599904"></a></p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Using Libraries to Access Web APIs"><div class="sect1" id="idm140319432600032">
+<h1>Using Libraries to Access Web APIs</h1>
+
+<p><code>requests</code> <a data-type="indexterm" data-primary="Web APIs" data-secondary="using libraries to access" id="WAPIlib5"></a><a data-type="indexterm" data-primary="libraries" data-secondary="using to access Web APIs" id="Lwebapi5"></a><a data-type="indexterm" data-primary="data collection" data-secondary="using libraries" id="DClibraries5"></a>is capable of negotiating with pretty much all web APIs and often a little function like <a data-type="xref" href="#oecd_request">Example 5-1</a> is all you need. But as the APIs start adding authentication and the data structures become more complicated, a good wrapper library can save a lot of hassle and reduce the tedious bookkeeping. In this section, I’ll cover a couple of the more popular <a href="https://en.wikipedia.org/wiki/Wrapper_library">wrapper libraries</a> to give you a feel for the workflow and some useful starting points.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Using Google Spreadsheets"><div class="sect2" id="idm140319431591632">
+<h2>Using Google Spreadsheets</h2>
+
+<p><a data-type="indexterm" data-primary="wrapper libraries" data-secondary="Google spreadsheets" id="WLgspread5"></a><a data-type="indexterm" data-primary="Google spreadsheets" id="Gspread5"></a>It’s becoming more common these days to have live datasets <em>in the cloud</em>. So, for example, you might find yourself required to visualize aspects of a Google spreadsheet that is the shared data pool for a group. My preference is to get this data out of the Google-plex and into Pandas to start exploring it (see <a data-type="xref" href="ch11.html#chapter_pandas_exploring">Chapter 11</a>), but a good library will let you access and adapt the data <em>in-place</em>, negotiating the web traffic as required.</p>
+
+<p><a href="https://github.com/burnash/gspread">Gspread</a> <a data-type="indexterm" data-primary="Python" data-secondary="Gspread library" id="Pgspread5"></a>is the best known Python library for accessing Google spreadsheets and makes doing so a relative breeze.</p>
+
+<p>You’ll need  <a href="https://en.wikipedia.org/wiki/OAuth">OAuth 2.0</a> credentials to use the API.<sup><a data-type="noteref" id="idm140319431581856-marker" href="ch05.html#idm140319431581856">3</a></sup> The most up-to-date guide can be found <a href="http://bit.ly/292nobI">here</a>. Following those instructions should provide a JSON file containing your private key.</p>
+
+<p>You’ll need to install <code>gspread</code> and the latest Python OAuth2 client library. Here’s how to do it with <code>pip</code>.</p>
+
+<pre data-type="programlisting">$ pip install gspread
+$ pip install --upgrade oauth2client</pre>
+
+<p>Depending on your system, you may also need PyOpenSSL:</p>
+
+<pre data-type="programlisting">$ pip install PyOpenSSL</pre>
+
+<p>See <a href="http://bit.ly/28W0XqK">Read the Docs</a> for more details and troubleshooting.</p>
+<div data-type="note" epub:type="note"><h6>Note</h6>
+<p>Google’s API assumes that the spreadsheets you are trying to access are owned or shared by your API account, not your personal one. The email address to share the spreadsheet with is available at your <a href="http://bit.ly/28SSIbd">Google developers console</a> and in the JSON credentials key needed to use the API. It should look something like <code>account-1@My Project…iam.gserviceaccount.com</code>.</p>
+</div>
+
+<p>With those libraries installed, you should be able to access any of your spreadsheets with just  a few lines. I’m using the Microbe-scope spreadsheet, which you can see <a href="http://bit.ly/1UgxdpH">here</a>. <a data-type="xref" href="#gspread_access">Example 5-2</a> shows how to load the spreadsheet.</p>
+<div id="gspread_access" data-type="example">
+<h5><span class="label">Example 5-2. </span>Opening a Google spreadsheet</h5>
+
+<pre data-type="programlisting" data-code-language="python"><code class="kn">import</code><code> </code><code class="nn">json</code><code>
+</code><code class="kn">import</code><code> </code><code class="nn">gspread</code><code>
+</code><code class="kn">from</code><code> </code><code class="nn">oauth2client.client</code><code> </code><code class="kn">import</code><code> </code><code class="n">SignedJwtAssertionCredentials</code><code>
+</code><code>
+</code><code class="n">json_key</code><code> </code><code class="o">=</code><code> </code><code class="n">json</code><code class="o">.</code><code class="n">load</code><code class="p">(</code><code class="nb">open</code><code class="p">(</code><code class="s1">'</code><code class="s1">gspread_credentials.json</code><code class="s1">'</code><code class="p">)</code><code class="p">)</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO4-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO4-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code class="n">scope</code><code> </code><code class="o">=</code><code> </code><code class="p">[</code><code class="s1">'</code><code class="s1">https://spreadsheets.google.com/feeds</code><code class="s1">'</code><code class="p">]</code><code>
+</code><code>
+</code><code class="n">credentials</code><code> </code><code class="o">=</code><code> </code><code class="n">SignedJwtAssertionCredentials</code><code class="p">(</code><code>\
+</code><code>    </code><code class="n">json_key</code><code class="p">[</code><code class="s1">'</code><code class="s1">client_email</code><code class="s1">'</code><code class="p">]</code><code class="p">,</code><code class="n">json_key</code><code class="p">[</code><code class="s1">'</code><code class="s1">private_key</code><code class="s1">'</code><code class="p">]</code><code class="p">,</code><code> </code><code class="n">scope</code><code class="p">)</code><code>
+</code><code>
+</code><code class="n">gc</code><code> </code><code class="o">=</code><code> </code><code class="n">gspread</code><code class="o">.</code><code class="n">authorize</code><code class="p">(</code><code class="n">credentials</code><code class="p">)</code><code>
+</code><code>
+</code><code class="n">ss</code><code> </code><code class="o">=</code><code> </code><code class="n">gc</code><code class="o">.</code><code class="n">open</code><code class="p">(</code><code class="s1">'</code><code class="s1">Microbe-scope</code><code class="s1">'</code><code class="p">)</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO4-2" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO4-2"><img src="2.png" alt="2" width="12" height="12"></a></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO4-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO4-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The JSON credentials file is the one provided by Google services, usually of the form <em>My Project-b8ab5e38fd68.json</em>.</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO4-2" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO4-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Here we’re opening the spreadsheet by name. Alternatives are <code>open_by_url</code> or <code>open_by_id</code>. See <a href="http://gspread.readthedocs.org/en/latest/index.html#gspread.Client">here</a> for details.</p></dd>
+</dl></div>
+
+<p>Now that we’ve got our spreadsheet, we can see the worksheets it contains:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">ss</code><code class="o">.</code><code class="n">worksheets</code><code class="p">()</code>
+<code class="n">Out</code><code class="p">:</code> <code class="p">[</code><code class="o">&lt;</code><code class="n">Worksheet</code> <code class="s1">'bugs'</code> <code class="nb">id</code><code class="p">:</code><code class="n">od6</code><code class="o">&gt;</code><code class="p">,</code>
+ <code class="o">&lt;</code><code class="n">Worksheet</code> <code class="s1">'outrageous facts'</code> <code class="nb">id</code><code class="p">:</code><code class="n">o74cw7y</code><code class="o">&gt;</code><code class="p">,</code>
+ <code class="o">&lt;</code><code class="n">Worksheet</code> <code class="s1">'physicians per 1,000'</code> <code class="nb">id</code><code class="p">:</code><code class="n">okzh6fp</code><code class="o">&gt;</code><code class="p">,</code>
+ <code class="o">&lt;</code><code class="n">Worksheet</code> <code class="s1">'amends'</code> <code class="nb">id</code><code class="p">:</code><code class="n">ogkk64p</code><code class="o">&gt;</code><code class="p">]</code>
+
+ <code class="n">ws</code> <code class="o">=</code> <code class="n">ss</code><code class="o">.</code><code class="n">worksheet</code><code class="p">(</code><code class="s1">'bugs'</code><code class="p">)</code></pre>
+
+<p>With the worksheet <code>bugs</code> selected from the spreadsheet, <code>gspread</code> allows you to access and change  column, row, and cell values (assuming the sheet isn’t read-only). So we can get the values in the second column with the <code>col_values</code> command:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">ws</code><code class="o">.</code><code class="n">col_values</code><code class="p">(</code><code class="mi">1</code><code class="p">)</code>
+<code class="n">Out</code><code class="p">:</code> <code class="p">[</code><code class="bp">None</code><code class="p">,</code>
+ <code class="s1">'grey = not plotted'</code><code class="p">,</code>
+ <code class="s1">'Anthrax (untreated)'</code><code class="p">,</code>
+ <code class="s1">'Bird Flu (H5N1)'</code><code class="p">,</code>
+ <code class="s1">'Bubonic Plague (untreated)'</code><code class="p">,</code>
+ <code class="s1">'C.Difficile'</code><code class="p">,</code>
+ <code class="s1">'Campylobacter'</code><code class="p">,</code>
+ <code class="s1">'Chicken Pox'</code><code class="p">,</code>
+ <code class="s1">'Cholera'</code><code class="p">,</code><code class="o">...</code></pre>
+<div data-type="tip"><h6>Tip</h6>
+<p>If you get a <code>BadStatusLine</code> error while accessing a Google spreadsheet with <code>gspread</code>, it is probably because the session has expired. Reopening the spreadsheet should get things working again. This <a href="http://bit.ly/291Vlch">outstanding <code>gspread</code> issue</a> provides more information.</p>
+</div>
+
+<p>Although you can use <code>gspread</code>’s API to plot directly, using a plot library like Matplotlib, I prefer to send the whole sheet to Pandas, Python’s powerhouse programmatic spreadsheet. This is easily achieved with <code>gspread</code>’s <code>get_all_records</code>, which returns a list of item dictionaries. This list can be used directly to initialize a Pandas <code>DataFrame</code> (see <a data-type="xref" href="ch08.html#pandas_objects">“The DataFrame”</a>):</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">df</code> <code class="o">=</code> <code class="n">pd</code><code class="o">.</code><code class="n">DataFrame</code><code class="p">(</code><code class="n">ws</code><code class="o">.</code><code class="n">get_all_records</code><code class="p">())</code>
+<code class="n">df</code><code class="o">.</code><code class="n">info</code><code class="p">()</code>
+<code class="n">Out</code><code class="p">:</code>
+<code class="o">&lt;</code><code class="k">class</code> <code class="err">'</code><code class="nc">pandas</code><code class="o">.</code><code class="n">core</code><code class="o">.</code><code class="n">frame</code><code class="o">.</code><code class="n">DataFrame</code><code class="s1">'&gt;</code>
+<code class="n">Int64Index</code><code class="p">:</code> <code class="mi">41</code> <code class="n">entries</code><code class="p">,</code> <code class="mi">0</code> <code class="n">to</code> <code class="mi">40</code>
+<code class="n">Data</code> <code class="n">columns</code> <code class="p">(</code><code class="n">total</code> <code class="mi">23</code> <code class="n">columns</code><code class="p">):</code>
+                                          <code class="mi">41</code> <code class="n">non</code><code class="o">-</code><code class="n">null</code> <code class="nb">object</code>
+<code class="n">average</code> <code class="n">basic</code> <code class="n">reproductive</code> <code class="n">rate</code>           <code class="mi">41</code> <code class="n">non</code><code class="o">-</code><code class="n">null</code> <code class="nb">object</code>
+<code class="n">case</code> <code class="n">fatality</code> <code class="n">rate</code>                        <code class="mi">41</code> <code class="n">non</code><code class="o">-</code><code class="n">null</code> <code class="nb">object</code>
+<code class="n">infectious</code> <code class="n">dose</code>                           <code class="mi">41</code> <code class="n">non</code><code class="o">-</code><code class="n">null</code> <code class="nb">object</code>
+<code class="o">...</code>
+<code class="n">upper</code> <code class="n">R0</code>                                  <code class="mi">41</code> <code class="n">non</code><code class="o">-</code><code class="n">null</code> <code class="nb">object</code>
+<code class="n">viral</code> <code class="n">load</code> <code class="ow">in</code> <code class="n">acute</code> <code class="n">stage</code>                 <code class="mi">41</code> <code class="n">non</code><code class="o">-</code><code class="n">null</code> <code class="nb">object</code>
+<code class="n">yearly</code> <code class="n">fatalities</code>                         <code class="mi">41</code> <code class="n">non</code><code class="o">-</code><code class="n">null</code> <code class="nb">object</code>
+<code class="n">dtypes</code><code class="p">:</code> <code class="nb">object</code><code class="p">(</code><code class="mi">23</code><code class="p">)</code>
+<code class="n">memory</code> <code class="n">usage</code><code class="p">:</code> <code class="mf">7.7</code><code class="o">+</code> <code class="n">KB</code></pre>
+
+<p>In <a data-type="xref" href="ch11.html#chapter_pandas_exploring">Chapter 11</a> we’ll see how to interactively explore a <code>DataFrame</code>’s data.<a data-type="indexterm" data-primary="" data-startref="WLgspread5" id="idm140319431131520"></a><a data-type="indexterm" data-primary="" data-startref="Gspread5" id="idm140319431130544"></a><a data-type="indexterm" data-primary="" data-startref="Pgspread5" id="idm140319431203312"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Using the Twitter API with Tweepy"><div class="sect2" id="sect_tweepy">
+<h2>Using the Twitter API with Tweepy</h2>
+
+<p><a data-type="indexterm" data-primary="wrapper libraries" data-secondary="Twitter" id="WLtwitter5"></a><a data-type="indexterm" data-primary="Twitter API" id="twitter5"></a><a data-type="indexterm" data-primary="Python" data-secondary="Tweepy library" id="Ptweepy5"></a>The advent of social media has generated a lot of data and an interest in visualizing the social networks, trending hashtags, and media storms contained in them. Twitter’s broadcast network is probably the richest source of cool data visualizations and its API provides tweets<sup><a data-type="noteref" id="idm140319431099920-marker" href="ch05.html#idm140319431099920">4</a></sup> filtered by user, hashtag, date, and the like.</p>
+
+<p>Python’s Tweepy is an easy-to-use Twitter library that provides a number of useful features, such as a <code>StreamListener</code> class for streaming live Twitter updates. To start using it, you’ll need a Twitter access token, which you can acquire by following the instructions  <a href="https://dev.twitter.com/oauth/overview/application-owner-access-tokens">at the Twitter docs</a> to create your Twitter application. Once this application is created you can get the keys and access tokens for your app by clicking on the link <a href="https://apps.twitter.com/">at your Twitter app page</a>.</p>
+
+<p>Tweepy typically requires the four authorization elements shown here:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="c1"># The user credential variables to access Twitter API</code>
+<code class="n">access_token</code> <code class="o">=</code> <code class="s2">"2677230157-Ze3bWuBAw4kwoj4via2dEntU86...TD7z"</code>
+<code class="n">access_token_secret</code> <code class="o">=</code> <code class="s2">"DxwKAvVzMFLq7WnQGnty49jgJ39Acu...paR8ZH"</code>
+<code class="n">consumer_key</code> <code class="o">=</code> <code class="s2">"pIorGFGQHShuYQtIxzYWk1jMD"</code>
+<code class="n">consumer_secret</code> <code class="o">=</code> <code class="s2">"yLc4Hw82G0Zn4vTi4q8pSBcNyHkn35BfIe...oVa4P7R"</code></pre>
+
+<p>With those defined, accessing tweets could hardly be easier. Here we create an OAuth <code>auth</code> object using our tokens and keys and use it to start an API session. We can then grab the latest tweets from our timeline:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">In</code> <code class="p">[</code><code class="mi">0</code><code class="p">]:</code> <code class="kn">import</code> <code class="nn">tweepy</code>
+
+        <code class="n">auth</code> <code class="o">=</code> <code class="n">tweepy</code><code class="o">.</code><code class="n">OAuthHandler</code><code class="p">(</code><code class="n">consumer_key</code><code class="p">,</code>\
+                                   <code class="n">consumer_secret</code><code class="p">)</code>
+        <code class="n">auth</code><code class="o">.</code><code class="n">set_access_token</code><code class="p">(</code><code class="n">access_token</code><code class="p">,</code> <code class="n">access_token_secret</code><code class="p">)</code>
+
+        <code class="n">api</code> <code class="o">=</code> <code class="n">tweepy</code><code class="o">.</code><code class="n">API</code><code class="p">(</code><code class="n">auth</code><code class="p">)</code>
+
+        <code class="n">public_tweets</code> <code class="o">=</code> <code class="n">api</code><code class="o">.</code><code class="n">home_timeline</code><code class="p">()</code>
+        <code class="k">for</code> <code class="n">tweet</code> <code class="ow">in</code> <code class="n">public_tweets</code><code class="p">:</code>
+            <code class="k">print</code> <code class="n">tweet</code><code class="o">.</code><code class="n">text</code></pre>
+
+<pre data-type="programlisting">RT @Glinner: Read these tweets https://t.co/QqzJPsDxUD
+Volodymyr Bilyachat https://t.co/VIyOHlje6b +1 bmeyer
+#javascript
+RT @bbcworldservice: If scientists edit genes to
+make people healthier does it change what it means to be
+human? https://t.co/Vciuyu6BCx h…
+RT @ForrestTheWoods:
+Launching something pretty cool tomorrow. I'm excited. Keep
+...</pre>
+
+<p>Tweepy’s <code>API</code> class offers a lot of convenience methods, which you can check out <a href="http://docs.tweepy.org/en/v3.2.0/api.html#api-reference">in the Tweepy docs</a>.  A common visualization is using a network graph to show patterns of friends and followers among Twitter subpopulations. The Tweepy method <code>followers_ids</code> (get all users following) and <code>friends_ids</code> (get all users being followed) can be used to construct such a network:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">my_follower_ids</code><code> </code><code class="o">=</code><code> </code><code class="n">api</code><code class="o">.</code><code class="n">followers_ids</code><code class="p">(</code><code class="p">)</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO5-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO5-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>
+</code><code class="k">for</code><code> </code><code class="nb">id</code><code> </code><code class="ow">in</code><code> </code><code class="n">my_followers_ids</code><code class="p">:</code><code>
+</code><code>    </code><code class="n">followers</code><code> </code><code class="o">=</code><code> </code><code class="n">api</code><code class="o">.</code><code class="n">followers_ids</code><code class="p">(</code><code class="nb">id</code><code class="p">)</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO5-2" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO5-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code>    </code><code class="c1"># ...</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO5-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO5-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Gets a list of your followers’ ids (e.g., <code>[1191701545, 1554134420, …]</code>).</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO5-2" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO5-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>The first argument to <code>follower_ids</code> can be an id or screen name.</p></dd>
+</dl>
+
+<p>By mapping followers of followers, you can create a network of connections that might just reveal something interesting about groups and subgroups clustered about a particular individual or subject. There’s a nice example of just such a Twitter analysis on <a href="http://gabesawhney.com/visualizing-twitter-clusters-with-gephi-update/">Gabe Sawhney’s blog</a>.</p>
+
+<p>One of the coolest features of Tweepy is its <code>StreamListener</code> class, which makes it easy to collect and process filtered tweets in real time. Live updates of Twitter streams have been used by many memorable visualizations, such as <a href="http://tweetping.net/">tweetping</a>. Let’s set up a little stream to record tweets mentioning Python, JavaScript, and Dataviz and save it to a MongoDB database using the <code>get_mongo_database</code> method from <a data-type="xref" href="ch03.html#data_mongodb">“MongoDB”</a>:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="c1"># ...</code><code>
+</code><code class="kn">from</code><code> </code><code class="nn">tweepy.streaming</code><code> </code><code class="kn">import</code><code> </code><code class="n">StreamListener</code><code>
+</code><code class="kn">import</code><code> </code><code class="nn">json</code><code>
+</code><code>
+</code><code class="c1"># ...</code><code>
+</code><code>
+</code><code class="k">class</code><code> </code><code class="nc">MyStreamListener</code><code class="p">(</code><code class="n">StreamListener</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>    </code><code class="sd">""" Streams tweets and saves to a MongoDB database """</code><code>
+</code><code>
+</code><code>    </code><code class="k">def</code><code> </code><code class="nf-Magic">__init__</code><code class="p">(</code><code class="bp">self</code><code class="p">,</code><code> </code><code class="n">api</code><code class="p">,</code><code> </code><code class="o">*</code><code class="o">*</code><code class="n">kw</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>        </code><code class="bp">self</code><code class="o">.</code><code class="n">api</code><code> </code><code class="o">=</code><code> </code><code class="n">api</code><code>
+</code><code>        </code><code class="nb">super</code><code class="p">(</code><code class="n">tweepy</code><code class="o">.</code><code class="n">StreamListener</code><code class="p">,</code><code> </code><code class="bp">self</code><code class="p">)</code><code class="o">.</code><code class="nf-Magic">__init__</code><code class="p">(</code><code class="p">)</code><code>
+</code><code>        </code><code class="bp">self</code><code class="o">.</code><code class="n">col</code><code> </code><code class="o">=</code><code> </code><code class="n">get_mongo_database</code><code class="p">(</code><code class="s1">'</code><code class="s1">tweets</code><code class="s1">'</code><code class="p">,</code><code> </code><code class="o">*</code><code class="o">*</code><code class="n">kw</code><code class="p">)</code><code class="p">[</code><code class="s1">'</code><code class="s1">tweets</code><code class="s1">'</code><code class="p">]</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO6-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO6-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>
+</code><code>    </code><code class="k">def</code><code> </code><code class="nf">on_data</code><code class="p">(</code><code class="bp">self</code><code class="p">,</code><code> </code><code class="n">tweet</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>        </code><code class="bp">self</code><code class="o">.</code><code class="n">col</code><code class="o">.</code><code class="n">insert</code><code class="p">(</code><code class="n">json</code><code class="o">.</code><code class="n">loads</code><code class="p">(</code><code class="n">tweet</code><code class="p">)</code><code class="p">)</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO6-2" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO6-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code>
+</code><code>    </code><code class="k">def</code><code> </code><code class="nf">on_error</code><code class="p">(</code><code class="bp">self</code><code class="p">,</code><code> </code><code class="n">status</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>        </code><code class="k">return</code><code> </code><code class="bp">True</code><code> </code><code class="c1"># keep stream open</code><code>
+</code><code>
+</code><code>
+</code><code class="n">auth</code><code> </code><code class="o">=</code><code> </code><code class="n">tweepy</code><code class="o">.</code><code class="n">OAuthHandler</code><code class="p">(</code><code class="n">consumer_key</code><code class="p">,</code><code> </code><code class="n">consumer_secret</code><code class="p">)</code><code>
+</code><code class="n">auth</code><code class="o">.</code><code class="n">set_access_token</code><code class="p">(</code><code class="n">access_token</code><code class="p">,</code><code> </code><code class="n">access_token_secret</code><code class="p">)</code><code>
+</code><code class="n">api</code><code> </code><code class="o">=</code><code> </code><code class="n">tweepy</code><code class="o">.</code><code class="n">API</code><code class="p">(</code><code class="n">auth</code><code class="p">)</code><code>
+</code><code class="n">stream</code><code> </code><code class="o">=</code><code> </code><code class="n">tweepy</code><code class="o">.</code><code class="n">Stream</code><code class="p">(</code><code class="n">auth</code><code class="p">,</code><code> </code><code class="n">MyStreamListener</code><code class="p">(</code><code class="n">api</code><code class="p">)</code><code class="p">)</code><code>
+</code><code>
+</code><code class="c1"># Start the stream with track list of keywords</code><code>
+</code><code class="n">stream</code><code class="o">.</code><code class="n">filter</code><code class="p">(</code><code class="n">track</code><code class="o">=</code><code class="p">[</code><code class="s1">'</code><code class="s1">python</code><code class="s1">'</code><code class="p">,</code><code> </code><code class="s1">'</code><code class="s1">javascript</code><code class="s1">'</code><code class="p">,</code><code> </code><code class="s1">'</code><code class="s1">dataviz</code><code class="s1">'</code><code class="p">]</code><code class="p">)</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO6-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO6-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The extra <code>kw</code> keywords allow us to pass the MongoDB-specific host, port, and username/password arguments to the stream <span class="keep-together">listener</span>.</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO6-2" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO6-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>The data is a raw JSON string that needs decoding before inserting into our <em>tweets</em> collection.</p></dd>
+</dl>
+
+<p>Now that we’ve had a taste of the kind of APIs you might run into during your search for interesting data, let’s look at the primary technique you’ll use if, as is often the case, no one is providing the data you want in a neat, user-friendly form: scraping data with Python.<a data-type="indexterm" data-primary="" data-startref="WAPIlib5" id="idm140319430742160"></a><a data-type="indexterm" data-primary="" data-startref="Lwebapi5" id="idm140319430727488"></a><a data-type="indexterm" data-primary="" data-startref="WLtwitter5" id="idm140319430726544"></a><a data-type="indexterm" data-primary="" data-startref="DClibraries5" id="idm140319430725600"></a><a data-type="indexterm" data-primary="" data-startref="twitter5" id="idm140319430724000"></a><a data-type="indexterm" data-primary="" data-startref="Ptweepy5" id="idm140319430723056"></a></p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Scraping Data"><div class="sect1" id="get_data_scraping">
+<h1>Scraping Data</h1>
+
+<p><a data-type="indexterm" data-primary="data collection" data-secondary="scraping data" id="DCscrap5"></a><a data-type="indexterm" data-primary="web scraping" data-secondary="benefits of" id="idm140319430844304"></a><a data-type="indexterm" data-primary="scraping data" data-see="web scraping" id="idm140319430740576"></a>Scraping is the chief metaphor used for the practice of getting data that wasn’t designed to be programmatically consumed off the Web. It is a pretty good metaphor because scraping is often about getting the balance right between removing too much and too little. Creating procedures that extract just the right data, as cleanly as possible, from web pages is a craft skill and often a fairly messy one at that. But the payoff is access to visualizable data that often cannot be acquired in any other way. Approached in the right way, scraping can even have an intrinsic satisfaction.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Why We Need to Scrape"><div class="sect2" id="idm140319430738768">
+<h2>Why We Need to Scrape</h2>
+
+<p><a data-type="indexterm" data-primary="web scraping" data-secondary="purpose of" id="idm140319430747504"></a>In an ideal virtual world, online data would be organized in a library, with everything cataloged through a sophisticated Dewey Decimal System for the web page. Unfortunately for the keen data hunter, the Web has grown organically, often unconstrained by considerations of easy data access for the budding data visualizer. So, in reality, the Web resembles a big mound of data, some of it clean and usable (and thankfully this percentage is increasing) but much of it poorly formed and designed for human consumption. And humans are able to parse the kind of messy, poorly formed data that our relatively dumb computers have problems with.<sup><a data-type="noteref" id="idm140319430745744-marker" href="ch05.html#idm140319430745744">5</a></sup></p>
+
+<p>Scraping is about fashioning selection patterns that grab the data we want and leave the rest behind. If we’re lucky, the web pages containing the data will have helpful pointers, like named tables, specific identities in preference to generic classes, and so on. If we’re unlucky, then these pointers will be missing and we will have to resort to using other patterns or, in the worst case, ordinal specifiers such as <em>third table in the main div</em>. These are obviously pretty fragile, and will break if somebody adds a table above the third.</p>
+
+<p>In this section, we’ll tackle a little scraping task, to get the some Nobel Prize winners data. We’ll use Python’s best-of-breed BeautifulSoup for this lightweight scraping foray, saving the heavy guns of Scrapy for the next chapter.</p>
+<div data-type="note" epub:type="note"><h6>Note</h6>
+<p>The fact that data and images are on the Web does not mean that they are necessarily free to use. For our scraping examples we’ll be using Wikipedia, which allows full reuse under the <a href="https://en.wikipedia.org/wiki/Creative_Commons_license">Creative Commons license</a>. It’s a good idea to make sure anything you scrape is available and, if in doubt, contact the site maintainer. You may be required to at least cite the original author.</p>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="BeautifulSoup and lxml"><div class="sect2" id="idm140319430714704">
+<h2>BeautifulSoup and lxml</h2>
+
+<p><a data-type="indexterm" data-primary="web scraping" data-secondary="tools for" id="idm140319430713648"></a><a data-type="indexterm" data-primary="BeautifulSoup" data-secondary="installing" id="idm140319430712448"></a><a data-type="indexterm" data-primary="lxml" id="idm140319430606512"></a><a data-type="indexterm" data-primary="Python" data-secondary="web scraping tools" id="idm140319430605840"></a>Python’s key lightweight scraping tools are <em>BeautifulSoup</em> and <em>lxml</em>. Their primary selection syntax is different but, confusingly, each can use the other’s parsers. The consensus seems to be that lxml’s parser is considerably faster, but BeautifulSoup’s might be more robust when dealing with poorly formed HTML. Personally, I’ve found lxml to be robust enough and its syntax, based on <a href="https://en.wikipedia.org/wiki/XPath">xpaths</a>, more powerful and often more intuitive. I think for someone coming from web development, familiar with CSS and jQuery, selection based on CSS selectors is much more natural. Depending on your system, lxml is usually the default parser for BeautifulSoup. We’ll be using it in the following sections.</p>
+
+<p>BeautifulSoup is part of the Anaconda packages (see <a data-type="xref" href="ch01.html#chapter_install">Chapter 1</a>) and easily installed with <code>pip</code>:</p>
+
+<pre data-type="programlisting">$ pip install beautifulsoup4</pre>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="A First Scraping Foray"><div class="sect2" id="idm140319430852688">
+<h2>A First Scraping Foray</h2>
+
+<p><a data-type="indexterm" data-primary="requests library" data-secondary="web scraping with" id="idm140319430851488"></a><a data-type="indexterm" data-primary="web scraping" data-secondary="basics of" id="idm140319430850512"></a><a data-type="indexterm" data-primary="BeautifulSoup" data-secondary="basic web scraping with" id="idm140319430849568"></a>Armed with requests and BeautifulSoup, let’s give ourselves a little task to get the names, years, categories, and nationalities of all the Nobel Prize winners. We’ll start at the <a href="http://en.wikipedia.org/wiki/List_of_Nobel_laureates">main Wikipedia Nobel Prize page</a>. Scrolling down shows a table with all the laureates by year and category, which is a good start to our minimal data requirements.</p>
+
+<p>Some kind of HTML explorer is pretty much a must for web scraping and the best I know is Chrome’s web developer’s Elements tab (see <a data-type="xref" href="ch04.html#chrome_elements">“The Elements Tab”</a>). <a data-type="xref" href="#wp_nobel">Figure 5-1</a> shows the key elements involved in quizzing a web page’s structure. We need to know how to select the data of interest, in this case a Wikipedia table, while avoiding other elements on the page. Crafting good selector patterns is the key to effective scraping, and highlighting the DOM element using the element inspector gives us both the CSS pattern and, with a right-click, the xpath. The latter is a particularly powerful syntax for DOM element selection and the basis of our industrial-strength scraping solution, <em>Scrapy</em>.<a data-type="indexterm" data-primary="" data-startref="DCscrap5" id="idm140319430818512"></a></p>
+
+<figure><div id="wp_nobel" class="figure">
+<img src="dvpj_0501.png" alt="dvpj 0501" width="1565" height="1335">
+<h6><span class="label">Figure 5-1. </span>Wikipedia’s main Nobel Prize Page: A and B show the wikitable’s CSS selector. Right-clicking and selecting C (Copy XPath) gives the table’s xpath (<code>//*[@id="mw-content-text"]/table[1]</code>). D shows a <code>thead</code> tag generated by jQuery.</h6>
+</div></figure>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Getting the Soup"><div class="sect1" id="idm140319430846768">
+<h1>Getting the Soup</h1>
+
+<p><a data-type="indexterm" data-primary="data collection" data-secondary="parsing data" id="idm140319430720016"></a><a data-type="indexterm" data-primary="BeautifulSoup" data-secondary="parsing data with" id="idm140319430719040"></a><a data-type="indexterm" data-primary="web scraping" data-secondary="parsing data" id="idm140319430718096"></a>The first thing you need to do before scraping the web page of interest is to parse it with BeautifulSoup, converting the HTML into a tag tree hierarchy or soup:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="kn">from</code><code> </code><code class="nn">bs4</code><code> </code><code class="kn">import</code><code> </code><code class="n">BeautifulSoup</code><code>
+</code><code class="kn">import</code><code> </code><code class="nn">requests</code><code>
+</code><code>
+</code><code class="n">BASE_URL</code><code> </code><code class="o">=</code><code> </code><code class="s1">'</code><code class="s1">http://en.wikipedia.org</code><code class="s1">'</code><code>
+</code><code class="c1"># Wikipedia will reject our request unless we add</code><code>
+</code><code class="c1"># a 'User-Agent' attribute to our http header.</code><code>
+</code><code class="n">HEADERS</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="s1">'</code><code class="s1">User-Agent</code><code class="s1">'</code><code class="p">:</code><code> </code><code class="s1">'</code><code class="s1">Mozilla/5.0</code><code class="s1">'</code><code class="p">}</code><code>
+</code><code>
+</code><code class="k">def</code><code> </code><code class="nf">get_Nobel_soup</code><code class="p">(</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>    </code><code class="sd">""" Return a parsed tag tree of our Nobel prize page """</code><code>
+</code><code>    </code><code class="c1"># Make a request to the Nobel page, setting valid headers</code><code>
+</code><code>    </code><code class="n">response</code><code> </code><code class="o">=</code><code> </code><code class="n">requests</code><code class="o">.</code><code class="n">get</code><code class="p">(</code><code>
+</code><code>        </code><code class="n">BASE_URL</code><code> </code><code class="o">+</code><code> </code><code class="s1">'</code><code class="s1">/wiki/List_of_Nobel_laureates</code><code class="s1">'</code><code class="p">,</code><code>
+</code><code>        </code><code class="n">headers</code><code class="o">=</code><code class="n">HEADERS</code><code class="p">)</code><code>
+</code><code>    </code><code class="c1"># Return the content of the response parsed by BeautifulSoup</code><code>
+</code><code>    </code><code class="k">return</code><code> </code><code class="n">BeautifulSoup</code><code class="p">(</code><code class="n">response</code><code class="o">.</code><code class="n">content</code><code class="p">,</code><code> </code><code class="s2">"</code><code class="s2">lxml</code><code class="s2">"</code><code class="p">)</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO7-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO7-1"><img src="1.png" alt="1" width="12" height="12"></a></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO7-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO7-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The second argument specifies the parser we want to use, namely lxml’s.</p></dd>
+</dl>
+
+<p>With our soup in hand, let’s see how to find our target tags.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Selecting Tags"><div class="sect1" id="idm140319430530048">
+<h1>Selecting Tags</h1>
+
+<p><a data-type="indexterm" data-primary="data collection" data-secondary="selecting tags" id="DCtag5"></a><a data-type="indexterm" data-primary="BeautifulSoup" data-secondary="selecting tags" id="BStags5"></a><a data-type="indexterm" data-primary="web scraping" data-secondary="selecting tags" id="idm140319430525904"></a>BeautifulSoup offers a few ways to select tags from the parsed soup, with subtle differences that can be confusing. Before demonstrating the selection methods, let’s get the soup of our Nobel Prize page:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">soup</code> <code class="o">=</code> <code class="n">get_Nobel_soup</code><code class="p">()</code></pre>
+
+<p>Our target table (see <a data-type="xref" href="#wp_nobel">Figure 5-1</a>) has two defining classes, <code>wikitable</code> and <code>sortable</code> (there are some unsortable tables on the page). We can use BeautifulSoup’s <code>find</code> method to find the first table tag with those classes. <code>find</code> takes a tag name as its first argument and a dictionary with class, id, and other identifiers as its second:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">In</code><code class="p">[</code><code class="mi">3</code><code class="p">]:</code> <code class="n">soup</code><code class="o">.</code><code class="n">find</code><code class="p">(</code><code class="s1">'table'</code><code class="p">,</code> <code class="p">{</code><code class="s1">'class'</code><code class="p">:</code><code class="s1">'wikitable sortable'</code><code class="p">})</code>
+<code class="n">Out</code><code class="p">[</code><code class="mi">3</code><code class="p">]:</code>
+<code class="o">&lt;</code><code class="n">table</code> <code class="n">class</code><code class="o">=</code><code class="s2">"wikitable sortable"</code><code class="o">&gt;</code>
+<code class="o">&lt;</code><code class="n">tr</code><code class="o">&gt;</code>
+<code class="o">&lt;</code><code class="n">th</code><code class="o">&gt;</code><code class="n">Year</code><code class="o">&lt;/</code><code class="n">th</code><code class="o">&gt;</code>
+<code class="o">...</code></pre>
+
+<p>Although we have successfully found our table by its classes, this method is not very robust. Let’s see what happens when we change the order of our CSS classes:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">In</code><code class="p">[</code><code class="mi">4</code><code class="p">]:</code> <code class="n">soup</code><code class="o">.</code><code class="n">find</code><code class="p">(</code><code class="s1">'table'</code><code class="p">,</code> <code class="p">{</code><code class="s1">'class'</code><code class="p">:</code><code class="s1">'sortable wikitable'</code><code class="p">})</code>
+<code class="c1"># nothing returned</code></pre>
+
+<p>So <code>find</code> cares about the order of the classes, using the class string to find the tag. If the classes were specified in a different order—something that might well happen during an HTML edit, then the <code>find</code> fails. This fragility makes it difficult to recommend the BeautifulSoup selectors, such as <code>find</code> and <code>find_all</code>. When doing quick hacking, I find lxml’s <a href="http://lxml.de/cssselect.html">CSS selectors</a> easier and more intuitive.</p>
+
+<p>Using the soup’s <code>select</code> method (available if you specified the lxml parser when creating it), you can specify an HTML element using its CSS class, id, and so on. This CSS selector is converted into the xpath syntax lxml uses internally.<sup><a data-type="noteref" id="idm140319430472816-marker" href="ch05.html#idm140319430472816">6</a></sup></p>
+
+<p>To get our wikitable, we just select a table in the soup, using the dot notation to indicate its classes:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">In</code><code class="p">[</code><code class="mi">5</code><code class="p">]:</code> <code class="n">soup</code><code class="o">.</code><code class="n">select</code><code class="p">(</code><code class="s1">'table.sortable.wikitable'</code><code class="p">)</code>
+<code class="n">Out</code><code class="p">[</code><code class="mi">5</code><code class="p">]:</code>
+<code class="p">[</code><code class="o">&lt;</code><code class="n">table</code> <code class="n">class</code><code class="o">=</code><code class="s2">"wikitable sortable"</code><code class="o">&gt;</code>
+ <code class="o">&lt;</code><code class="n">tr</code><code class="o">&gt;</code>
+ <code class="o">&lt;</code><code class="n">th</code><code class="o">&gt;</code><code class="n">Year</code><code class="o">&lt;/</code><code class="n">th</code><code class="o">&gt;</code>
+ <code class="o">...</code>
+<code class="p">]</code></pre>
+
+<p>Note that <code>select</code> returns an array of results, finding all the matching tags in the soup. lxml provides the <code>select_one</code> convenience method if you are selecting just one HTML element. Let’s grab our Nobel table and see what headers it has:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">In</code><code class="p">[</code><code class="mi">8</code><code class="p">]:</code> <code class="n">table</code> <code class="o">=</code> <code class="n">soup</code><code class="o">.</code><code class="n">select_one</code><code class="p">(</code><code class="s1">'table.sortable.wikitable'</code><code class="p">)</code>
+
+<code class="n">In</code><code class="p">[</code><code class="mi">9</code><code class="p">]:</code> <code class="n">table</code><code class="o">.</code><code class="n">select</code><code class="p">(</code><code class="s1">'th'</code><code class="p">)</code>
+<code class="n">Out</code><code class="p">[</code><code class="mi">9</code><code class="p">]:</code>
+<code class="p">[</code><code class="o">&lt;</code><code class="n">th</code><code class="o">&gt;</code><code class="n">Year</code><code class="o">&lt;/</code><code class="n">th</code><code class="o">&gt;</code><code class="p">,</code>
+ <code class="o">&lt;</code><code class="n">th</code> <code class="n">width</code><code class="o">=</code><code class="s2">"18%"</code><code class="o">&gt;&lt;</code><code class="n">a</code> <code class="n">href</code><code class="o">=</code><code class="s2">"/wiki/..._in_Physics..&lt;/a&gt;&lt;/th&gt;,</code>
+ <code class="o">&lt;</code><code class="n">th</code> <code class="n">width</code><code class="o">=</code><code class="s2">"16%"</code><code class="o">&gt;&lt;</code><code class="n">a</code> <code class="n">href</code><code class="o">=</code><code class="s2">"/wiki/..._in_Chemis..&lt;/a&gt;&lt;/th&gt;,</code>
+ <code class="o">...</code>
+<code class="p">]</code></pre>
+
+<p>As a shorthand for <code>select</code>, you can call the tag directly on the soup; so these two are equivalent:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">table</code><code class="o">.</code><code class="n">select</code><code class="p">(</code><code class="s1">'th'</code><code class="p">)</code>
+<code class="n">table</code><code class="p">(</code><code class="s1">'th'</code><code class="p">)</code></pre>
+
+<p>With lxml’s parser, BeautifulSoup provides a number of different filters for finding tags, including the simple string name we’ve just used, searching by <a href="https://en.wikipedia.org/wiki/Regular_expression">regular expression</a>, using a list of tag names, and more. See this <a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/#kinds-of-filters">comprehensive list</a> for more details.</p>
+
+<p>As well as lxml’s <code>select</code> and <code>select_one</code>, there are 10 BeautfulSoup convenience methods for searching the parsed tree. These are essentially variants on <code>find</code> and <code>find_all</code> that specify which parts of the tree they search. For example, <code>find_parent</code> and <code>find_parents</code>, rather than looking for descendents down the tree, look for parent tags of the tag being searched.  All 10 methods are available in the BeautifulSoup <a href="http://www.crummy.com/software/BeautifulSoup/bs4/doc/#find-parents-and-find-parent">official docs</a>.</p>
+
+<p>Now that we know how to select our Wikipedia table and are armed with lxml’s selection methods, let’s see how to craft some selection patterns to get the data we want.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Crafting Selection Patterns"><div class="sect2" id="idm140319430100864">
+<h2>Crafting Selection Patterns</h2>
+
+<p><a data-type="indexterm" data-primary="web scraping" data-secondary="selection patterns" id="WSpattern5"></a>Having successfully selected our data table, we now want to craft some selection patterns to scrape the required data. Using the HTML explorer, you can see that the individual winners are contained in <code>&lt;td&gt;</code> cells, with an href <code>&lt;a&gt;</code> link to Wikipedia’s bio-pages (in the case of individuals). Here’s a typical target row with CSS classes that we can use as targets to get the data in the <code>&lt;td&gt;</code> cells.</p>
+
+<pre data-type="programlisting"> &lt;tr&gt;
+  &lt;td align="center"&gt;
+   1901
+  &lt;/td&gt;
+  &lt;td&gt;
+   &lt;span class="sortkey"&gt;
+    Röntgen, Wilhelm
+   &lt;/span&gt;
+   &lt;span class="vcard"&gt;
+    &lt;span class="fn"&gt;
+     &lt;a href="/wiki/Wilhelm_R%C3%B6ntgen" \
+        title="Wilhelm Röntgen"&gt;
+      Wilhelm Röntgen
+     &lt;/a&gt;
+    &lt;/span&gt;
+   &lt;/span&gt;
+  &lt;/td&gt;
+  &lt;td&gt;
+  ...
+&lt;/tr&gt;</pre>
+
+<p>If we loop through these data cells, keeping track of their row (year) and column (category), then we should be able to create a list of winners with all the data we specified except nationality.</p>
+
+<p>The following <code>get_column_titles</code> function scrapes our table for the Nobel category column headers, ignoring the first Year column. Often the header cell in a Wikipedia table contains a web-linked <code>'a'</code> tag; all the Nobel categories fit this model, pointing to their respective Wikipedia pages. If the header is not clickable, we store its text and a null href:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="k">def</code><code> </code><code class="nf">get_column_titles</code><code class="p">(</code><code class="n">table</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>    </code><code class="sd">""" Get the Nobel categories from the table header """</code><code>
+</code><code>    </code><code class="n">cols</code><code> </code><code class="o">=</code><code> </code><code class="p">[</code><code class="p">]</code><code>
+</code><code>    </code><code class="k">for</code><code> </code><code class="n">th</code><code> </code><code class="ow">in</code><code> </code><code class="n">table</code><code class="o">.</code><code class="n">select_one</code><code class="p">(</code><code class="s1">'</code><code class="s1">tr</code><code class="s1">'</code><code class="p">)</code><code class="o">.</code><code class="n">select</code><code class="p">(</code><code class="s1">'</code><code class="s1">th</code><code class="s1">'</code><code class="p">)</code><code class="p">[</code><code class="mi">1</code><code class="p">:</code><code class="p">]</code><code class="p">:</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO8-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO8-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>        </code><code class="n">link</code><code> </code><code class="o">=</code><code> </code><code class="n">th</code><code class="o">.</code><code class="n">select_one</code><code class="p">(</code><code class="s1">'</code><code class="s1">a</code><code class="s1">'</code><code class="p">)</code><code>
+</code><code>        </code><code class="c1"># Store the category name and any Wikipedia link it has</code><code>
+</code><code>        </code><code class="k">if</code><code> </code><code class="n">link</code><code class="p">:</code><code>
+</code><code>            </code><code class="n">cols</code><code class="o">.</code><code class="n">append</code><code class="p">(</code><code class="p">{</code><code class="s1">'</code><code class="s1">name</code><code class="s1">'</code><code class="p">:</code><code class="n">link</code><code class="o">.</code><code class="n">text</code><code class="p">,</code><code>\
+</code><code>                         </code><code class="s1">'</code><code class="s1">href</code><code class="s1">'</code><code class="p">:</code><code class="n">link</code><code class="o">.</code><code class="n">attrs</code><code class="p">[</code><code class="s1">'</code><code class="s1">href</code><code class="s1">'</code><code class="p">]</code><code class="p">}</code><code class="p">)</code><code>
+</code><code>        </code><code class="k">else</code><code class="p">:</code><code>
+</code><code>            </code><code class="n">cols</code><code class="o">.</code><code class="n">append</code><code class="p">(</code><code class="p">{</code><code class="s1">'</code><code class="s1">name</code><code class="s1">'</code><code class="p">:</code><code class="n">th</code><code class="o">.</code><code class="n">text</code><code class="p">,</code><code> </code><code class="s1">'</code><code class="s1">href</code><code class="s1">'</code><code class="p">:</code><code class="bp">None</code><code class="p">}</code><code class="p">)</code><code>
+</code><code>    </code><code class="k">return</code><code> </code><code class="n">cols</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO8-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO8-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>We loop through the table head, ignoring the first Year column ([1:]). This selects the column headers shown in <a data-type="xref" href="#scraping_nobel_table">Figure 5-2</a>.</p></dd>
+</dl>
+
+<p>Let’s make sure <code>get_column_titles</code> is giving us what we want:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">get_column_titles</code><code class="p">(</code><code class="n">table</code><code class="p">)</code>
+<code class="n">Out</code><code class="p">:</code>
+<code class="p">[{</code><code class="s1">'href'</code><code class="p">:</code> <code class="s1">'/wiki/List_of_Nobel_laureates_in_Physics'</code><code class="p">,</code>
+  <code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Physics'</code><code class="p">},</code>
+ <code class="p">{</code><code class="s1">'href'</code><code class="p">:</code> <code class="s1">'/wiki/List_of_Nobel_laureates_in_Chemistry'</code><code class="p">,</code>
+  <code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Chemistry'</code><code class="p">},</code> <code class="o">...</code></pre>
+
+<figure><div id="scraping_nobel_table" class="figure">
+<img src="dvpj_0502.png" alt="dvpj 0502" width="1567" height="1033">
+<h6><span class="label">Figure 5-2. </span>Wikipedia’s table of Nobel Prize winners</h6>
+</div></figure>
+
+<pre data-type="programlisting" data-code-language="python"><code class="k">def</code><code> </code><code class="nf">get_Nobel_winners</code><code class="p">(</code><code class="n">table</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>    </code><code class="n">cols</code><code> </code><code class="o">=</code><code> </code><code class="n">get_column_titles</code><code class="p">(</code><code class="n">table</code><code class="p">)</code><code>
+</code><code>    </code><code class="n">winners</code><code> </code><code class="o">=</code><code> </code><code class="p">[</code><code class="p">]</code><code>
+</code><code>    </code><code class="k">for</code><code> </code><code class="n">row</code><code> </code><code class="ow">in</code><code> </code><code class="n">table</code><code class="o">.</code><code class="n">select</code><code class="p">(</code><code class="s1">'</code><code class="s1">tr</code><code class="s1">'</code><code class="p">)</code><code class="p">[</code><code class="mi">1</code><code class="p">:</code><code class="o">-</code><code class="mi">1</code><code class="p">]</code><code class="p">:</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO9-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO9-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>        </code><code class="n">year</code><code> </code><code class="o">=</code><code> </code><code class="nb">int</code><code class="p">(</code><code class="n">row</code><code class="o">.</code><code class="n">select_one</code><code class="p">(</code><code class="s1">'</code><code class="s1">td</code><code class="s1">'</code><code class="p">)</code><code class="o">.</code><code class="n">text</code><code class="p">)</code><code> </code><code class="c1"># Gets 1st &lt;td&gt;</code><code>
+</code><code>        </code><code class="k">for</code><code> </code><code class="n">i</code><code class="p">,</code><code> </code><code class="n">td</code><code> </code><code class="ow">in</code><code> </code><code class="nb">enumerate</code><code class="p">(</code><code class="n">row</code><code class="o">.</code><code class="n">select</code><code class="p">(</code><code class="s1">'</code><code class="s1">td</code><code class="s1">'</code><code class="p">)</code><code class="p">[</code><code class="mi">1</code><code class="p">:</code><code class="p">]</code><code class="p">)</code><code class="p">:</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO9-2" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO9-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code>            </code><code class="k">for</code><code> </code><code class="n">winner</code><code> </code><code class="ow">in</code><code> </code><code class="n">td</code><code class="o">.</code><code class="n">select</code><code class="p">(</code><code class="s1">'</code><code class="s1">a</code><code class="s1">'</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>                </code><code class="n">href</code><code> </code><code class="o">=</code><code> </code><code class="n">winner</code><code class="o">.</code><code class="n">attrs</code><code class="p">[</code><code class="s1">'</code><code class="s1">href</code><code class="s1">'</code><code class="p">]</code><code>
+</code><code>                </code><code class="k">if</code><code> </code><code class="ow">not</code><code> </code><code class="n">href</code><code class="o">.</code><code class="n">startswith</code><code class="p">(</code><code class="s1">'</code><code class="s1">#endnote</code><code class="s1">'</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>                    </code><code class="n">winners</code><code class="o">.</code><code class="n">append</code><code class="p">(</code><code class="p">{</code><code>
+</code><code>                        </code><code class="s1">'</code><code class="s1">year</code><code class="s1">'</code><code class="p">:</code><code class="n">year</code><code class="p">,</code><code>
+</code><code>                        </code><code class="s1">'</code><code class="s1">category</code><code class="s1">'</code><code class="p">:</code><code class="n">cols</code><code class="p">[</code><code class="n">i</code><code class="p">]</code><code class="p">[</code><code class="s1">'</code><code class="s1">name</code><code class="s1">'</code><code class="p">]</code><code class="p">,</code><code>
+</code><code>                        </code><code class="s1">'</code><code class="s1">name</code><code class="s1">'</code><code class="p">:</code><code class="n">winner</code><code class="o">.</code><code class="n">text</code><code class="p">,</code><code>
+</code><code>                        </code><code class="s1">'</code><code class="s1">link</code><code class="s1">'</code><code class="p">:</code><code class="n">winner</code><code class="o">.</code><code class="n">attrs</code><code class="p">[</code><code class="s1">'</code><code class="s1">href</code><code class="s1">'</code><code class="p">]</code><code>
+</code><code>                    </code><code class="p">}</code><code class="p">)</code><code>
+</code><code>    </code><code class="k">return</code><code> </code><code class="n">winners</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO9-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO9-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Gets all the Year rows, starting from the second, corresponding to the rows in <a data-type="xref" href="#scraping_nobel_table">Figure 5-2</a>.</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO9-2" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO9-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Finds the <code>&lt;td&gt;</code> data cells shown in <a data-type="xref" href="#scraping_nobel_table">Figure 5-2</a>.</p></dd>
+</dl>
+
+<p>Iterating through the year rows, we take the first Year column and then iterate over the remaining columns, using <code>enumerate</code> to keep track of our index, which will map to the category column names. We know that all the winner names are contained in an <code>&lt;a&gt;</code> tag but that there are occasional extra <code>&lt;a&gt;</code> tags beginning with <code>#endnote</code>, which we filter for. Finally we append a year, category, name, and link dictionary to our data array. Note that the winner selector has an <code>attrs</code> dictionary containing, among other things, the <code>&lt;a&gt;</code> tag’s href.</p>
+
+<p>Let’s confirm that <code>get_Nobel_winners</code> delivers a list of Nobel Prize winner dictionaries:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">In</code> <code class="p">[</code><code class="mi">0</code><code class="p">]:</code> <code class="n">get_Nobel_winners</code><code class="p">(</code><code class="n">wikitable</code><code class="p">)</code></pre>
+
+<pre data-type="programlisting">[{'category': u'Physics',
+  'link': '/wiki/Wilhelm_R%C3%B6ntgen',
+  'name': u'Wilhelm R\xf6ntgen',
+  'year': 1901},
+ {'category': u'Chemistry',
+  'link': '/wiki/Jacobus_Henricus_van_%27t_Hoff',
+  'name': u"Jacobus Henricus van 't Hoff",
+  'year': 1901},
+ {'category': u'Physiology\nor Medicine',
+  'link': '/wiki/Emil_Adolf_von_Behring',
+  'name': u'Emil Adolf von Behring',
+  'year': 1901},
+...</pre>
+
+<p>Now that we have the full list of Nobel Prize winners and links to their Wikipedia pages, we can use these links to scrape data from the individuals’ biographies. This will involve making a largish number of requests, and it’s not something we really want to do more than once. The sensible and respectful<sup><a data-type="noteref" id="idm140319429672800-marker" href="ch05.html#idm140319429672800">7</a></sup> thing is to cache the data we scrape, allowing us to try out various scraping experiments without returning to Wikipedia.<a data-type="indexterm" data-primary="" data-startref="WSpattern5" id="idm140319429671856"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Caching the Web Pages"><div class="sect2" id="idm140319430100240">
+<h2>Caching the Web Pages</h2>
+
+<p><a data-type="indexterm" data-primary="web scraping" data-secondary="caching web pages" id="idm140319429669536"></a>It’s easy enough to rustle up a quick cacher in Python, but as often as not it’s easier still to find a better solution written by someone else and kindly donated to the open source community. <code>requests</code> has a nice plugin called <code>requests-cache</code> that, with a few lines of configuration, will take care of all your basic caching needs.</p>
+
+<p>First we install the plugin using <code>pip</code>:</p>
+
+<pre data-type="programlisting">$ pip install --upgrade requests-cache</pre>
+
+<p><code>requests-cache</code> uses <a href="http://stackoverflow.com/questions/5626193/what-is-a-monkey-patch">monkey-patching</a> to dynamically replace parts of the <code>requests</code> API at runtime. This means it can work transparently. You just have to install its cache and then use <code>requests</code> as usual, with all the caching being taken care of.  Here’s the simplest way to use <code>requests-cache</code>:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="kn">import</code> <code class="nn">requests</code>
+<code class="kn">import</code> <code class="nn">requests_cache</code>
+
+<code class="n">requests_cache</code><code class="o">.</code><code class="n">install_cache</code><code class="p">()</code>
+<code class="c1"># use requests as usual...</code></pre>
+
+<p>The <code>install_cache</code> method has a number of useful options, including allowing you to specify the cache <code>backend</code> (<code>sqlite</code>, <code>memory</code>, <code>mongdb</code>, or <code>redis</code>) or set an expiry time (<code>expiry_after</code>) in seconds on the caching. So the following creates a cache named <code>nobel_pages</code> with an <code>sqlite</code> backend and pages that expire in two hours (7,200 s).</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">requests_cache</code><code class="o">.</code><code class="n">install_cache</code><code class="p">(</code><code class="s1">'nobel_pages'</code><code class="p">,</code>\
+                         <code class="n">backend</code><code class="o">=</code><code class="s1">'sqlite'</code><code class="p">,</code> <code class="n">expire_after</code><code class="o">=</code><code class="mi">7200</code><code class="p">)</code></pre>
+
+<p><code>requests-cache</code> will serve most of your caching needs and couldn’t be much easier to use. For more details, see <a href="https://requests-cache.readthedocs.org/en/latest/user_guide.html">the official docs</a> where you’ll also find a little example of request throttling, which is a useful technique when doing bulk scraping.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Scraping the Winners’ Nationalities"><div class="sect2" id="idm140319429589904">
+<h2>Scraping the Winners’ Nationalities</h2>
+
+<p>With caching in place, let’s try getting the winners’ nationalities, using the first 50 for our experiment. A little <code>get_winner_nationality()</code> function will use the winner links we stored earlier to scrape their page and then use the infobox shown in <a data-type="xref" href="#country_bio">Figure 5-3</a> to get the <code>Nationality</code> attribute.</p>
+
+<figure><div id="country_bio" class="figure">
+<img src="dvpj_0503.png" alt="dvpj 0503" width="1555" height="936">
+<h6><span class="label">Figure 5-3. </span>Scraping a winner’s nationality</h6>
+</div></figure>
+<div data-type="note" epub:type="note"><h6>Note</h6>
+<p>When scraping, you are looking for reliable patterns and repeating elements with useful data. As we’ll see, the Wikipedia infoboxes for individuals are not such a reliable source, but clicking on a few random links certainly gives that impression. Depending on the size of the dataset, it’s good to perform a few experimental sanity checks. You can do this manually, but, as mentioned at the start of the chapter, this won’t scale or improve your craft skills.</p>
+</div>
+
+<p><a data-type="xref" href="#get_winner_nationality">Example 5-3</a> takes one of the winner dictionaries we scraped earlier and returns a name-labeled dictionary with a <code>Nationality</code> key if one is found. Let’s run it on the first 50 winners and see how often a <code>Nationality</code> attribute is missing:</p>
+<div id="get_winner_nationality" data-type="example">
+<h5><span class="label">Example 5-3. </span>Scraping the winner’s country from their biography page</h5>
+
+<pre data-type="programlisting" data-code-language="python"><code class="k">def</code><code> </code><code class="nf">get_winner_nationality</code><code class="p">(</code><code class="n">w</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>    </code><code class="sd">""" scrape biographic data from the winner's wikipedia page """</code><code>
+</code><code>    </code><code class="n">data</code><code> </code><code class="o">=</code><code> </code><code class="n">get_url</code><code class="p">(</code><code class="s1">'</code><code class="s1">http://en.wikipedia.org</code><code class="s1">'</code><code> </code><code class="o">+</code><code> </code><code class="n">w</code><code class="p">[</code><code class="s1">'</code><code class="s1">link</code><code class="s1">'</code><code class="p">]</code><code class="p">)</code><code>
+</code><code>    </code><code class="n">soup</code><code> </code><code class="o">=</code><code> </code><code class="n">BeautifulSoup</code><code class="p">(</code><code class="n">data</code><code class="p">)</code><code>
+</code><code>    </code><code class="n">person_data</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="s1">'</code><code class="s1">name</code><code class="s1">'</code><code class="p">:</code><code> </code><code class="n">w</code><code class="p">[</code><code class="s1">'</code><code class="s1">name</code><code class="s1">'</code><code class="p">]</code><code class="p">}</code><code>
+</code><code>    </code><code class="n">attr_rows</code><code> </code><code class="o">=</code><code> </code><code class="n">soup</code><code class="o">.</code><code class="n">select</code><code class="p">(</code><code class="s1">'</code><code class="s1">table.infobox tr</code><code class="s1">'</code><code class="p">)</code><code> </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO10-1" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO10-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>    </code><code class="k">for</code><code> </code><code class="n">tr</code><code> </code><code class="ow">in</code><code> </code><code class="n">attr_rows</code><code class="p">:</code><code>                        </code><a class="co" id="co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO10-2" href="#callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO10-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code>        </code><code class="k">try</code><code class="p">:</code><code>
+</code><code>            </code><code class="n">attribute</code><code> </code><code class="o">=</code><code> </code><code class="n">tr</code><code class="o">.</code><code class="n">select_one</code><code class="p">(</code><code class="s1">'</code><code class="s1">th</code><code class="s1">'</code><code class="p">)</code><code class="o">.</code><code class="n">text</code><code>
+</code><code>            </code><code class="k">if</code><code> </code><code class="n">attribute</code><code> </code><code class="o">==</code><code> </code><code class="s1">'</code><code class="s1">Nationality</code><code class="s1">'</code><code class="p">:</code><code>
+</code><code>                </code><code class="n">person_data</code><code class="p">[</code><code class="n">attribute</code><code class="p">]</code><code> </code><code class="o">=</code><code> </code><code class="n">tr</code><code class="o">.</code><code class="n">select_one</code><code class="p">(</code><code class="s1">'</code><code class="s1">td</code><code class="s1">'</code><code class="p">)</code><code class="o">.</code><code class="n">text</code><code>
+</code><code>        </code><code class="k">except</code><code> </code><code class="ne">AttributeError</code><code class="p">:</code><code>
+</code><code>            </code><code class="k">pass</code><code>
+</code><code>
+</code><code>    </code><code class="k">return</code><code> </code><code class="n">person_data</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO10-1" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO10-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>We use a CSS selector to find all the <code>&lt;tr&gt;</code> rows of the table with class <code>infobox</code>.</p></dd>
+<dt><a class="co" id="callout_getting_data_off_the_web__span_class__keep_together__with_python__span__CO10-2" href="#co_getting_data_off_the_web__span_class__keep_together__with_python__span__CO10-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Cycles through the rows looking for a Nationality field.</p></dd>
+</dl></div>
+
+<p><a data-type="xref" href="#nationality_test">Example 5-4</a> shows that 14 of the 50 first winners failed our attempt to scrape their nationality. In the case of the Institut de Droit International, national affiliation may well be moot, but Theodore Roosevelt is about as American as they come. Clicking on a few of the names shows the problem (see <a data-type="xref" href="#missing_nationality">Figure 5-4</a>). The lack of a standardized biography format means synonyms for <em>Nationality</em> are often employed, as in Marie Curie’s <em>Citizenship</em>; sometimes no reference is made, as with Niels Finsen; and Randall Cremer has nothing but a photograph in his infobox. We can discard the infoboxes as a reliable source of winners’ nationalities but, as they appeared to be the only regular source of potted data, this sends us back to the drawing board. In the next chapter, we’ll see a successful approach using Scrapy and a different start page.</p>
+<div id="nationality_test" data-type="example">
+<h5><span class="label">Example 5-4. </span>Testing for scraped nationalities</h5>
+
+<pre data-type="programlisting" data-code-language="python"><code class="n">wdata</code> <code class="o">=</code> <code class="p">[]</code>
+<code class="c1"># test first 50 winners</code>
+<code class="k">for</code> <code class="n">w</code> <code class="ow">in</code> <code class="n">winners</code><code class="p">[:</code><code class="mi">50</code><code class="p">]:</code>
+    <code class="n">wdata</code><code class="o">.</code><code class="n">append</code><code class="p">(</code><code class="n">get_winner_nationality</code><code class="p">(</code><code class="n">w</code><code class="p">))</code>
+<code class="n">missing_nationality</code> <code class="o">=</code> <code class="p">[]</code>
+<code class="k">for</code> <code class="n">w</code> <code class="ow">in</code> <code class="n">wdata</code><code class="p">:</code>
+    <code class="c1"># if missing 'Nationality' add to list</code>
+    <code class="k">if</code> <code class="ow">not</code> <code class="n">w</code><code class="o">.</code><code class="n">get</code><code class="p">(</code><code class="s1">'Nationality'</code><code class="p">):</code>
+        <code class="n">missing_nationality</code><code class="o">.</code><code class="n">append</code><code class="p">(</code><code class="n">w</code><code class="p">)</code>
+<code class="c1"># output list</code>
+<code class="n">missing_nationality</code>
+
+<code class="p">[{</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'</code><code class="se">\xc9</code><code class="s1">lie Ducommun'</code><code class="p">},</code>
+ <code class="p">{</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Charles Albert Gobat'</code><code class="p">},</code>
+ <code class="p">{</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Marie Curie'</code><code class="p">},</code>
+ <code class="p">{</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Niels Ryberg Finsen'</code><code class="p">},</code>
+ <code class="p">{</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Randal Cremer'</code><code class="p">},</code>
+ <code class="p">{</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Institut de Droit International'</code><code class="p">},</code>
+ <code class="p">{</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Bertha von Suttner'</code><code class="p">},</code>
+ <code class="p">{</code><code class="s1">'name'</code><code class="p">:</code> <code class="s-Affix">u</code><code class="s1">'Theodore Roosevelt'</code><code class="p">},</code>
+ <code class="o">...</code></pre></div>
+
+<figure><div id="missing_nationality" class="figure">
+<img src="dvpj_0504.png" alt="dvpj 0504" width="1564" height="1044">
+<h6><span class="label">Figure 5-4. </span>Winners without a recorded <em>nationality</em></h6>
+</div></figure>
+
+<p>Although Wikipedia is a relative free-for-all, production-wise, where data is designed for human consumption, you can expect a lack of rigor. Many sites have similar gotchas and as the datasets get bigger, more tests may be needed to find the flaws in a collection pattern.</p>
+
+<p>Although our first scraping exercise was a little artificial in order to introduce the tools, I hope it captured something of the slightly messy spirit of web scraping. The ultimately abortive pursuit of a reliable Nationality field for our Nobel dataset could have been forestalled by a bit of web browsing and manual HTML-source trawling. However, if the dataset were significantly larger and the failure rate a bit smaller, then programmatic detection, which gets easier and easier as you become acquainted with the scraping modules, really starts to deliver.</p>
+
+<p>This little scraping test was designed to introduce BeautifulSoup, and  shows that collecting the data we set ourselves requires a little more thought, which is often the case with scraping. In the next chapter, we’ll wheel out the big gun, <em>Scrapy</em>, and, with what we’ve learned in this section, harvest the data we need for our Nobel Prize visualization.<a data-type="indexterm" data-primary="" data-startref="DCtag5" id="idm140319429235536"></a><a data-type="indexterm" data-primary="" data-startref="BStags5" id="idm140319429234560"></a></p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Summary"><div class="sect1" id="idm140319430529232">
+<h1>Summary</h1>
+
+<p>In this chapter, we’ve seen examples of the most common ways in which data can be sucked out of the Web and into Python containers, databases, or Pandas datasets. Python’s <code>requests</code> library is the true workhorse of HTTP negotiation and a fundamental tool in our dataviz toolchain. For simpler, RESTful APIs, consuming data with <code>requests</code> is a few lines of Python away. For the more awkward APIs, such as those with potentially complicated authorization, a wrapper library like Tweepy (for Twitter) can save a lot of hassle. Decent wrappers can also keep track of access rates and, where necessary, throttle your requests. This is a key consideration, particularly when there is the possibility of blacklisting unfriendly consumers.</p>
+
+<p>We also started our first forays into data scraping, which is often a necessary fallback where no API exists and the data is for human consumption. In the next chapter, we’ll get all the Nobel Prize data needed for the book’s visualization using Python’s Scrapy, an industrial-strength scraping library.</p>
+</div></section>
+
+
+
+
+
+
+
+<div data-type="footnotes"><p data-type="footnote" id="idm140319433128336"><sup><a href="ch05.html#idm140319433128336-marker">1</a></sup> This is actually a <a href="http://docs.python-requests.org/en/latest/dev/philosophy/#standard-library">deliberate policy</a> of the developers.</p><p data-type="footnote" id="idm140319433033952"><sup><a href="ch05.html#idm140319433033952-marker">2</a></sup> There are some platform dependencies that might still generate errors. This <a href="http://stackoverflow.com/questions/29099404/ssl-insecureplatform-error-when-using-requests-package">Stack Overflow thread</a> is a good starting point if you still have problems.</p><p data-type="footnote" id="idm140319431581856"><sup><a href="ch05.html#idm140319431581856-marker">3</a></sup> OAuth1 access has been deprecated recently.</p><p data-type="footnote" id="idm140319431099920"><sup><a href="ch05.html#idm140319431099920-marker">4</a></sup> The free API is currently limited to around <a href="https://dev.twitter.com/rest/public/rate-limiting">350 requests per hour</a>.</p><p data-type="footnote" id="idm140319430745744"><sup><a href="ch05.html#idm140319430745744-marker">5</a></sup> Much of modern Machine Learning and Artificial Intelligence (AI) research is dedicated to creating computer software that can cope with messy, noisy, fuzzy, informal data but, as of this book’s publication, there’s no off-the-shelf solution I know of.</p><p data-type="footnote" id="idm140319430472816"><sup><a href="ch05.html#idm140319430472816-marker">6</a></sup> This CSS selection syntax should be familiar to anyone who’s used JavaScript’s <a href="https://jquery.com/">jQuery</a> library and is also similar to that used by <a href="https://d3js.org/">D3</a>.</p><p data-type="footnote" id="idm140319429672800"><sup><a href="ch05.html#idm140319429672800-marker">7</a></sup> When scraping, you’re using other people’s web bandwidth, which ultimately costs them money. It’s just good manners to try to limit your number of requests.</p></div></div></section></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/part02.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">II. Getting Your Data</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch06.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">6. Heavyweight Scraping with Scrapy</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+
+          
+            <p>You have 6 days left in your trial, Flankpeter. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/">Settings</a></li>
+      <li class="full-support"><a href="https://www.safaribooksonline.com/public/support">Support</a></li>
+      <li><a href="https://www.safaribooksonline.com/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+
+
+
+    
+
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

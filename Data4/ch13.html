@@ -1,0 +1,1080 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage"" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/data-visualization-with/9781491920565/ch13.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="2870136"
+  data-user-uuid="fee1bd59-4e02-48a4-a7b4-152ec4c157ac"
+  data-username="flankpeter"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/04/2018"
+
+
+  data-archive="9781491920565"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch13.html"
+  data-epub-title="Data Visualization with Python and JavaScript" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage"" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/data-visualization-with/9781491920565/ch13.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="2870136"
+  data-user-uuid="fee1bd59-4e02-48a4-a7b4-152ec4c157ac"
+  data-username="flankpeter"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/04/2018"
+
+
+  data-archive="9781491920565"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch13.html"
+  data-epub-title="Data Visualization with Python and JavaScript" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781491920565"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>13. RESTful Data with Flask - Data Visualization with Python and JavaScript</title><link rel="stylesheet" href="/static/CACHE/css/a04cd81b09cd.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.ef38b0457d7b.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    @charset "utf-8";#sbo-rt-content html,#sbo-rt-content div,#sbo-rt-content div,#sbo-rt-content span,#sbo-rt-content applet,#sbo-rt-content object,#sbo-rt-content iframe,#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5,#sbo-rt-content h6,#sbo-rt-content p,#sbo-rt-content blockquote,#sbo-rt-content pre,#sbo-rt-content a,#sbo-rt-content abbr,#sbo-rt-content acronym,#sbo-rt-content address,#sbo-rt-content big,#sbo-rt-content cite,#sbo-rt-content code,#sbo-rt-content del,#sbo-rt-content dfn,#sbo-rt-content em,#sbo-rt-content img,#sbo-rt-content ins,#sbo-rt-content kbd,#sbo-rt-content q,#sbo-rt-content s,#sbo-rt-content samp,#sbo-rt-content small,#sbo-rt-content strike,#sbo-rt-content strong,#sbo-rt-content sub,#sbo-rt-content sup,#sbo-rt-content tt,#sbo-rt-content var,#sbo-rt-content b,#sbo-rt-content u,#sbo-rt-content i,#sbo-rt-content center,#sbo-rt-content dl,#sbo-rt-content dt,#sbo-rt-content dd,#sbo-rt-content ol,#sbo-rt-content ul,#sbo-rt-content li,#sbo-rt-content fieldset,#sbo-rt-content form,#sbo-rt-content label,#sbo-rt-content legend,#sbo-rt-content table,#sbo-rt-content caption,#sbo-rt-content tdiv,#sbo-rt-content tfoot,#sbo-rt-content thead,#sbo-rt-content tr,#sbo-rt-content th,#sbo-rt-content td,#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content canvas,#sbo-rt-content details,#sbo-rt-content embed,#sbo-rt-content figure,#sbo-rt-content figcaption,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content output,#sbo-rt-content ruby,#sbo-rt-content section,#sbo-rt-content summary,#sbo-rt-content time,#sbo-rt-content mark,#sbo-rt-content audio,#sbo-rt-content video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content details,#sbo-rt-content figcaption,#sbo-rt-content figure,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content section{display:block}#sbo-rt-content div{line-height:1}#sbo-rt-content ol,#sbo-rt-content ul{list-style:none}#sbo-rt-content blockquote,#sbo-rt-content q{quotes:none}#sbo-rt-content blockquote:before,#sbo-rt-content blockquote:after,#sbo-rt-content q:before,#sbo-rt-content q:after{content:none}#sbo-rt-content table{border-collapse:collapse;border-spacing:0}@page{margin:5px !important}#sbo-rt-content p{margin:10px 0 0;line-height:125%;text-align:left}#sbo-rt-content p.byline{text-align:left;margin:-33px auto 35px;font-style:italic;font-weight:bold}#sbo-rt-content div.preface p+p.byline{margin:1em 0 0}#sbo-rt-content div.preface p.byline+p.byline{margin:0}#sbo-rt-content div.sect1>p.byline{margin:-.25em 0 1em}#sbo-rt-content div.sect1>p.byline+p.byline{margin-top:-1em}#sbo-rt-content em{font-style:italic;font-family:inherit}#sbo-rt-content em strong,#sbo-rt-content strong em{font-weight:bold;font-style:italic;font-family:inherit}#sbo-rt-content strong,#sbo-rt-content span.bold{font-weight:bold}#sbo-rt-content em.replaceable{font-style:italic}#sbo-rt-content strong.userinput{font-weight:bold;font-style:normal}#sbo-rt-content span.bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content a.ulink,#sbo-rt-content a.xref,#sbo-rt-content a.email,#sbo-rt-content a.link,#sbo-rt-content a{text-decoration:none;color:#8e0012}#sbo-rt-content span.lineannotation{font-style:italic;color:#a62a2a;font-family:serif}#sbo-rt-content span.underline{text-decoration:underline}#sbo-rt-content span.strikethrough{text-decoration:line-through}#sbo-rt-content span.smallcaps{font-variant:small-caps}#sbo-rt-content span.cursor{background:#000;color:#fff}#sbo-rt-content span.smaller{font-size:75%}#sbo-rt-content .boxedtext,#sbo-rt-content .keycap{border-style:solid;border-width:1px;border-color:#000;padding:1px}#sbo-rt-content span.gray50{color:#7F7F7F;}#sbo-rt-content h1,#sbo-rt-content div.toc-title,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5{-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;font-weight:bold;text-align:left;page-break-after:avoid !important;font-family:sans-serif,"DejaVuSans"}#sbo-rt-content div.toc-title{font-size:1.5em;margin-top:20px !important;margin-bottom:30px !important}#sbo-rt-content section[data-type="sect1"] h1{font-size:1.3em;color:#8e0012;margin:40px 0 8px 0}#sbo-rt-content section[data-type="sect2"] h2{font-size:1.1em;margin:30px 0 8px 0 !important}#sbo-rt-content section[data-type="sect3"] h3{font-size:1em;color:#555;margin:20px 0 8px 0 !important}#sbo-rt-content section[data-type="sect4"] h4{font-size:1em;font-weight:normal;font-style:italic;margin:15px 0 6px 0 !important}#sbo-rt-content section[data-type="chapter"]>div>h1,#sbo-rt-content section[data-type="preface"]>div>h1,#sbo-rt-content section[data-type="appendix"]>div>h1,#sbo-rt-content section[data-type="glossary"]>div>h1,#sbo-rt-content section[data-type="bibliography"]>div>h1,#sbo-rt-content section[data-type="index"]>div>h1{font-size:2em;line-height:1;margin-bottom:50px;color:#000;padding-bottom:10px;border-bottom:1px solid #000}#sbo-rt-content span.label,#sbo-rt-content span.keep-together{font-size:inherit;font-weight:inherit}#sbo-rt-content div[data-type="part"] h1{font-size:2em;text-align:center;margin-top:0 !important;margin-bottom:50px;padding:50px 0 10px 0;border-bottom:1px solid #000}#sbo-rt-content img.width-ninety{width:90%}#sbo-rt-content img{max-width:95%;margin:0 auto;padding:0}#sbo-rt-content div.figure{background-color:transparent;text-align:center !important;margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content figure{margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content div.figure h6{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding-top:10px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.informalfigure{text-align:center !important;padding:5px 0 !important}#sbo-rt-content div.sidebar{margin:15px 0 10px 0 !important;border:1px solid #DCDCDC;background-color:#F7F7F7;padding:15px !important;page-break-inside:avoid}#sbo-rt-content aside[data-type="sidebar"]{margin:15px 0 10px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar-title,#sbo-rt-content aside[data-type="sidebar"] h5{font-weight:bold;font-size:1em;font-family:sans-serif;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar ol,#sbo-rt-content div.sidebar ul,#sbo-rt-content aside[data-type="sidebar"] ol,#sbo-rt-content aside[data-type="sidebar"] ul{margin-left:1.25em !important}#sbo-rt-content div.sidebar div.figure p.title,#sbo-rt-content aside[data-type="sidebar"] figcaption,#sbo-rt-content div.sidebar div.informalfigure div.caption{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding:5px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.sidebar div.tip,#sbo-rt-content div.sidebar div[data-type="tip"],#sbo-rt-content div.sidebar div.note,#sbo-rt-content div.sidebar div[data-type="note"],#sbo-rt-content div.sidebar div.warning,#sbo-rt-content div.sidebar div[data-type="warning"],#sbo-rt-content div.sidebar div[data-type="caution"],#sbo-rt-content div.sidebar div[data-type="important"]{margin:20px auto 20px auto !important;font-size:90%;width:85%}#sbo-rt-content aside[data-type="sidebar"] p.byline{font-size:90%;font-weight:bold;font-style:italic;text-align:center;text-indent:0;margin:5px auto 6px;page-break-after:avoid}#sbo-rt-content pre{white-space:pre-wrap;font-family:"Ubuntu Mono",monospace;margin:25px 0 25px 20px;font-size:85%;display:block;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content div.note pre.programlisting,#sbo-rt-content div.tip pre.programlisting,#sbo-rt-content div.warning pre.programlisting,#sbo-rt-content div.caution pre.programlisting,#sbo-rt-content div.important pre.programlisting{margin-bottom:0}#sbo-rt-content code{font-family:"Ubuntu Mono",monospace;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content code strong em,#sbo-rt-content code em strong,#sbo-rt-content pre em strong,#sbo-rt-content pre strong em,#sbo-rt-content strong code em code,#sbo-rt-content em code strong code,#sbo-rt-content span.bolditalic code{font-weight:bold;font-style:italic;font-family:"Ubuntu Mono BoldItal",monospace}#sbo-rt-content code em,#sbo-rt-content em code,#sbo-rt-content pre em,#sbo-rt-content em.replaceable{font-family:"Ubuntu Mono Ital",monospace;font-style:italic}#sbo-rt-content code strong,#sbo-rt-content strong code,#sbo-rt-content pre strong,#sbo-rt-content strong.userinput{font-family:"Ubuntu Mono Bold",monospace;font-weight:bold}#sbo-rt-content div[data-type="example"]{margin:10px 0 15px 0 !important}#sbo-rt-content div[data-type="example"] h1,#sbo-rt-content div[data-type="example"] h2,#sbo-rt-content div[data-type="example"] h3,#sbo-rt-content div[data-type="example"] h4,#sbo-rt-content div[data-type="example"] h5,#sbo-rt-content div[data-type="example"] h6{font-style:italic;font-weight:normal;text-align:left !important;text-transform:none !important;font-family:serif !important;margin:10px 0 5px 0 !important;border-bottom:1px solid #000}#sbo-rt-content li pre.example{padding:10px 0 !important}#sbo-rt-content div[data-type="example"] pre[data-type="programlisting"],#sbo-rt-content div[data-type="example"] pre[data-type="screen"]{margin:0}#sbo-rt-content section[data-type="titlepage"]>div>h1{font-size:2em;margin:50px 0 10px 0 !important;line-height:1;text-align:center}#sbo-rt-content section[data-type="titlepage"] h2,#sbo-rt-content section[data-type="titlepage"] p.subtitle,#sbo-rt-content section[data-type="titlepage"] p[data-type="subtitle"]{font-size:1.3em;font-weight:normal;text-align:center;margin-top:.5em;color:#555}#sbo-rt-content section[data-type="titlepage"]>div>h2[data-type="author"],#sbo-rt-content section[data-type="titlepage"] p.author{font-size:1.3em;font-family:serif !important;font-weight:bold;margin:50px 0 !important;text-align:center}#sbo-rt-content section[data-type="titlepage"] p.edition{text-align:center;text-transform:uppercase;margin-top:2em}#sbo-rt-content div.book div.titlepage div.publishername{margin-top:60%;margin-bottom:20px;text-align:center;font-size:1.25em}#sbo-rt-content div.book div.titlepage div.locations p{margin:0;text-align:center}#sbo-rt-content div.book div.titlepage div.locations p.cities{font-size:80%;text-align:center;margin-top:5px}#sbo-rt-content section.preface[title="Dedication"]>div.titlepage h2.title{text-align:center;text-transform:uppercase;font-size:1.5em;margin-top:50px;margin-bottom:50px}#sbo-rt-content ul.stafflist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.stafflist li{list-style-type:none;padding:5px 0}#sbo-rt-content ul.printings li{list-style-type:none}#sbo-rt-content section.preface[title="Dedication"] p{font-style:italic;text-align:center}#sbo-rt-content div.colophon h1.title{font-size:1.3em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon h2.subtitle{margin:0 !important;color:#000;font-family:serif !important;font-size:1em;font-weight:normal}#sbo-rt-content div.colophon div.author h3.author{font-size:1.1em;font-family:serif !important;margin:10px 0 0 !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h4,#sbo-rt-content div.colophon div.editor h3.editor{color:#000;font-size:.8em;margin:15px 0 0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h3.editor{font-size:.8em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.publisher{margin-top:10px}#sbo-rt-content div.colophon div.publisher p,#sbo-rt-content div.colophon div.publisher span.publishername{margin:0;font-size:.8em}#sbo-rt-content div.legalnotice p,#sbo-rt-content div.timestamp p{font-size:.8em}#sbo-rt-content div.timestamp p{margin-top:10px}#sbo-rt-content div.colophon[title="About the Author"] h1.title,#sbo-rt-content div.colophon[title="Colophon"] h1.title{font-size:1.5em;margin:0 !important;font-family:sans-serif !important}#sbo-rt-content section.chapter div.titlepage div.author{margin:10px 0 10px 0}#sbo-rt-content section.chapter div.titlepage div.author div.affiliation{font-style:italic}#sbo-rt-content div.attribution{margin:5px 0 0 50px !important}#sbo-rt-content h3.author span.orgname{display:none}#sbo-rt-content div.epigraph{margin:10px 0 10px 20px !important;page-break-inside:avoid;font-size:90%}#sbo-rt-content div.epigraph p{font-style:italic}#sbo-rt-content blockquote,#sbo-rt-content div.blockquote{margin:10px !important;page-break-inside:avoid;font-size:95%}#sbo-rt-content blockquote p,#sbo-rt-content div.blockquote p{font-style:italic;margin:.75em 0 0 !important}#sbo-rt-content blockquote div.attribution,#sbo-rt-content blockquote p[data-type="attribution"]{margin:5px 0 10px 30px !important;text-align:right;width:80%}#sbo-rt-content blockquote div.attribution p,#sbo-rt-content blockquote p[data-type="attribution"]{font-style:normal;margin-top:5px}#sbo-rt-content blockquote div.attribution p:before,#sbo-rt-content blockquote p[data-type="attribution"]:before{font-style:normal;content:"—";-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none}#sbo-rt-content p.right{text-align:right;margin:0}#sbo-rt-content div[data-type="footnotes"]{border-top:1px solid black;margin-top:1.5em}#sbo-rt-content sub,#sbo-rt-content sup{font-size:75%;line-height:0;position:relative}#sbo-rt-content sup{top:-.5em}#sbo-rt-content sub{bottom:-.25em}#sbo-rt-content div.refentry p.refname{font-size:1em;font-family:sans-serif,"DejaVuSans";font-weight:bold;margin-bottom:5px;overflow:auto;width:100%}#sbo-rt-content div.refentry{width:100%;display:block;margin-top:2em}#sbo-rt-content div.refsynopsisdiv{display:block;clear:both}#sbo-rt-content div.refentry header{page-break-inside:avoid !important;display:block;break-inside:avoid !important;padding-top:0;border-bottom:1px solid #000}#sbo-rt-content div.refsect1 h6{font-size:.9em;font-family:sans-serif,"DejaVuSans";font-weight:bold}#sbo-rt-content div.refsect1{margin-top:3em}#sbo-rt-content dt{padding-top:10px !important;padding-bottom:0 !important}#sbo-rt-content dd{margin-left:1.5em !important;margin-bottom:.25em}#sbo-rt-content dd,#sbo-rt-content li{text-align:left}#sbo-rt-content ul{list-style-type:disc}#sbo-rt-content ul ul{list-style-type:square}#sbo-rt-content ul ul ul{list-style-type:circle}#sbo-rt-content ol{list-style-type:decimal}#sbo-rt-content ol ol{list-style-type:lower-alpha}#sbo-rt-content ol ol ol{list-style-type:lower-roman}#sbo-rt-content ol ul{list-style-type:disc}#sbo-rt-content ol ul ol{list-style-type:decimal}#sbo-rt-content ul ol{list-style-type:decimal}#sbo-rt-content ul ol ul{list-style-type:disc}#sbo-rt-content ol,#sbo-rt-content ul{list-style-position:outside;margin:15px 0 15px 1.25em}#sbo-rt-content ol li,#sbo-rt-content ul li{margin:.5em 0 .65em;line-height:125%}#sbo-rt-content div.orderedlistalpha{list-style-type:upper-alpha}#sbo-rt-content table.simplelist,#sbo-rt-content ul.simplelist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.simplelist li{list-style-type:none;padding:5px 0}#sbo-rt-content table.simplelist td{border:none}#sbo-rt-content table.simplelist tr{border-bottom:none}#sbo-rt-content table.simplelist tr:nth-of-type(even){background-color:transparent}#sbo-rt-content dl.calloutlist p:first-child{margin-top:-25px !important}#sbo-rt-content dl.calloutlist dd{padding-left:0;margin-top:-25px}#sbo-rt-content dl.calloutlist img,#sbo-rt-content a.co img{padding:0}#sbo-rt-content div.toc ol{margin-top:8px !important;margin-bottom:8px !important;margin-left:0 !important;padding-left:0 !important}#sbo-rt-content div.toc ol ol{margin-left:30px !important;padding-left:0 !important}#sbo-rt-content div.toc ol li{list-style-type:none}#sbo-rt-content div.toc a{color:#8e0012}#sbo-rt-content div.toc ol a{font-size:1em;font-weight:bold}#sbo-rt-content div.toc ol>li>ol a{font-weight:bold;font-size:1em}#sbo-rt-content div.toc ol>li>ol>li>ol a{text-decoration:none;font-weight:normal;font-size:1em}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"],#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{margin:30px !important;font-size:90%;padding:10px 8px 20px 8px !important;page-break-inside:avoid}#sbo-rt-content div.tip ol,#sbo-rt-content div.tip ul,#sbo-rt-content div[data-type="tip"] ol,#sbo-rt-content div[data-type="tip"] ul,#sbo-rt-content div.note ol,#sbo-rt-content div.note ul,#sbo-rt-content div[data-type="note"] ol,#sbo-rt-content div[data-type="note"] ul,#sbo-rt-content div.warning ol,#sbo-rt-content div.warning ul,#sbo-rt-content div[data-type="warning"] ol,#sbo-rt-content div[data-type="warning"] ul,#sbo-rt-content div[data-type="caution"] ol,#sbo-rt-content div[data-type="caution"] ul,#sbo-rt-content div[data-type="important"] ol,#sbo-rt-content div[data-type="important"] ul{margin-left:1.5em !important}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"]{border:1px solid #BEBEBE;background-color:transparent}#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{border:1px solid #BC8F8F}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="note"] h1,#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1,#sbo-rt-content div[data-type="important"] h6{font-weight:bold;font-size:110%;font-family:sans-serif !important;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px !important}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div[data-type="note"] h1{color:#737373}#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="important"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1{color:#C67171}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note,#sbo-rt-content div.safarienabled{background-color:transparent;margin:8px 0 0 !important;border:0 solid #BEBEBE;font-size:100%;padding:0 !important;page-break-inside:avoid}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note h3,#sbo-rt-content div.safarienabled h6{display:none}#sbo-rt-content div.table,#sbo-rt-content table{margin:15px 0 30px 0 !important;max-width:95%;border:none !important;background:none;display:table !important}#sbo-rt-content div.table,#sbo-rt-content div.informaltable,#sbo-rt-content table{page-break-inside:avoid}#sbo-rt-content tr,#sbo-rt-content tr td{border-bottom:1px solid #c3c3c3}#sbo-rt-content thead td,#sbo-rt-content thead th{border-bottom:#9d9d9d 1px solid !important;border-top:#9d9d9d 1px solid !important}#sbo-rt-content tr:nth-of-type(even){background-color:#f1f6fc}#sbo-rt-content thead{font-family:sans-serif;font-weight:bold}#sbo-rt-content td,#sbo-rt-content th{display:table-cell;padding:.3em;text-align:left;vertical-align:middle;font-size:80%}#sbo-rt-content div.informaltable table{margin:10px auto !important}#sbo-rt-content div.informaltable table tr{border-bottom:none}#sbo-rt-content div.informaltable table tr:nth-of-type(even){background-color:transparent}#sbo-rt-content div.informaltable td,#sbo-rt-content div.informaltable th{border:#9d9d9d 1px solid}#sbo-rt-content div.table-title,#sbo-rt-content table caption{font-weight:normal;font-style:italic;font-family:serif;font-size:1em;margin:10px 0 10px 0 !important;padding:0;page-break-after:avoid;text-align:left !important}#sbo-rt-content table code{font-size:smaller}#sbo-rt-content div.equation,#sbo-rt-content div[data-type="equation"]{margin:10px 0 15px 0 !important}#sbo-rt-content div.equation-title,#sbo-rt-content div[data-type="equation"] h5{font-style:italic;font-weight:normal;font-family:serif !important;font-size:90%;margin:20px 0 10px 0 !important;page-break-after:avoid}#sbo-rt-content div.equation-contents{margin-left:20px}#sbo-rt-content span.inlinemediaobject{height:.85em;display:inline-block;margin-bottom:.2em}#sbo-rt-content span.inlinemediaobject img{margin:0;height:.85em}#sbo-rt-content div.informalequation{margin:20px 0 20px 20px;width:75%}#sbo-rt-content div.informalequation img{width:75%}#sbo-rt-content div.index{text-indent:0}#sbo-rt-content div.index li{line-height:140%}#sbo-rt-content div.index a.indexterm{color:#8e0012}#sbo-rt-content div.index ul,#sbo-rt-content div[data-type="index"] ul{list-style-type:none;padding-left:0;margin-left:0}#sbo-rt-content div.index ul li{padding-left:0;margin-left:0}#sbo-rt-content div.index ul li ul li{margin-left:1em}#sbo-rt-content code.boolean,#sbo-rt-content .navy{color:rgb(0,0,128);}#sbo-rt-content code.character,#sbo-rt-content .olive{color:rgb(128,128,0);}#sbo-rt-content code.comment,#sbo-rt-content .blue{color:rgb(0,0,255);}#sbo-rt-content code.conditional,#sbo-rt-content .limegreen{color:rgb(50,205,50);}#sbo-rt-content code.constant,#sbo-rt-content .darkorange{color:rgb(255,140,0);}#sbo-rt-content code.debug,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.define,#sbo-rt-content .darkgoldenrod,#sbo-rt-content .gold{color:rgb(184,134,11);}#sbo-rt-content code.delimiter,#sbo-rt-content .dimgray{color:rgb(105,105,105);}#sbo-rt-content code.error,#sbo-rt-content .red{color:rgb(255,0,0);}#sbo-rt-content code.exception,#sbo-rt-content .salmon{color:rgb(250,128,11);}#sbo-rt-content code.float,#sbo-rt-content .steelblue{color:rgb(70,130,180);}#sbo-rt-content pre code.function,#sbo-rt-content .green{color:rgb(0,128,0);}#sbo-rt-content code.identifier,#sbo-rt-content .royalblue{color:rgb(65,105,225);}#sbo-rt-content code.ignore,#sbo-rt-content .gray{color:rgb(128,128,128);}#sbo-rt-content code.include,#sbo-rt-content .purple{color:rgb(128,0,128);}#sbo-rt-content code.keyword,#sbo-rt-content .sienna{color:rgb(160,82,45);}#sbo-rt-content code.label,#sbo-rt-content .deeppink{color:rgb(255,20,147);}#sbo-rt-content code.macro,#sbo-rt-content .orangered{color:rgb(255,69,0);}#sbo-rt-content code.number,#sbo-rt-content .brown{color:rgb(165,42,42);}#sbo-rt-content code.operator,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.preCondit,#sbo-rt-content .teal{color:rgb(0,128,128);}#sbo-rt-content code.preProc,#sbo-rt-content .fuschia{color:rgb(255,0,255);}#sbo-rt-content code.repeat,#sbo-rt-content .indigo{color:rgb(75,0,130);}#sbo-rt-content code.special,#sbo-rt-content .saddlebrown{color:rgb(139,69,19);}#sbo-rt-content code.specialchar,#sbo-rt-content .magenta{color:rgb(255,0,255);}#sbo-rt-content code.specialcomment,#sbo-rt-content .seagreen{color:rgb(46,139,87);}#sbo-rt-content code.statement,#sbo-rt-content .forestgreen{color:rgb(34,139,34);}#sbo-rt-content code.storageclass,#sbo-rt-content .plum{color:rgb(221,160,221);}#sbo-rt-content code.string,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.structure,#sbo-rt-content .chocolate{color:rgb(210,106,30);}#sbo-rt-content code.tag,#sbo-rt-content .darkcyan{color:rgb(0,139,139);}#sbo-rt-content code.todo,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.type,#sbo-rt-content .mediumslateblue{color:rgb(123,104,238);}#sbo-rt-content code.typedef,#sbo-rt-content .darkgreen{color:rgb(0,100,0);}#sbo-rt-content code.underlined{text-decoration:underline;}#sbo-rt-content pre code.hll{background-color:#ffc}#sbo-rt-content pre code.c{color:#09F;font-style:italic}#sbo-rt-content pre code.err{color:#A00}#sbo-rt-content pre code.k{color:#069;font-weight:bold}#sbo-rt-content pre code.o{color:#555}#sbo-rt-content pre code.cm{color:#35586C;font-style:italic}#sbo-rt-content pre code.cp{color:#099}#sbo-rt-content pre code.c1{color:#35586C;font-style:italic}#sbo-rt-content pre code.cs{color:#35586C;font-weight:bold;font-style:italic}#sbo-rt-content pre code.gd{background-color:#FCC}#sbo-rt-content pre code.ge{font-style:italic}#sbo-rt-content pre code.gr{color:#F00}#sbo-rt-content pre code.gh{color:#030;font-weight:bold}#sbo-rt-content pre code.gi{background-color:#CFC}#sbo-rt-content pre code.go{color:#000}#sbo-rt-content pre code.gp{color:#009;font-weight:bold}#sbo-rt-content pre code.gs{font-weight:bold}#sbo-rt-content pre code.gu{color:#030;font-weight:bold}#sbo-rt-content pre code.gt{color:#9C6}#sbo-rt-content pre code.kc{color:#069;font-weight:bold}#sbo-rt-content pre code.kd{color:#069;font-weight:bold}#sbo-rt-content pre code.kn{color:#069;font-weight:bold}#sbo-rt-content pre code.kp{color:#069}#sbo-rt-content pre code.kr{color:#069;font-weight:bold}#sbo-rt-content pre code.kt{color:#078;font-weight:bold}#sbo-rt-content pre code.m{color:#F60}#sbo-rt-content pre code.s{color:#C30}#sbo-rt-content pre code.na{color:#309}#sbo-rt-content pre code.nb{color:#366}#sbo-rt-content pre code.nc{color:#0A8;font-weight:bold}#sbo-rt-content pre code.no{color:#360}#sbo-rt-content pre code.nd{color:#99F}#sbo-rt-content pre code.ni{color:#999;font-weight:bold}#sbo-rt-content pre code.ne{color:#C00;font-weight:bold}#sbo-rt-content pre code.nf{color:#C0F}#sbo-rt-content pre code.nl{color:#99F}#sbo-rt-content pre code.nn{color:#0CF;font-weight:bold}#sbo-rt-content pre code.nt{color:#309;font-weight:bold}#sbo-rt-content pre code.nv{color:#033}#sbo-rt-content pre code.ow{color:#000;font-weight:bold}#sbo-rt-content pre code.w{color:#bbb}#sbo-rt-content pre code.mf{color:#F60}#sbo-rt-content pre code.mh{color:#F60}#sbo-rt-content pre code.mi{color:#F60}#sbo-rt-content pre code.mo{color:#F60}#sbo-rt-content pre code.sb{color:#C30}#sbo-rt-content pre code.sc{color:#C30}#sbo-rt-content pre code.sd{color:#C30;font-style:italic}#sbo-rt-content pre code.s2{color:#C30}#sbo-rt-content pre code.se{color:#C30;font-weight:bold}#sbo-rt-content pre code.sh{color:#C30}#sbo-rt-content pre code.si{color:#A00}#sbo-rt-content pre code.sx{color:#C30}#sbo-rt-content pre code.sr{color:#3AA}#sbo-rt-content pre code.s1{color:#C30}#sbo-rt-content pre code.ss{color:#A60}#sbo-rt-content pre code.bp{color:#366}#sbo-rt-content pre code.vc{color:#033}#sbo-rt-content pre code.vg{color:#033}#sbo-rt-content pre code.vi{color:#033}#sbo-rt-content pre code.il{color:#F60}#sbo-rt-content pre code.g{color:#050}#sbo-rt-content pre code.l{color:#C60}#sbo-rt-content pre code.l{color:#F90}#sbo-rt-content pre code.n{color:#008}#sbo-rt-content pre code.nx{color:#008}#sbo-rt-content pre code.py{color:#96F}#sbo-rt-content pre code.p{color:#000}#sbo-rt-content pre code.x{color:#F06}#sbo-rt-content div.blockquote_sampler_toc{width:95%;margin:5px 5px 5px 10px !important}#sbo-rt-content div{font-family:serif;text-align:left}#sbo-rt-content .gray-background,#sbo-rt-content .reverse-video{background:#2E2E2E;color:#FFF}#sbo-rt-content .light-gray-background{background:#A0A0A0}#sbo-rt-content .preserve-whitespace{white-space:pre-wrap}#sbo-rt-content span.gray{color:#4C4C4C}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781491920565/chapter/ch13.html",
+          "book_id": "9781491920565",
+          "chapter_uri": "ch13.html",
+          "position": 0,
+          "user_uuid": "fee1bd59-4e02-48a4-a7b4-152ec4c157ac",
+          "next_chapter_uri": "/library/view/data-visualization-with/9781491920565/part05.html"
+        
+      },
+      title: "Data Visualization with Python and JavaScript",
+      author_list: "Kyran Dale",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.js"></script><script>
+    
+      
+       window.PUBLIC_ANNOTATIONS = false;
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "https://www.safaribooksonline.com/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://www.safaribooksonline.com/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch13.html"/><meta name="description" content=" Chapter 13. RESTful Data with Flask In Chapter 12 we saw how to begin building a basic RESTful web server with Flask, limited to GET requests. This allowed retrieval of ... "><meta property="og:title" content="13. RESTful Data with Flask" /><meta itemprop="isPartOf" content="/library/view/data-visualization-with/9781491920565/" /><meta itemprop="name" content="13. RESTful Data with Flask" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch13.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781491920565/" /><meta property="og:description" itemprop="description" content=" Chapter 13. RESTful Data with Flask In Chapter 12 we saw how to begin building a basic RESTful web server with Flask, limited to GET requests. This allowed retrieval of ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="O&#39;Reilly Media, Inc." /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781491920510" /><meta property="og:book:author" itemprop="author" content="Kyran Dale" /><meta property="og:book:tag" itemprop="about" content="JavaScript" /><meta property="og:book:tag" itemprop="about" content="Python" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><script>
+    window.ENABLE_BOWERBIRD_COLLECTIONS = true;
+  </script><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': 'fee1bd59-4e02-48a4-a7b4-152ec4c157ac' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', 'fee1bd59-4e02-48a4-a7b4-152ec4c157ac');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.e2e622a103f9.js"></script><script defer src="/static/js/build/reader.84feb506aa44.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+                 Playlists
+              </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/fee1bd59-4e02-48a4-a7b4-152ec4c157ac/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.safaribooksonline.com/public/support" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">7</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.safaribooksonline.com/public/support" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Data Visualization with Python and JavaScript
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781491920565/chapter/ch13.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch13.html&text=Data%20Visualization%20with%20Python%20and%20JavaScript&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch13.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch13.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 13.%20RESTful%20Data%20with%20Flask&body=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch13.html%0D%0Afrom Data%20Visualization%20with%20Python%20and%20JavaScript%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.893631b34e7a.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch12.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">12. Delivering the Data</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/part05.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">V. Visualizing Your Data with D3</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><section data-type="chapter" epub:type="chapter" data-pdf-bookmark="Chapter 13. RESTful Data with Flask"><div class="chapter" id="chapter_delivery_restful">
+<h1><span class="label">Chapter 13. </span>RESTful Data with Flask</h1>
+
+
+<p><a data-type="indexterm" data-primary="data delivery" data-see="also Flask" id="idm140319404298736"></a>In <a data-type="xref" href="ch12.html#chapter_delivery_intro">Chapter 12</a> we saw how to begin building a basic RESTful web server with Flask, limited to GET requests. This allowed retrieval of a dataset and some of its subsets. For most visualizations, the constraint that data be passively consumed, not altered, is acceptable,<sup><a data-type="noteref" id="idm140319404296528-marker" href="ch13.html#idm140319404296528">1</a></sup>  but even allowing for this, a lot of fairly basic stuff was missing (e.g., the ability to paginate retrieved data, allowing you to control the size of responses from the server). In this chapter, we’ll see two Flask RESTful plugins that add this functionality and a whole lot more for the price of a few lines of Python. I think you’ll be impressed by how much web API can be rolled with so little.</p>
+
+<p><a data-type="indexterm" data-primary="Flask-Restless, RESTful APIs" id="idm140319404295040"></a>We’ll deal with the two major use cases: serving data from SQL and NoSQL (in the shape of MongoDB) databases with Flask-Restless and Flask Eve, respectively.</p>
+
+<p><a data-type="indexterm" data-primary="Flask" data-secondary="RESTful data with" data-tertiary="adapting plugins for" id="idm140319404293808"></a>Although there are some Flask RESTful plugins that can be adapted to work with both SQL and NoSQL database backends (e.g., Flask-RESTful), in my experience adapting them is  a little awkward and, given the shallow learning curve and limited boilerplate code involved, it’s easier to stick with the specialist solutions like the two we’re about to put through their paces. First off we’ll examine Python Eve, a fairly recent Flask RESTful library that is impressively full-featured and succinct.</p>
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="A RESTful, MongoDB API with Eve"><div class="sect1" id="idm140319404116880">
+<h1>A RESTful, MongoDB API with Eve</h1>
+
+<p><a data-type="indexterm" data-primary="Flask" data-secondary="RESTful data with" data-tertiary="MongoDB plugin" id="Fresteve13"></a><a data-type="indexterm" data-primary="Eve RESTful APIs" id="eve13"></a><a data-type="indexterm" data-primary="MongoDB" data-secondary="RESTful API with Eve" id="Mresteve13"></a>Python Eve is a plugin for the Flask framework that makes implementing a MongoDB-based RESTful API a relatively painless affair. It’s full-featured, with a huge array of options, and has been well thought through. If MongoDB is your database of choice, this is a great way to deliver data to the browser with support for pagination, authentication, and a whole load of things that should cover pretty much every eventuality. If anything’s missing, it’s a healthy, open source framework  with a responsive development team and a large <a href="https://github.com/nicolaiarocci/eve">GitHub following</a>.</p>
+
+<p>Eve isn’t part of the Anaconda Python package recommended for this book but can easily be installed with <code>pip</code>:</p>
+
+<pre data-type="programlisting">$ pip install eve</pre>
+
+<p>Once Eve is installed, we can turn our existing MongoDB <code>'nobel_prize'</code> database into a fully fledged RESTful API with the addition of a couple of lines to a <em>settings.py</em> file. We’ll be putting our Eve files in an <em>api</em> subdirectory of our root <em>nobel_viz</em> directory:</p>
+
+<pre data-type="programlisting">nobel_viz
+├── index.html
+├── nobel_viz.py
+├── api
+│   ├── server_eve.py
+│   └── settings.py
+...</pre>
+
+<p>In <em>settings.py</em> we specify our preferred URL prefix for the API (<code>api</code>), the name of the database we’re serving (<code>nobel_prize</code>), and the table we’re exposing (<code>winners</code>) in the DOMAIN dictionary. It’s sensible to add a schema providing at least the type of the fields we’re exposing:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="c1"># api/settings.py</code><code>
+</code><code>
+</code><code class="c1"># Optional MONGO variables</code><code>
+</code><code class="c1">#MONGO_HOST = 'localhost'</code><code>
+</code><code class="c1">#MONGO_PORT = 27017</code><code>
+</code><code class="c1">#MONGO_USERNAME = 'user'</code><code>
+</code><code class="c1">#MONGO_PASSWORD = 'user'</code><code>
+</code><code>
+</code><code class="n">URL_PREFIX</code><code> </code><code class="o">=</code><code> </code><code class="s1">'</code><code class="s1">api</code><code class="s1">'</code><code>
+</code><code class="n">MONGO_DBNAME</code><code> </code><code class="o">=</code><code> </code><code class="s1">'</code><code class="s1">nobel_prize</code><code class="s1">'</code><code>
+</code><code class="n">DOMAIN</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="s1">'</code><code class="s1">winners</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code>
+</code><code>    </code><code class="s1">'</code><code class="s1">schema</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code>              </code><a class="co" id="co_restful_data_with_flask_CO1-1" href="#callout_restful_data_with_flask_CO1-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">country</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">category</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">name</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">year</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code> </code><code class="s1">'</code><code class="s1">integer</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">gender</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code>
+</code><code>     </code><code class="p">}</code><code>
+</code><code class="p">}</code><code class="p">}</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_restful_data_with_flask_CO1-1" href="#co_restful_data_with_flask_CO1-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The schema allows us to expose fields in our winners data that we want delivered with the item data. It is also used for proper data validation. The schema definition is based on the <a href="https://github.com/nicolaiarocci/cerberus">Cerberus grammar</a>.</p></dd>
+</dl>
+
+<p>There are a huge number of <a href="http://bit.ly/1tui8VC">Eve-specific parameters</a> you can add to the settings. There’s also a comprehensive section on <a href="http://bit.ly/261YMZA">DOMAIN configuration</a>. With the settings specified, we need only create a tiny server module in the same directory:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="c1"># api/server_eve.py</code>
+<code class="kn">from</code> <code class="nn">eve</code> <code class="kn">import</code> <code class="n">Eve</code>
+
+<code class="n">app</code> <code class="o">=</code> <code class="n">Eve</code><code class="p">()</code>
+
+<code class="k">if</code> <code class="nv-Magic">__name__</code><code class="o">==</code><code class="s1">'__main__'</code><code class="p">:</code>
+    <code class="n">app</code><code class="o">.</code><code class="n">run</code><code class="p">(</code><code class="n">debug</code><code class="o">=</code><code class="bp">True</code><code class="p">)</code></pre>
+
+<p>You can now go to the <em>api</em> directory and start the server, like so:</p>
+
+<pre data-type="programlisting">$ python server_eve.py
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Restarting with stat</pre>
+<aside data-type="sidebar" epub:type="sidebar"><div class="sidebar" id="idm140319403799024">
+<h5>Testing APIs with curl</h5>
+<p><em>curl</em> <a data-type="indexterm" data-primary="curl, testing APIs with" id="idm140319403797440"></a>is a handy command-line tool for transferring data using various protocols. It’s pretty easy to do the same using Python’s <code>requests</code> module, but sometimes curl is just that little bit more convenient and a useful way of demonstrating the general-purpose nature of your RESTful API, being language-agnostic. Unlike <code>requests</code>, with curl you don’t have to quiz a response object to get the output. Basic retrieval is as easy as:</p>
+
+<pre data-type="programlisting">curl www.example.com</pre>
+
+<p>curl can handle posted data, HTTP headers, and all the other aspects of an HTTP request. See <a href="http://curl.haxx.se/docs/manpage.html">here</a> for more details.</p>
+</div></aside>
+
+<p><a data-type="indexterm" data-primary="URL globbing parsers" id="idm140319403772640"></a>Let’s get all the French Nobel Prize winners using a <code>where</code> clause to specify our query. Note that we use curl’s <code>-g</code> flag to switch off its <a href="http://ec.haxx.se/cmdline-globbing.html"><em>URL globbing parser</em></a>. The globbing parser interprets the brackets ({} and []). By turning it off, we can use them to construct our Eve query:</p>
+
+<pre data-type="programlisting">curl -g http://127.0.0.1:5000/api/winners\?where\=
+\{\"country\":\"France\"\}
+{
+  "_items": [
+    {
+      "category": "Chemistry",
+      "_updated": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "name": "Ir\u00e8ne Joliot-Curie",
+      "gender": "female",
+      "year": 1935,
+      "_links": { <a class="co" id="co_restful_data_with_flask_CO2-1" href="#callout_restful_data_with_flask_CO2-1"><img src="1.png" alt="1" width="12" height="12"></a>
+        "self": {
+          "href": "winners\/568d03a826a7113f2cc0a86a",
+          "title": "Winner"
+        }
+      },
+      "country": "France",
+      "_created": "Thu, 01 Jan 1970 00:00:00 GMT",
+      "_id": "568d03a826a7113f2cc0a86a",
+      "_etag": "dcaff67c8e9ab22a6830fec9313ed61c8a1c8ffc"
+    },
+    ...
+    "_meta": {
+    "max_results": 25, <a class="co" id="co_restful_data_with_flask_CO2-2" href="#callout_restful_data_with_flask_CO2-2"><img src="2.png" alt="2" width="12" height="12"></a>
+    "total": 60,
+    "page": 1
+  }
+}</pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_restful_data_with_flask_CO2-1" href="#co_restful_data_with_flask_CO2-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p><a data-type="indexterm" data-primary="HATEEOAS" id="idm140319403762080"></a>Eve has <em>Hypermedia as the Engine of Application State</em> (<a href="https://en.wikipedia.org/wiki/HATEOAS">HATEOAS</a>) enabled by default (set the domain’s <code>hateoas</code> variable to <code>False</code> in <em>settings.py</em> to turn it off). This allows clients to dynamically navigate the API without knowing its structure beforehand (see the <a href="http://python-eve.org/features.html#hateoas">Python Eve site</a> for details).</p></dd>
+<dt><a class="co" id="callout_restful_data_with_flask_CO2-2" href="#co_restful_data_with_flask_CO2-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Pagination is on by default, delivering a maximum of 25 items from the 60 French winners available. The <code>PAGINATION_DEFAULT</code> setting allows you to specify how large you want the item pages to be.</p></dd>
+</dl>
+
+<p>Eve supports the full <a href="https://docs.mongodb.org/manual/tutorial/query-documents/">MongoDB query document</a> and <a href="https://docs.mongodb.org/manual/reference/operator/query/">operators</a>, allowing fine-grained access to the dataset. For example, let’s request all female winners since the year 2000:<sup><a data-type="noteref" id="idm140319403752768-marker" href="ch13.html#idm140319403752768">2</a></sup></p>
+
+<pre data-type="programlisting" data-code-language="bash"> curl -g http://127.0.0.1:5000/api/winners<code class="se">\?</code>
+         where<code class="se">\=\{\"</code>year<code class="se">\"\:\{\"\$</code>gt<code class="se">\"\:</code>2000<code class="se">\}</code>,
+         <code class="se">\"</code>gender<code class="se">\"</code>:<code class="se">\"</code>female<code class="se">\"\}</code>
+<code class="o">{</code>
+  <code class="s2">"_items"</code>: <code class="o">[</code>
+    <code class="o">{</code>
+      <code class="s2">"category"</code>: <code class="s2">"Peace"</code>,
+      <code class="s2">"_updated"</code>: <code class="s2">"Thu, 01 Jan 1970 00:00:00 GMT"</code>,
+      <code class="s2">"name"</code>: <code class="s2">"Leymah Gbowee"</code>,
+      <code class="s2">"gender"</code>: <code class="s2">"female"</code>,
+      <code class="s2">"year"</code>: 2011,
+      <code class="s2">"_links"</code>: <code class="o">{</code>
+        <code class="s2">"self"</code>: <code class="o">{</code>
+          <code class="s2">"href"</code>: <code class="s2">"winners\/568d03a826a7113f2cc0a8a2"</code>,
+          <code class="s2">"title"</code>: <code class="s2">"Winner"</code>
+        <code class="o">}</code>
+      <code class="o">}</code>,
+      <code class="s2">"country"</code>: <code class="s2">"Liberia"</code>,
+      <code class="s2">"_created"</code>: <code class="s2">"Thu, 01 Jan 1970 00:00:00 GMT"</code>,
+      <code class="s2">"_id"</code>: <code class="s2">"568d03a826a7113f2cc0a8a2"</code>,
+      <code class="s2">"_etag"</code>: <code class="s2">"78126885f22a973af96e39f293df16f270a13c1e"</code>
+    <code class="o">}</code>,
+    ...
+      <code class="s2">"_meta"</code>: <code class="o">{</code>
+    <code class="s2">"max_results"</code>: 25,
+    <code class="s2">"total"</code>: 17,
+    <code class="s2">"page"</code>: 1
+  <code class="o">}</code>
+<code class="o">}</code></pre>
+
+<p>Eve is extremely configurable, with a huge range of <a href="http://python-eve.org/config.html">options</a> with which to craft a RESTful API fitting your exact requirements. For example, you can change the query keynames (<code>where</code>, <code>sort</code>, etc.), specify date formatting for Python datetime values,  fix the HTTP methods allowed at resource endpoints (default is <code>['GET']</code>), rate-limit requests, and set the value of the <code>Cache-Control</code> header field used when serving GET requests.<a data-type="indexterm" data-primary="" data-startref="Fresteve13" id="idm140319403700064"></a><a data-type="indexterm" data-primary="" data-startref="eve13" id="idm140319403699088"></a><a data-type="indexterm" data-primary="" data-startref="Mresteve13" id="idm140319403698144"></a></p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Using AJAX to Access the API"><div class="sect2" id="sect_ajax_api">
+<h2>Using AJAX to Access the API</h2>
+
+<p><a data-type="indexterm" data-primary="AJAX" id="ajax13"></a><a data-type="indexterm" data-primary="Flask" data-secondary="RESTful data with" data-tertiary="Ajax API access" id="Frestajax13"></a>Now that we’ve used curl to verify that our Eve API is working, let’s see how to access it from a browser using a JavaScript AJAX call. To demonstrate good practice, the JavaScript consuming the data will be run from a different server than the one running the API.</p>
+
+<p>We’ll make the AJAX request from a page served by a basic Flask web server that just delivers an <em>index.html</em> in the root directory. The following code sets up that server, running on port 8080 (our API is on port 5000) and serving a little HTML index file:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="c1"># nobel_viz.py</code><code>
+</code><code class="kn">from</code><code> </code><code class="nn">flask</code><code> </code><code class="kn">import</code><code> </code><code class="n">Flask</code><code class="p">,</code><code> </code><code class="n">send_from_directory</code><code>
+</code><code>
+</code><code class="n">app</code><code> </code><code class="o">=</code><code> </code><code class="n">Flask</code><code class="p">(</code><code class="nv-Magic">__name__</code><code class="p">)</code><code>
+</code><code>
+</code><code class="nd">@app.route</code><code class="p">(</code><code class="s1">'</code><code class="s1">/</code><code class="s1">'</code><code class="p">)</code><code>
+</code><code class="k">def</code><code> </code><code class="nf">root</code><code class="p">(</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>    </code><code class="k">return</code><code> </code><code class="n">send_from_directory</code><code class="p">(</code><code class="s1">'</code><code class="s1">.</code><code class="s1">'</code><code class="p">,</code><code> </code><code class="s1">'</code><code class="s1">index.html</code><code class="s1">'</code><code class="p">)</code><code> </code><a class="co" id="co_restful_data_with_flask_CO3-1" href="#callout_restful_data_with_flask_CO3-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>
+</code><code class="k">if</code><code> </code><code class="nv-Magic">__name__</code><code> </code><code class="o">==</code><code> </code><code class="s1">'</code><code class="s1">__main__</code><code class="s1">'</code><code class="p">:</code><code>
+</code><code>    </code><code class="n">app</code><code class="o">.</code><code class="n">run</code><code class="p">(</code><code class="n">port</code><code class="o">=</code><code class="mi">8080</code><code class="p">)</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_restful_data_with_flask_CO3-1" href="#co_restful_data_with_flask_CO3-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Serves a file from the directory—in this case, the local directory (<em>.</em>)]—specified in the first argument.</p></dd>
+</dl>
+
+<p>The <em>index.html</em> file we’re serving has a couple of placeholders for the request and response data, and adds the jQuery and D3 libraries along with the <em>script.js</em> file containing the AJAX call:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="c">&lt;!-- index.html --&gt;</code>
+<code class="cp">&lt;!DOCTYPE html&gt;</code>
+<code class="nt">&lt;meta</code> <code class="na">charset=</code><code class="s">"utf-8"</code><code class="nt">&gt;</code>
+
+<code class="nt">&lt;style&gt;</code>
+  <code class="nt">body</code><code class="p">{</code> <code class="k">font-family</code><code class="o">:</code> <code class="nb">sans-serif</code><code class="p">;}</code>
+<code class="nt">&lt;/style&gt;</code>
+
+<code class="nt">&lt;h3&gt;</code>Request<code class="nt">&lt;/h3&gt;</code>
+<code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'query'</code><code class="nt">&gt;</code>
+    <code class="nt">&lt;pre&gt;&lt;/pre&gt;</code>
+<code class="nt">&lt;/div&gt;</code>
+
+<code class="nt">&lt;h3&gt;</code>Response<code class="nt">&lt;/h3&gt;</code>
+<code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'data'</code><code class="nt">&gt;</code>
+    <code class="nt">&lt;pre&gt;&lt;/pre&gt;</code>
+<code class="nt">&lt;/div&gt;</code>
+
+<code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"//code.jQuery.com/jQuery-1.11.0.min.js"</code><code class="nt">&gt;&lt;/script&gt;</code>
+<code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"http://d3js.org/d3.v3.min.js"</code><code class="nt">&gt;&lt;/script&gt;</code>
+
+<code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"static/js/script.js"</code><code class="nt">&gt;&lt;/script&gt;</code></pre>
+
+<p>To make the AJAX GET request, we’ll use one of <a href="https://github.com/mbostock/d3/wiki/Requests">D3’s request methods</a> to make an <a href="http://en.wikipedia.org/wiki/XMLHttpRequest">XMLHttpRequest, or XHR</a>. D3’s convenience method <code>json</code> is built on the main <code>xhr</code> method but is specialized for getting JSON data. If the request is successful, the data is delivered as fully parsed JSON, ready to use.</p>
+
+<p><a data-type="xref" href="#delivery_ajax">Example 13-1</a> shows the code required to make an AJAX call for JSON data to our Eve API. The <code>displayJSON</code> method takes a query string (e.g., <code>'/winners?where={"gender":"female}'</code>) and uses it to make a request for JSON data to the API.</p>
+<div id="delivery_ajax" data-type="example">
+<h5><span class="label">Example 13-1. </span>Making an AJAX call to the Eve API with D3</h5>
+
+<pre data-type="programlisting" data-code-language="js"><code class="c1">// static/js/script.js
+</code><code class="kd">var</code><code> </code><code class="nx">API_URL</code><code> </code><code class="o">=</code><code> </code><code class="s1">'http://localhost:5000/api'</code><code class="p">;</code><code>
+
+</code><code class="kd">var</code><code> </code><code class="nx">displayJSON</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">query</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+
+    </code><code class="nx">d3</code><code class="p">.</code><code class="nx">json</code><code class="p">(</code><code class="nx">API_URL</code><code> </code><code class="o">+</code><code> </code><code class="nx">query</code><code class="p">,</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">error</code><code class="p">,</code><code> </code><code class="nx">data</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+
+        </code><code class="c1">// log any error to the console as a warning
+</code><code>        </code><code class="k">if</code><code class="p">(</code><code class="nx">error</code><code class="p">)</code><code class="p">{</code><code>
+            </code><code class="k">return</code><code> </code><code class="nx">console</code><code class="p">.</code><code class="nx">warn</code><code class="p">(</code><code class="nx">error</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="p">}</code><code>
+
+        </code><code class="nx">d3</code><code class="p">.</code><code class="nx">select</code><code class="p">(</code><code class="s1">'#query pre'</code><code class="p">)</code><code class="p">.</code><code class="nx">html</code><code class="p">(</code><code class="nx">query</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_restful_data_with_flask_CO4-1" href="#callout_restful_data_with_flask_CO4-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+        </code><code class="nx">d3</code><code class="p">.</code><code class="nx">select</code><code class="p">(</code><code class="s1">'#data pre'</code><code class="p">)</code><code class="p">.</code><code class="nx">html</code><code class="p">(</code><code class="nx">JSON</code><code class="p">.</code><code class="nx">stringify</code><code class="p">(</code><code class="nx">data</code><code class="p">,</code><code> </code><code class="kc">null</code><code class="p">,</code><code> </code><code class="mi">4</code><code class="p">)</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="nx">console</code><code class="p">.</code><code class="nx">log</code><code class="p">(</code><code class="nx">data</code><code class="p">)</code><code class="p">;</code><code>
+    </code><code class="p">}</code><code class="p">)</code><code class="p">;</code><code>
+</code><code class="p">}</code><code class="p">;</code><code>
+
+</code><code class="kd">var</code><code> </code><code class="nx">query</code><code> </code><code class="o">=</code><code> </code><code class="s1">'/winners?where='</code><code> </code><code class="o">+</code><code> </code><code class="nx">JSON</code><code class="p">.</code><code class="nx">stringify</code><code class="p">(</code><code class="p">{</code><code> </code><a class="co" id="co_restful_data_with_flask_CO4-2" href="#callout_restful_data_with_flask_CO4-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+    </code><code class="s2">"year"</code><code class="o">:</code><code> </code><code class="p">{</code><code class="s2">"$gt"</code><code class="o">:</code><code class="mi">2000</code><code class="p">}</code><code class="p">,</code><code>
+    </code><code class="s2">"gender"</code><code class="o">:</code><code> </code><code class="s2">"female"</code><code>
+</code><code class="p">}</code><code class="p">)</code><code class="p">;</code><code>
+
+</code><code class="nx">displayJSON</code><code class="p">(</code><code class="nx">query</code><code class="p">)</code><code class="p">;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_restful_data_with_flask_CO4-1" href="#co_restful_data_with_flask_CO4-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>We use D3 to select our content <code>pre</code> tags and fill them with the query string and the JSON data returned from the server, using <code>JSON.stringify</code> to turn the JavaScript object into a formatted JSON string.</p></dd>
+<dt><a class="co" id="callout_restful_data_with_flask_CO4-2" href="#co_restful_data_with_flask_CO4-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Here we construct the query string to our API, with a <code>where</code> argument containing the MongoDB query dictionary.</p></dd>
+</dl></div>
+
+<p>Now that our data flow is in place, let’s start the <code>nobel_viz</code> server running, serving our simple <em>index.html</em> file:</p>
+
+<pre data-type="programlisting">$ python nobel_viz.py
+ * Running on http://127.0.0.1:8080/ (Press CTRL+C to quit)</pre>
+
+<p>With the server running, if you open your browser and navigate to <a href="http://localhost:8080"><em class="hyperlink">http://localhost:8080</em></a>, you’ll see that the AJAX call has failed. Opening the browser’s console (Ctrl-Shift-I on Chrome) will show something like <a data-type="xref" href="#delivery_cor_error">Figure 13-1</a> indicating that the API request has been denied because of the CORS constraint.  You can also see the <code>XMLHttpRequest</code>  logged-on error by the <code>d3.json</code> method in <a data-type="xref" href="#delivery_ajax">Example 13-1</a>.</p>
+
+<figure><div id="delivery_cor_error" class="figure">
+<img src="dvpj_1301.png" alt="dvpj 1301" width="1258" height="220">
+<h6><span class="label">Figure 13-1. </span>Cross-origin error on request</h6>
+</div></figure>
+<aside data-type="sidebar" epub:type="sidebar"><div class="sidebar" id="idm140319403461744">
+<h5>Cross-Origin Resource Sharing</h5>
+<p><a data-type="indexterm" data-primary="cross-origin resource sharing (CORS)" id="idm140319403285520"></a>Although you can serve your data web API from the same server as all your other HTML, that’s not a very flexible approach and it’s often better to have the API stand alone. This means it can be used by multiple sites and placed wherever you want (e.g., if large datasets are involved, somewhere cheap and reliable). If you want to call down data from a different server to the one generating the JavaScript AJAX call, you’ll run into <em>cross-origin resource sharing</em> (CORS).</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS</a> is a mechanism that allows restricted resources on a web page to be requested from a domain other than that from which the resource originated. In other words, it allows your JavaScript to request data from another website—in our case, the RESTful data server. These types of requests are forbidden by default for security purposes (they would make it trivial to <em>emulate</em> another site, for example, possibly fooling the user into giving away sensitive information). CORS lets us get around this constraint by allowing the data server (in our example) to specify whitelisted sites through its <code>Access-Control-Allow-Origin</code> header. Setting this to <code>*</code> allows all sites to access the data; setting it to <code>http://foo.com</code> allows only requests from <em>foo.com</em>. <a data-type="xref" href="#delivery_cors">Figure 13-2</a> shows a request loop being mediated by CORS.</p>
+
+<figure><div id="delivery_cors" class="figure">
+<img src="dvpj_1302.png" alt="dvpj 1302" width="983" height="817">
+<h6><span class="label">Figure 13-2. </span>Getting data from a RESTful web API</h6>
+</div></figure>
+
+<p>CORS should be mediated by the HTTP server (e.g., Apache or Nginx), but it’s useful during development to specify it at the application level in order to easily test your APIs.</p>
+</div></aside>
+
+<p>With regard to CORS restrictions, Eve has a number of variables that allow you to expose a standalone API to selected sites. For example, the <code>X_DOMAINS</code> variable allows a list of domains that are allowed to perform a CORS request (the default is <code>None</code>). <code>X_DOMAINS</code> can take a string or list of strings specifying the domains from which calls to the API are allowed (a whitelist). We are running our <code>nobel_viz</code> server from <code>http:localhost:8080</code>, so adding the following to <em>settings.py</em> will allow the API call and stop the CORS error:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="err">#</code> <code class="p">...</code>
+<code class="nx">X_DOMAINS</code> <code class="o">=</code> <code class="s1">'http://localhost:8080'</code></pre>
+
+<p>If you wanted to allow all sites to access the API (only advisable during development and then with caution), you could use an asterisk wildcard for <code>X_DOMAINS</code>:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="err">#</code> <code class="p">...</code>
+<code class="nx">X_DOMAINS</code> <code class="o">=</code> <code class="s1">'*'</code></pre>
+
+<p>If you add our <code>X_DOMAIN</code> whitelist to <em>settings.py</em>, restart the <code>nobel_viz</code>, and navigate to <code>http:localhost:8080</code>,  you should see something like <a data-type="xref" href="#delivery_eve_ajax">Figure 13-3</a> showing that our request for all female Nobel Prize winners since the year 2000 has been successful.</p>
+
+<figure><div id="delivery_eve_ajax" class="figure">
+<img src="dvpj_1303.png" alt="dvpj 1303" width="845" height="526">
+<h6><span class="label">Figure 13-3. </span>Displaying the data retrieved by AJAX to the browser window</h6>
+</div></figure>
+
+<p>Now that we know how to roll a MongoDB RESTful API with Eve and a few lines of Python, let’s see how we extend it to deliver the Nobel Prize dataset to our Nobel Prize web visualization.<a data-type="indexterm" data-primary="" data-startref="ajax13" id="idm140319403174480"></a><a data-type="indexterm" data-primary="" data-startref="Frestajax13" id="idm140319403173504"></a></p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Delivering Data to the Nobel Prize Visualization"><div class="sect1" id="sect_nobel_restful">
+<h1>Delivering Data to the Nobel Prize Visualization</h1>
+
+<p><a data-type="indexterm" data-primary="Flask" data-secondary="RESTful data with" data-tertiary="Nobel Prize visualization" id="FrestNPV13"></a><a data-type="indexterm" data-primary="Nobel Prize visualization" data-secondary="delivering data to" id="NPVdeliver13"></a>At this point along our toolchain, we have three datasets that will be needed for our visualization:</p>
+<ol>
+<li>
+<p>The <code>winners</code> dataset of basic Nobel Prize winner information, which we cleaned in <a data-type="xref" href="ch09.html#chapter_cleaning">Chapter 9</a>.</p>
+</li>
+<li>
+<p>The <code>winners_bios</code> dataset of winners’ images and mini-biographies, which we scraped in <a data-type="xref" href="ch06.html#scrapy_pipelines">“Scrapy Pipelines”</a>.</p>
+</li>
+<li>
+<p>The country data we downloaded in <a data-type="xref" href="ch05.html#country_data">“Getting Country Data for the Nobel Dataviz”</a>, with useful national statistics.</p>
+</li>
+
+</ol>
+
+<p>The winners and country datasets are fairly small and will be required to initialize the visualization. It makes sense to download them in their entirety. The <code>winners_bios</code> dataset is considerably larger than the others, containing a few paragraphs of body text for each winner. As the biographies will only be used one at a time, it is better that they be downloaded as required, driven by user interaction. As datasets become nontrivial, downloading the whole set and caching in JavaScript becomes impractical. It’s likely the user will only be interested in a tiny fraction of the data available and it’s better to supply that on demand with AJAX than risk a lengthy <span class="keep-together">start-up</span>.</p>
+
+<p>We’ll use MongoDB and Eve to deliver the winners’ data for our Nobel Prize visualization. While we could keep the <code>winners</code> and <code>winners_bios</code> datasets separate (in an SQL database such tabular decomposition into, say, users and biographies is usual), in a document-based database it seems more natural to store all the data on an individual in one document. This also simplifies our API to one exposed domain/table. Given this, we’ll be using the merged dataset <code>winners_all</code> we created in <a data-type="xref" href="ch09.html#saving_datasets">“Saving the Cleaned Dataset”</a>, which contains all the Nobel Prize data we scraped (with the filepaths for our Nobel photos).</p>
+
+<p>First we adapt Eve’s <em>settings.py</em> file with our new DOMAIN and the <code>X_DOMAINS</code> variable set to allow all CORS requests (for all domains, during development). We’ll also set the <code>HATEOAS</code> variable to <code>False</code> as we won’t be using those links, and turn off pagination so we can get the set of Nobel Prize winners on our first initializing request:</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="c1"># api/settings.py</code><code>
+</code><code class="n">URL_PREFIX</code><code> </code><code class="o">=</code><code> </code><code class="s1">'</code><code class="s1">api</code><code class="s1">'</code><code>
+</code><code class="n">DOMAIN</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="s1">'</code><code class="s1">winners_full</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code>
+</code><code>    </code><code class="s1">'</code><code class="s1">item_title</code><code class="s1">'</code><code class="p">:</code><code> </code><code class="s1">'</code><code class="s1">winners</code><code class="s1">'</code><code class="p">,</code><code>
+</code><code>    </code><code class="s1">'</code><code class="s1">schema</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">country</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">category</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">name</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">year</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code> </code><code class="s1">'</code><code class="s1">integer</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">gender</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">mini_bio</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code class="p">,</code><code> </code><a class="co" id="co_restful_data_with_flask_CO5-1" href="#callout_restful_data_with_flask_CO5-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>        </code><code class="s1">'</code><code class="s1">bio_image</code><code class="s1">'</code><code class="p">:</code><code class="p">{</code><code class="s1">'</code><code class="s1">type</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">string</code><code class="s1">'</code><code class="p">}</code><code>
+</code><code>        </code><code class="p">}</code><code class="p">,</code><code>
+</code><code>    </code><code class="s1">'</code><code class="s1">url</code><code class="s1">'</code><code class="p">:</code><code class="s1">'</code><code class="s1">winners</code><code class="s1">'</code><code> </code><a class="co" id="co_restful_data_with_flask_CO5-2" href="#callout_restful_data_with_flask_CO5-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code class="p">}</code><code class="p">}</code><code>
+</code><code class="o">.</code><code class="o">.</code><code class="o">.</code><code>
+</code><code class="n">X_DOMAINS</code><code> </code><code class="o">=</code><code> </code><code class="s1">'</code><code class="s1">*</code><code class="s1">'</code><code>
+</code><code class="n">HATEOAS</code><code> </code><code class="o">=</code><code> </code><code class="bp">False</code><code>
+</code><code class="n">PAGINATION</code><code> </code><code class="o">=</code><code> </code><code class="bp">False</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_restful_data_with_flask_CO5-1" href="#co_restful_data_with_flask_CO5-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Adds fields for our biographical data.</p></dd>
+<dt><a class="co" id="callout_restful_data_with_flask_CO5-2" href="#co_restful_data_with_flask_CO5-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>The <code>url</code> key allows us to change from the <code>winners_full</code> default for the domain to the preferable <code>winners</code> (i.e., <em>/api/winners?\where…</em>).</p></dd>
+</dl>
+
+<p>We’ll use the same server setup we saw in <a data-type="xref" href="#sect_ajax_api">“Using AJAX to Access the API”</a> to test our API, using the <code>displayJSON</code> method from <a data-type="xref" href="#delivery_ajax">Example 13-1</a> to send a URL and some query data to an AJAX GET request. If the request is successful, we’ll see the results on the web page.</p>
+
+<p>Within the visualization, we’ll be making two types of requests for data:</p>
+<ol>
+<li>
+<p>Get the basic data for all  the Nobel Prize winners without including the large <code>mini_bio</code> field.</p>
+</li>
+<li>
+<p>Get all the data for a single individual.</p>
+</li>
+
+</ol>
+
+<p>In order to make request 1, we need to tell our API to withhold the <code>mini_bio</code> field. We can achieve this by using a cool feature of Eve, <a href="http://python-eve.org/features.html#projections">projections</a>. Projections allow us to selectively turn fields on (to the exclusion of all others) or off (sending everything else).<sup><a data-type="noteref" id="idm140319402855152-marker" href="ch13.html#idm140319402855152">3</a></sup> So to get all the winners data without the mini-bios, we just add a <code>projection</code> argument to our API request. In the following code, we use the <code>displayJSON</code> method from <a data-type="xref" href="#delivery_ajax">Example 13-1</a> to display the request string and JSON response data in the browser window:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="kd">var</code><code> </code><code class="nx">query</code><code> </code><code class="o">=</code><code> </code><code class="s1">'/winners?projection='</code><code> </code><code class="o">+</code><code> </code><code class="nx">JSON</code><code class="p">.</code><code class="nx">stringify</code><code class="p">(</code><code class="p">{</code><code> </code><a class="co" id="co_restful_data_with_flask_CO6-1" href="#callout_restful_data_with_flask_CO6-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+    </code><code class="s2">"mini_bio"</code><code class="o">:</code><code class="mi">0</code><code>
+</code><code class="p">}</code><code class="p">)</code><code class="p">;</code><code>
+
+</code><code class="nx">displayJSON</code><code class="p">(</code><code class="nx">query</code><code class="p">)</code><code class="p">;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_restful_data_with_flask_CO6-1" href="#co_restful_data_with_flask_CO6-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The <code>projection</code> argument is an exclusive dictionary that removes the <code>mini_bio</code> field from the Nobel Prize winner items returned on a request to the <code>winners</code> resource of our API.</p></dd>
+</dl>
+
+<p>This should produce <a data-type="xref" href="#delivery_nviz_full">Figure 13-4</a>, showing that the items are missing the <code>mini_bio</code> field.</p>
+
+<figure><div id="delivery_nviz_full" class="figure">
+<img src="dvpj_1304.png" alt="dvpj 1304" width="802" height="512">
+<h6><span class="label">Figure 13-4. </span>Requesting all the winners, without the biographical text</h6>
+</div></figure>
+
+<p>As part of the visualization, we want the user to be able to select one of the filtered winners from a list and then display any available photograph and biographical text we scraped from Wikipedia. With the dataset we’re using, the size of the biographical text is much greater than the other fields combined, so we don’t really need to use a projection to select it exclusively. But as a demonstration, let’s select a certain famous Nobel Prize winner based on his name and include the biographical data we scraped in <a data-type="xref" href="ch06.html#scraping_bio">“Scraping Text and Images with a Pipeline”</a>:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="p">...</code>
+
+<code class="kd">var</code> <code class="nx">query</code> <code class="o">=</code> <code class="s1">'/winners?where='</code> <code class="o">+</code> <code class="nx">JSON</code><code class="p">.</code><code class="nx">stringify</code><code class="p">({</code>
+     <code class="s2">"name"</code><code class="o">:</code><code class="s2">"Albert Einstein"</code><code class="p">});</code>
+
+<code class="nx">displayJSON</code><code class="p">(</code><code class="nx">query</code><code class="p">);</code></pre>
+
+<p>Although for demonstration we queried for Albert Einstein by name on the <code>winners</code> collection, the items in <a data-type="xref" href="#delivery_nviz_full">Figure 13-4</a> provide their MongoDB ids with an <code>_id</code> field. We can use this id to request an individual winner resource directly, providing a cleaner data response:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="c1">// on selection of Albert Einstein (albert_item):</code>
+
+<code class="c1">// http://localhost:5000/api/winners/5693be6c26a7113f2cc0b601</code>
+<code class="kd">var</code> <code class="nx">query</code> <code class="o">=</code> <code class="s1">'/winners/'</code> <code class="o">+</code> <code class="nx">albert_item</code><code class="p">.</code><code class="nx">_id</code><code class="p">;</code>
+
+<code class="nx">displayJSON</code><code class="p">(</code><code class="nx">query</code><code class="p">);</code></pre>
+
+<p>This produces a nice, clean data object shown in <a data-type="xref" href="#delivery_nviz_albert">Figure 13-5</a>, with which to build a little biographical window.</p>
+
+<figure><div id="delivery_nviz_albert" class="figure">
+<img src="dvpj_1305.png" alt="dvpj 1305" width="734" height="534">
+<h6><span class="label">Figure 13-5. </span>Requesting the biographical data for a single Nobel Prize winner</h6>
+</div></figure>
+
+<p>We now have the RESTful API needed for the Nobel Prize visualization and the queries required to get the data we need. In the coming chapters, we’ll see how that data is turned into a modern, interactive web visualization.</p>
+
+<p><a data-type="indexterm" data-primary="eve-sqlalchemy extension" id="idm140319403127824"></a>Eve comes with MongoDB support out of the box and, in terms of documentation, community support, and so on, is currently a NoSQL specialist. It was envisaged that Eve would provide support for SQL databases, and there is a recent <a href="https://github.com/RedTurtle/eve-sqlalchemy">eve-sqlalchemy</a> extension that does just this. It is currently at version 0.1 and has a small (but growing) GitHub following. For now, if you need to use an SQL database, I’d recommend using a library dedicated to the job. <a href="https://flask-restless.readthedocs.org/en/latest/">Flask-Restless</a> is a good choice and is particularly easy to get up and running. Let’s now see how it works.<a data-type="indexterm" data-primary="" data-startref="FrestNPV13" id="idm140319403125088"></a><a data-type="indexterm" data-primary="" data-startref="NPVdeliver13" id="idm140319403124112"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="RESTful SQL with Flask-Restless"><div class="sect1" id="sect_restless">
+<h1>RESTful SQL with Flask-Restless</h1>
+
+<p><a data-type="indexterm" data-primary="Flask" data-secondary="RESTful data with" data-tertiary="SQL plugins" id="Frestsql13"></a>There are a number of SQL-capable Flask RESTful plugins, including the powerful and well-specced Flask RESTful,<sup><a data-type="noteref" id="idm140319402756368-marker" href="ch13.html#idm140319402756368">4</a></sup> but Flask-Restless is quite a bit easier to get up and running and for most data visualization work (primarily about consuming data) does the job nicely.</p>
+
+<p>Flask-Restless is not part of the Anaconda Python package so will need a <code>pip</code> install:</p>
+
+<pre data-type="programlisting">$ pip install flask-restless</pre>
+
+<p>For this section, you will also need the Flask-SQLAlchemy plugin, once again installed with <code>pip</code>:</p>
+
+<pre data-type="programlisting">$ pip install flask-sqlalchemy</pre>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Creating the API"><div class="sect2" id="idm140319402752112">
+<h2>Creating the API</h2>
+
+<p>With our modules installed, let’s create an API based on our stored SQLite <em>nobel_prize.db</em> database (see <a data-type="xref" href="ch09.html#saving_datasets">“Saving the Cleaned Dataset”</a>). The <code>winners</code> table contains the scraped and cleaned winners data so we’ll expose that, using an SQLAlchemy schema to specify the data we require.</p>
+
+<p><a data-type="xref" href="#delivery_restless">Example 13-2</a> shows the code required to turn our <em>winners</em> table into a RESTful resource.</p>
+<div id="delivery_restless" data-type="example">
+<h5><span class="label">Example 13-2. </span>Nobel Prize winners Flask-Restless API</h5>
+
+<pre data-type="programlisting" data-code-language="python"><code class="c1"># server_flask_restless.py</code><code>
+</code><code class="kn">import</code><code> </code><code class="nn">flask</code><code>
+</code><code class="kn">import</code><code> </code><code class="nn">flask.ext.sqlalchemy</code><code>
+</code><code class="kn">import</code><code> </code><code class="nn">flask.ext.restless</code><code>
+</code><code>
+</code><code>
+</code><code class="c1"># Create the Flask application and the Flask-SQLAlchemy object.</code><code>
+</code><code class="n">app</code><code> </code><code class="o">=</code><code> </code><code class="n">flask</code><code class="o">.</code><code class="n">Flask</code><code class="p">(</code><code class="nv-Magic">__name__</code><code class="p">)</code><code>
+</code><code class="n">app</code><code class="o">.</code><code class="n">config</code><code class="p">[</code><code class="s1">'</code><code class="s1">DEBUG</code><code class="s1">'</code><code class="p">]</code><code> </code><code class="o">=</code><code> </code><code class="bp">True</code><code>
+</code><code class="n">app</code><code class="o">.</code><code class="n">config</code><code class="p">[</code><code class="s1">'</code><code class="s1">SQLALCHEMY_DATABASE_URI</code><code class="s1">'</code><code class="p">]</code><code> </code><code class="o">=</code><code> </code><code>\
+</code><code class="s1">'</code><code class="s1">sqlite:///data/nobel_prize.db</code><code class="s1">'</code><code>
+</code><code>
+</code><code class="n">db</code><code> </code><code class="o">=</code><code> </code><code class="n">flask</code><code class="o">.</code><code class="n">ext</code><code class="o">.</code><code class="n">sqlalchemy</code><code class="o">.</code><code class="n">SQLAlchemy</code><code class="p">(</code><code class="n">app</code><code class="p">)</code><code>
+</code><code>
+</code><code class="c1"># Create your Flask-SQLALchemy models as usual but with the</code><code>
+</code><code class="c1"># following two (reasonable) restrictions:</code><code>
+</code><code class="c1">#   1. They must have a primary key column of type</code><code>
+</code><code class="c1">#      sqlalchemy.Integer or type sqlalchemy.Unicode.</code><code>
+</code><code class="c1">#   2. They must have an __init__ method which accepts keyword</code><code>
+</code><code class="c1">#      arguments for all columns (the constructor in</code><code>
+</code><code class="c1">#      flask.ext.sqlalchemy.SQLAlchemy.Model supplies such a</code><code>
+</code><code class="c1">#      method, so you don't need to declare a new one).</code><code>
+</code><code class="k">class</code><code> </code><code class="nc">Winners</code><code class="p">(</code><code class="n">db</code><code class="o">.</code><code class="n">Model</code><code class="p">)</code><code class="p">:</code><code>
+</code><code>    </code><code class="n">__tablename__</code><code> </code><code class="o">=</code><code> </code><code class="s1">'</code><code class="s1">winners</code><code class="s1">'</code><code> </code><code class="c1"># optional, default being class-name</code><code>
+</code><code>    </code><code class="n">index</code><code> </code><code class="o">=</code><code> </code><code class="n">db</code><code class="o">.</code><code class="n">Column</code><code class="p">(</code><code class="n">db</code><code class="o">.</code><code class="n">Integer</code><code class="p">,</code><code> </code><code class="n">primary_key</code><code class="o">=</code><code class="bp">True</code><code class="p">)</code><code> </code><a class="co" id="co_restful_data_with_flask_CO7-1" href="#callout_restful_data_with_flask_CO7-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>    </code><code class="n">name</code><code> </code><code class="o">=</code><code> </code><code class="n">db</code><code class="o">.</code><code class="n">Column</code><code class="p">(</code><code class="n">db</code><code class="o">.</code><code class="n">Unicode</code><code class="p">,</code><code> </code><code class="n">unique</code><code class="o">=</code><code class="bp">True</code><code class="p">)</code><code>
+</code><code>    </code><code class="n">category</code><code> </code><code class="o">=</code><code> </code><code class="n">db</code><code class="o">.</code><code class="n">Column</code><code class="p">(</code><code class="n">db</code><code class="o">.</code><code class="n">Unicode</code><code class="p">)</code><code>
+</code><code>    </code><code class="n">year</code><code> </code><code class="o">=</code><code> </code><code class="n">db</code><code class="o">.</code><code class="n">Column</code><code class="p">(</code><code class="n">db</code><code class="o">.</code><code class="n">Unicode</code><code class="p">)</code><code>
+</code><code>    </code><code class="n">country</code><code> </code><code class="o">=</code><code> </code><code class="n">db</code><code class="o">.</code><code class="n">Column</code><code class="p">(</code><code class="n">db</code><code class="o">.</code><code class="n">Unicode</code><code class="p">)</code><code>
+</code><code>    </code><code class="n">gender</code><code> </code><code class="o">=</code><code> </code><code class="n">db</code><code class="o">.</code><code class="n">Column</code><code class="p">(</code><code class="n">db</code><code class="o">.</code><code class="n">Unicode</code><code class="p">)</code><code>
+</code><code>
+</code><code>
+</code><code class="c1"># Create the database tables.</code><code>
+</code><code class="n">db</code><code class="o">.</code><code class="n">create_all</code><code class="p">(</code><code class="p">)</code><code>
+</code><code>
+</code><code class="c1"># Create the Flask-Restless API manager.</code><code>
+</code><code class="n">manager</code><code> </code><code class="o">=</code><code> </code><code class="n">flask</code><code class="o">.</code><code class="n">ext</code><code class="o">.</code><code class="n">restless</code><code class="o">.</code><code class="n">APIManager</code><code class="p">(</code><code class="n">app</code><code class="p">,</code><code> </code><code class="n">flask_sqlalchemy_db</code><code class="o">=</code><code class="n">db</code><code class="p">)</code><code>
+</code><code>
+</code><code class="c1"># Create API endpoints, which will be available at</code><code>
+</code><code class="c1"># /api/&lt;tablename&gt; by default.</code><code>
+</code><code class="c1"># Allowed HTTP methods can be specified as well.</code><code>
+</code><code class="n">manager</code><code class="o">.</code><code class="n">create_api</code><code class="p">(</code><code class="n">Winners</code><code class="p">,</code><code>
+</code><code>                   </code><code class="n">methods</code><code class="o">=</code><code class="p">[</code><code class="s1">'</code><code class="s1">GET</code><code class="s1">'</code><code class="p">]</code><code class="p">,</code><code> </code><code class="c1"># optional POST, DELETE etc..</code><code>
+</code><code>                   </code><code class="n">max_results_per_page</code><code class="o">=</code><code class="mi">1000</code><code class="p">)</code><code>
+</code><code>
+</code><code class="c1"># start the flask loop</code><code>
+</code><code class="n">app</code><code class="o">.</code><code class="n">run</code><code class="p">(</code><code class="p">)</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_restful_data_with_flask_CO7-1" href="#co_restful_data_with_flask_CO7-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The index of our saved Pandas <code>DataFrame</code> (see <a data-type="xref" href="ch09.html#saving_datasets">“Saving the Cleaned Dataset”</a>).</p></dd>
+</dl></div>
+
+<p>Flask-Restless is doing some introspective magic behind the scenes, simplifying the boilerplate. Note that by default the name of our <code>db.Model</code> (Winners) is the capitalized name of the table we’re exposing, which we can set explicitly by declaring the class <code>__tablename__</code> variable. The Flask <code>app</code> is first used to create an SQLAlchemy database <code>db</code>, which in turn creates the <code>Winners</code> model. The database and app are then used to configure a Flask-Restless <code>APIManager</code>. Finally, the <code>create_api</code> method is used to make a resource point for the <code>winners</code> table. We restrict HTTP methods to GET and increase the maximum results per page to 1,000.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Adding CORS Support"><div class="sect2" id="idm140319402404112">
+<h2>Adding CORS Support</h2>
+
+<p><a data-type="indexterm" data-primary="cross-origin resource sharing (CORS)" id="idm140319402402912"></a>While CORS is best handled in production servers by the likes of <a href="http://bit.ly/1Ue2eWa">Apache</a> or <a href="http://bit.ly/23gK63y">Nginx</a>, in order to test standalone API, it’s useful to be able to regulate access during development. Flask has a <a href="http://bit.ly/23gJH1d">handy <span class="keep-together">plugin</span></a> for just this need, which works well with Flask-Restless. A <code>pip</code> install will make it available:</p>
+
+<pre data-type="programlisting">$ pip install flask-cors</pre>
+
+<p>We can then add a few lines to our RESTful server (see <a data-type="xref" href="#delivery_restless">Example 13-2</a>) to add CORS support.</p>
+
+<pre data-type="programlisting" data-code-language="python"><code class="o">.</code><code class="o">.</code><code class="o">.</code><code>
+</code><code class="kn">from</code><code> </code><code class="nn">flask.ext.cors</code><code> </code><code class="kn">import</code><code> </code><code class="n">CORS</code><code>
+</code><code>
+</code><code class="n">app</code><code> </code><code class="o">=</code><code> </code><code class="n">flask</code><code class="o">.</code><code class="n">Flask</code><code class="p">(</code><code class="nv-Magic">__name__</code><code class="p">)</code><code>
+</code><code class="o">.</code><code class="o">.</code><code class="o">.</code><code>
+</code><code class="n">app</code><code class="o">.</code><code class="n">config</code><code class="p">[</code><code class="s1">'</code><code class="s1">CORS_ALLOW_HEADERS</code><code class="s1">'</code><code class="p">]</code><code> </code><code class="o">=</code><code> </code><code class="s2">"</code><code class="s2">Content-Type</code><code class="s2">"</code><code>
+</code><code class="n">app</code><code class="o">.</code><code class="n">config</code><code class="p">[</code><code class="s1">'</code><code class="s1">CORS_RESOURCES</code><code class="s1">'</code><code class="p">]</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="s-Affix">r</code><code class="s2">"</code><code class="s2">/api/*</code><code class="s2">"</code><code class="p">:</code><code> </code><code class="p">{</code><code class="s2">"</code><code class="s2">origins</code><code class="s2">"</code><code class="p">:</code><code> </code><code class="s2">"</code><code class="s2">*</code><code class="s2">"</code><code class="p">}</code><code class="p">}</code><code> </code><a class="co" id="co_restful_data_with_flask_CO8-1" href="#callout_restful_data_with_flask_CO8-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>
+</code><code class="o">.</code><code class="o">.</code><code class="o">.</code><code>
+</code><code class="n">cors</code><code> </code><code class="o">=</code><code> </code><code class="n">CORS</code><code class="p">(</code><code class="n">app</code><code class="p">)</code><code>
+</code><code class="o">.</code><code class="o">.</code><code class="o">.</code><code>
+</code><code>
+</code><code class="n">app</code><code class="o">.</code><code class="n">run</code><code class="p">(</code><code class="p">)</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_restful_data_with_flask_CO8-1" href="#co_restful_data_with_flask_CO8-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>For development, we’ll expose the URL route <code>/api/</code> to requests from any origin.</p></dd>
+</dl>
+
+<p>With our API established and CORS support in place, let’s start the RESTful server running:</p>
+
+<pre data-type="programlisting">$ python server_flask_restless.py
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)</pre>
+
+<p>With our server up and running, let’s start requesting some data.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Querying the API"><div class="sect2" id="query_restless">
+<h2>Querying the API</h2>
+
+<p>The Flask-Restless API provides a wide range of <a href="http://bit.ly/1UEwBEM">query operators</a>, allowing you full control over the data you want returned. The Flask-Restless query engine is pretty fine-grained, essentially emulating the standard SQL operation set. The operator strings recognized by the API include:</p>
+
+<ul>
+<li>
+<p><code>==</code>, <code>eq</code>, <code>equals</code>, <code>equals_to</code></p>
+</li>
+<li>
+<p><code>!=</code>, <code>neq</code>, <code>does_not_equal</code>, <code>not_equal_to</code></p>
+</li>
+<li>
+<p><code>&gt;</code>, <code>gt</code>, <code>&lt;</code>, <code>lt</code></p>
+</li>
+<li>
+<p><code>&gt;=</code>, <code>ge</code>, <code>gte</code>, <code>geq</code>, <code>\&lt;=</code>, <code>le</code>, <code>lte</code>, <code>leq</code></p>
+</li>
+<li>
+<p><code>in</code>, <code>not_in</code></p>
+</li>
+<li>
+<p><code>is_null</code>, <code>is_not_null</code></p>
+</li>
+<li>
+<p><code>like</code>, <code>has</code>, <code>any</code></p>
+</li>
+</ul>
+
+<p>These correspond to the <a href="http://bit.ly/1UEz7uA">SQLAlchemy column operators</a>.</p>
+
+<p>Let’s use the <code>displayJSON</code> method from <a data-type="xref" href="#delivery_ajax">Example 13-1</a> to request some JSON data from our API using a query string. We’ll use a couple of filters to specify all female winners since the year 2000 and order them by ascending year. These filters take a column name, SQL operation (e.g., <code>not_in</code>), and value. The following code should produce the browser output shown in <a data-type="xref" href="#delivery_restless_oz">Figure 13-6</a> if you navigate to <code>http://localhost:8080</code>:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="c1">// ...</code>
+<code class="kd">var</code> <code class="nx">filters</code> <code class="o">=</code> <code class="p">[</code> <code class="p">{</code><code class="s2">"name"</code><code class="o">:</code><code class="s2">"year"</code><code class="p">,</code> <code class="s2">"op"</code><code class="o">:</code><code class="s2">"gte"</code><code class="p">,</code> <code class="s2">"val"</code><code class="o">:</code><code class="mi">2000</code><code class="p">},</code>
+                <code class="p">{</code><code class="s2">"name"</code><code class="o">:</code><code class="s2">"gender"</code><code class="p">,</code> <code class="s2">"op"</code><code class="o">:</code><code class="s2">"=="</code><code class="p">,</code> <code class="s2">"val"</code><code class="o">:</code><code class="s2">"female"</code><code class="p">}</code> <code class="p">];</code>
+
+<code class="kd">var</code> <code class="nx">order_by</code> <code class="o">=</code> <code class="p">[</code> <code class="p">{</code><code class="s2">"field"</code><code class="o">:</code><code class="s2">"year"</code><code class="p">,</code> <code class="s2">"direction"</code><code class="o">:</code><code class="s2">"asc"</code><code class="p">}</code> <code class="p">];</code>
+
+<code class="kd">var</code> <code class="nx">query</code> <code class="o">=</code> <code class="s1">'/winners?'</code> <code class="o">+</code>
+    <code class="s1">'q='</code> <code class="o">+</code> <code class="nx">JSON</code><code class="p">.</code><code class="nx">stringify</code><code class="p">({</code><code class="s1">'filters'</code><code class="o">:</code><code class="nx">filters</code><code class="p">,</code>
+                           <code class="s1">'order_by'</code><code class="o">:</code> <code class="nx">order_by</code>
+                          <code class="p">});</code>
+
+<code class="nx">displayJSON</code><code class="p">(</code><code class="nx">query</code><code class="p">);</code></pre>
+
+<p>As you can see from <a data-type="xref" href="#delivery_restless_oz">Figure 13-6</a>, by default the output of Flask-Restless is a good deal less sophisticated than that of Eve. The metadata and <a href="https://en.wikipedia.org/wiki/HATEOAS">HATEOS</a> links are missing and only the item data specified in the SQLAlchemy model is included. This would be a drawback for certain applications, but most visualization work only really needs these object fields.</p>
+
+<figure><div id="delivery_restless_oz" class="figure">
+<img src="dvpj_1306.png" alt="dvpj 1306" width="833" height="463">
+<h6><span class="label">Figure 13-6. </span>Querying the Nobel Prize winners API</h6>
+</div></figure>
+
+<p>Flask-Restless gives you all the fine-grained queries you’re likely to need and, in conjunction with SQLite, is a very lightweight solution to a data API.<a data-type="indexterm" data-primary="" data-startref="Frestsql13" id="idm140319402504544"></a></p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Summary"><div class="sect1" id="idm140319403123040">
+<h1>Summary</h1>
+
+<p>This chapter showed how Python and Flask can combine with ease to deliver your data to the web browser with a flexible, RESTful API. This ability really opens up the possibilities of web dataviz. Although you can do some amazing things with your data delivered in static files, being able to negotiate fine-grained access to a server-side database extends the realm of web dataviz enormously. Depending on the bandwidth available, for datasets beyond a few hundred kilobytes, caching all the data on initialization is likely to make for a slow, frustrating user experience.</p>
+
+<p>We also saw how we’ll use Flask Eve to deliver the winners’ data our visualization will need, using projections to dictate which data fields are needed. In the next chapter we’ll see how that data is used to initialize our Nobel Prize visualization.</p>
+</div></section>
+
+
+
+
+
+
+
+<div data-type="footnotes"><p data-type="footnote" id="idm140319404296528"><sup><a href="ch13.html#idm140319404296528-marker">1</a></sup> That still leaves a lot of visualizations, such as dashboards, where user-driven changes to data via HTTP POST, PUT, and DELETE are very much required.</p><p data-type="footnote" id="idm140319403752768"><sup><a href="ch13.html#idm140319403752768-marker">2</a></sup> When using MongoDB’s  mathematical operators such as <code>$gt</code> (greater than), it’s important to specify the right field type (integer in the case of years) for your schema declaration in <em>settings.py</em>.</p><p data-type="footnote" id="idm140319402855152"><sup><a href="ch13.html#idm140319402855152-marker">3</a></sup> Note that one limitation of MongoDB is that you can’t mix inclusive and exclusive <span class="keep-together">projections</span>.</p><p data-type="footnote" id="idm140319402756368"><sup><a href="ch13.html#idm140319402756368-marker">4</a></sup> Flask RESTful wins the GitHub stars award by a comfortable margin and is a very good library.</p></div></div></section></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch12.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">12. Delivering the Data</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/part05.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">V. Visualizing Your Data with D3</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+
+          
+            <p>You have 7 days left in your trial, Flankpeter. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/">Settings</a></li>
+      <li class="full-support"><a href="https://www.safaribooksonline.com/public/support">Support</a></li>
+      <li><a href="https://www.safaribooksonline.com/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+
+
+
+    
+
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

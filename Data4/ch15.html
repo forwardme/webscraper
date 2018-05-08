@@ -1,0 +1,1489 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage"" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/data-visualization-with/9781491920565/ch15.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="2870136"
+  data-user-uuid="fee1bd59-4e02-48a4-a7b4-152ec4c157ac"
+  data-username="flankpeter"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/04/2018"
+
+
+  data-archive="9781491920565"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch15.html"
+  data-epub-title="Data Visualization with Python and JavaScript" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage"" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/data-visualization-with/9781491920565/ch15.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="2870136"
+  data-user-uuid="fee1bd59-4e02-48a4-a7b4-152ec4c157ac"
+  data-username="flankpeter"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/04/2018"
+
+
+  data-archive="9781491920565"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch15.html"
+  data-epub-title="Data Visualization with Python and JavaScript" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781491920565"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>15. Building a Visualization - Data Visualization with Python and JavaScript</title><link rel="stylesheet" href="/static/CACHE/css/a04cd81b09cd.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.ef38b0457d7b.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    @charset "utf-8";#sbo-rt-content html,#sbo-rt-content div,#sbo-rt-content div,#sbo-rt-content span,#sbo-rt-content applet,#sbo-rt-content object,#sbo-rt-content iframe,#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5,#sbo-rt-content h6,#sbo-rt-content p,#sbo-rt-content blockquote,#sbo-rt-content pre,#sbo-rt-content a,#sbo-rt-content abbr,#sbo-rt-content acronym,#sbo-rt-content address,#sbo-rt-content big,#sbo-rt-content cite,#sbo-rt-content code,#sbo-rt-content del,#sbo-rt-content dfn,#sbo-rt-content em,#sbo-rt-content img,#sbo-rt-content ins,#sbo-rt-content kbd,#sbo-rt-content q,#sbo-rt-content s,#sbo-rt-content samp,#sbo-rt-content small,#sbo-rt-content strike,#sbo-rt-content strong,#sbo-rt-content sub,#sbo-rt-content sup,#sbo-rt-content tt,#sbo-rt-content var,#sbo-rt-content b,#sbo-rt-content u,#sbo-rt-content i,#sbo-rt-content center,#sbo-rt-content dl,#sbo-rt-content dt,#sbo-rt-content dd,#sbo-rt-content ol,#sbo-rt-content ul,#sbo-rt-content li,#sbo-rt-content fieldset,#sbo-rt-content form,#sbo-rt-content label,#sbo-rt-content legend,#sbo-rt-content table,#sbo-rt-content caption,#sbo-rt-content tdiv,#sbo-rt-content tfoot,#sbo-rt-content thead,#sbo-rt-content tr,#sbo-rt-content th,#sbo-rt-content td,#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content canvas,#sbo-rt-content details,#sbo-rt-content embed,#sbo-rt-content figure,#sbo-rt-content figcaption,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content output,#sbo-rt-content ruby,#sbo-rt-content section,#sbo-rt-content summary,#sbo-rt-content time,#sbo-rt-content mark,#sbo-rt-content audio,#sbo-rt-content video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content details,#sbo-rt-content figcaption,#sbo-rt-content figure,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content section{display:block}#sbo-rt-content div{line-height:1}#sbo-rt-content ol,#sbo-rt-content ul{list-style:none}#sbo-rt-content blockquote,#sbo-rt-content q{quotes:none}#sbo-rt-content blockquote:before,#sbo-rt-content blockquote:after,#sbo-rt-content q:before,#sbo-rt-content q:after{content:none}#sbo-rt-content table{border-collapse:collapse;border-spacing:0}@page{margin:5px !important}#sbo-rt-content p{margin:10px 0 0;line-height:125%;text-align:left}#sbo-rt-content p.byline{text-align:left;margin:-33px auto 35px;font-style:italic;font-weight:bold}#sbo-rt-content div.preface p+p.byline{margin:1em 0 0}#sbo-rt-content div.preface p.byline+p.byline{margin:0}#sbo-rt-content div.sect1>p.byline{margin:-.25em 0 1em}#sbo-rt-content div.sect1>p.byline+p.byline{margin-top:-1em}#sbo-rt-content em{font-style:italic;font-family:inherit}#sbo-rt-content em strong,#sbo-rt-content strong em{font-weight:bold;font-style:italic;font-family:inherit}#sbo-rt-content strong,#sbo-rt-content span.bold{font-weight:bold}#sbo-rt-content em.replaceable{font-style:italic}#sbo-rt-content strong.userinput{font-weight:bold;font-style:normal}#sbo-rt-content span.bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content a.ulink,#sbo-rt-content a.xref,#sbo-rt-content a.email,#sbo-rt-content a.link,#sbo-rt-content a{text-decoration:none;color:#8e0012}#sbo-rt-content span.lineannotation{font-style:italic;color:#a62a2a;font-family:serif}#sbo-rt-content span.underline{text-decoration:underline}#sbo-rt-content span.strikethrough{text-decoration:line-through}#sbo-rt-content span.smallcaps{font-variant:small-caps}#sbo-rt-content span.cursor{background:#000;color:#fff}#sbo-rt-content span.smaller{font-size:75%}#sbo-rt-content .boxedtext,#sbo-rt-content .keycap{border-style:solid;border-width:1px;border-color:#000;padding:1px}#sbo-rt-content span.gray50{color:#7F7F7F;}#sbo-rt-content h1,#sbo-rt-content div.toc-title,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5{-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;font-weight:bold;text-align:left;page-break-after:avoid !important;font-family:sans-serif,"DejaVuSans"}#sbo-rt-content div.toc-title{font-size:1.5em;margin-top:20px !important;margin-bottom:30px !important}#sbo-rt-content section[data-type="sect1"] h1{font-size:1.3em;color:#8e0012;margin:40px 0 8px 0}#sbo-rt-content section[data-type="sect2"] h2{font-size:1.1em;margin:30px 0 8px 0 !important}#sbo-rt-content section[data-type="sect3"] h3{font-size:1em;color:#555;margin:20px 0 8px 0 !important}#sbo-rt-content section[data-type="sect4"] h4{font-size:1em;font-weight:normal;font-style:italic;margin:15px 0 6px 0 !important}#sbo-rt-content section[data-type="chapter"]>div>h1,#sbo-rt-content section[data-type="preface"]>div>h1,#sbo-rt-content section[data-type="appendix"]>div>h1,#sbo-rt-content section[data-type="glossary"]>div>h1,#sbo-rt-content section[data-type="bibliography"]>div>h1,#sbo-rt-content section[data-type="index"]>div>h1{font-size:2em;line-height:1;margin-bottom:50px;color:#000;padding-bottom:10px;border-bottom:1px solid #000}#sbo-rt-content span.label,#sbo-rt-content span.keep-together{font-size:inherit;font-weight:inherit}#sbo-rt-content div[data-type="part"] h1{font-size:2em;text-align:center;margin-top:0 !important;margin-bottom:50px;padding:50px 0 10px 0;border-bottom:1px solid #000}#sbo-rt-content img.width-ninety{width:90%}#sbo-rt-content img{max-width:95%;margin:0 auto;padding:0}#sbo-rt-content div.figure{background-color:transparent;text-align:center !important;margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content figure{margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content div.figure h6{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding-top:10px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.informalfigure{text-align:center !important;padding:5px 0 !important}#sbo-rt-content div.sidebar{margin:15px 0 10px 0 !important;border:1px solid #DCDCDC;background-color:#F7F7F7;padding:15px !important;page-break-inside:avoid}#sbo-rt-content aside[data-type="sidebar"]{margin:15px 0 10px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar-title,#sbo-rt-content aside[data-type="sidebar"] h5{font-weight:bold;font-size:1em;font-family:sans-serif;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar ol,#sbo-rt-content div.sidebar ul,#sbo-rt-content aside[data-type="sidebar"] ol,#sbo-rt-content aside[data-type="sidebar"] ul{margin-left:1.25em !important}#sbo-rt-content div.sidebar div.figure p.title,#sbo-rt-content aside[data-type="sidebar"] figcaption,#sbo-rt-content div.sidebar div.informalfigure div.caption{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding:5px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.sidebar div.tip,#sbo-rt-content div.sidebar div[data-type="tip"],#sbo-rt-content div.sidebar div.note,#sbo-rt-content div.sidebar div[data-type="note"],#sbo-rt-content div.sidebar div.warning,#sbo-rt-content div.sidebar div[data-type="warning"],#sbo-rt-content div.sidebar div[data-type="caution"],#sbo-rt-content div.sidebar div[data-type="important"]{margin:20px auto 20px auto !important;font-size:90%;width:85%}#sbo-rt-content aside[data-type="sidebar"] p.byline{font-size:90%;font-weight:bold;font-style:italic;text-align:center;text-indent:0;margin:5px auto 6px;page-break-after:avoid}#sbo-rt-content pre{white-space:pre-wrap;font-family:"Ubuntu Mono",monospace;margin:25px 0 25px 20px;font-size:85%;display:block;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content div.note pre.programlisting,#sbo-rt-content div.tip pre.programlisting,#sbo-rt-content div.warning pre.programlisting,#sbo-rt-content div.caution pre.programlisting,#sbo-rt-content div.important pre.programlisting{margin-bottom:0}#sbo-rt-content code{font-family:"Ubuntu Mono",monospace;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content code strong em,#sbo-rt-content code em strong,#sbo-rt-content pre em strong,#sbo-rt-content pre strong em,#sbo-rt-content strong code em code,#sbo-rt-content em code strong code,#sbo-rt-content span.bolditalic code{font-weight:bold;font-style:italic;font-family:"Ubuntu Mono BoldItal",monospace}#sbo-rt-content code em,#sbo-rt-content em code,#sbo-rt-content pre em,#sbo-rt-content em.replaceable{font-family:"Ubuntu Mono Ital",monospace;font-style:italic}#sbo-rt-content code strong,#sbo-rt-content strong code,#sbo-rt-content pre strong,#sbo-rt-content strong.userinput{font-family:"Ubuntu Mono Bold",monospace;font-weight:bold}#sbo-rt-content div[data-type="example"]{margin:10px 0 15px 0 !important}#sbo-rt-content div[data-type="example"] h1,#sbo-rt-content div[data-type="example"] h2,#sbo-rt-content div[data-type="example"] h3,#sbo-rt-content div[data-type="example"] h4,#sbo-rt-content div[data-type="example"] h5,#sbo-rt-content div[data-type="example"] h6{font-style:italic;font-weight:normal;text-align:left !important;text-transform:none !important;font-family:serif !important;margin:10px 0 5px 0 !important;border-bottom:1px solid #000}#sbo-rt-content li pre.example{padding:10px 0 !important}#sbo-rt-content div[data-type="example"] pre[data-type="programlisting"],#sbo-rt-content div[data-type="example"] pre[data-type="screen"]{margin:0}#sbo-rt-content section[data-type="titlepage"]>div>h1{font-size:2em;margin:50px 0 10px 0 !important;line-height:1;text-align:center}#sbo-rt-content section[data-type="titlepage"] h2,#sbo-rt-content section[data-type="titlepage"] p.subtitle,#sbo-rt-content section[data-type="titlepage"] p[data-type="subtitle"]{font-size:1.3em;font-weight:normal;text-align:center;margin-top:.5em;color:#555}#sbo-rt-content section[data-type="titlepage"]>div>h2[data-type="author"],#sbo-rt-content section[data-type="titlepage"] p.author{font-size:1.3em;font-family:serif !important;font-weight:bold;margin:50px 0 !important;text-align:center}#sbo-rt-content section[data-type="titlepage"] p.edition{text-align:center;text-transform:uppercase;margin-top:2em}#sbo-rt-content div.book div.titlepage div.publishername{margin-top:60%;margin-bottom:20px;text-align:center;font-size:1.25em}#sbo-rt-content div.book div.titlepage div.locations p{margin:0;text-align:center}#sbo-rt-content div.book div.titlepage div.locations p.cities{font-size:80%;text-align:center;margin-top:5px}#sbo-rt-content section.preface[title="Dedication"]>div.titlepage h2.title{text-align:center;text-transform:uppercase;font-size:1.5em;margin-top:50px;margin-bottom:50px}#sbo-rt-content ul.stafflist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.stafflist li{list-style-type:none;padding:5px 0}#sbo-rt-content ul.printings li{list-style-type:none}#sbo-rt-content section.preface[title="Dedication"] p{font-style:italic;text-align:center}#sbo-rt-content div.colophon h1.title{font-size:1.3em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon h2.subtitle{margin:0 !important;color:#000;font-family:serif !important;font-size:1em;font-weight:normal}#sbo-rt-content div.colophon div.author h3.author{font-size:1.1em;font-family:serif !important;margin:10px 0 0 !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h4,#sbo-rt-content div.colophon div.editor h3.editor{color:#000;font-size:.8em;margin:15px 0 0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h3.editor{font-size:.8em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.publisher{margin-top:10px}#sbo-rt-content div.colophon div.publisher p,#sbo-rt-content div.colophon div.publisher span.publishername{margin:0;font-size:.8em}#sbo-rt-content div.legalnotice p,#sbo-rt-content div.timestamp p{font-size:.8em}#sbo-rt-content div.timestamp p{margin-top:10px}#sbo-rt-content div.colophon[title="About the Author"] h1.title,#sbo-rt-content div.colophon[title="Colophon"] h1.title{font-size:1.5em;margin:0 !important;font-family:sans-serif !important}#sbo-rt-content section.chapter div.titlepage div.author{margin:10px 0 10px 0}#sbo-rt-content section.chapter div.titlepage div.author div.affiliation{font-style:italic}#sbo-rt-content div.attribution{margin:5px 0 0 50px !important}#sbo-rt-content h3.author span.orgname{display:none}#sbo-rt-content div.epigraph{margin:10px 0 10px 20px !important;page-break-inside:avoid;font-size:90%}#sbo-rt-content div.epigraph p{font-style:italic}#sbo-rt-content blockquote,#sbo-rt-content div.blockquote{margin:10px !important;page-break-inside:avoid;font-size:95%}#sbo-rt-content blockquote p,#sbo-rt-content div.blockquote p{font-style:italic;margin:.75em 0 0 !important}#sbo-rt-content blockquote div.attribution,#sbo-rt-content blockquote p[data-type="attribution"]{margin:5px 0 10px 30px !important;text-align:right;width:80%}#sbo-rt-content blockquote div.attribution p,#sbo-rt-content blockquote p[data-type="attribution"]{font-style:normal;margin-top:5px}#sbo-rt-content blockquote div.attribution p:before,#sbo-rt-content blockquote p[data-type="attribution"]:before{font-style:normal;content:"—";-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none}#sbo-rt-content p.right{text-align:right;margin:0}#sbo-rt-content div[data-type="footnotes"]{border-top:1px solid black;margin-top:1.5em}#sbo-rt-content sub,#sbo-rt-content sup{font-size:75%;line-height:0;position:relative}#sbo-rt-content sup{top:-.5em}#sbo-rt-content sub{bottom:-.25em}#sbo-rt-content div.refentry p.refname{font-size:1em;font-family:sans-serif,"DejaVuSans";font-weight:bold;margin-bottom:5px;overflow:auto;width:100%}#sbo-rt-content div.refentry{width:100%;display:block;margin-top:2em}#sbo-rt-content div.refsynopsisdiv{display:block;clear:both}#sbo-rt-content div.refentry header{page-break-inside:avoid !important;display:block;break-inside:avoid !important;padding-top:0;border-bottom:1px solid #000}#sbo-rt-content div.refsect1 h6{font-size:.9em;font-family:sans-serif,"DejaVuSans";font-weight:bold}#sbo-rt-content div.refsect1{margin-top:3em}#sbo-rt-content dt{padding-top:10px !important;padding-bottom:0 !important}#sbo-rt-content dd{margin-left:1.5em !important;margin-bottom:.25em}#sbo-rt-content dd,#sbo-rt-content li{text-align:left}#sbo-rt-content ul{list-style-type:disc}#sbo-rt-content ul ul{list-style-type:square}#sbo-rt-content ul ul ul{list-style-type:circle}#sbo-rt-content ol{list-style-type:decimal}#sbo-rt-content ol ol{list-style-type:lower-alpha}#sbo-rt-content ol ol ol{list-style-type:lower-roman}#sbo-rt-content ol ul{list-style-type:disc}#sbo-rt-content ol ul ol{list-style-type:decimal}#sbo-rt-content ul ol{list-style-type:decimal}#sbo-rt-content ul ol ul{list-style-type:disc}#sbo-rt-content ol,#sbo-rt-content ul{list-style-position:outside;margin:15px 0 15px 1.25em}#sbo-rt-content ol li,#sbo-rt-content ul li{margin:.5em 0 .65em;line-height:125%}#sbo-rt-content div.orderedlistalpha{list-style-type:upper-alpha}#sbo-rt-content table.simplelist,#sbo-rt-content ul.simplelist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.simplelist li{list-style-type:none;padding:5px 0}#sbo-rt-content table.simplelist td{border:none}#sbo-rt-content table.simplelist tr{border-bottom:none}#sbo-rt-content table.simplelist tr:nth-of-type(even){background-color:transparent}#sbo-rt-content dl.calloutlist p:first-child{margin-top:-25px !important}#sbo-rt-content dl.calloutlist dd{padding-left:0;margin-top:-25px}#sbo-rt-content dl.calloutlist img,#sbo-rt-content a.co img{padding:0}#sbo-rt-content div.toc ol{margin-top:8px !important;margin-bottom:8px !important;margin-left:0 !important;padding-left:0 !important}#sbo-rt-content div.toc ol ol{margin-left:30px !important;padding-left:0 !important}#sbo-rt-content div.toc ol li{list-style-type:none}#sbo-rt-content div.toc a{color:#8e0012}#sbo-rt-content div.toc ol a{font-size:1em;font-weight:bold}#sbo-rt-content div.toc ol>li>ol a{font-weight:bold;font-size:1em}#sbo-rt-content div.toc ol>li>ol>li>ol a{text-decoration:none;font-weight:normal;font-size:1em}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"],#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{margin:30px !important;font-size:90%;padding:10px 8px 20px 8px !important;page-break-inside:avoid}#sbo-rt-content div.tip ol,#sbo-rt-content div.tip ul,#sbo-rt-content div[data-type="tip"] ol,#sbo-rt-content div[data-type="tip"] ul,#sbo-rt-content div.note ol,#sbo-rt-content div.note ul,#sbo-rt-content div[data-type="note"] ol,#sbo-rt-content div[data-type="note"] ul,#sbo-rt-content div.warning ol,#sbo-rt-content div.warning ul,#sbo-rt-content div[data-type="warning"] ol,#sbo-rt-content div[data-type="warning"] ul,#sbo-rt-content div[data-type="caution"] ol,#sbo-rt-content div[data-type="caution"] ul,#sbo-rt-content div[data-type="important"] ol,#sbo-rt-content div[data-type="important"] ul{margin-left:1.5em !important}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"]{border:1px solid #BEBEBE;background-color:transparent}#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{border:1px solid #BC8F8F}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="note"] h1,#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1,#sbo-rt-content div[data-type="important"] h6{font-weight:bold;font-size:110%;font-family:sans-serif !important;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px !important}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div[data-type="note"] h1{color:#737373}#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="important"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1{color:#C67171}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note,#sbo-rt-content div.safarienabled{background-color:transparent;margin:8px 0 0 !important;border:0 solid #BEBEBE;font-size:100%;padding:0 !important;page-break-inside:avoid}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note h3,#sbo-rt-content div.safarienabled h6{display:none}#sbo-rt-content div.table,#sbo-rt-content table{margin:15px 0 30px 0 !important;max-width:95%;border:none !important;background:none;display:table !important}#sbo-rt-content div.table,#sbo-rt-content div.informaltable,#sbo-rt-content table{page-break-inside:avoid}#sbo-rt-content tr,#sbo-rt-content tr td{border-bottom:1px solid #c3c3c3}#sbo-rt-content thead td,#sbo-rt-content thead th{border-bottom:#9d9d9d 1px solid !important;border-top:#9d9d9d 1px solid !important}#sbo-rt-content tr:nth-of-type(even){background-color:#f1f6fc}#sbo-rt-content thead{font-family:sans-serif;font-weight:bold}#sbo-rt-content td,#sbo-rt-content th{display:table-cell;padding:.3em;text-align:left;vertical-align:middle;font-size:80%}#sbo-rt-content div.informaltable table{margin:10px auto !important}#sbo-rt-content div.informaltable table tr{border-bottom:none}#sbo-rt-content div.informaltable table tr:nth-of-type(even){background-color:transparent}#sbo-rt-content div.informaltable td,#sbo-rt-content div.informaltable th{border:#9d9d9d 1px solid}#sbo-rt-content div.table-title,#sbo-rt-content table caption{font-weight:normal;font-style:italic;font-family:serif;font-size:1em;margin:10px 0 10px 0 !important;padding:0;page-break-after:avoid;text-align:left !important}#sbo-rt-content table code{font-size:smaller}#sbo-rt-content div.equation,#sbo-rt-content div[data-type="equation"]{margin:10px 0 15px 0 !important}#sbo-rt-content div.equation-title,#sbo-rt-content div[data-type="equation"] h5{font-style:italic;font-weight:normal;font-family:serif !important;font-size:90%;margin:20px 0 10px 0 !important;page-break-after:avoid}#sbo-rt-content div.equation-contents{margin-left:20px}#sbo-rt-content span.inlinemediaobject{height:.85em;display:inline-block;margin-bottom:.2em}#sbo-rt-content span.inlinemediaobject img{margin:0;height:.85em}#sbo-rt-content div.informalequation{margin:20px 0 20px 20px;width:75%}#sbo-rt-content div.informalequation img{width:75%}#sbo-rt-content div.index{text-indent:0}#sbo-rt-content div.index li{line-height:140%}#sbo-rt-content div.index a.indexterm{color:#8e0012}#sbo-rt-content div.index ul,#sbo-rt-content div[data-type="index"] ul{list-style-type:none;padding-left:0;margin-left:0}#sbo-rt-content div.index ul li{padding-left:0;margin-left:0}#sbo-rt-content div.index ul li ul li{margin-left:1em}#sbo-rt-content code.boolean,#sbo-rt-content .navy{color:rgb(0,0,128);}#sbo-rt-content code.character,#sbo-rt-content .olive{color:rgb(128,128,0);}#sbo-rt-content code.comment,#sbo-rt-content .blue{color:rgb(0,0,255);}#sbo-rt-content code.conditional,#sbo-rt-content .limegreen{color:rgb(50,205,50);}#sbo-rt-content code.constant,#sbo-rt-content .darkorange{color:rgb(255,140,0);}#sbo-rt-content code.debug,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.define,#sbo-rt-content .darkgoldenrod,#sbo-rt-content .gold{color:rgb(184,134,11);}#sbo-rt-content code.delimiter,#sbo-rt-content .dimgray{color:rgb(105,105,105);}#sbo-rt-content code.error,#sbo-rt-content .red{color:rgb(255,0,0);}#sbo-rt-content code.exception,#sbo-rt-content .salmon{color:rgb(250,128,11);}#sbo-rt-content code.float,#sbo-rt-content .steelblue{color:rgb(70,130,180);}#sbo-rt-content pre code.function,#sbo-rt-content .green{color:rgb(0,128,0);}#sbo-rt-content code.identifier,#sbo-rt-content .royalblue{color:rgb(65,105,225);}#sbo-rt-content code.ignore,#sbo-rt-content .gray{color:rgb(128,128,128);}#sbo-rt-content code.include,#sbo-rt-content .purple{color:rgb(128,0,128);}#sbo-rt-content code.keyword,#sbo-rt-content .sienna{color:rgb(160,82,45);}#sbo-rt-content code.label,#sbo-rt-content .deeppink{color:rgb(255,20,147);}#sbo-rt-content code.macro,#sbo-rt-content .orangered{color:rgb(255,69,0);}#sbo-rt-content code.number,#sbo-rt-content .brown{color:rgb(165,42,42);}#sbo-rt-content code.operator,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.preCondit,#sbo-rt-content .teal{color:rgb(0,128,128);}#sbo-rt-content code.preProc,#sbo-rt-content .fuschia{color:rgb(255,0,255);}#sbo-rt-content code.repeat,#sbo-rt-content .indigo{color:rgb(75,0,130);}#sbo-rt-content code.special,#sbo-rt-content .saddlebrown{color:rgb(139,69,19);}#sbo-rt-content code.specialchar,#sbo-rt-content .magenta{color:rgb(255,0,255);}#sbo-rt-content code.specialcomment,#sbo-rt-content .seagreen{color:rgb(46,139,87);}#sbo-rt-content code.statement,#sbo-rt-content .forestgreen{color:rgb(34,139,34);}#sbo-rt-content code.storageclass,#sbo-rt-content .plum{color:rgb(221,160,221);}#sbo-rt-content code.string,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.structure,#sbo-rt-content .chocolate{color:rgb(210,106,30);}#sbo-rt-content code.tag,#sbo-rt-content .darkcyan{color:rgb(0,139,139);}#sbo-rt-content code.todo,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.type,#sbo-rt-content .mediumslateblue{color:rgb(123,104,238);}#sbo-rt-content code.typedef,#sbo-rt-content .darkgreen{color:rgb(0,100,0);}#sbo-rt-content code.underlined{text-decoration:underline;}#sbo-rt-content pre code.hll{background-color:#ffc}#sbo-rt-content pre code.c{color:#09F;font-style:italic}#sbo-rt-content pre code.err{color:#A00}#sbo-rt-content pre code.k{color:#069;font-weight:bold}#sbo-rt-content pre code.o{color:#555}#sbo-rt-content pre code.cm{color:#35586C;font-style:italic}#sbo-rt-content pre code.cp{color:#099}#sbo-rt-content pre code.c1{color:#35586C;font-style:italic}#sbo-rt-content pre code.cs{color:#35586C;font-weight:bold;font-style:italic}#sbo-rt-content pre code.gd{background-color:#FCC}#sbo-rt-content pre code.ge{font-style:italic}#sbo-rt-content pre code.gr{color:#F00}#sbo-rt-content pre code.gh{color:#030;font-weight:bold}#sbo-rt-content pre code.gi{background-color:#CFC}#sbo-rt-content pre code.go{color:#000}#sbo-rt-content pre code.gp{color:#009;font-weight:bold}#sbo-rt-content pre code.gs{font-weight:bold}#sbo-rt-content pre code.gu{color:#030;font-weight:bold}#sbo-rt-content pre code.gt{color:#9C6}#sbo-rt-content pre code.kc{color:#069;font-weight:bold}#sbo-rt-content pre code.kd{color:#069;font-weight:bold}#sbo-rt-content pre code.kn{color:#069;font-weight:bold}#sbo-rt-content pre code.kp{color:#069}#sbo-rt-content pre code.kr{color:#069;font-weight:bold}#sbo-rt-content pre code.kt{color:#078;font-weight:bold}#sbo-rt-content pre code.m{color:#F60}#sbo-rt-content pre code.s{color:#C30}#sbo-rt-content pre code.na{color:#309}#sbo-rt-content pre code.nb{color:#366}#sbo-rt-content pre code.nc{color:#0A8;font-weight:bold}#sbo-rt-content pre code.no{color:#360}#sbo-rt-content pre code.nd{color:#99F}#sbo-rt-content pre code.ni{color:#999;font-weight:bold}#sbo-rt-content pre code.ne{color:#C00;font-weight:bold}#sbo-rt-content pre code.nf{color:#C0F}#sbo-rt-content pre code.nl{color:#99F}#sbo-rt-content pre code.nn{color:#0CF;font-weight:bold}#sbo-rt-content pre code.nt{color:#309;font-weight:bold}#sbo-rt-content pre code.nv{color:#033}#sbo-rt-content pre code.ow{color:#000;font-weight:bold}#sbo-rt-content pre code.w{color:#bbb}#sbo-rt-content pre code.mf{color:#F60}#sbo-rt-content pre code.mh{color:#F60}#sbo-rt-content pre code.mi{color:#F60}#sbo-rt-content pre code.mo{color:#F60}#sbo-rt-content pre code.sb{color:#C30}#sbo-rt-content pre code.sc{color:#C30}#sbo-rt-content pre code.sd{color:#C30;font-style:italic}#sbo-rt-content pre code.s2{color:#C30}#sbo-rt-content pre code.se{color:#C30;font-weight:bold}#sbo-rt-content pre code.sh{color:#C30}#sbo-rt-content pre code.si{color:#A00}#sbo-rt-content pre code.sx{color:#C30}#sbo-rt-content pre code.sr{color:#3AA}#sbo-rt-content pre code.s1{color:#C30}#sbo-rt-content pre code.ss{color:#A60}#sbo-rt-content pre code.bp{color:#366}#sbo-rt-content pre code.vc{color:#033}#sbo-rt-content pre code.vg{color:#033}#sbo-rt-content pre code.vi{color:#033}#sbo-rt-content pre code.il{color:#F60}#sbo-rt-content pre code.g{color:#050}#sbo-rt-content pre code.l{color:#C60}#sbo-rt-content pre code.l{color:#F90}#sbo-rt-content pre code.n{color:#008}#sbo-rt-content pre code.nx{color:#008}#sbo-rt-content pre code.py{color:#96F}#sbo-rt-content pre code.p{color:#000}#sbo-rt-content pre code.x{color:#F06}#sbo-rt-content div.blockquote_sampler_toc{width:95%;margin:5px 5px 5px 10px !important}#sbo-rt-content div{font-family:serif;text-align:left}#sbo-rt-content .gray-background,#sbo-rt-content .reverse-video{background:#2E2E2E;color:#FFF}#sbo-rt-content .light-gray-background{background:#A0A0A0}#sbo-rt-content .preserve-whitespace{white-space:pre-wrap}#sbo-rt-content span.gray{color:#4C4C4C}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781491920565/chapter/ch15.html",
+          "book_id": "9781491920565",
+          "chapter_uri": "ch15.html",
+          "position": 0,
+          "user_uuid": "fee1bd59-4e02-48a4-a7b4-152ec4c157ac",
+          "next_chapter_uri": "/library/view/data-visualization-with/9781491920565/ch16.html"
+        
+      },
+      title: "Data Visualization with Python and JavaScript",
+      author_list: "Kyran Dale",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: false,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.js"></script><script>
+    
+      
+       window.PUBLIC_ANNOTATIONS = false;
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "https://www.safaribooksonline.com/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://www.safaribooksonline.com/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch15.html"/><meta name="description" content=" Chapter 15. Building a Visualization In Chapter 14 we used the results of our Pandas exploration of the Nobel Prize dataset (see Chapter 11) to imagine a visualization. Figure 15-1 ... "><meta property="og:title" content="15. Building a Visualization" /><meta itemprop="isPartOf" content="/library/view/data-visualization-with/9781491920565/" /><meta itemprop="name" content="15. Building a Visualization" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch15.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781491920565/" /><meta property="og:description" itemprop="description" content=" Chapter 15. Building a Visualization In Chapter 14 we used the results of our Pandas exploration of the Nobel Prize dataset (see Chapter 11) to imagine a visualization. Figure 15-1 ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="O&#39;Reilly Media, Inc." /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781491920510" /><meta property="og:book:author" itemprop="author" content="Kyran Dale" /><meta property="og:book:tag" itemprop="about" content="JavaScript" /><meta property="og:book:tag" itemprop="about" content="Python" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><script>
+    window.ENABLE_BOWERBIRD_COLLECTIONS = true;
+  </script><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': 'fee1bd59-4e02-48a4-a7b4-152ec4c157ac' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', 'fee1bd59-4e02-48a4-a7b4-152ec4c157ac');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.e2e622a103f9.js"></script><script defer src="/static/js/build/reader.84feb506aa44.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+                 Playlists
+              </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/fee1bd59-4e02-48a4-a7b4-152ec4c157ac/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.safaribooksonline.com/public/support" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">7</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.safaribooksonline.com/public/support" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Data Visualization with Python and JavaScript
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781491920565/chapter/ch15.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch15.html&text=Data%20Visualization%20with%20Python%20and%20JavaScript&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch15.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch15.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 15.%20Building%20a%20Visualization&body=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch15.html%0D%0Afrom Data%20Visualization%20with%20Python%20and%20JavaScript%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.893631b34e7a.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch14.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">14. Imagining a Nobel Visualization</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch16.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">16. Introducing D3—The Story of a Bar Chart</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><section data-type="chapter" epub:type="chapter" data-pdf-bookmark="Chapter 15. Building a Visualization"><div class="chapter" id="chapter_building_viz">
+<h1><span class="label">Chapter 15. </span>Building a Visualization</h1>
+
+
+<p><a data-type="indexterm" data-primary="web visualizations" data-see="also visualization implementation; visualization planning" id="idm140319402130464"></a>In <a data-type="xref" href="ch14.html#chapter_imagining">Chapter 14</a> we used the results of our Pandas exploration of the Nobel Prize dataset (see <a data-type="xref" href="ch11.html#chapter_pandas_exploring">Chapter 11</a>) to imagine a visualization. <a data-type="xref" href="#d3build_target">Figure 15-1</a> shows the visualization we imagined, and in this chapter we’ll see how to go about building it, leveraging the power of JavaScript and D3.</p>
+
+<figure><div id="d3build_target" class="figure">
+<img src="dvpj_1408.png" alt="dvpj 1408" width="1014" height="842">
+<h6><span class="label">Figure 15-1. </span>Our target, a Nobel Prize visualization</h6>
+</div></figure>
+
+<p>I’ll show how the visual elements we conceived combine to transform our freshly cleaned and processed Nobel dataset into an interactive web visualization, deployable to billions of devices at the flick of a switch.  But before going into the details, let’s have a look at the core components of a modern web visualization.</p>
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Preliminaries"><div class="sect1" id="idm140319402123872">
+<h1>Preliminaries</h1>
+
+<p>Before beginning to build the Nobel visualization, let’s consider the core components that will be used and how we will organize our files.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Core Components"><div class="sect2" id="idm140319402122080">
+<h2>Core Components</h2>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="core components" id="idm140319402120880"></a>As we saw in <a data-type="xref" href="ch04.html#webdev101_basic_page">“A Basic Page with Placeholders”</a>, building a modern web visualization requires four key components:</p>
+
+<ul>
+<li>
+<p>An HTML skeleton upon which to hang our JavaScripted <span class="keep-together">creation</span></p>
+</li>
+<li>
+<p>One or more CSS stylesheets to govern the look and feel of the dataviz</p>
+</li>
+<li>
+<p>The JavaScript files themselves, including any third-party libraries you might need (D3 being our biggest dependency)</p>
+</li>
+<li>
+<p>And last but not least,  the data to be transformed, ideally in the JSON or CSV (if wholly static data) format</p>
+</li>
+</ul>
+
+<p>Before we start looking at our dataviz components, let’s get the file-structure for our Nobel Prize visualization (Nobel-viz) project in place and establish how we’re going to feed data to our visualization.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Organizing Your Files"><div class="sect2" id="idm140319402113008">
+<h2>Organizing Your Files</h2>
+
+<p><a data-type="xref" href="#nviz_files">Example 15-1</a> <a data-type="indexterm" data-primary="visualization implementation" data-secondary="file organization" id="idm140319402110976"></a><a data-type="indexterm" data-primary="Flask" data-secondary="file organization" id="idm140319402109984"></a>shows the structure of our project directory. A couple of Flask servers and an initializing <em>index.html</em> file are in the project’s root, all other assets being in subdirectories of the <em>static</em> directory, ready to be served as static files to the browser.</p>
+<div id="nviz_files" data-type="example" class="pagebreak-before">
+<h5><span class="label">Example 15-1. </span>Our Nobel-viz project’s file structure</h5>
+
+<pre data-type="programlisting" data-code-language="bash"><code>nobel_viz</code><code>
+</code><code>├──</code><code> </code><code>templates</code><code>
+</code><code>│</code><code>   </code><code>└──</code><code> </code><code>index.html</code><code>
+</code><code>├──</code><code> </code><code>notes.md</code><code>
+</code><code>├──</code><code> </code><code>nobel_viz.py</code><code>
+</code><code>├──</code><code> </code><code>api</code><code> </code><a class="co" id="co_building_a_visualization_CO1-1" href="#callout_building_a_visualization_CO1-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code>│</code><code>   </code><code>├──</code><code> </code><code>server_eve.py</code><code>
+</code><code>│</code><code>   </code><code>└──</code><code> </code><code>settings.py</code><code>
+</code><code>└──</code><code> </code><code>static</code><code>
+    </code><code>├──</code><code> </code><code>css</code><code>
+    </code><code>│  </code><code> </code><code>└──</code><code> </code><code>style.css</code><code>
+    </code><code>├──</code><code> </code><code>data</code><code>                </code><a class="co" id="co_building_a_visualization_CO1-2" href="#callout_building_a_visualization_CO1-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+    </code><code>│  </code><code> </code><code>├──</code><code> </code><code>world-110m.json</code><code>
+    </code><code>│  </code><code> </code><code>├──</code><code> </code><code>world-country-names-nobel.csv</code><code>
+    </code><code>│  </code><code> </code><code>└──</code><code> </code><code>winning_country_data.json</code><code>
+    </code><code>├──</code><code> </code><code>images</code><code>
+    </code><code>│  </code><code> </code><code>└──</code><code> </code><code>winners</code><code> </code><a class="co" id="co_building_a_visualization_CO1-3" href="#callout_building_a_visualization_CO1-3"><img src="3.png" alt="3" width="12" height="12"></a><code>
+    </code><code>│  </code><code>     </code><code>└──</code><code> </code><code>full</code><code>
+    </code><code>│  </code><code>         </code><code>├──</code><code> </code><code>002b4f05aa3758e2d6acadde4ed80aa991ed6357.jpg</code><code>
+    </code><code>│  </code><code>         </code><code>├──</code><code> </code><code>00d7ed381db8b5d18edc84694b7f9ce14ee57c5b.jpg</code><code>
+    </code><code>│  </code><code>         </code><code>├──</code><code> </code><code>...</code><code>
+    </code><code>├──</code><code> </code><code>js</code><code>
+    </code><code>│  </code><code> </code><code>├──</code><code> </code><code>nbviz_bar.js</code><code> </code><a class="co" id="co_building_a_visualization_CO1-4" href="#callout_building_a_visualization_CO1-4"><img src="4.png" alt="4" width="12" height="12"></a><code>
+    </code><code>│  </code><code> </code><code>├──</code><code> </code><code>...</code><code>
+    </code><code>└──</code><code> </code><code>lib</code><code>
+        </code><code>├──</code><code> </code><code>crossfilter.min.js</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO1-1" href="#co_building_a_visualization_CO1-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The <em>api</em> directory containing the Python Eve server we coded in <a data-type="xref" href="ch13.html#sect_nobel_restful">“Delivering Data to the Nobel Prize Visualization”</a>.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO1-2" href="#co_building_a_visualization_CO1-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>The static data files we’ll be using, including a TopoJSON world map (see <a data-type="xref" href="ch18.html#chapter_d3_maps">Chapter 18</a>)  and the country data we grabbed from the Web (see <a data-type="xref" href="ch05.html#country_data">“Getting Country Data for the Nobel Dataviz”</a>).</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO1-3" href="#co_building_a_visualization_CO1-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>The Nobel Prize winners’ photos we scraped using Scrapy in <a data-type="xref" href="ch06.html#scraping_bio">“Scraping Text and Images with a Pipeline”</a>.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO1-4" href="#co_building_a_visualization_CO1-4"><img src="4.png" alt="4" width="12" height="12"></a></dt>
+<dd><p>The <em>js</em> subdirectory contains our Nobel-viz JavaScript files, separated into core elements and starting with <em>nbviz_</em>.</p></dd>
+</dl></div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Serving the Data"><div class="sect2" id="idm140319401981392">
+<h2>Serving the Data</h2>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="serving data" id="idm140319401980384"></a><a data-type="indexterm" data-primary="data delivery" data-secondary="serving data" id="idm140319401979312"></a><a data-type="indexterm" data-primary="static file delivery" id="idm140319401978464"></a><a data-type="indexterm" data-primary="data delivery" data-secondary="static files" id="idm140319401977856"></a>We’re going to use a mixture of static and dynamic data delivery for our app, as presented in <a data-type="xref" href="ch12.html#sect_static_delivery">“Delivering Static Files”</a> and <a data-type="xref" href="ch13.html#sect_nobel_restful">“Delivering Data to the Nobel Prize Visualization”</a>. The static data files will be stored in a static data directory (<a data-type="xref" href="#nviz_files">Example 15-1</a>, #2) and the data to be delivered dynamically stored in a MongoDB database and served by a Python Eve RESTful API.</p>
+
+<p>The use of a RESTful API for our Nobel Prize dataset is slightly contrived, as the dataset, with biographical data,  is not particularly large (just over 3 MB uncompressed). But add a few more winners and make the biographies snippets bigger, and we could easily start hitting the 10 MB mark, at which point caching the whole dataset is going to lead to a potentially frustrating wait for the user while the app initializes.</p>
+
+<p>More to the point, being able to deliver fine-grained data from a backend database means you can really take the gloves off as far as creating ambitious visualizations is concerned. Any visualization where a user is encouraged to drill down into a large dataset for items of interest (e.g., a dashboard with stock inventories or a geographical dataset of house prices) will probably require returning to the server to meet the individual data demand. Being able to roll a robust RESTful MongoDB API in a few lines is a huge win here. The dynamic data flow demonstrated in our Nobel Prize visualization is eminently scalable and very flexible and, to reiterate, really takes off the static data handcuffs.</p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="The HTML Skeleton"><div class="sect1" id="html_skeleton">
+<h1>The HTML Skeleton</h1>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="HTML skeleton for" id="VIskel15"></a><a data-type="indexterm" data-primary="web visualizations" data-secondary="HTML skeleton for" id="WVskel15"></a><a data-type="indexterm" data-primary="HTML (Hypertext Markup Language)" data-secondary="web visualization skeleton" id="HTMLwvskel15"></a>Although our Nobel visualization has a number of dynamic components, the HTML skeleton required is surprisingly simple. This demonstrates a core theme of the book, that you need very little conventional <em>web development</em> to set the stage for programming data visualizations.</p>
+
+<p>The <em>index.html</em> file, which creates the visualization on loading, is shown in <a data-type="xref" href="#d3build_index">Example 15-2</a>. The three components are:</p>
+<ol class="pagebreak-before">
+<li>
+<p>A CSS stylesheet <em>style.css</em>, setting fonts, content-block positions, and the like, is imported.</p>
+</li>
+<li>
+<p>HTML placeholders for our visual elements with ids of the form <code>nobel-[foo]</code>.</p>
+</li>
+<li>
+<p>The JavaScript; first third-party libraries, then our original scripts.</p>
+</li>
+
+</ol>
+
+<p>We’ll cover the individual HTML sections in detail in the coming chapters, but I wanted you to see what is essentially the entire non-programmatic element of the Nobel Prize visualization. With this skeleton in place, you can then turn to the job of creative programming, something D3 encourages and excels at. As you get used to defining your content blocks in HTML, fixing dimensions and positioning with CSS, you’ll find you spend more and more time doing what you love best: manipulating data with code.</p>
+<div data-type="tip"><h6>Tip</h6>
+<p>I find it helpful to treat the identified placeholders, such as the map holder <code>&lt;div id="nobel-map"&gt;&lt;/div&gt;</code>, as panels <em>owned</em> by their respective elements. We set the dimension and relative positioning of these frames in the main CSS or JS<sup><a data-type="noteref" id="idm140319401958992-marker" href="ch15.html#idm140319401958992">1</a></sup> file and the elements, such as our dynamic map, adapt themselves to the size of their frame. This allows a nonprogramming designer to change the look and feel or the visualization through CSS styling.</p>
+</div>
+<div id="d3build_index" data-type="example">
+<h5><span class="label">Example 15-2. </span>The index.html access file to our single-page visualization</h5>
+
+<pre data-type="programlisting" data-code-language="html"><code class="cp">&lt;!DOCTYPE html&gt;</code>
+<code class="nt">&lt;meta</code> <code class="na">charset=</code><code class="s">"utf-8"</code><code class="nt">&gt;</code>
+<code class="nt">&lt;title&gt;</code>{{config.APP_TITLE}}<code class="nt">&lt;/title&gt;</code>
+<code class="c">&lt;!-- 1. IMPORT THE visualization'S CSS STYLING --&gt;</code>
+<code class="nt">&lt;link</code> <code class="na">rel=</code><code class="s">"stylesheet"</code> <code class="na">href=</code><code class="s">"static/css/style.css"</code>
+<code class="na">media=</code><code class="s">"screen"</code> <code class="nt">/&gt;</code>
+<code class="nt">&lt;body&gt;</code>
+  <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'chart'</code><code class="nt">&gt;</code>
+    <code class="c">&lt;!-- 2. A HEADER WITH TITLE AND SOME EXPLANATORY INFO --&gt;</code>
+    <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'title'</code><code class="nt">&gt;</code>Visualizing the Nobel Prize<code class="nt">&lt;/div&gt;</code>
+    <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"info"</code><code class="nt">&gt;</code>
+      This is a companion piece to the book <code class="nt">&lt;a</code> <code class="na">href=</code><code class="s">'http://'</code><code class="nt">&gt;</code>
+      Data visualization with Python and JavaScript<code class="nt">&lt;/a&gt;</code>, in which
+      its construction is detailed. The data used was scraped
+      Wikipedia using the <code class="nt">&lt;a</code> <code class="na">href=</code>
+      <code class="s">'https://en.wikipedia.org/wiki</code>
+<code class="s">      /List_of_Nobel_laureates_by_country'</code><code class="nt">&gt;</code>
+      list of winners by country<code class="nt">&lt;/a&gt;</code> as a starting point. The
+      accompanying Github repo is <code class="nt">&lt;a</code> <code class="na">href=</code>
+      <code class="s">'http://github.com/Kyrand/dataviz-with-python-and-js'</code><code class="nt">&gt;</code>
+      here<code class="nt">&lt;/a&gt;</code>.
+    <code class="nt">&lt;/div&gt;</code>
+    <code class="c">&lt;!-- 3. THE PLACEHOLDERS FOR OUR VISUAL COMPONENTS  --&gt;</code>
+    <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"nbviz"</code><code class="nt">&gt;</code>
+      <code class="c">&lt;!-- BEGIN MENU BAR --&gt;</code>
+      <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"nobel-menu"</code><code class="nt">&gt;</code>
+        <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"cat-select"</code><code class="nt">&gt;</code>
+          Category
+          <code class="nt">&lt;select&gt;&lt;/select&gt;</code>
+        <code class="nt">&lt;/div&gt;</code>
+        <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"gender-select"</code><code class="nt">&gt;</code>
+          Gender
+          <code class="nt">&lt;select&gt;</code>
+            <code class="nt">&lt;option</code> <code class="na">value=</code><code class="s">"All"</code><code class="nt">&gt;</code>All<code class="nt">&lt;/option&gt;</code>
+            <code class="nt">&lt;option</code> <code class="na">value=</code><code class="s">"female"</code><code class="nt">&gt;</code>Female<code class="nt">&lt;/option&gt;</code>
+            <code class="nt">&lt;option</code> <code class="na">value=</code><code class="s">"male"</code><code class="nt">&gt;</code>Male<code class="nt">&lt;/option&gt;</code>
+          <code class="nt">&lt;/select&gt;</code>
+        <code class="nt">&lt;/div&gt;</code>
+        <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"country-select"</code><code class="nt">&gt;</code>
+          Country
+          <code class="nt">&lt;select&gt;&lt;/select&gt;</code>
+        <code class="nt">&lt;/div&gt;</code>
+        <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'metric-radio'</code><code class="nt">&gt;</code>
+          Number of Winners:<code class="ni">&amp;nbsp;</code>
+          <code class="nt">&lt;form&gt;</code>
+            <code class="nt">&lt;label&gt;</code>absolute
+              <code class="nt">&lt;input</code> <code class="na">type=</code><code class="s">"radio"</code> <code class="na">name=</code><code class="s">"mode"</code> <code class="na">value=</code><code class="s">"0"</code> <code class="na">checked</code><code class="nt">&gt;</code>
+            <code class="nt">&lt;/label&gt;</code>
+            <code class="nt">&lt;label&gt;</code>per-capita
+              <code class="nt">&lt;input</code> <code class="na">type=</code><code class="s">"radio"</code> <code class="na">name=</code><code class="s">"mode"</code> <code class="na">value=</code><code class="s">"1"</code><code class="nt">&gt;</code>
+            <code class="nt">&lt;/label&gt;</code>
+          <code class="nt">&lt;/form&gt;</code>
+        <code class="nt">&lt;/div&gt;</code>
+      <code class="nt">&lt;/div&gt;</code>
+      <code class="c">&lt;!-- END MENU BAR  --&gt;</code>
+      <code class="c">&lt;!-- BEGIN NOBEL-VIZ COMPONENTS --&gt;</code>
+      <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'chart-holder'</code> <code class="na">class=</code><code class="s">'_dev'</code><code class="nt">&gt;</code>
+        <code class="c">&lt;!-- TIME LINE OF PRIZES --&gt;</code>
+        <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"nobel-time"</code><code class="nt">&gt;&lt;/div&gt;</code>
+        <code class="c">&lt;!-- MAP AND TOOLTIP --&gt;</code>
+        <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"nobel-map"</code><code class="nt">&gt;</code>
+          <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"map-tooltip"</code><code class="nt">&gt;</code>
+            <code class="nt">&lt;h2&gt;&lt;/h2&gt;</code>
+            <code class="nt">&lt;p&gt;&lt;/p&gt;</code>
+          <code class="nt">&lt;/div&gt;</code>
+        <code class="nt">&lt;/div&gt;</code>
+        <code class="c">&lt;!-- LIST OF WINNERS --&gt;</code>
+        <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"nobel-list"</code><code class="nt">&gt;</code>
+          <code class="nt">&lt;h2&gt;</code>Selected winners<code class="nt">&lt;/h2&gt;</code>
+          <code class="nt">&lt;table&gt;</code>
+            <code class="nt">&lt;thead&gt;</code>
+              <code class="nt">&lt;tr&gt;</code>
+                <code class="nt">&lt;th</code> <code class="na">id=</code><code class="s">'year'</code><code class="nt">&gt;</code>Year<code class="nt">&lt;/th&gt;</code>
+                <code class="nt">&lt;th</code> <code class="na">id=</code><code class="s">'category'</code><code class="nt">&gt;</code>Category<code class="nt">&lt;/th&gt;</code>
+                <code class="nt">&lt;th</code> <code class="na">id=</code><code class="s">'name'</code><code class="nt">&gt;</code>Name<code class="nt">&lt;/th&gt;</code>
+              <code class="nt">&lt;/tr&gt;</code>
+            <code class="nt">&lt;/thead&gt;</code>
+            <code class="nt">&lt;tbody&gt;</code>
+            <code class="nt">&lt;/tbody&gt;</code>
+          <code class="nt">&lt;/table&gt;</code>
+        <code class="nt">&lt;/div&gt;</code>
+        <code class="c">&lt;!-- BIOGRAPHY BOX --&gt;</code>
+        <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"nobel-winner"</code><code class="nt">&gt;</code>
+          <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"picbox"</code><code class="nt">&gt;&lt;/div&gt;</code>
+          <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'winner-title'</code><code class="nt">&gt;&lt;/div&gt;</code>
+          <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'infobox'</code><code class="nt">&gt;</code>
+            <code class="nt">&lt;div</code> <code class="na">class=</code><code class="s">'property'</code><code class="nt">&gt;</code>
+              <code class="nt">&lt;div</code> <code class="na">class=</code><code class="s">'label'</code><code class="nt">&gt;</code>Category<code class="nt">&lt;/div&gt;</code>
+              <code class="nt">&lt;span</code> <code class="na">name=</code><code class="s">'category'</code><code class="nt">&gt;&lt;/span&gt;</code>
+            <code class="nt">&lt;/div&gt;</code>
+            <code class="nt">&lt;div</code> <code class="na">class=</code><code class="s">'property'</code><code class="nt">&gt;</code>
+              <code class="nt">&lt;div</code> <code class="na">class=</code><code class="s">'label'</code><code class="nt">&gt;</code>Year<code class="nt">&lt;/div&gt;</code>
+              <code class="nt">&lt;span</code> <code class="na">name=</code><code class="s">'year'</code><code class="nt">&gt;&lt;/span&gt;</code>
+            <code class="nt">&lt;/div&gt;</code>
+            <code class="nt">&lt;div</code> <code class="na">class=</code><code class="s">'property'</code><code class="nt">&gt;</code>
+              <code class="nt">&lt;div</code> <code class="na">class=</code><code class="s">'label'</code><code class="nt">&gt;</code>Country<code class="nt">&lt;/div&gt;</code>
+              <code class="nt">&lt;span</code> <code class="na">name=</code><code class="s">'country'</code><code class="nt">&gt;&lt;/span&gt;</code>
+            <code class="nt">&lt;/div&gt;</code>
+          <code class="nt">&lt;/div&gt;</code>
+          <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'biobox'</code><code class="nt">&gt;&lt;/div&gt;</code>
+          <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">'readmore'</code><code class="nt">&gt;</code>
+            <code class="nt">&lt;a</code> <code class="na">href=</code><code class="s">'#'</code><code class="nt">&gt;</code>Read more at Wikipedia<code class="nt">&lt;/a&gt;</code>
+          <code class="nt">&lt;/div&gt;</code>
+        <code class="nt">&lt;/div&gt;</code>
+        <code class="c">&lt;!-- NOBEL BAR CHART --&gt;</code>
+        <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"nobel-bar"</code><code class="nt">&gt;&lt;/div&gt;</code>
+      <code class="nt">&lt;/div&gt;</code>
+      <code class="c">&lt;!-- END NOBEL-VIZ COMPONENTS --&gt;</code>
+    <code class="nt">&lt;/div&gt;</code>
+  <code class="nt">&lt;/div&gt;</code>
+  <code class="c">&lt;!-- 4. THE JAVASCRIPT FILES --&gt;</code>
+  <code class="c">&lt;!-- THIRD-PARTY JAVASCRIPT LIBRARIES, MAINLY D3  --&gt;</code>
+  <code class="nt">&lt;script </code><code class="err">...</code> <code class="err">&lt;/</code><code class="na">script</code><code class="nt">&gt;</code>
+  <code class="c">&lt;!--</code> <code class="nx">THE</code> <code class="nx">JAVASCRIPT</code> <code class="nx">FOR</code> <code class="nx">OUR</code> <code class="nx">NOBEL</code> <code class="nx">ELEMENTS</code> <code class="o">--&gt;</code>
+  <code class="o">&lt;</code><code class="nx">script</code> <code class="p">...</code> <code class="nt">&lt;/script&gt;</code>
+<code class="nt">&lt;/body&gt;</code></pre></div>
+
+<p>The HTML skeleton (<a data-type="xref" href="#d3build_index">Example 15-2</a>, #3) defines the hierarchical structure of our Nobel-viz components, but their visual sizing and positioning are set in the <em>style.css</em> file. In the next section, we’ll see how this is done and look at the general styling of our visualization.<a data-type="indexterm" data-primary="" data-startref="WVskel15" id="idm140319401945856"></a><a data-type="indexterm" data-primary="" data-startref="VIskel15" id="idm140319401944880"></a><a data-type="indexterm" data-primary="" data-startref="HTMLwvskel15" id="idm140319401943936"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="CSS Styling"><div class="sect1" id="idm140319401942864">
+<h1>CSS Styling</h1>
+
+<p><a data-type="indexterm" data-primary="CSS (Cascading Style Sheets)" data-secondary="applying to HTML" id="CSS15"></a><a data-type="indexterm" data-primary="web visualizations" data-secondary="CSS application" id="WVcss15"></a><a data-type="indexterm" data-primary="visualization implementation" data-secondary="CSS styling" id="VIcss15"></a>We’ll deal with the styling of the individual chart components of our chart (<a data-type="xref" href="#d3build_target">Figure 15-1</a>) in their respective chapters. This section will cover the remaining nonspecific CSS, most importantly the sizing and positioning of our elements’ content blocks (<em>panels</em>).</p>
+
+<p><a data-type="indexterm" data-primary="size" id="idm140319401724272"></a>The size of a visualization can be a tricky choice. There are many more device formats out there these days, with smartphones, tablets, mobile devices, etc. having a variety of different resolutions, such as “retina,”<sup><a data-type="noteref" id="idm140319401723200-marker" href="ch15.html#idm140319401723200">2</a></sup> and full HD (1,920×1,080). Most mobile devices can pinch-and-zoom to fit visualizations, but it’s best to target a size that will fit without such manipulation. A reasonable expectation these days is that a device has at least 1,280×800 pixels. Using this as our constraint, we will make our Nobel-viz 1,000 pixels wide and 800 pixels high, including our 50-pixels-high topmost user controls.</p>
+
+<p>First we set some general styles we want applied to the whole document using the <code>body</code> selector; a sans-serif font, an off-white background, and some link detailing are specified. We also set the width of the visualization and its margins:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nt">body</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">font-family</code><code class="o">:</code><code> </code><code class="s2">"Helvetica Neue"</code><code class="o">,</code><code> </code><code class="n">Helvetica</code><code class="o">,</code><code> </code><code class="n">Arial</code><code class="o">,</code><code> </code><code class="nb">sans-serif</code><code class="p">;</code><code>
+    </code><code class="k">background</code><code class="o">:</code><code> </code><code class="m">#fefefe</code><code class="p">;</code><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">1000px</code><code class="p">;</code><code>
+    </code><code class="k">margin</code><code class="o">:</code><code> </code><code class="m">0</code><code> </code><code class="nb">auto</code><code class="p">;</code><code> </code><code class="c">/* top and bottom 0, left and right auto */</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nt">a</code><code class="nd">:link</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">color</code><code class="o">:</code><code> </code><code class="nb">royalblue</code><code class="p">;</code><code>
+    </code><code class="k">text-decoration</code><code class="o">:</code><code> </code><code class="nb">none</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO2-1" href="#callout_building_a_visualization_CO2-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nt">a</code><code class="nd">:hover</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">text-decoration</code><code class="o">:</code><code> </code><code class="nb">underline</code><code class="p">;</code><code>
+</code><code class="p">}</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO2-1" href="#co_building_a_visualization_CO2-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The default underlined hyperlinks look a bit fussy in my opinion, so we remove decoration.</p></dd>
+</dl>
+
+<p>There are three main div content blocks to our Nobel-viz, which we position absolutely within the <code>#chart</code> div (their relative parent). These are the main title (<code>#title</code>) , some information on the visualization (<code>#info</code>), and the main container (<code>#nbviz</code>). The title and info are placed by eye and the main container is placed 90 pixels from the page top to allow them room, and given a width of 100% to make it expand to the available space. The following CSS achieves this:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nf">#nbviz</code> <code class="p">{</code>
+    <code class="k">position</code><code class="o">:</code> <code class="nb">absolute</code><code class="p">;</code>
+    <code class="k">top</code><code class="o">:</code> <code class="m">90px</code><code class="p">;</code>
+    <code class="k">width</code><code class="o">:</code> <code class="m">100%</code><code class="p">;</code>
+<code class="p">}</code>
+
+<code class="nf">#title</code> <code class="p">{</code>
+    <code class="k">position</code><code class="o">:</code> <code class="nb">absolute</code><code class="p">;</code>
+    <code class="k">font-size</code><code class="o">:</code> <code class="m">30px</code><code class="p">;</code>
+    <code class="k">font-weight</code><code class="o">:</code> <code class="m">100</code><code class="p">;</code>
+    <code class="k">top</code><code class="o">:</code> <code class="m">20px</code><code class="p">;</code>
+<code class="p">}</code>
+
+<code class="nf">#info</code> <code class="p">{</code>
+    <code class="k">position</code><code class="o">:</code> <code class="nb">absolute</code><code class="p">;</code>
+    <code class="k">font-size</code><code class="o">:</code> <code class="m">11px</code><code class="p">;</code>
+    <code class="k">top</code><code class="o">:</code> <code class="m">18px</code><code class="p">;</code>
+    <code class="k">width</code><code class="o">:</code> <code class="m">300px</code><code class="p">;</code>
+    <code class="k">right</code><code class="o">:</code> <code class="m">0px</code><code class="p">;</code>
+<code class="p">}</code></pre>
+
+<p>The <code>chart-holder</code> is given a height of 750 px, a width of 100% its parent, and a <code>position</code> property of <code>relative</code>, meaning the absolute positioning of its child <em>panels</em> will be relative to its top-left corner:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nf">#chart-holder</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">100%</code><code class="p">;</code><code>
+    </code><code class="k">height</code><code class="o">:</code><code class="m">750px</code><code class="p">;</code><code>
+    </code><code class="k">position</code><code class="o">:</code><code> </code><code class="nb">relative</code><code class="p">;</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nf">#chart-holder</code><code> </code><code class="nt">svg</code><code> </code><code class="p">{</code><code> </code><a class="co" id="co_building_a_visualization_CO3-1" href="#callout_building_a_visualization_CO3-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">100%</code><code class="p">;</code><code>
+    </code><code class="k">height</code><code class="o">:</code><code> </code><code class="m">100%</code><code class="p">;</code><code>
+</code><code class="p">}</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO3-1" href="#co_building_a_visualization_CO3-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>We want the SVG contexts for our components to expand to fit their containers.</p></dd>
+</dl>
+
+<p>Allowing for the Nobel-viz’s height constraint of 750 pixels, the width/height ratio of two for our equirectangular map,<sup><a data-type="noteref" id="idm140319401562848-marker" href="ch15.html#idm140319401562848">3</a></sup> and the need to fit over 100 years’ worth of Nobel Prize circular indicators into our time chart, playing with the dimensions suggests <a data-type="xref" href="#d3build_dimensions">Figure 15-2</a> as a good compromise for the size of our visual elements.</p>
+
+<figure><div id="d3build_dimensions" class="figure">
+<img src="dvpj_1502.png" alt="dvpj 1502" width="1529" height="1074">
+<h6><span class="label">Figure 15-2. </span>The Nobel-viz’s dimensions</h6>
+</div></figure>
+
+<p><a data-type="indexterm" data-primary="dimensions" id="idm140319401557952"></a>This CSS positions and sizes the components as shown in <a data-type="xref" href="#d3build_dimensions">Figure 15-2</a>:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nf">#nobel-map</code><code class="o">,</code><code> </code><code class="nf">#nobel-winner</code><code class="o">,</code><code> </code><code class="nf">#nobel-bar</code><code class="o">,</code><code> </code><code class="nf">#nobel-time</code><code class="o">,</code><code> </code><code class="nf">#nobel-list</code><code class="p">{</code><code>
+    </code><code class="k">position</code><code class="o">:</code><code class="nb">absolute</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO4-1" href="#callout_building_a_visualization_CO4-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nf">#nobel-time</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">top</code><code class="o">:</code><code> </code><code class="m">0</code><code class="p">;</code><code>
+    </code><code class="k">height</code><code class="o">:</code><code> </code><code class="m">150px</code><code class="p">;</code><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">100%</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO4-2" href="#callout_building_a_visualization_CO4-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nf">#nobel-map</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">background</code><code class="o">:</code><code> </code><code class="nb">azure</code><code class="p">;</code><code>
+    </code><code class="k">top</code><code class="o">:</code><code> </code><code class="m">160px</code><code class="p">;</code><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">700px</code><code class="p">;</code><code>
+    </code><code class="k">height</code><code class="o">:</code><code> </code><code class="m">350px</code><code class="p">;</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nf">#nobel-winner</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">top</code><code class="o">:</code><code> </code><code class="m">510px</code><code class="p">;</code><code>
+    </code><code class="k">left</code><code class="o">:</code><code> </code><code class="m">700px</code><code class="p">;</code><code>
+    </code><code class="k">height</code><code class="o">:</code><code> </code><code class="m">240px</code><code class="p">;</code><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">300px</code><code class="p">;</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nf">#nobel-bar</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">top</code><code class="o">:</code><code> </code><code class="m">510px</code><code class="p">;</code><code>
+    </code><code class="k">height</code><code class="o">:</code><code> </code><code class="m">240px</code><code class="p">;</code><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">700px</code><code class="p">;</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nf">#nobel-list</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">top</code><code class="o">:</code><code> </code><code class="m">160px</code><code class="p">;</code><code>
+    </code><code class="k">height</code><code class="o">:</code><code> </code><code class="m">340px</code><code class="p">;</code><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">290px</code><code class="p">;</code><code>
+    </code><code class="k">left</code><code class="o">:</code><code> </code><code class="m">700px</code><code class="p">;</code><code>
+    </code><code class="k">padding-left</code><code class="o">:</code><code> </code><code class="m">10px</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO4-3" href="#callout_building_a_visualization_CO4-3"><img src="3.png" alt="3" width="12" height="12"></a><code>
+</code><code class="p">}</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO4-1" href="#co_building_a_visualization_CO4-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>We want absolute, manually adjusted positioning, relative to the <code>chart-holder</code> parent container.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO4-2" href="#co_building_a_visualization_CO4-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>The timeline runs the full width of the visualization.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO4-3" href="#co_building_a_visualization_CO4-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>You can use padding to let the components “breathe.”</p></dd>
+</dl>
+
+<p>The other CSS styles are specific to the individual components and will be covered in their respective chapters. With the preceding CSS, we have an HTML skeleton on which to flesh out our visualization with JavaScript.<a data-type="indexterm" data-primary="" data-startref="CSS15" id="idm140319401456960"></a><a data-type="indexterm" data-primary="" data-startref="WVcss15" id="idm140319401456096"></a><a data-type="indexterm" data-primary="" data-startref="VIcss15" id="idm140319401455152"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="The JavaScript Engine"><div class="sect1" id="idm140319401730672">
+<h1>The JavaScript Engine</h1>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="JavaScript engine" data-tertiary="benefits of modularity" id="idm140319401452800"></a><a data-type="indexterm" data-primary="JavaScript" data-secondary="for web visualizations" data-secondary-sortas="web visualizations" id="JSwebvis15"></a>With a visualization of any size, it’s good to start imposing some modularity early on. Many of the D3 examples on the Web<sup><a data-type="noteref" id="idm140319401449776-marker" href="ch15.html#idm140319401449776">4</a></sup> are one-page solutions, combining HTML, CSS, JS, and even data on one page. Though this is great for teaching by example, as the code base increases, things will degenerate fast, making changes a slog and increasing the chance of namespace collisions and the like.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Importing the Scripts"><div class="sect2" id="idm140319401447328">
+<h2>Importing the Scripts</h2>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="JavaScript engine" data-tertiary="importing scripts" id="idm140319401445888"></a>Although there are a number of more or less successful attempts to develop a mature import/include system for JavaScript libraries, it’s not there yet.<sup><a data-type="noteref" id="idm140319401444320-marker" href="ch15.html#idm140319401444320">5</a></sup> For now I would advise most JavaScripters, certainly beginners, to live with including scripts in the right order. It’s reliable, doesn’t require complicated build scripts or shims, and is good for most small- to medium-sized projects.<sup><a data-type="noteref" id="idm140319401442544-marker" href="ch15.html#idm140319401442544">6</a></sup></p>
+
+<p>We include the JavaScript files for our visualization using <code>&lt;script&gt;</code> tags placed at the bottom of the <code>&lt;body&gt;</code> tag in our entry <em>index.html</em> file, as shown in <a data-type="xref" href="#d3build_index">Example 15-2</a>:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="cp">&lt;!DOCTYPE html&gt;</code><code>
+</code><code class="nt">&lt;meta</code><code> </code><code class="na">charset=</code><code class="s">"utf-8"</code><code class="nt">&gt;</code><code>
+...
+</code><code class="nt">&lt;body</code><code class="nt">&gt;</code><code>
+...
+  </code><code class="c">&lt;!--</code><code class="c"> THIRD</code><code class="c">-</code><code class="c">PARTY JAVASCRIPT LIBRARIES, MAINLY D3 BASED  </code><code class="c">--&gt;</code><code> </code><a class="co" id="co_building_a_visualization_CO5-1" href="#callout_building_a_visualization_CO5-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+  </code><code class="nt">&lt;script
+    </code><code class="na">src=</code><code class="s">"https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.16
+    /d3.js"</code><code class="nt">&gt;</code><code>
+  </code><code class="nt">&lt;/script&gt;</code><code>
+  </code><code class="nt">&lt;script
+    </code><code class="na">src=</code><code class="s">"https://cdnjs.cloudflare.com/ajax/libs/topojson/
+    1.6.20/topojson.min.js"</code><code class="nt">&gt;</code><code>
+  </code><code class="nt">&lt;/script&gt;</code><code>
+  </code><code class="nt">&lt;script
+    </code><code class="na">src=</code><code class="s">"https://cdnjs.cloudflare.com/ajax/libs/queue-async/
+    1.0.7/queue.min.js"</code><code class="nt">&gt;</code><code>
+  </code><code class="nt">&lt;/script&gt;</code><code>
+  </code><code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"static/lib/crossfilter.min.js"</code><code class="nt">&gt;</code><code class="nt">&lt;/script&gt;</code><code>
+
+  </code><code class="c">&lt;!--</code><code class="c"> THE JAVASCRIPT FOR OUR NOBEL ELEMENTS </code><code class="c">--&gt;</code><code>
+  </code><code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"static/js/nbviz_core.js"</code><code> </code><code class="nt">&gt;</code><code class="nt">&lt;/script&gt;</code><code> </code><a class="co" id="co_building_a_visualization_CO5-2" href="#callout_building_a_visualization_CO5-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+  </code><code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"static/js/nbviz_menu.js"</code><code> </code><code class="nt">&gt;</code><code class="nt">&lt;/script&gt;</code><code> </code><a class="co" id="co_building_a_visualization_CO5-3" href="#callout_building_a_visualization_CO5-3"><img src="3.png" alt="3" width="12" height="12"></a><code>
+  </code><code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"static/js/nbviz_map.js"</code><code class="nt">&gt;</code><code class="nt">&lt;/script&gt;</code><code>
+  </code><code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"static/js/nbviz_bar.js"</code><code class="nt">&gt;</code><code class="nt">&lt;/script&gt;</code><code>
+  </code><code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"static/js/nbviz_time.js"</code><code class="nt">&gt;</code><code class="nt">&lt;/script&gt;</code><code>
+  </code><code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"static/js/nbviz_details.js"</code><code class="nt">&gt;</code><code class="nt">&lt;/script&gt;</code><code>
+  </code><code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"static/js/nbviz_main.js"</code><code class="nt">&gt;</code><code class="nt">&lt;/script&gt;</code><code> </code><a class="co" id="co_building_a_visualization_CO5-4" href="#callout_building_a_visualization_CO5-4"><img src="4.png" alt="4" width="12" height="12"></a><code>
+</code><code class="nt">&lt;/body&gt;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO5-1" href="#co_building_a_visualization_CO5-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>We use cacheable online <a href="http://bit.ly/1sKdjr1">content delivery networks (CDNs)</a> to access most of our third-party JavaScript libraries, in this case D3 specific.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO5-2" href="#co_building_a_visualization_CO5-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>These are the shared core JavaScript utilities, constants, and so on.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO5-3" href="#co_building_a_visualization_CO5-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>A script for each of the visualization’s elements.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO5-4" href="#co_building_a_visualization_CO5-4"><img src="4.png" alt="4" width="12" height="12"></a></dt>
+<dd><p>The main entry point for our Nobel app, where it requests its first datasets and sets the display ball rolling.</p></dd>
+</dl>
+
+<p>We’ll use the JS-module pattern described in <a data-type="xref" href="ch02.html#sect_namespaces">“Keeping Your Namespaces Clean”</a> to establish an <code>nbviz</code> namespace, keeping our global namespace clean and allowing for shared methods, parameters, constants, and the like. Each module will expose any necessary methods to the <code>nbviz</code> object, allowing them to be used in the other scripts. For example, <code>nbviz_map.js</code> exposes the <code>nbviz.initMap</code> and <code>nbviz.updateMap</code> methods.  Here is the basic structure of our modules:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="cm">/* global $, _, crossfilter, d3  */</code><code> </code><a class="co" id="co_building_a_visualization_CO6-1" href="#callout_building_a_visualization_CO6-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code class="p">(</code><code class="kd">function</code><code class="p">(</code><code class="nx">nbviz</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+    </code><code class="s1">'use strict'</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO6-2" href="#callout_building_a_visualization_CO6-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+     </code><code class="c1">//... MODULES PRIVATE VARS ETC..
+</code><code>     </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">foo</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="p">)</code><code class="p">{</code><code> </code><code class="c1">//... </code><a class="co" id="co_building_a_visualization_CO6-3" href="#callout_building_a_visualization_CO6-3"><img src="3.png" alt="3" width="12" height="12"></a><code class="c1">
+</code><code>     </code><code class="p">}</code><code class="p">;</code><code>
+</code><code class="p">}</code><code class="p">(</code><code class="nb">window</code><code class="p">.</code><code class="nx">nbviz</code><code> </code><code class="o">=</code><code> </code><code class="nb">window</code><code class="p">.</code><code class="nx">nbviz</code><code> </code><code class="o">||</code><code> </code><code class="p">{</code><code class="p">}</code><code class="p">)</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO6-4" href="#callout_building_a_visualization_CO6-4"><img src="4.png" alt="4" width="12" height="12"></a></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO6-1" href="#co_building_a_visualization_CO6-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Defining variables as global will prevent them triggering <a href="http://www.jslint.com/">JSLint</a> errors.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO6-2" href="#co_building_a_visualization_CO6-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Enforces ECMAScript 5’s strict mode, a great sanity check.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO6-3" href="#co_building_a_visualization_CO6-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>Exposes this function to other scripts as part of shared <code>nbviz</code> namespace.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO6-4" href="#co_building_a_visualization_CO6-4"><img src="4.png" alt="4" width="12" height="12"></a></dt>
+<dd><p>Uses the <code>nbviz</code> object if available, and creates it otherwise.</p></dd>
+</dl>
+
+<p>In the coming chapters, the JavaScript/D3 used to produce the visualization’s elements will be explained in detail. First we’ll deal with the flow of data through the Nobel-viz, from the (data) server to the client browser and within the client, driven by user interaction.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Basic Data Flow"><div class="sect2" id="d3build_sect_components">
+<h2>Basic Data Flow</h2>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="JavaScript engine" data-tertiary="basic data flow" id="idm140319400834544"></a>There are many ways to deal with data in a project of any complexity. For interactive apps, and particularly data visualizations, I find the most robust pattern is to have a central data object to cache current data. In addition to the cached data, we also have some active reflections or subsets of this dataset, stored in the main data object. For example, in our Nobel-viz a user can select a number of subsets of the data (e.g., only those winners in the Physics category).</p>
+
+<p>If a different data reflection is triggered by the user, such as by choosing the per capita prize metric, a flag<sup><a data-type="noteref" id="idm140319400832096-marker" href="ch15.html#idm140319400832096">7</a></sup> is set (in this case, <code>valuePerCapita</code> is set to <code>0</code> or <code>1</code>). We then update all the visual components, and those that depend on <code>valuePerCapita</code> adapt accordingly. The size of the map indicators changes and the bar chart <span class="keep-together">reorganizes</span>.</p>
+
+<p>The key idea is to make sure the visual elements are synchronized to any user-driven data changes. A reliable way to do this is to have a single update method (here called <code>onDataChange</code>) that is called whenever a user does something to change the data. This method alerts all the active visual elements to the changed data and they respond accordingly.</p>
+
+<p>Let’s now see how the app’s code fits together, starting with the shared core utilities.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="The Core Code"><div class="sect2" id="idm140319400827504">
+<h2>The Core Code</h2>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="JavaScript engine" data-tertiary="core code" id="idm140319400826256"></a>The first JavaScript file loaded is <em>nbviz_core.js</em>. This script contains any code we might want to share among the other scripts. For example, we have a <code>categoryFill</code> method that returns a specific color for each category. This is used by both the timeline component and as a border in the biography box. This core code includes functions we might want to isolate for testing, or simply to make other modules less cluttered.</p>
+<div data-type="tip"><h6>Tip</h6>
+<p>Often in programming we use string constants as dictionary keys and comparatives, and in generated labels. It’s easy to slip into the bad habit of typing these strings when required, but a much better way is to define a constant variable instead. For example, rather than <code>'if option === "All Categories"'</code>, we use <code>'if option === nbviz.ALL_CATS'</code>. In the former option, mistyping <code>'All Categories'</code> will not flag an error, an accident waiting to happen. Having a const also means only one edit is needed to change all occurrences of the string. Note that unlike some languages JavaScript doesn’t have <a href="http://bit.ly/1YxorUj">immutable constants</a>, but by convention uppercase variables should not be changed.</p>
+</div>
+
+<p><a data-type="xref" href="#build_core">Example 15-3</a> shows the code shared between the other modules. Anything intended to be used by other <em>modules</em> is attached to the shared <code>nbviz</code> namespace.</p>
+<div id="build_core" data-type="example">
+<h5><span class="label">Example 15-3. </span>Shared code base in nbviz_core.js</h5>
+
+<pre data-type="programlisting" data-code-language="js"><code class="cm">/* global $, _, crossfilter, d3  */</code><code>
+</code><code class="p">(</code><code class="kd">function</code><code class="p">(</code><code class="nx">nbviz</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+    </code><code class="s1">'use strict'</code><code class="p">;</code><code>
+
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">data</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="p">}</code><code class="p">;</code><code> </code><code class="c1">// our main data object
+</code><code>    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">valuePerCapita</code><code> </code><code class="o">=</code><code> </code><code class="mi">0</code><code class="p">;</code><code> </code><code class="c1">// metric flag
+</code><code>    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">activeCountry</code><code> </code><code class="o">=</code><code> </code><code class="kc">null</code><code class="p">;</code><code>
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">ALL_CATS</code><code> </code><code class="o">=</code><code> </code><code class="s1">'All Categories'</code><code class="p">;</code><code>
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">TRANS_DURATION</code><code> </code><code class="o">=</code><code> </code><code class="mi">2000</code><code class="p">;</code><code> </code><code class="c1">// length in ms for our transitions
+</code><code>    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">MAX_CENTROID_RADIUS</code><code> </code><code class="o">=</code><code> </code><code class="mi">30</code><code class="p">;</code><code>
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">MIN_CENTROID_RADIUS</code><code> </code><code class="o">=</code><code> </code><code class="mi">2</code><code class="p">;</code><code>
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">COLORS</code><code> </code><code class="o">=</code><code> </code><code class="p">{</code><code class="nx">palegold</code><code class="o">:</code><code class="s1">'#E6BE8A'</code><code class="p">}</code><code class="p">;</code><code> </code><code class="c1">// any named colors we use
+</code><code>    </code><code class="nx">$EVE_API</code><code> </code><code class="o">=</code><code> </code><code class="s1">'http://localhost:5000/api/'</code><code class="p">;</code><code>
+
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">CATEGORIES</code><code> </code><code class="o">=</code><code> </code><code class="p">[</code><code>
+        </code><code class="s2">"Chemistry"</code><code class="p">,</code><code> </code><code class="s2">"Economics"</code><code class="p">,</code><code> </code><code class="s2">"Literature"</code><code class="p">,</code><code> </code><code class="s2">"Peace"</code><code class="p">,</code><code>
+        </code><code class="s2">"Physics"</code><code class="p">,</code><code> </code><code class="s2">"Physiology or Medicine"</code><code>
+    </code><code class="p">]</code><code class="p">;</code><code>
+
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">categoryFill</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">category</code><code class="p">)</code><code class="p">{</code><code>
+        </code><code class="kd">var</code><code> </code><code class="nx">i</code><code> </code><code class="o">=</code><code> </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">CATEGORIES</code><code class="p">.</code><code class="nx">indexOf</code><code class="p">(</code><code class="nx">category</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="k">return</code><code> </code><code class="nx">d3</code><code class="p">.</code><code class="nx">hcl</code><code class="p">(</code><code class="nx">i</code><code> </code><code class="o">/</code><code> </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">CATEGORIES</code><code class="p">.</code><code class="nx">length</code><code> </code><code class="o">*</code><code> </code><code class="mi">360</code><code class="p">,</code><code> </code><code class="mi">60</code><code class="p">,</code><code> </code><code class="mi">70</code><code class="p">)</code><code class="p">;</code><code>
+    </code><code class="p">}</code><code class="p">;</code><code>
+
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">getDataFromAPI</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">resource</code><code class="p">,</code><code> </code><code class="nx">callback</code><code class="p">)</code><code class="p">{</code><code>
+        </code><code class="nx">d3</code><code class="p">.</code><code class="nx">json</code><code class="p">(</code><code class="nx">$EVE_API</code><code> </code><code class="o">+</code><code> </code><code class="nx">resource</code><code class="p">,</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">error</code><code class="p">,</code><code> </code><code class="nx">data</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+        </code><code class="c1">//...
+</code><code>        </code><code class="p">}</code><code class="p">)</code><code class="p">;</code><code>
+    </code><code class="p">}</code><code class="p">;</code><code>
+
+    </code><code class="kd">var</code><code> </code><code class="nx">nestDataByYear</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">entries</code><code class="p">)</code><code> </code><code class="p">{</code><code>          </code><a class="co" id="co_building_a_visualization_CO7-1" href="#callout_building_a_visualization_CO7-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+    </code><code class="c1">//...
+</code><code>    </code><code class="p">}</code><code class="p">;</code><code>
+
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">makeFilterAndDimensions</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">winnersData</code><code class="p">)</code><code class="p">{</code><code>
+    </code><code class="c1">//...
+</code><code>    </code><code class="p">}</code><code class="p">;</code><code>
+
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">filterByCountries</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">countryNames</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+    </code><code class="c1">//...
+</code><code>    </code><code class="p">}</code><code class="p">;</code><code>
+
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">filterByCategory</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">cat</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+    </code><code class="c1">//...
+</code><code>    </code><code class="p">}</code><code class="p">;</code><code>
+
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">getCountryData</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+    </code><code class="c1">// ...
+</code><code>    </code><code class="p">}</code><code class="p">;</code><code>
+
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">onDataChange</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="p">)</code><code> </code><code class="p">{</code><code> </code><a class="co" id="co_building_a_visualization_CO7-2" href="#callout_building_a_visualization_CO7-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+        </code><code class="kd">var</code><code> </code><code class="nx">data</code><code> </code><code class="o">=</code><code> </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">getCountryData</code><code class="p">(</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">updateBarChart</code><code class="p">(</code><code class="nx">data</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">updateMap</code><code class="p">(</code><code class="nx">data</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">updateList</code><code class="p">(</code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">countryDim</code><code class="p">.</code><code class="nx">top</code><code class="p">(</code><code class="kc">Infinity</code><code class="p">)</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="nx">data</code><code> </code><code class="o">=</code><code> </code><code class="nx">nestDataByYear</code><code class="p">(</code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">countryDim</code><code class="p">.</code><code class="nx">top</code><code class="p">(</code><code class="kc">Infinity</code><code class="p">)</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">updateTimeChart</code><code class="p">(</code><code class="nx">data</code><code class="p">)</code><code class="p">;</code><code>
+    </code><code class="p">}</code><code class="p">;</code><code>
+
+</code><code class="p">}</code><code class="p">(</code><code class="nb">window</code><code class="p">.</code><code class="nx">nbviz</code><code> </code><code class="o">=</code><code> </code><code class="nb">window</code><code class="p">.</code><code class="nx">nbviz</code><code> </code><code class="o">||</code><code> </code><code class="p">{</code><code class="p">}</code><code class="p">)</code><code class="p">)</code><code class="p">;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO7-1" href="#co_building_a_visualization_CO7-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>This and the following empty methods will be explained in detail in the following chapters in a use context.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO7-2" href="#co_building_a_visualization_CO7-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>This function is called when the dataset changes (after initialization of the app, this is user-driven) to update the Nobel-viz elements. See <a data-type="xref" href="#d3build_sect_components">“Basic Data Flow”</a> for details.</p></dd>
+</dl></div>
+
+<p>With the core code at hand, let’s see how our app is initialized, by loading some datasets from static files and our dynamic RESTful API.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Initializing the Nobel Prize Visualization"><div class="sect2" id="idm140319399876256">
+<h2>Initializing the Nobel Prize Visualization</h2>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="JavaScript engine" data-tertiary="initialization" id="idm140319399874880"></a>The Nobel Prize app is started by a set of data requests made in the <em>nbviz_main.js</em> script. We use D3’s <a href="https://github.com/d3/d3-queue"><code>queue</code></a> function, one of Mike Bostock’s many helpers, to make simultaneous requests for static data files and the set of all winners (courtesy of our Python Eve API). When all the calls to <code>queue</code> have been resolved, a callback function specified by the <code>await</code> method is called with the data response and any errors generated:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="c1">//...
+</code><code class="kd">var</code><code> </code><code class="nx">query_winners</code><code> </code><code class="o">=</code><code> </code><code class="s1">'winners?projection='</code><code> </code><code class="o">+</code><code>
+    </code><code class="nx">JSON</code><code class="p">.</code><code class="nx">stringify</code><code class="p">(</code><code> </code><code class="p">{</code><code class="s2">"mini_bio"</code><code class="o">:</code><code class="mi">0</code><code class="p">,</code><code> </code><code class="s2">"bio_image"</code><code class="o">:</code><code class="mi">0</code><code class="p">}</code><code> </code><code class="p">)</code><code class="p">;</code><code>
+
+</code><code class="nx">queue</code><code class="p">(</code><code class="p">)</code><code>
+    </code><code class="p">.</code><code class="nx">defer</code><code class="p">(</code><code class="nx">d3</code><code class="p">.</code><code class="nx">json</code><code class="p">,</code><code> </code><code class="s2">"static/data/world-110m.json"</code><code class="p">)</code><code> </code><a class="co" id="co_building_a_visualization_CO8-1" href="#callout_building_a_visualization_CO8-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+    </code><code class="p">.</code><code class="nx">defer</code><code class="p">(</code><code class="nx">d3</code><code class="p">.</code><code class="nx">csv</code><code class="p">,</code><code> </code><code class="s2">"static/data/world-country-names-nobel.csv"</code><code class="p">)</code><code>
+    </code><code class="p">.</code><code class="nx">defer</code><code class="p">(</code><code class="nx">d3</code><code class="p">.</code><code class="nx">json</code><code class="p">,</code><code> </code><code class="s2">"static/data/winning_country_data.json"</code><code class="p">)</code><code>
+    </code><code class="p">.</code><code class="nx">defer</code><code class="p">(</code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">getDataFromAPI</code><code class="p">,</code><code> </code><code class="nx">query_winners</code><code class="p">)</code><code> </code><a class="co" id="co_building_a_visualization_CO8-2" href="#callout_building_a_visualization_CO8-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+    </code><code class="p">.</code><code class="nx">await</code><code class="p">(</code><code class="nx">ready</code><code class="p">)</code><code class="p">;</code><code>
+
+</code><code class="kd">function</code><code> </code><code class="nx">ready</code><code class="p">(</code><code class="nx">error</code><code class="p">,</code><code> </code><code class="nx">world</code><code class="p">,</code><code> </code><code class="nx">names</code><code class="p">,</code><code> </code><code class="nx">countryData</code><code class="p">,</code><code> </code><code class="nx">winnersData</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+</code><code class="c1">// Do something cool with the data...
+</code><code class="p">}</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO8-1" href="#co_building_a_visualization_CO8-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The static files consist of a world map (110m resolution) and some country data we’ll be using in the visualization. You can find the commonly used <em>world-110m.json</em> data at <a href="http://bit.ly/268d0EI">the topojson GitHub repo</a>.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO8-2" href="#co_building_a_visualization_CO8-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>This makes a request for dynamic data to our Python Eve API using the <code>query_winners</code> arguments to exclude the superfluous biographical details (i.e., <code>http://localhost:5000/api/winners?projection=%7B%22mini_bio...</code>).</p></dd>
+</dl>
+
+<p>In the call to <code>queue</code>, we make use of a <code>nbviz.getDataFromAPI</code> method (defined in <em>nbviz_core.js</em>), which wraps a D3 AJAX call to our Python Eve API (running on localhost, port 5000). <a data-type="xref" href="#build_get_data">Example 15-4</a> shows code for <code>getDataFromAPI</code>.</p>
+<div id="build_get_data" data-type="example">
+<h5><span class="label">Example 15-4. </span>A wrapper function to get data from our RESTful API using a resource string and some query data</h5>
+
+<pre data-type="programlisting" data-code-language="js"><code class="kd">var</code><code> </code><code class="nx">$EVE_API</code><code> </code><code class="o">=</code><code> </code><code class="s1">'http://localhost:5000/api/'</code><code class="p">;</code><code>
+
+</code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">getDataFromAPI</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">resource</code><code class="p">,</code><code> </code><code class="nx">callback</code><code class="p">)</code><code class="p">{</code><code> </code><a class="co" id="co_building_a_visualization_CO9-1" href="#callout_building_a_visualization_CO9-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+    </code><code class="nx">d3</code><code class="p">.</code><code class="nx">json</code><code class="p">(</code><code class="nx">$EVE_API</code><code> </code><code class="o">+</code><code> </code><code class="nx">resource</code><code class="p">,</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">error</code><code class="p">,</code><code> </code><code class="nx">data</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+        </code><code class="k">if</code><code class="p">(</code><code class="nx">error</code><code class="p">)</code><code class="p">{</code><code>
+            </code><code class="k">return</code><code> </code><code class="nx">callback</code><code class="p">(</code><code class="nx">error</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="p">}</code><code>
+        </code><code class="k">if</code><code class="p">(</code><code class="s1">'_items'</code><code> </code><code class="k">in</code><code> </code><code class="nx">data</code><code class="p">)</code><code class="p">{</code><code> </code><a class="co" id="co_building_a_visualization_CO9-2" href="#callout_building_a_visualization_CO9-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+            </code><code class="nx">callback</code><code class="p">(</code><code class="kc">null</code><code class="p">,</code><code> </code><code class="nx">data</code><code class="p">.</code><code class="nx">_items</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO9-3" href="#callout_building_a_visualization_CO9-3"><img src="3.png" alt="3" width="12" height="12"></a><code>
+        </code><code class="p">}</code><code>
+        </code><code class="k">else</code><code class="p">{</code><code>
+            </code><code class="nx">callback</code><code class="p">(</code><code class="kc">null</code><code class="p">,</code><code> </code><code class="nx">data</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="p">}</code><code>
+    </code><code class="p">}</code><code class="p">)</code><code class="p">;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO9-1" href="#co_building_a_visualization_CO9-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Accepts a resource (e.g., <code>winners?projection={'mini_bio':0,'bio_image':0}</code>) and a callback to be invoked when the request to our Python Eve API has resolved.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO9-2" href="#co_building_a_visualization_CO9-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>If the response data has an <code>items</code> field, then we’re dealing with a set of MongoDB items; otherwise, we have an individual resource (i.e., the data for a single Nobel prize winner).</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO9-3" href="#co_building_a_visualization_CO9-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>The callback accepts an error argument (null here) and some response data.</p></dd>
+</dl></div>
+
+<p>If our data requests are successful, the  <code>ready</code> function receives the requested data and we’re ready to start sending data to the visual <span class="keep-together">elements</span>.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Ready to Go"><div class="sect2" id="sect_ready">
+<h2>Ready to Go</h2>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="JavaScript engine" data-tertiary="ready function" id="idm140319400402544"></a>After the deferred requests for data made by the <code>queue</code> method are resolved, it calls the specified <code>ready</code> function, passing the datasets as arguments in the order in which they were added.</p>
+
+<p>The <code>ready</code> function is shown in <a data-type="xref" href="#build_ready">Example 15-5</a>. If the data has downloaded without error, we use the winners’ data to create the active filter (courtesy of the Crossfilter library) we will use to allow the user to select subsets of the Nobel winners based on category, gender, and country. We then call some initializer methods, and finally use the <code>onDataChange</code> method to trigger a drawing of the visual elements of dataviz, updating bar chart, map, timeline, and so on. The schematic in <a data-type="xref" href="#d3build_work_flow">Figure 15-3</a> shows the way in which data changes propagate.</p>
+<div id="build_ready" data-type="example">
+<h5><span class="label">Example 15-5. </span>The ready function is called when the initial data requests have resolved</h5>
+
+<pre data-type="programlisting" data-code-language="js"><code class="c1">//...
+</code><code>    </code><code class="kd">function</code><code> </code><code class="nx">ready</code><code class="p">(</code><code class="nx">error</code><code class="p">,</code><code> </code><code class="nx">worldMap</code><code class="p">,</code><code> </code><code class="nx">countryNames</code><code class="p">,</code><code> </code><code class="nx">countryData</code><code class="p">,</code><code>
+                   </code><code class="nx">winnersData</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+        </code><code class="c1">// LOG ANY ERROR TO CONSOLE
+</code><code>        </code><code class="k">if</code><code class="p">(</code><code class="nx">error</code><code class="p">)</code><code class="p">{</code><code>
+            </code><code class="k">return</code><code> </code><code class="nx">console</code><code class="p">.</code><code class="nx">warn</code><code class="p">(</code><code class="nx">error</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="p">}</code><code>
+        </code><code class="c1">// STORE OUR COUNTRY-DATA DATASET
+</code><code>        </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">data</code><code class="p">.</code><code class="nx">countryData</code><code> </code><code class="o">=</code><code> </code><code class="nx">countryData</code><code class="p">;</code><code>
+        </code><code class="c1">// MAKE OUR FILTER AND ITS DIMENSIONS
+</code><code>        </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">makeFilterAndDimensions</code><code class="p">(</code><code class="nx">winnersData</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO10-1" href="#callout_building_a_visualization_CO10-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+        </code><code class="c1">// INITIALIZE MENU AND MAP
+</code><code>        </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">initMenu</code><code class="p">(</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">initMap</code><code class="p">(</code><code class="nx">worldMap</code><code class="p">,</code><code> </code><code class="nx">countryNames</code><code class="p">)</code><code class="p">;</code><code>
+        </code><code class="c1">// TRIGGER UPDATE WITH FULL WINNERS' DATASET
+</code><code>        </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">onDataChange</code><code class="p">(</code><code class="p">)</code><code class="p">;</code><code>
+    </code><code class="p">}</code><code>
+</code><code class="p">}</code><code class="p">(</code><code class="nb">window</code><code class="p">.</code><code class="nx">nbviz</code><code> </code><code class="o">=</code><code> </code><code class="nb">window</code><code class="p">.</code><code class="nx">nbviz</code><code> </code><code class="o">||</code><code> </code><code class="p">{</code><code class="p">}</code><code class="p">)</code><code class="p">)</code><code class="p">;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO10-1" href="#co_building_a_visualization_CO10-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>This method uses the freshly loaded Nobel Prize dataset to create the filter we will use to allow the user to select subsets of the data to visualize. See <a data-type="xref" href="#crossfilter">“Filtering Data with Crossfilter”</a> for details.</p></dd>
+</dl></div>
+
+<p>We’ll see how the <code>makeFilterAndDimensions</code> method (<a data-type="xref" href="#build_ready">Example 15-5</a>, <img src="1.png" alt="1" width="12" height="12">) works when we cover the Crossfilter library in <a data-type="xref" href="#crossfilter">“Filtering Data with Crossfilter”</a>. For now, we’ll assume we have a means of getting the data currently selected by the user via some menu selectors (e.g., selecting all female winners).</p>
+
+<figure><div id="d3build_work_flow" class="figure">
+<img src="dvpj_1503.png" alt="dvpj 1503" width="1466" height="986">
+<h6><span class="label">Figure 15-3. </span>The app’s main data flow</h6>
+</div></figure>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Data-Driven Updates"><div class="sect2" id="d3build_sect_components_2">
+<h2>Data-Driven Updates</h2>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="JavaScript engine" data-tertiary="data-driven updates" id="idm140319400240816"></a>After the menu and map have been initialized in the <code>ready</code> function (we’ll see how that works in their respective chapters: <a data-type="xref" href="ch18.html#chapter_d3_maps">Chapter 18</a> for the map and <a data-type="xref" href="ch20.html#chapter_d3_ui">Chapter 20</a> for the menu), we trigger an update of the visual elements with the <code>onDataChange</code> method defined in <em>nbviz_core.js</em>. <code>onDataChange</code> (see <a data-type="xref" href="#src_ondatachange">Example 15-6</a>) is a shared function that is called whenever the set of displayed data changes in response to user interaction, or when the user chooses a different country prize metric (e.g., measuring per capita rather than absolute <span class="keep-together">numbers</span>).</p>
+<div id="src_ondatachange" data-type="example">
+<h5><span class="label">Example 15-6. </span>Function called to update the visual elements when selected data is changed</h5>
+
+<pre data-type="programlisting" data-code-language="js"><code class="c1">// nbviz_core.js
+</code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">onDataChange</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+    </code><code class="kd">var</code><code> </code><code class="nx">data</code><code> </code><code class="o">=</code><code> </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">getCountryData</code><code class="p">(</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO11-1" href="#callout_building_a_visualization_CO11-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">updateBarChart</code><code class="p">(</code><code class="nx">data</code><code class="p">)</code><code class="p">;</code><code>
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">updateMap</code><code class="p">(</code><code class="nx">data</code><code class="p">)</code><code class="p">;</code><code>
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">updateList</code><code class="p">(</code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">countryDim</code><code class="p">.</code><code class="nx">top</code><code class="p">(</code><code class="kc">Infinity</code><code class="p">)</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO11-2" href="#callout_building_a_visualization_CO11-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+    </code><code class="nx">data</code><code> </code><code class="o">=</code><code> </code><code class="nx">nestDataByYear</code><code class="p">(</code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">countryDim</code><code class="p">.</code><code class="nx">top</code><code class="p">(</code><code class="kc">Infinity</code><code class="p">)</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO11-3" href="#callout_building_a_visualization_CO11-3"><img src="3.png" alt="3" width="12" height="12"></a><code>
+    </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">updateTimeChart</code><code class="p">(</code><code class="nx">data</code><code class="p">)</code><code class="p">;</code><code>
+</code><code class="p">}</code><code class="p">;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO11-1" href="#co_building_a_visualization_CO11-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p><code>getCountryData</code> returns a tailored data array, based on grouping the winners by country and adding some data from our country dataset. See <a data-type="xref" href="#build_getCountryData">Example 15-7</a> for details.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO11-2" href="#co_building_a_visualization_CO11-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Passes an array of all selected winners to the <code>updateList</code> method (see <a data-type="xref" href="ch19.html#chapter_d3_bios">Chapter 19</a> for details).</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO11-3" href="#co_building_a_visualization_CO11-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>Our time chart needs a nested dataset. We’ll cover the construction of this in <a data-type="xref" href="ch17.html#chapter_d3_nobels">Chapter 17</a>.</p></dd>
+</dl></div>
+
+<p>The main dataset, consumed by the timeline, map, and bar chart, is produced by the <code>getCountryData</code> method, which groups the prize winners by country and adds some national information, namely population size and international alphacode. <a data-type="xref" href="#build_getCountryData">Example 15-7</a> breaks this method down.</p>
+<div id="build_getCountryData" data-type="example">
+<h5><span class="label">Example 15-7. </span>Creating the main country dataset</h5>
+
+<pre data-type="programlisting" data-code-language="js"><code class="nx">nbviz</code><code class="p">.</code><code class="nx">getCountryData</code><code> </code><code class="o">=</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="p">)</code><code> </code><code class="p">{</code><code>
+    </code><code class="kd">var</code><code> </code><code class="nx">countryGroups</code><code> </code><code class="o">=</code><code> </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">countryDim</code><code class="p">.</code><code class="nx">group</code><code class="p">(</code><code class="p">)</code><code class="p">.</code><code class="nx">all</code><code class="p">(</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO12-1" href="#callout_building_a_visualization_CO12-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+
+    </code><code class="c1">// make main data-ball
+</code><code>    </code><code class="kd">var</code><code> </code><code class="nx">data</code><code> </code><code class="o">=</code><code> </code><code class="nx">countryGroups</code><code class="p">.</code><code class="nx">map</code><code class="p">(</code><code> </code><code class="kd">function</code><code class="p">(</code><code class="nx">c</code><code class="p">)</code><code> </code><code class="p">{</code><code> </code><a class="co" id="co_building_a_visualization_CO12-2" href="#callout_building_a_visualization_CO12-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+        </code><code class="kd">var</code><code> </code><code class="nx">cData</code><code> </code><code class="o">=</code><code> </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">data</code><code class="p">.</code><code class="nx">countryData</code><code class="p">[</code><code class="nx">c</code><code class="p">.</code><code class="nx">key</code><code class="p">]</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO12-3" href="#callout_building_a_visualization_CO12-3"><img src="3.png" alt="3" width="12" height="12"></a><code>
+        </code><code class="kd">var</code><code> </code><code class="nx">value</code><code> </code><code class="o">=</code><code> </code><code class="nx">c</code><code class="p">.</code><code class="nx">value</code><code class="p">;</code><code>
+        </code><code class="c1">// if per capita value then divide by pop. size
+</code><code>        </code><code class="k">if</code><code class="p">(</code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">valuePerCapita</code><code class="p">)</code><code class="p">{</code><code>
+            </code><code class="nx">value</code><code> </code><code class="o">=</code><code> </code><code class="nx">value</code><code> </code><code class="o">/</code><code> </code><code class="nx">cData</code><code class="p">.</code><code class="nx">population</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO12-4" href="#callout_building_a_visualization_CO12-4"><img src="4.png" alt="4" width="12" height="12"></a><code>
+        </code><code class="p">}</code><code>
+        </code><code class="k">return</code><code> </code><code class="p">{</code><code>
+            </code><code class="nx">key</code><code class="o">:</code><code> </code><code class="nx">c</code><code class="p">.</code><code class="nx">key</code><code class="p">,</code><code> </code><code class="c1">// e.g., Japan
+</code><code>            </code><code class="nx">value</code><code class="o">:</code><code> </code><code class="nx">value</code><code class="p">,</code><code> </code><code class="c1">// e.g., 19 (prizes)
+</code><code>            </code><code class="nx">code</code><code class="o">:</code><code> </code><code class="nx">cData</code><code class="p">.</code><code class="nx">alpha3Code</code><code class="p">,</code><code> </code><code class="c1">// e.g., JPN
+</code><code>        </code><code class="p">}</code><code class="p">;</code><code>
+    </code><code class="p">}</code><code class="p">)</code><code>
+        </code><code class="p">.</code><code class="nx">sort</code><code class="p">(</code><code class="kd">function</code><code class="p">(</code><code class="nx">a</code><code class="p">,</code><code> </code><code class="nx">b</code><code class="p">)</code><code> </code><code class="p">{</code><code> </code><a class="co" id="co_building_a_visualization_CO12-5" href="#callout_building_a_visualization_CO12-5"><img src="5.png" alt="5" width="12" height="12"></a><code>
+            </code><code class="k">return</code><code> </code><code class="nx">b</code><code class="p">.</code><code class="nx">value</code><code> </code><code class="o">-</code><code> </code><code class="nx">a</code><code class="p">.</code><code class="nx">value</code><code class="p">;</code><code> </code><code class="c1">// descending
+</code><code>        </code><code class="p">}</code><code class="p">)</code><code class="p">;</code><code>
+
+    </code><code class="k">return</code><code> </code><code class="nx">data</code><code class="p">;</code><code>
+</code><code class="p">}</code><code class="p">;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO12-1" href="#co_building_a_visualization_CO12-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p><code>countryDim</code> is one of our Crossfilter dimensions (see <a data-type="xref" href="#crossfilter">“Filtering Data with Crossfilter”</a>), here providing group key, value counts (e.g., <code>{key:Argentina, value:5}</code>).</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO12-2" href="#co_building_a_visualization_CO12-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>We use the array’s <code>map</code> method to create a new array with added components from our country dataset.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO12-3" href="#co_building_a_visualization_CO12-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>Fetches country data using our group key (e.g., Australia).</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO12-4" href="#co_building_a_visualization_CO12-4"><img src="4.png" alt="4" width="12" height="12"></a></dt>
+<dd><p>Makes the country prize rate a per capita one if <code>valuePerCapita</code> integer is <code>1</code>.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO12-5" href="#co_building_a_visualization_CO12-5"><img src="5.png" alt="5" width="12" height="12"></a></dt>
+<dd><p>Uses <code>Array</code>’s <code>sort</code> method to make the array descending by value.</p></dd>
+</dl></div>
+
+<p>The update methods of our Nobel-viz elements all make use of data filtered by the Crossfilter library. Let’s see how that’s done now.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Filtering Data with Crossfilter"><div class="sect2" id="crossfilter">
+<h2>Filtering Data with Crossfilter</h2>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="JavaScript engine" data-tertiary="filtering data" id="idm140319400653648"></a><a data-type="indexterm" data-primary="Crossfilter library" data-secondary="benefits of" id="idm140319400652432"></a>Developed by D3’s creators, Mike Bostock and Jason Davies, Crossfilter<sup><a data-type="noteref" id="idm140319400651360-marker" href="ch15.html#idm140319400651360">8</a></sup> is a highly optimized library for exploring large, multivariate datasets using JavaScript. It’s very fast and can easily handle datasets far larger than our Nobel Prize dataset. We’ll be using it  to filter our dataset of winners by the dimensions of category, gender, and <span class="keep-together">country</span>.</p>
+
+<p>The choice of Crossfilter is slightly ambitious, but I wanted to show it in action as I’ve found it to be so useful personally. It’s also the basis of <a href="https://dc-js.github.io/dc.js/">dc.js</a>, the very popular D3 charting library, which testifies to its usefulness. Although Crossfilter can be a little difficult to grasp, especially when we start intersecting dimensional filters, most use cases follow a basic pattern that is quickly absorbed. If you ever find yourself trying to cut and slice large datasets, Crossfilter’s optimizations will prove a boon.</p>
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect3" data-pdf-bookmark="Creating the filter"><div class="sect3" id="idm140319400646912">
+<h3>Creating the filter</h3>
+
+<p><a data-type="indexterm" data-primary="Crossfilter library" data-secondary="filter creation" id="idm140319400644992"></a>On initializing the Nobel-viz, the <code>makeFilterAndDimensions</code> method defined in <em>nbviz_core.js</em> is called from the <code>ready</code> method in <em>nbviz_main.js</em> (see <a data-type="xref" href="#sect_ready">“Ready to Go”</a>). <code>makeFilterAndDimensions</code> uses the freshly loaded Nobel Prize dataset to create a Crossfilter filter and some dimensions (e.g., prize category) based on it.</p>
+
+<p>We first create our filter using the dataset of Nobel Prize winners returned by our Python Eve API. Let’s remind ourselves what that looks like:</p>
+
+<pre data-type="programlisting" data-code-language="json"><code class="err">//</code> <code class="err">winners</code> <code class="err">=</code>
+<code class="p">[{</code>
+  <code class="err">name:</code><code class="nt">"C\u00e9sar Milstein"</code><code class="p">,</code>
+  <code class="err">category:</code><code class="nt">"Physiology or Medicine"</code><code class="p">,</code>
+  <code class="err">gender:</code><code class="nt">"male"</code><code class="p">,</code>
+  <code class="err">country:</code><code class="nt">"Argentina"</code><code class="p">,</code>
+  <code class="err">year:</code> <code class="err">1984</code>
+ <code class="p">},</code>
+ <code class="p">{</code>
+  <code class="err">name:</code><code class="nt">"Auguste Beernaert"</code><code class="p">,</code>
+  <code class="err">category:</code><code class="nt">"Peace"</code><code class="p">,</code>
+  <code class="err">gender:</code><code class="nt">"male"</code><code class="p">,</code>
+  <code class="err">country:</code><code class="nt">"Belgium"</code><code class="p">,</code>
+  <code class="err">year:</code> <code class="err">1909</code>
+ <code class="p">},</code>
+ <code class="err">...</code>
+<code class="err">}</code><code class="p">]</code><code class="err">;</code></pre>
+
+<p>To create our filter, call the <code>crossfilter</code> function with the array of winner objects:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="nx">nbviz</code><code class="p">.</code><code class="nx">makeFilterAndDimensions</code> <code class="o">=</code> <code class="kd">function</code><code class="p">(</code><code class="nx">winnersData</code><code class="p">){</code>
+    <code class="c1">// ADD OUR FILTER AND CREATE CATEGORY DIMENSIONS</code>
+    <code class="nx">nbviz</code><code class="p">.</code><code class="nx">filter</code> <code class="o">=</code> <code class="nx">crossfilter</code><code class="p">(</code><code class="nx">winnersData</code><code class="p">);</code>
+    <code class="c1">//...</code>
+<code class="p">};</code></pre>
+
+<p>Crossfilter works by allowing you to create dimensional filters on your data. You do so by applying a function to the objects. At its simplest, this creates a dimension based on a single category—for example, by gender. Here we create the gender dimension we’ll use to filter Nobel Prizes by sex:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="nx">nbviz</code><code class="p">.</code><code class="nx">makeFilterAndDimensions</code> <code class="o">=</code> <code class="kd">function</code><code class="p">(</code><code class="nx">winnersData</code><code class="p">){</code>
+<code class="c1">//...</code>
+    <code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code> <code class="o">=</code> <code class="nx">nbviz</code><code class="p">.</code><code class="nx">filter</code><code class="p">.</code><code class="nx">dimension</code><code class="p">(</code><code class="kd">function</code><code class="p">(</code><code class="nx">o</code><code class="p">)</code> <code class="p">{</code>
+        <code class="k">return</code> <code class="nx">o</code><code class="p">.</code><code class="nx">gender</code><code class="p">;</code>
+    <code class="p">});</code>
+<code class="c1">//...</code></pre>
+
+<p>This dimension now has an efficient ordering of our dataset by the gender field. We can use it like this, to return all objects with gender female:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code><code class="p">.</code><code class="nx">filter</code><code class="p">(</code><code class="s1">'female'</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO13-1" href="#callout_building_a_visualization_CO13-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code class="kd">var</code><code> </code><code class="nx">femaleWinners</code><code> </code><code class="o">=</code><code> </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code><code class="p">.</code><code class="nx">top</code><code class="p">(</code><code class="kc">Infinity</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO13-2" href="#callout_building_a_visualization_CO13-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code class="nx">femaleWinners</code><code class="p">.</code><code class="nx">length</code><code> </code><code class="c1">// 47</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO13-1" href="#co_building_a_visualization_CO13-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p><code>filter</code> takes a single value or, where appropriate, a range (e.g., [5, 21]—all values between 5 and 21). It can also take a Boolean function of the values.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO13-2" href="#co_building_a_visualization_CO13-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Once the filter is applied, <code>top</code> returns the specified number of ordered objects. Specifying <code>Infinity</code><sup><a data-type="noteref" id="idm140319399491664-marker" href="ch15.html#idm140319399491664">9</a></sup> returns all the filtered data objects.</p></dd>
+</dl>
+
+<p>Crossfilter really comes into its own when we start applying multiple dimensional filters, allowing us to slice and dice the data into any subsets we require, all achieved with impressive speed.<sup><a data-type="noteref" id="idm140319399489376-marker" href="ch15.html#idm140319399489376">10</a></sup></p>
+
+<p>Let’s clear the gender dimension and add a new one, filtering by prize-winning category. To reset a dimension,<sup><a data-type="noteref" id="idm140319399470208-marker" href="ch15.html#idm140319399470208">11</a></sup> apply the <code>filter</code> method without arguments:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code><code class="p">.</code><code class="nx">filter</code><code class="p">();</code>
+<code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code><code class="p">.</code><code class="nx">top</code><code class="p">(</code><code class="kc">Infinity</code><code class="p">)</code> <code class="c1">//  the full Array[858] of objects</code></pre>
+
+<p>We’ll now create a new prize category dimension:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="nx">nbviz</code><code class="p">.</code><code class="nx">categoryDim</code> <code class="o">=</code> <code class="nx">nbviz</code><code class="p">.</code><code class="nx">filter</code><code class="p">.</code><code class="nx">dimension</code><code class="p">(</code><code class="kd">function</code><code class="p">(</code><code class="nx">o</code><code class="p">)</code> <code class="p">{</code>
+    <code class="k">return</code> <code class="nx">o</code><code class="p">.</code><code class="nx">category</code><code class="p">;</code>
+<code class="p">});</code></pre>
+
+<p>We can now filter the gender and category dimensions in sequence, allowing us to find, for example, all female Physics prize winners:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code><code class="p">.</code><code class="nx">filter</code><code class="p">(</code><code class="s1">'female'</code><code class="p">);</code>
+<code class="nx">nbviz</code><code class="p">.</code><code class="nx">categoryDim</code><code class="p">.</code><code class="nx">filter</code><code class="p">(</code><code class="s1">'Physics'</code><code class="p">);</code>
+<code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code><code class="p">.</code><code class="nx">top</code><code class="p">(</code><code class="kc">Infinity</code><code class="p">);</code>
+<code class="c1">// Out:</code>
+<code class="c1">// [</code>
+<code class="c1">//  {name:"Marie Sklodowska-Curie", category:"Physics",...</code>
+<code class="c1">//  {name:"Maria Goeppert-Mayer", category:"Physics",...</code>
+<code class="c1">// ]</code></pre>
+
+<p class="pagebreak-before">Note that we can turn the filters on and off selectively. So, for example, we can remove the Physics category filter, meaning the gender dimension now contains all the female Nobel Prize winners.</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="nx">nbviz</code><code class="p">.</code><code class="nx">categoryDim</code><code class="p">.</code><code class="nx">filter</code><code class="p">();</code>
+<code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code><code class="p">.</code><code class="nx">top</code><code class="p">(</code><code class="kc">Infinity</code><code class="p">);</code> <code class="c1">// Array[47] of objects</code></pre>
+
+<p>In our Nobel-viz, these filter operations will be driven by the user making selections from the topmost menu bar.</p>
+
+<p>As well as returning the filtered subsets, Crossfilter can perform grouping operations on the data. We use this to get the national prize aggregates for the bar chart and map indicators.</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code><code class="p">.</code><code class="nx">filter</code><code class="p">(</code><code class="p">)</code><code class="p">;</code><code> </code><code class="c1">// reset gender dimension
+</code><code class="kd">var</code><code> </code><code class="nx">countryGroup</code><code> </code><code class="o">=</code><code> </code><code class="nx">nbviz</code><code class="p">.</code><code class="nx">countryDim</code><code class="p">.</code><code class="nx">group</code><code class="p">(</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO14-1" href="#callout_building_a_visualization_CO14-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+</code><code class="nx">countryGroup</code><code class="p">.</code><code class="nx">all</code><code class="p">(</code><code class="p">)</code><code class="p">;</code><code> </code><a class="co" id="co_building_a_visualization_CO14-2" href="#callout_building_a_visualization_CO14-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+
+</code><code class="c1">// Out:
+</code><code class="c1">// [
+</code><code class="c1">//  {key:"Argentina", value:5}, </code><a class="co" id="co_building_a_visualization_CO14-3" href="#callout_building_a_visualization_CO14-3"><img src="3.png" alt="3" width="12" height="12"></a><code class="c1">
+</code><code class="c1">//  {key:"Australia", value:9},
+</code><code class="c1">//  {key:"Austria", value:14},
+</code><code class="c1">// ...]</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_building_a_visualization_CO14-1" href="#co_building_a_visualization_CO14-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Group takes an optional function as an argument, but the default is generally what you want.</p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO14-2" href="#co_building_a_visualization_CO14-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Returns all groups by key and value. Do not modify the returned array.<sup><a data-type="noteref" id="idm140319399269936-marker" href="ch15.html#idm140319399269936">12</a></sup></p></dd>
+<dt><a class="co" id="callout_building_a_visualization_CO14-3" href="#co_building_a_visualization_CO14-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p><code>value</code> is the total number of Nobel Prize winners for Argentina.</p></dd>
+</dl>
+
+<p>To create our Crossfilter filter and dimensions, we use the <code>makeFilterAndDimensions</code> method, defined in <em>nbviz_core.js</em>. <a data-type="xref" href="#makeFilterAndDims">Example 15-8</a> shows the whole method. See <a data-type="xref" href="app01.html#sect_testing_js">“Testing JavaScript Apps”</a>, which uses <code>makeFilterAndDimensions</code> to demonstrate some JavaScript testing.<a data-type="indexterm" data-primary="" data-startref="JSwebvis15" id="idm140319399076592"></a></p>
+<div id="makeFilterAndDims" data-type="example" class="pagebreak-before">
+<h5><span class="label">Example 15-8. </span>Making our Crossfilter filter and dimensions</h5>
+
+<pre data-type="programlisting" data-code-language="js">    <code class="nx">nbviz</code><code class="p">.</code><code class="nx">makeFilterAndDimensions</code> <code class="o">=</code> <code class="kd">function</code><code class="p">(</code><code class="nx">winnersData</code><code class="p">){</code>
+        <code class="c1">// ADD OUR FILTER AND CREATE CATEGORY DIMENSIONS</code>
+        <code class="nx">nbviz</code><code class="p">.</code><code class="nx">filter</code> <code class="o">=</code> <code class="nx">crossfilter</code><code class="p">(</code><code class="nx">winnersData</code><code class="p">);</code>
+        <code class="nx">nbviz</code><code class="p">.</code><code class="nx">countryDim</code> <code class="o">=</code> <code class="nx">nbviz</code><code class="p">.</code><code class="nx">filter</code><code class="p">.</code><code class="nx">dimension</code><code class="p">(</code><code class="kd">function</code><code class="p">(</code><code class="nx">o</code><code class="p">){</code>
+            <code class="k">return</code> <code class="nx">o</code><code class="p">.</code><code class="nx">country</code><code class="p">;</code>
+        <code class="p">});</code>
+
+        <code class="nx">nbviz</code><code class="p">.</code><code class="nx">categoryDim</code> <code class="o">=</code> <code class="nx">nbviz</code><code class="p">.</code><code class="nx">filter</code><code class="p">.</code><code class="nx">dimension</code><code class="p">(</code><code class="kd">function</code><code class="p">(</code><code class="nx">o</code><code class="p">)</code> <code class="p">{</code>
+            <code class="k">return</code> <code class="nx">o</code><code class="p">.</code><code class="nx">category</code><code class="p">;</code>
+        <code class="p">});</code>
+
+        <code class="nx">nbviz</code><code class="p">.</code><code class="nx">genderDim</code> <code class="o">=</code> <code class="nx">nbviz</code><code class="p">.</code><code class="nx">filter</code><code class="p">.</code><code class="nx">dimension</code><code class="p">(</code><code class="kd">function</code><code class="p">(</code><code class="nx">o</code><code class="p">)</code> <code class="p">{</code>
+            <code class="k">return</code> <code class="nx">o</code><code class="p">.</code><code class="nx">gender</code><code class="p">;</code>
+        <code class="p">});</code>
+    <code class="p">};</code></pre></div>
+</div></section>
+
+
+
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Running the Nobel Prize Visualization App"><div class="sect1" id="idm140319400645968">
+<h1>Running the Nobel Prize Visualization App</h1>
+
+<p><a data-type="indexterm" data-primary="visualization implementation" data-secondary="running the app" id="idm140319399062688"></a>To run the Nobel-viz app, go to the <em>api</em> subdirectory of the root <em>nobel_viz</em> directory and start the Python Eve RESTful API server on port 5000 (by default):</p>
+
+<pre data-type="programlisting">$nobel_viz/api  python server_eve.py
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+...</pre>
+
+<p>In the project’s root directory, set the Nobel-viz server running on port 8000:</p>
+
+<pre data-type="programlisting">$nobel_viz  python nobel_viz.py
+ * Running on http://127.0.0.1:8000/ (Press CTRL+C to quit)
+ ...</pre>
+
+<p>With these two servers running locally, navigate your browser to <code>http:localhost:8000</code> and you should see <a data-type="xref" href="#d3build_nobelviz">Figure 15-4</a>.</p>
+
+<p>In <a data-type="xref" href="app01.html#sect_flask_deploy">“Deploying Flask Apps”</a>, we’ll see how to deploy a Flask app on a production machine, using the Apache web server.</p>
+
+<figure><div id="d3build_nobelviz" class="figure">
+<img src="dvpj_1504.png" alt="dvpj 1504" width="1272" height="931">
+<h6><span class="label">Figure 15-4. </span>The finished Nobel-viz app</h6>
+</div></figure>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Summary"><div class="sect1" id="idm140319398992256">
+<h1>Summary</h1>
+
+<p>In this chapter, we sketched out how to implement the visualization we imagined in <a data-type="xref" href="ch14.html#chapter_imagining">Chapter 14</a>. The backbone was assembled from HTML, CSS, and JavaScript building blocks and the data feed to the app and data flow within it described. In the following chapters, we’ll see how the individual components of our Nobel-viz use the data sent to them to create our interactive visualization. We’ll start with a big chapter, which will introduce the fundamentals of D3 while showing how to build the bar chart component of our app. This should set you up for the subsequent D3-focused chapters.</p>
+</div></section>
+
+
+
+
+
+
+
+<div data-type="footnotes"><p data-type="footnote" id="idm140319401958992"><sup><a href="ch15.html#idm140319401958992-marker">1</a></sup> I would advise saving JavaScripted styling for special occasions, doing as much as possible with vanilla CSS.</p><p data-type="footnote" id="idm140319401723200"><sup><a href="ch15.html#idm140319401723200-marker">2</a></sup> Currently around 2,560×1,600 pixels.</p><p data-type="footnote" id="idm140319401562848"><sup><a href="ch15.html#idm140319401562848-marker">3</a></sup> See <a data-type="xref" href="ch18.html#sect_projections">“Projections”</a> for a comparison of the different geometric projections. Given the constraint of showing all Nobel Prize–winning countries, the equirectangular projection proved most effective.</p><p data-type="footnote" id="idm140319401449776"><sup><a href="ch15.html#idm140319401449776-marker">4</a></sup> See the collection at <a href="https://github.com/mbostock/d3/wiki/Gallery">D3’s GitHub</a> and the huge collection of 11,000 examples at <a href="http://bit.ly/1ZWYnAC">blockbuilder.org</a>.</p><p data-type="footnote" id="idm140319401444320"><sup><a href="ch15.html#idm140319401444320-marker">5</a></sup> ES2015 (aka EcmaScript 6), the new JavaScript specification, is almost here and will go a long way to solving this problem. D3 v4 use ES2015 along with <a href="http://rollupjs.org">rollup.js</a> for module management.</p><p data-type="footnote" id="idm140319401442544"><sup><a href="ch15.html#idm140319401442544-marker">6</a></sup> Right now there are a number of competing module-loading utilities, the most used being requireJS, browserify, and webpack. They each have pros and cons, but all have a learning curve and require adaptation of existing modules.</p><p data-type="footnote" id="idm140319400832096"><sup><a href="ch15.html#idm140319400832096-marker">7</a></sup> In our app, I’m keeping things as simple as possible; as the number of UI options increases, it’s sensible to store flags, ranges, etc. in a dedicated object.</p><p data-type="footnote" id="idm140319400651360"><sup><a href="ch15.html#idm140319400651360-marker">8</a></sup> See <a href="http://square.github.io/crossfilter/"><em class="hyperlink">http://square.github.io/crossfilter/</em></a> for an impressive example.</p><p data-type="footnote" id="idm140319399491664"><sup><a href="ch15.html#idm140319399491664-marker">9</a></sup> JavaScript’s <a href="https://mzl.la/1OuMLUG"><code>Infinity</code></a> is a numeric value representing infinity.</p><p data-type="footnote" id="idm140319399489376"><sup><a href="ch15.html#idm140319399489376-marker">10</a></sup> Crossfilter was designed to update millions of records in real time, in response to user input.</p><p data-type="footnote" id="idm140319399470208"><sup><a href="ch15.html#idm140319399470208-marker">11</a></sup> This will clear all the filters on this dimension.</p><p data-type="footnote" id="idm140319399269936"><sup><a href="ch15.html#idm140319399269936-marker">12</a></sup> See the <a href="https://github.com/square/crossfilter/wiki/API-Reference#group_all">Crossfilter GitHub page</a>.</p></div></div></section></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch14.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">14. Imagining a Nobel Visualization</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch16.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">16. Introducing D3—The Story of a Bar Chart</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+
+          
+            <p>You have 7 days left in your trial, Flankpeter. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/">Settings</a></li>
+      <li class="full-support"><a href="https://www.safaribooksonline.com/public/support">Support</a></li>
+      <li><a href="https://www.safaribooksonline.com/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+
+
+
+    
+
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>

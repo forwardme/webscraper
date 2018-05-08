@@ -1,0 +1,1802 @@
+<!--[if IE]><![endif]--><!DOCTYPE html><!--[if IE 8]><html class="no-js ie8 oldie" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage"" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/data-visualization-with/9781491920565/ch04.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="2870136"
+  data-user-uuid="fee1bd59-4e02-48a4-a7b4-152ec4c157ac"
+  data-username="flankpeter"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/04/2018"
+
+
+  data-archive="9781491920565"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch04.html"
+  data-epub-title="Data Visualization with Python and JavaScript" data-debug=0 data-testing=0><![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en" prefix="og: http://ogp.me/ns/# og:book: http://ogp.me/ns/book# og:video: http://ogp.me/ns/video#"
+
+    
+        itemscope itemtype="http://schema.org/Book http://schema.org/ItemPage"" data-login-url="/accounts/login/"
+data-offline-url="/"
+data-url="/library/view/data-visualization-with/9781491920565/ch04.html"
+data-csrf-cookie="csrfsafari"
+data-highlight-privacy=""
+
+
+  data-user-id="2870136"
+  data-user-uuid="fee1bd59-4e02-48a4-a7b4-152ec4c157ac"
+  data-username="flankpeter"
+  data-account-type="Trial"
+  
+  data-activated-trial-date="05/04/2018"
+
+
+  data-archive="9781491920565"
+  data-publishers="O&#39;Reilly Media, Inc."
+
+
+
+  data-htmlfile-name="ch04.html"
+  data-epub-title="Data Visualization with Python and JavaScript" data-debug=0 data-testing=0><!--<![endif]--><head><meta charset="utf-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><meta name="author" content="Safari Books Online" /><meta name="format-detection" content="telephone=no"><meta http-equiv="cleartype" content="on"/><meta name="HandheldFriendly" content="True"/><meta name="MobileOptimized" content="320"/><meta name="apple-itunes-app" content="app-id=881697395, app-argument=safaridetail://9781491920565"/><meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0"/><meta property="twitter:account_id" content="4503599627559754" /><link rel="apple-touch-icon" href="/static/images/apple-touch-icon.0c29511d2d72.png"/><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'><title>4. Webdev 101 - Data Visualization with Python and JavaScript</title><link rel="stylesheet" href="/static/CACHE/css/a04cd81b09cd.css" type="text/css" /><link rel="stylesheet" type="text/css" href="/static/css/annotator.ef38b0457d7b.css"/><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"><style type="text/css" title="ibis-book">
+    @charset "utf-8";#sbo-rt-content html,#sbo-rt-content div,#sbo-rt-content div,#sbo-rt-content span,#sbo-rt-content applet,#sbo-rt-content object,#sbo-rt-content iframe,#sbo-rt-content h1,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5,#sbo-rt-content h6,#sbo-rt-content p,#sbo-rt-content blockquote,#sbo-rt-content pre,#sbo-rt-content a,#sbo-rt-content abbr,#sbo-rt-content acronym,#sbo-rt-content address,#sbo-rt-content big,#sbo-rt-content cite,#sbo-rt-content code,#sbo-rt-content del,#sbo-rt-content dfn,#sbo-rt-content em,#sbo-rt-content img,#sbo-rt-content ins,#sbo-rt-content kbd,#sbo-rt-content q,#sbo-rt-content s,#sbo-rt-content samp,#sbo-rt-content small,#sbo-rt-content strike,#sbo-rt-content strong,#sbo-rt-content sub,#sbo-rt-content sup,#sbo-rt-content tt,#sbo-rt-content var,#sbo-rt-content b,#sbo-rt-content u,#sbo-rt-content i,#sbo-rt-content center,#sbo-rt-content dl,#sbo-rt-content dt,#sbo-rt-content dd,#sbo-rt-content ol,#sbo-rt-content ul,#sbo-rt-content li,#sbo-rt-content fieldset,#sbo-rt-content form,#sbo-rt-content label,#sbo-rt-content legend,#sbo-rt-content table,#sbo-rt-content caption,#sbo-rt-content tdiv,#sbo-rt-content tfoot,#sbo-rt-content thead,#sbo-rt-content tr,#sbo-rt-content th,#sbo-rt-content td,#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content canvas,#sbo-rt-content details,#sbo-rt-content embed,#sbo-rt-content figure,#sbo-rt-content figcaption,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content output,#sbo-rt-content ruby,#sbo-rt-content section,#sbo-rt-content summary,#sbo-rt-content time,#sbo-rt-content mark,#sbo-rt-content audio,#sbo-rt-content video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}#sbo-rt-content article,#sbo-rt-content aside,#sbo-rt-content details,#sbo-rt-content figcaption,#sbo-rt-content figure,#sbo-rt-content footer,#sbo-rt-content header,#sbo-rt-content hgroup,#sbo-rt-content menu,#sbo-rt-content nav,#sbo-rt-content section{display:block}#sbo-rt-content div{line-height:1}#sbo-rt-content ol,#sbo-rt-content ul{list-style:none}#sbo-rt-content blockquote,#sbo-rt-content q{quotes:none}#sbo-rt-content blockquote:before,#sbo-rt-content blockquote:after,#sbo-rt-content q:before,#sbo-rt-content q:after{content:none}#sbo-rt-content table{border-collapse:collapse;border-spacing:0}@page{margin:5px !important}#sbo-rt-content p{margin:10px 0 0;line-height:125%;text-align:left}#sbo-rt-content p.byline{text-align:left;margin:-33px auto 35px;font-style:italic;font-weight:bold}#sbo-rt-content div.preface p+p.byline{margin:1em 0 0}#sbo-rt-content div.preface p.byline+p.byline{margin:0}#sbo-rt-content div.sect1>p.byline{margin:-.25em 0 1em}#sbo-rt-content div.sect1>p.byline+p.byline{margin-top:-1em}#sbo-rt-content em{font-style:italic;font-family:inherit}#sbo-rt-content em strong,#sbo-rt-content strong em{font-weight:bold;font-style:italic;font-family:inherit}#sbo-rt-content strong,#sbo-rt-content span.bold{font-weight:bold}#sbo-rt-content em.replaceable{font-style:italic}#sbo-rt-content strong.userinput{font-weight:bold;font-style:normal}#sbo-rt-content span.bolditalic{font-weight:bold;font-style:italic}#sbo-rt-content a.ulink,#sbo-rt-content a.xref,#sbo-rt-content a.email,#sbo-rt-content a.link,#sbo-rt-content a{text-decoration:none;color:#8e0012}#sbo-rt-content span.lineannotation{font-style:italic;color:#a62a2a;font-family:serif}#sbo-rt-content span.underline{text-decoration:underline}#sbo-rt-content span.strikethrough{text-decoration:line-through}#sbo-rt-content span.smallcaps{font-variant:small-caps}#sbo-rt-content span.cursor{background:#000;color:#fff}#sbo-rt-content span.smaller{font-size:75%}#sbo-rt-content .boxedtext,#sbo-rt-content .keycap{border-style:solid;border-width:1px;border-color:#000;padding:1px}#sbo-rt-content span.gray50{color:#7F7F7F;}#sbo-rt-content h1,#sbo-rt-content div.toc-title,#sbo-rt-content h2,#sbo-rt-content h3,#sbo-rt-content h4,#sbo-rt-content h5{-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;font-weight:bold;text-align:left;page-break-after:avoid !important;font-family:sans-serif,"DejaVuSans"}#sbo-rt-content div.toc-title{font-size:1.5em;margin-top:20px !important;margin-bottom:30px !important}#sbo-rt-content section[data-type="sect1"] h1{font-size:1.3em;color:#8e0012;margin:40px 0 8px 0}#sbo-rt-content section[data-type="sect2"] h2{font-size:1.1em;margin:30px 0 8px 0 !important}#sbo-rt-content section[data-type="sect3"] h3{font-size:1em;color:#555;margin:20px 0 8px 0 !important}#sbo-rt-content section[data-type="sect4"] h4{font-size:1em;font-weight:normal;font-style:italic;margin:15px 0 6px 0 !important}#sbo-rt-content section[data-type="chapter"]>div>h1,#sbo-rt-content section[data-type="preface"]>div>h1,#sbo-rt-content section[data-type="appendix"]>div>h1,#sbo-rt-content section[data-type="glossary"]>div>h1,#sbo-rt-content section[data-type="bibliography"]>div>h1,#sbo-rt-content section[data-type="index"]>div>h1{font-size:2em;line-height:1;margin-bottom:50px;color:#000;padding-bottom:10px;border-bottom:1px solid #000}#sbo-rt-content span.label,#sbo-rt-content span.keep-together{font-size:inherit;font-weight:inherit}#sbo-rt-content div[data-type="part"] h1{font-size:2em;text-align:center;margin-top:0 !important;margin-bottom:50px;padding:50px 0 10px 0;border-bottom:1px solid #000}#sbo-rt-content img.width-ninety{width:90%}#sbo-rt-content img{max-width:95%;margin:0 auto;padding:0}#sbo-rt-content div.figure{background-color:transparent;text-align:center !important;margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content figure{margin:15px 0 15px 0 !important;page-break-inside:avoid}#sbo-rt-content div.figure h6{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding-top:10px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.informalfigure{text-align:center !important;padding:5px 0 !important}#sbo-rt-content div.sidebar{margin:15px 0 10px 0 !important;border:1px solid #DCDCDC;background-color:#F7F7F7;padding:15px !important;page-break-inside:avoid}#sbo-rt-content aside[data-type="sidebar"]{margin:15px 0 10px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar-title,#sbo-rt-content aside[data-type="sidebar"] h5{font-weight:bold;font-size:1em;font-family:sans-serif;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px 0 !important;page-break-inside:avoid}#sbo-rt-content div.sidebar ol,#sbo-rt-content div.sidebar ul,#sbo-rt-content aside[data-type="sidebar"] ol,#sbo-rt-content aside[data-type="sidebar"] ul{margin-left:1.25em !important}#sbo-rt-content div.sidebar div.figure p.title,#sbo-rt-content aside[data-type="sidebar"] figcaption,#sbo-rt-content div.sidebar div.informalfigure div.caption{font-size:90%;text-align:center;font-weight:normal;font-style:italic;font-family:serif !important;color:#000;padding:5px !important;page-break-before:avoid;page-break-after:avoid}#sbo-rt-content div.sidebar div.tip,#sbo-rt-content div.sidebar div[data-type="tip"],#sbo-rt-content div.sidebar div.note,#sbo-rt-content div.sidebar div[data-type="note"],#sbo-rt-content div.sidebar div.warning,#sbo-rt-content div.sidebar div[data-type="warning"],#sbo-rt-content div.sidebar div[data-type="caution"],#sbo-rt-content div.sidebar div[data-type="important"]{margin:20px auto 20px auto !important;font-size:90%;width:85%}#sbo-rt-content aside[data-type="sidebar"] p.byline{font-size:90%;font-weight:bold;font-style:italic;text-align:center;text-indent:0;margin:5px auto 6px;page-break-after:avoid}#sbo-rt-content pre{white-space:pre-wrap;font-family:"Ubuntu Mono",monospace;margin:25px 0 25px 20px;font-size:85%;display:block;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content div.note pre.programlisting,#sbo-rt-content div.tip pre.programlisting,#sbo-rt-content div.warning pre.programlisting,#sbo-rt-content div.caution pre.programlisting,#sbo-rt-content div.important pre.programlisting{margin-bottom:0}#sbo-rt-content code{font-family:"Ubuntu Mono",monospace;-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none;overflow-wrap:break-word}#sbo-rt-content code strong em,#sbo-rt-content code em strong,#sbo-rt-content pre em strong,#sbo-rt-content pre strong em,#sbo-rt-content strong code em code,#sbo-rt-content em code strong code,#sbo-rt-content span.bolditalic code{font-weight:bold;font-style:italic;font-family:"Ubuntu Mono BoldItal",monospace}#sbo-rt-content code em,#sbo-rt-content em code,#sbo-rt-content pre em,#sbo-rt-content em.replaceable{font-family:"Ubuntu Mono Ital",monospace;font-style:italic}#sbo-rt-content code strong,#sbo-rt-content strong code,#sbo-rt-content pre strong,#sbo-rt-content strong.userinput{font-family:"Ubuntu Mono Bold",monospace;font-weight:bold}#sbo-rt-content div[data-type="example"]{margin:10px 0 15px 0 !important}#sbo-rt-content div[data-type="example"] h1,#sbo-rt-content div[data-type="example"] h2,#sbo-rt-content div[data-type="example"] h3,#sbo-rt-content div[data-type="example"] h4,#sbo-rt-content div[data-type="example"] h5,#sbo-rt-content div[data-type="example"] h6{font-style:italic;font-weight:normal;text-align:left !important;text-transform:none !important;font-family:serif !important;margin:10px 0 5px 0 !important;border-bottom:1px solid #000}#sbo-rt-content li pre.example{padding:10px 0 !important}#sbo-rt-content div[data-type="example"] pre[data-type="programlisting"],#sbo-rt-content div[data-type="example"] pre[data-type="screen"]{margin:0}#sbo-rt-content section[data-type="titlepage"]>div>h1{font-size:2em;margin:50px 0 10px 0 !important;line-height:1;text-align:center}#sbo-rt-content section[data-type="titlepage"] h2,#sbo-rt-content section[data-type="titlepage"] p.subtitle,#sbo-rt-content section[data-type="titlepage"] p[data-type="subtitle"]{font-size:1.3em;font-weight:normal;text-align:center;margin-top:.5em;color:#555}#sbo-rt-content section[data-type="titlepage"]>div>h2[data-type="author"],#sbo-rt-content section[data-type="titlepage"] p.author{font-size:1.3em;font-family:serif !important;font-weight:bold;margin:50px 0 !important;text-align:center}#sbo-rt-content section[data-type="titlepage"] p.edition{text-align:center;text-transform:uppercase;margin-top:2em}#sbo-rt-content div.book div.titlepage div.publishername{margin-top:60%;margin-bottom:20px;text-align:center;font-size:1.25em}#sbo-rt-content div.book div.titlepage div.locations p{margin:0;text-align:center}#sbo-rt-content div.book div.titlepage div.locations p.cities{font-size:80%;text-align:center;margin-top:5px}#sbo-rt-content section.preface[title="Dedication"]>div.titlepage h2.title{text-align:center;text-transform:uppercase;font-size:1.5em;margin-top:50px;margin-bottom:50px}#sbo-rt-content ul.stafflist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.stafflist li{list-style-type:none;padding:5px 0}#sbo-rt-content ul.printings li{list-style-type:none}#sbo-rt-content section.preface[title="Dedication"] p{font-style:italic;text-align:center}#sbo-rt-content div.colophon h1.title{font-size:1.3em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon h2.subtitle{margin:0 !important;color:#000;font-family:serif !important;font-size:1em;font-weight:normal}#sbo-rt-content div.colophon div.author h3.author{font-size:1.1em;font-family:serif !important;margin:10px 0 0 !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h4,#sbo-rt-content div.colophon div.editor h3.editor{color:#000;font-size:.8em;margin:15px 0 0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.editor h3.editor{font-size:.8em;margin:0 !important;font-family:serif !important;font-weight:normal}#sbo-rt-content div.colophon div.publisher{margin-top:10px}#sbo-rt-content div.colophon div.publisher p,#sbo-rt-content div.colophon div.publisher span.publishername{margin:0;font-size:.8em}#sbo-rt-content div.legalnotice p,#sbo-rt-content div.timestamp p{font-size:.8em}#sbo-rt-content div.timestamp p{margin-top:10px}#sbo-rt-content div.colophon[title="About the Author"] h1.title,#sbo-rt-content div.colophon[title="Colophon"] h1.title{font-size:1.5em;margin:0 !important;font-family:sans-serif !important}#sbo-rt-content section.chapter div.titlepage div.author{margin:10px 0 10px 0}#sbo-rt-content section.chapter div.titlepage div.author div.affiliation{font-style:italic}#sbo-rt-content div.attribution{margin:5px 0 0 50px !important}#sbo-rt-content h3.author span.orgname{display:none}#sbo-rt-content div.epigraph{margin:10px 0 10px 20px !important;page-break-inside:avoid;font-size:90%}#sbo-rt-content div.epigraph p{font-style:italic}#sbo-rt-content blockquote,#sbo-rt-content div.blockquote{margin:10px !important;page-break-inside:avoid;font-size:95%}#sbo-rt-content blockquote p,#sbo-rt-content div.blockquote p{font-style:italic;margin:.75em 0 0 !important}#sbo-rt-content blockquote div.attribution,#sbo-rt-content blockquote p[data-type="attribution"]{margin:5px 0 10px 30px !important;text-align:right;width:80%}#sbo-rt-content blockquote div.attribution p,#sbo-rt-content blockquote p[data-type="attribution"]{font-style:normal;margin-top:5px}#sbo-rt-content blockquote div.attribution p:before,#sbo-rt-content blockquote p[data-type="attribution"]:before{font-style:normal;content:"—";-webkit-hyphens:none;hyphens:none;adobe-hyphenate:none}#sbo-rt-content p.right{text-align:right;margin:0}#sbo-rt-content div[data-type="footnotes"]{border-top:1px solid black;margin-top:1.5em}#sbo-rt-content sub,#sbo-rt-content sup{font-size:75%;line-height:0;position:relative}#sbo-rt-content sup{top:-.5em}#sbo-rt-content sub{bottom:-.25em}#sbo-rt-content div.refentry p.refname{font-size:1em;font-family:sans-serif,"DejaVuSans";font-weight:bold;margin-bottom:5px;overflow:auto;width:100%}#sbo-rt-content div.refentry{width:100%;display:block;margin-top:2em}#sbo-rt-content div.refsynopsisdiv{display:block;clear:both}#sbo-rt-content div.refentry header{page-break-inside:avoid !important;display:block;break-inside:avoid !important;padding-top:0;border-bottom:1px solid #000}#sbo-rt-content div.refsect1 h6{font-size:.9em;font-family:sans-serif,"DejaVuSans";font-weight:bold}#sbo-rt-content div.refsect1{margin-top:3em}#sbo-rt-content dt{padding-top:10px !important;padding-bottom:0 !important}#sbo-rt-content dd{margin-left:1.5em !important;margin-bottom:.25em}#sbo-rt-content dd,#sbo-rt-content li{text-align:left}#sbo-rt-content ul{list-style-type:disc}#sbo-rt-content ul ul{list-style-type:square}#sbo-rt-content ul ul ul{list-style-type:circle}#sbo-rt-content ol{list-style-type:decimal}#sbo-rt-content ol ol{list-style-type:lower-alpha}#sbo-rt-content ol ol ol{list-style-type:lower-roman}#sbo-rt-content ol ul{list-style-type:disc}#sbo-rt-content ol ul ol{list-style-type:decimal}#sbo-rt-content ul ol{list-style-type:decimal}#sbo-rt-content ul ol ul{list-style-type:disc}#sbo-rt-content ol,#sbo-rt-content ul{list-style-position:outside;margin:15px 0 15px 1.25em}#sbo-rt-content ol li,#sbo-rt-content ul li{margin:.5em 0 .65em;line-height:125%}#sbo-rt-content div.orderedlistalpha{list-style-type:upper-alpha}#sbo-rt-content table.simplelist,#sbo-rt-content ul.simplelist{margin:15px 0 15px 20px !important}#sbo-rt-content ul.simplelist li{list-style-type:none;padding:5px 0}#sbo-rt-content table.simplelist td{border:none}#sbo-rt-content table.simplelist tr{border-bottom:none}#sbo-rt-content table.simplelist tr:nth-of-type(even){background-color:transparent}#sbo-rt-content dl.calloutlist p:first-child{margin-top:-25px !important}#sbo-rt-content dl.calloutlist dd{padding-left:0;margin-top:-25px}#sbo-rt-content dl.calloutlist img,#sbo-rt-content a.co img{padding:0}#sbo-rt-content div.toc ol{margin-top:8px !important;margin-bottom:8px !important;margin-left:0 !important;padding-left:0 !important}#sbo-rt-content div.toc ol ol{margin-left:30px !important;padding-left:0 !important}#sbo-rt-content div.toc ol li{list-style-type:none}#sbo-rt-content div.toc a{color:#8e0012}#sbo-rt-content div.toc ol a{font-size:1em;font-weight:bold}#sbo-rt-content div.toc ol>li>ol a{font-weight:bold;font-size:1em}#sbo-rt-content div.toc ol>li>ol>li>ol a{text-decoration:none;font-weight:normal;font-size:1em}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"],#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{margin:30px !important;font-size:90%;padding:10px 8px 20px 8px !important;page-break-inside:avoid}#sbo-rt-content div.tip ol,#sbo-rt-content div.tip ul,#sbo-rt-content div[data-type="tip"] ol,#sbo-rt-content div[data-type="tip"] ul,#sbo-rt-content div.note ol,#sbo-rt-content div.note ul,#sbo-rt-content div[data-type="note"] ol,#sbo-rt-content div[data-type="note"] ul,#sbo-rt-content div.warning ol,#sbo-rt-content div.warning ul,#sbo-rt-content div[data-type="warning"] ol,#sbo-rt-content div[data-type="warning"] ul,#sbo-rt-content div[data-type="caution"] ol,#sbo-rt-content div[data-type="caution"] ul,#sbo-rt-content div[data-type="important"] ol,#sbo-rt-content div[data-type="important"] ul{margin-left:1.5em !important}#sbo-rt-content div.tip,#sbo-rt-content div[data-type="tip"],#sbo-rt-content div.note,#sbo-rt-content div[data-type="note"]{border:1px solid #BEBEBE;background-color:transparent}#sbo-rt-content div.warning,#sbo-rt-content div[data-type="warning"],#sbo-rt-content div[data-type="caution"],#sbo-rt-content div[data-type="important"]{border:1px solid #BC8F8F}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="note"] h1,#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1,#sbo-rt-content div[data-type="important"] h6{font-weight:bold;font-size:110%;font-family:sans-serif !important;text-transform:uppercase;letter-spacing:1px;text-align:center;margin:4px 0 6px !important}#sbo-rt-content div.tip h3,#sbo-rt-content div[data-type="tip"] h6,#sbo-rt-content div.note h3,#sbo-rt-content div[data-type="note"] h6,#sbo-rt-content div[data-type="tip"] h1,#sbo-rt-content div[data-type="note"] h1{color:#737373}#sbo-rt-content div.warning h3,#sbo-rt-content div[data-type="warning"] h6,#sbo-rt-content div[data-type="caution"] h6,#sbo-rt-content div[data-type="important"] h6,#sbo-rt-content div[data-type="warning"] h1,#sbo-rt-content div[data-type="caution"] h1,#sbo-rt-content div[data-type="important"] h1{color:#C67171}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note,#sbo-rt-content div.safarienabled{background-color:transparent;margin:8px 0 0 !important;border:0 solid #BEBEBE;font-size:100%;padding:0 !important;page-break-inside:avoid}#sbo-rt-content div.sect1[title="Safari® Books Online"] div.note h3,#sbo-rt-content div.safarienabled h6{display:none}#sbo-rt-content div.table,#sbo-rt-content table{margin:15px 0 30px 0 !important;max-width:95%;border:none !important;background:none;display:table !important}#sbo-rt-content div.table,#sbo-rt-content div.informaltable,#sbo-rt-content table{page-break-inside:avoid}#sbo-rt-content tr,#sbo-rt-content tr td{border-bottom:1px solid #c3c3c3}#sbo-rt-content thead td,#sbo-rt-content thead th{border-bottom:#9d9d9d 1px solid !important;border-top:#9d9d9d 1px solid !important}#sbo-rt-content tr:nth-of-type(even){background-color:#f1f6fc}#sbo-rt-content thead{font-family:sans-serif;font-weight:bold}#sbo-rt-content td,#sbo-rt-content th{display:table-cell;padding:.3em;text-align:left;vertical-align:middle;font-size:80%}#sbo-rt-content div.informaltable table{margin:10px auto !important}#sbo-rt-content div.informaltable table tr{border-bottom:none}#sbo-rt-content div.informaltable table tr:nth-of-type(even){background-color:transparent}#sbo-rt-content div.informaltable td,#sbo-rt-content div.informaltable th{border:#9d9d9d 1px solid}#sbo-rt-content div.table-title,#sbo-rt-content table caption{font-weight:normal;font-style:italic;font-family:serif;font-size:1em;margin:10px 0 10px 0 !important;padding:0;page-break-after:avoid;text-align:left !important}#sbo-rt-content table code{font-size:smaller}#sbo-rt-content div.equation,#sbo-rt-content div[data-type="equation"]{margin:10px 0 15px 0 !important}#sbo-rt-content div.equation-title,#sbo-rt-content div[data-type="equation"] h5{font-style:italic;font-weight:normal;font-family:serif !important;font-size:90%;margin:20px 0 10px 0 !important;page-break-after:avoid}#sbo-rt-content div.equation-contents{margin-left:20px}#sbo-rt-content span.inlinemediaobject{height:.85em;display:inline-block;margin-bottom:.2em}#sbo-rt-content span.inlinemediaobject img{margin:0;height:.85em}#sbo-rt-content div.informalequation{margin:20px 0 20px 20px;width:75%}#sbo-rt-content div.informalequation img{width:75%}#sbo-rt-content div.index{text-indent:0}#sbo-rt-content div.index li{line-height:140%}#sbo-rt-content div.index a.indexterm{color:#8e0012}#sbo-rt-content div.index ul,#sbo-rt-content div[data-type="index"] ul{list-style-type:none;padding-left:0;margin-left:0}#sbo-rt-content div.index ul li{padding-left:0;margin-left:0}#sbo-rt-content div.index ul li ul li{margin-left:1em}#sbo-rt-content code.boolean,#sbo-rt-content .navy{color:rgb(0,0,128);}#sbo-rt-content code.character,#sbo-rt-content .olive{color:rgb(128,128,0);}#sbo-rt-content code.comment,#sbo-rt-content .blue{color:rgb(0,0,255);}#sbo-rt-content code.conditional,#sbo-rt-content .limegreen{color:rgb(50,205,50);}#sbo-rt-content code.constant,#sbo-rt-content .darkorange{color:rgb(255,140,0);}#sbo-rt-content code.debug,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.define,#sbo-rt-content .darkgoldenrod,#sbo-rt-content .gold{color:rgb(184,134,11);}#sbo-rt-content code.delimiter,#sbo-rt-content .dimgray{color:rgb(105,105,105);}#sbo-rt-content code.error,#sbo-rt-content .red{color:rgb(255,0,0);}#sbo-rt-content code.exception,#sbo-rt-content .salmon{color:rgb(250,128,11);}#sbo-rt-content code.float,#sbo-rt-content .steelblue{color:rgb(70,130,180);}#sbo-rt-content pre code.function,#sbo-rt-content .green{color:rgb(0,128,0);}#sbo-rt-content code.identifier,#sbo-rt-content .royalblue{color:rgb(65,105,225);}#sbo-rt-content code.ignore,#sbo-rt-content .gray{color:rgb(128,128,128);}#sbo-rt-content code.include,#sbo-rt-content .purple{color:rgb(128,0,128);}#sbo-rt-content code.keyword,#sbo-rt-content .sienna{color:rgb(160,82,45);}#sbo-rt-content code.label,#sbo-rt-content .deeppink{color:rgb(255,20,147);}#sbo-rt-content code.macro,#sbo-rt-content .orangered{color:rgb(255,69,0);}#sbo-rt-content code.number,#sbo-rt-content .brown{color:rgb(165,42,42);}#sbo-rt-content code.operator,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.preCondit,#sbo-rt-content .teal{color:rgb(0,128,128);}#sbo-rt-content code.preProc,#sbo-rt-content .fuschia{color:rgb(255,0,255);}#sbo-rt-content code.repeat,#sbo-rt-content .indigo{color:rgb(75,0,130);}#sbo-rt-content code.special,#sbo-rt-content .saddlebrown{color:rgb(139,69,19);}#sbo-rt-content code.specialchar,#sbo-rt-content .magenta{color:rgb(255,0,255);}#sbo-rt-content code.specialcomment,#sbo-rt-content .seagreen{color:rgb(46,139,87);}#sbo-rt-content code.statement,#sbo-rt-content .forestgreen{color:rgb(34,139,34);}#sbo-rt-content code.storageclass,#sbo-rt-content .plum{color:rgb(221,160,221);}#sbo-rt-content code.string,#sbo-rt-content .darkred{color:rgb(139,0,0);}#sbo-rt-content code.structure,#sbo-rt-content .chocolate{color:rgb(210,106,30);}#sbo-rt-content code.tag,#sbo-rt-content .darkcyan{color:rgb(0,139,139);}#sbo-rt-content code.todo,#sbo-rt-content .black{color:#000;}#sbo-rt-content code.type,#sbo-rt-content .mediumslateblue{color:rgb(123,104,238);}#sbo-rt-content code.typedef,#sbo-rt-content .darkgreen{color:rgb(0,100,0);}#sbo-rt-content code.underlined{text-decoration:underline;}#sbo-rt-content pre code.hll{background-color:#ffc}#sbo-rt-content pre code.c{color:#09F;font-style:italic}#sbo-rt-content pre code.err{color:#A00}#sbo-rt-content pre code.k{color:#069;font-weight:bold}#sbo-rt-content pre code.o{color:#555}#sbo-rt-content pre code.cm{color:#35586C;font-style:italic}#sbo-rt-content pre code.cp{color:#099}#sbo-rt-content pre code.c1{color:#35586C;font-style:italic}#sbo-rt-content pre code.cs{color:#35586C;font-weight:bold;font-style:italic}#sbo-rt-content pre code.gd{background-color:#FCC}#sbo-rt-content pre code.ge{font-style:italic}#sbo-rt-content pre code.gr{color:#F00}#sbo-rt-content pre code.gh{color:#030;font-weight:bold}#sbo-rt-content pre code.gi{background-color:#CFC}#sbo-rt-content pre code.go{color:#000}#sbo-rt-content pre code.gp{color:#009;font-weight:bold}#sbo-rt-content pre code.gs{font-weight:bold}#sbo-rt-content pre code.gu{color:#030;font-weight:bold}#sbo-rt-content pre code.gt{color:#9C6}#sbo-rt-content pre code.kc{color:#069;font-weight:bold}#sbo-rt-content pre code.kd{color:#069;font-weight:bold}#sbo-rt-content pre code.kn{color:#069;font-weight:bold}#sbo-rt-content pre code.kp{color:#069}#sbo-rt-content pre code.kr{color:#069;font-weight:bold}#sbo-rt-content pre code.kt{color:#078;font-weight:bold}#sbo-rt-content pre code.m{color:#F60}#sbo-rt-content pre code.s{color:#C30}#sbo-rt-content pre code.na{color:#309}#sbo-rt-content pre code.nb{color:#366}#sbo-rt-content pre code.nc{color:#0A8;font-weight:bold}#sbo-rt-content pre code.no{color:#360}#sbo-rt-content pre code.nd{color:#99F}#sbo-rt-content pre code.ni{color:#999;font-weight:bold}#sbo-rt-content pre code.ne{color:#C00;font-weight:bold}#sbo-rt-content pre code.nf{color:#C0F}#sbo-rt-content pre code.nl{color:#99F}#sbo-rt-content pre code.nn{color:#0CF;font-weight:bold}#sbo-rt-content pre code.nt{color:#309;font-weight:bold}#sbo-rt-content pre code.nv{color:#033}#sbo-rt-content pre code.ow{color:#000;font-weight:bold}#sbo-rt-content pre code.w{color:#bbb}#sbo-rt-content pre code.mf{color:#F60}#sbo-rt-content pre code.mh{color:#F60}#sbo-rt-content pre code.mi{color:#F60}#sbo-rt-content pre code.mo{color:#F60}#sbo-rt-content pre code.sb{color:#C30}#sbo-rt-content pre code.sc{color:#C30}#sbo-rt-content pre code.sd{color:#C30;font-style:italic}#sbo-rt-content pre code.s2{color:#C30}#sbo-rt-content pre code.se{color:#C30;font-weight:bold}#sbo-rt-content pre code.sh{color:#C30}#sbo-rt-content pre code.si{color:#A00}#sbo-rt-content pre code.sx{color:#C30}#sbo-rt-content pre code.sr{color:#3AA}#sbo-rt-content pre code.s1{color:#C30}#sbo-rt-content pre code.ss{color:#A60}#sbo-rt-content pre code.bp{color:#366}#sbo-rt-content pre code.vc{color:#033}#sbo-rt-content pre code.vg{color:#033}#sbo-rt-content pre code.vi{color:#033}#sbo-rt-content pre code.il{color:#F60}#sbo-rt-content pre code.g{color:#050}#sbo-rt-content pre code.l{color:#C60}#sbo-rt-content pre code.l{color:#F90}#sbo-rt-content pre code.n{color:#008}#sbo-rt-content pre code.nx{color:#008}#sbo-rt-content pre code.py{color:#96F}#sbo-rt-content pre code.p{color:#000}#sbo-rt-content pre code.x{color:#F06}#sbo-rt-content div.blockquote_sampler_toc{width:95%;margin:5px 5px 5px 10px !important}#sbo-rt-content div{font-family:serif;text-align:left}#sbo-rt-content .gray-background,#sbo-rt-content .reverse-video{background:#2E2E2E;color:#FFF}#sbo-rt-content .light-gray-background{background:#A0A0A0}#sbo-rt-content .preserve-whitespace{white-space:pre-wrap}#sbo-rt-content span.gray{color:#4C4C4C}
+    </style><script> // <![CDATA[
+    var g = {
+      position_cache: {
+        
+          "chapter": "/api/v1/book/9781491920565/chapter/ch04.html",
+          "book_id": "9781491920565",
+          "chapter_uri": "ch04.html",
+          "position": 0,
+          "user_uuid": "fee1bd59-4e02-48a4-a7b4-152ec4c157ac",
+          "next_chapter_uri": "/library/view/data-visualization-with/9781491920565/part02.html"
+        
+      },
+      title: "Data Visualization with Python and JavaScript",
+      author_list: "Kyran Dale",
+      format: "book",
+      source: "application/epub+zip",
+      is_system_book: true,
+      is_public: true,
+      loaded_from_server: true,
+      allow_scripts: false,
+      has_mathml: false,
+      show_ios_app_teaser: false
+    };
+    // ]]></script><script src="/static/js/src/modernizr.js"></script><script>
+    
+      
+       window.PUBLIC_ANNOTATIONS = false;
+      
+
+      window.MOBILE_PUBLIC_ANNOTATIONS = false;
+
+    
+
+    
+      window.PRIVACY_CONTROL_OVERRIDE = false;
+    
+
+    
+      window.PRIVACY_CONTROL_SWITCH = true;
+    
+
+    
+      window.PUBLISHER_PAGES = true;
+    
+
+      window.SBO = {
+        "constants": {
+          "SITB_ENDPOINT": "https://www.safaribooksonline.com/api/v2/sitb/",
+          "SEARCH_SELECT_ENDPOINT": "https://www.safaribooksonline.com/api/v2/search/select/",
+          "ENABLE_ONLINE_TRAINING": true
+        }
+      };
+  </script><link rel="canonical" href="https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch04.html"/><meta name="description" content=" Chapter 4. Webdev 101 This chapter introduces the core web-development knowledge you will need to understand the web pages you scrape for data and to structure those you want to ... "><meta property="og:title" content="4. Webdev 101" /><meta itemprop="isPartOf" content="/library/view/data-visualization-with/9781491920565/" /><meta itemprop="name" content="4. Webdev 101" /><meta property="og:url" itemprop="url" content="https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch04.html" /><meta property="og:site_name" content="Safari" /><meta property="og:image" itemprop="thumbnailUrl" content="https://www.safaribooksonline.com/library/cover/9781491920565/" /><meta property="og:description" itemprop="description" content=" Chapter 4. Webdev 101 This chapter introduces the core web-development knowledge you will need to understand the web pages you scrape for data and to structure those you want to ... "><meta itemprop="inLanguage" content="en" /><meta itemprop="publisher" content="O&#39;Reilly Media, Inc." /><meta property="og:type" content="book" /><meta property="og:book:isbn" itemprop="isbn" content="9781491920510" /><meta property="og:book:author" itemprop="author" content="Kyran Dale" /><meta property="og:book:tag" itemprop="about" content="JavaScript" /><meta property="og:book:tag" itemprop="about" content="Python" /><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@safari"><script>
+    window.ENABLE_BOWERBIRD_COLLECTIONS = true;
+  </script><style type="text/css" id="font-styles" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-size: <%= font_size %> !important; }"></style><style type="text/css" id="font-family" data-template="#sbo-rt-content, #sbo-rt-content p, #sbo-rt-content div { font-family: <%= font_family %> !important; }"></style><style type="text/css" id="column-width" data-template="#sbo-rt-content { max-width: <%= column_width %>% !important; margin: 0 auto !important; }"></style><noscript><meta http-equiv="refresh" content="0; url=/library/no-js/" /></noscript><script type="text/javascript">
+    (function(i,s,o,g,r,a,m) {
+      i['GoogleAnalyticsObject']=r;
+      i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();
+      a=s.createElement(o),m=s.getElementsByTagName(o)[0];
+      a.async=1;
+      a.src=g;
+      m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    var matches = document.cookie.match(/BrowserCookie\s*=\s*([a-f0-9\-]{36})/),
+      user_uuid = null;
+
+    if (matches && matches.length === 2) {
+      user_uuid = matches[1];
+    }
+
+  
+    ga('create', 'UA-39299553-7', {'userId': 'fee1bd59-4e02-48a4-a7b4-152ec4c157ac' });
+  
+
+  
+    
+      ga('set', 'dimension1', 'Trial');
+    
+  
+
+  ga('set', 'dimension6', user_uuid);
+
+  
+    ga('set', 'dimension2', 'fee1bd59-4e02-48a4-a7b4-152ec4c157ac');
+    
+  
+
+  
+
+  
+
+  //enable enhanced link tracking
+  ga('require', 'linkid', 'linkid.js');
+
+  // reading interface will track pageviews itself
+  if (document.location.pathname.indexOf("/library/view") !== 0) {
+    ga('send', 'pageview');
+  }
+  </script><script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5P4V6Z');
+  </script><script defer src="/static/js/build/vendor.e2e622a103f9.js"></script><script defer src="/static/js/build/reader.84feb506aa44.js"></script></head>
+
+
+<body class="reading sidenav nav-collapsed  scalefonts">
+
+    
+  
+  <noscript> 
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-5P4V6Z"
+            height="0" width="0"
+            style="display:none;visibility:hidden">
+    </iframe>
+  </noscript>
+  
+
+
+
+    
+      <div class="hide working" role="status">
+        <div class="working-image"></div>
+      </div>
+      <div class="sbo-site-nav">
+        
+
+
+
+
+
+<a href="#container" class="skip">Skip to content</a><header class="topbar t-topbar"><nav role="navigation" class="js-site-nav"><ul class="topnav"><li class="t-logo"><a href="/home/" class="l0 None safari-home nav-icn js-keyboard-nav-home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>Safari Home Icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M4 9.9L4 9.9 4 18 16 18 16 9.9 10 4 4 9.9ZM2.6 8.1L2.6 8.1 8.7 1.9 10 0.5 11.3 1.9 17.4 8.1 18 8.7 18 9.5 18 18.1 18 20 16.1 20 3.9 20 2 20 2 18.1 2 9.5 2 8.7 2.6 8.1Z"/><rect x="10" y="12" width="3" height="7"/><rect transform="translate(18.121320, 10.121320) rotate(-315.000000) translate(-18.121320, -10.121320) " x="16.1" y="9.1" width="4" height="2"/><rect transform="translate(2.121320, 10.121320) scale(-1, 1) rotate(-315.000000) translate(-2.121320, -10.121320) " x="0.1" y="9.1" width="4" height="2"/></g></svg><span>Safari Home</span></a></li><li><a href="/r/" class="t-recommendations-nav l0 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recommendations icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M50 25C50 18.2 44.9 12.5 38.3 11.7 37.5 5.1 31.8 0 25 0 18.2 0 12.5 5.1 11.7 11.7 5.1 12.5 0 18.2 0 25 0 31.8 5.1 37.5 11.7 38.3 12.5 44.9 18.2 50 25 50 31.8 50 37.5 44.9 38.3 38.3 44.9 37.5 50 31.8 50 25ZM25 3.1C29.7 3.1 33.6 6.9 34.4 11.8 30.4 12.4 26.9 15.1 25 18.8 23.1 15.1 19.6 12.4 15.6 11.8 16.4 6.9 20.3 3.1 25 3.1ZM34.4 15.6C33.6 19.3 30.7 22.2 27.1 22.9 27.8 19.2 30.7 16.3 34.4 15.6ZM22.9 22.9C19.2 22.2 16.3 19.3 15.6 15.6 19.3 16.3 22.2 19.2 22.9 22.9ZM3.1 25C3.1 20.3 6.9 16.4 11.8 15.6 12.4 19.6 15.1 23.1 18.8 25 15.1 26.9 12.4 30.4 11.8 34.4 6.9 33.6 3.1 29.7 3.1 25ZM22.9 27.1C22.2 30.7 19.3 33.6 15.6 34.4 16.3 30.7 19.2 27.8 22.9 27.1ZM25 46.9C20.3 46.9 16.4 43.1 15.6 38.2 19.6 37.6 23.1 34.9 25 31.3 26.9 34.9 30.4 37.6 34.4 38.2 33.6 43.1 29.7 46.9 25 46.9ZM27.1 27.1C30.7 27.8 33.6 30.7 34.4 34.4 30.7 33.6 27.8 30.7 27.1 27.1ZM38.2 34.4C37.6 30.4 34.9 26.9 31.3 25 34.9 23.1 37.6 19.6 38.2 15.6 43.1 16.4 46.9 20.3 46.9 25 46.9 29.7 43.1 33.6 38.2 34.4Z"/></g></svg><span>Recommended</span></a></li><li><a href="/playlists/" class="t-queue-nav l0 nav-icn None"><?xml version="1.0" encoding="UTF-8"?><svg width="21px" height="17px" viewBox="0 0 21 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch --><title>icon_Playlist_sml</title><desc>Created with Sketch.</desc><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="icon_Playlist_sml" fill-rule="nonzero" fill="#000000"><g id="playlist-icon"><g id="Group-6"><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle></g><g id="Group-5" transform="translate(0.000000, 7.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g><g id="Group-5-Copy" transform="translate(0.000000, 14.000000)"><circle id="Oval" cx="1.5" cy="1.5" r="1.5"></circle><rect id="Rectangle-path" x="5" y="0" width="16" height="3" rx="0.5"></rect></g></g></g></g></svg><span>
+                 Playlists
+              </span></a></li><li class="search"><a href="#" class="t-search-nav trigger nav-icn l0" data-dropdown-selector=".searchbox"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>search icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M31.3 0C20.9 0 12.5 8.4 12.5 18.8 12.5 22.5 13.6 25.9 15.4 28.8L1.2 42.9C-0.4 44.5-0.4 47.2 1.2 48.8 2 49.6 3.1 50 4.2 50 5.2 50 6.3 49.6 7.1 48.8L21.2 34.6C24.1 36.5 27.5 37.5 31.3 37.5 41.6 37.5 50 29.1 50 18.8 50 8.4 41.6 0 31.3 0ZM31.3 31.3C24.4 31.3 18.8 25.6 18.8 18.8 18.8 11.9 24.4 6.3 31.3 6.3 38.1 6.3 43.8 11.9 43.8 18.8 43.8 25.6 38.1 31.3 31.3 31.3Z"/></g></svg><span>Search</span></a></li><li class="usermenu dropdown"><a href="#" class="trigger l0 nav-icn nav-dropdown"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>navigation arrow</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M0.1 12.5L9.7 3.1C9.8 3 9.9 3 10 3 10.1 3 10.2 3 10.3 3.1L19.9 12.5C20 12.5 20 12.6 20 12.8 20 12.9 20 13 19.9 13L17 15.9C16.9 16 16.8 16 16.7 16 16.5 16 16.4 16 16.4 15.9L10 9.7 3.6 15.9C3.6 16 3.5 16 3.3 16 3.2 16 3.1 16 3 15.9L0.1 13C0 12.9 0 12.8 0 12.7 0 12.7 0 12.6 0.1 12.5Z"/></g></svg><span>Expand Nav</span></a><div class="drop-content"><ul><li><a href="/history/" class="t-recent-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>recent items icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 0C11.2 0 0 11.2 0 25 0 38.8 11.2 50 25 50 38.8 50 50 38.8 50 25 50 11.2 38.8 0 25 0ZM6.3 25C6.3 14.6 14.6 6.3 25 6.3 35.4 6.3 43.8 14.6 43.8 25 43.8 35.4 35.4 43.8 25 43.8 14.6 43.8 6.3 35.4 6.3 25ZM31.8 31.5C32.5 30.5 32.4 29.2 31.6 28.3L27.1 23.8 27.1 12.8C27.1 11.5 26.2 10.4 25 10.4 23.9 10.4 22.9 11.5 22.9 12.8L22.9 25.7 28.8 31.7C29.2 32.1 29.7 32.3 30.2 32.3 30.8 32.3 31.3 32 31.8 31.5Z"/></g></svg><span>History</span></a></li><li><a href="/topics" class="t-topics-link l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 55" width="20" height="20" version="1.1" fill="#4A3C31"><desc>topics icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M25 55L50 41.262 50 13.762 25 0 0 13.762 0 41.262 25 55ZM8.333 37.032L8.333 17.968 25 8.462 41.667 17.968 41.667 37.032 25 46.538 8.333 37.032Z"/></g></svg><span>Topics</span></a></li><li><a href="/tutorials/" class="l1 nav-icn t-tutorials-nav js-toggle-menu-item None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" width="20" height="20" version="1.1" fill="#4A3C31"><desc>tutorials icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M15.8 18.2C15.8 18.2 15.9 18.2 16 18.2 16.1 18.2 16.2 18.2 16.4 18.2 16.5 18.2 16.7 18.1 16.9 18 17 17.9 17.1 17.8 17.2 17.7 17.3 17.6 17.4 17.5 17.4 17.4 17.5 17.2 17.6 16.9 17.6 16.7 17.6 16.6 17.6 16.5 17.6 16.4 17.5 16.2 17.5 16.1 17.4 15.9 17.3 15.8 17.2 15.6 17 15.5 16.8 15.3 16.6 15.3 16.4 15.2 16.2 15.2 16 15.2 15.8 15.2 15.7 15.2 15.5 15.3 15.3 15.4 15.2 15.4 15.1 15.5 15 15.7 14.9 15.8 14.8 15.9 14.7 16 14.7 16.1 14.6 16.3 14.6 16.4 14.6 16.5 14.6 16.6 14.6 16.6 14.6 16.7 14.6 16.9 14.6 17 14.6 17.1 14.7 17.3 14.7 17.4 14.8 17.6 15 17.7 15.1 17.9 15.2 18 15.3 18 15.5 18.1 15.5 18.1 15.6 18.2 15.7 18.2 15.7 18.2 15.7 18.2 15.8 18.2L15.8 18.2ZM9.4 11.5C9.5 11.5 9.5 11.5 9.6 11.5 9.7 11.5 9.9 11.5 10 11.5 10.2 11.5 10.3 11.4 10.5 11.3 10.6 11.2 10.8 11.1 10.9 11 10.9 10.9 11 10.8 11.1 10.7 11.2 10.5 11.2 10.2 11.2 10 11.2 9.9 11.2 9.8 11.2 9.7 11.2 9.5 11.1 9.4 11 9.2 10.9 9.1 10.8 8.9 10.6 8.8 10.5 8.7 10.3 8.6 10 8.5 9.9 8.5 9.7 8.5 9.5 8.5 9.3 8.5 9.1 8.6 9 8.7 8.8 8.7 8.7 8.8 8.6 9 8.5 9.1 8.4 9.2 8.4 9.3 8.2 9.5 8.2 9.8 8.2 10 8.2 10.1 8.2 10.2 8.2 10.3 8.2 10.5 8.3 10.6 8.4 10.7 8.5 10.9 8.6 11.1 8.7 11.2 8.9 11.3 9 11.4 9.1 11.4 9.2 11.4 9.3 11.5 9.3 11.5 9.3 11.5 9.4 11.5 9.4 11.5L9.4 11.5ZM3 4.8C3.1 4.8 3.1 4.8 3.2 4.8 3.4 4.8 3.5 4.8 3.7 4.8 3.8 4.8 4 4.7 4.1 4.6 4.3 4.5 4.4 4.4 4.5 4.3 4.6 4.2 4.6 4.1 4.7 4 4.8 3.8 4.8 3.5 4.8 3.3 4.8 3.1 4.8 3 4.8 2.9 4.7 2.8 4.7 2.6 4.6 2.5 4.5 2.3 4.4 2.2 4.2 2.1 4 1.9 3.8 1.9 3.6 1.8 3.5 1.8 3.3 1.8 3.1 1.8 2.9 1.8 2.7 1.9 2.6 2 2.4 2.1 2.3 2.2 2.2 2.3 2.1 2.4 2 2.5 2 2.6 1.8 2.8 1.8 3 1.8 3.3 1.8 3.4 1.8 3.5 1.8 3.6 1.8 3.8 1.9 3.9 2 4 2.1 4.2 2.2 4.4 2.4 4.5 2.5 4.6 2.6 4.7 2.7 4.7 2.8 4.7 2.9 4.8 2.9 4.8 3 4.8 3 4.8 3 4.8L3 4.8ZM13.1 15.2C13.2 15.1 13.2 15.1 13.2 15.1 13.3 14.9 13.4 14.7 13.6 14.5 13.8 14.2 14.1 14 14.4 13.8 14.7 13.6 15.1 13.5 15.5 13.4 15.9 13.4 16.3 13.4 16.7 13.5 17.2 13.5 17.6 13.7 17.9 13.9 18.2 14.1 18.5 14.4 18.7 14.7 18.9 15 19.1 15.3 19.2 15.6 19.3 15.9 19.4 16.1 19.4 16.4 19.4 17 19.3 17.5 19.1 18.1 19 18.3 18.9 18.5 18.7 18.7 18.5 19 18.3 19.2 18 19.4 17.7 19.6 17.3 19.8 16.9 19.9 16.6 20 16.3 20 16 20 15.8 20 15.6 20 15.4 19.9 15.4 19.9 15.4 19.9 15.4 19.9 15.2 19.9 15 19.8 14.9 19.8 14.8 19.7 14.7 19.7 14.6 19.7 14.4 19.6 14.3 19.5 14.1 19.3 13.7 19.1 13.4 18.7 13.2 18.4 13.1 18.1 12.9 17.8 12.9 17.5 12.8 17.3 12.8 17.1 12.8 16.9L3.5 14.9C3.3 14.9 3.1 14.8 3 14.8 2.7 14.7 2.4 14.5 2.1 14.3 1.7 14 1.4 13.7 1.2 13.3 1 13 0.9 12.6 0.8 12.3 0.7 12 0.7 11.7 0.7 11.4 0.7 11 0.8 10.5 1 10.1 1.1 9.8 1.3 9.5 1.6 9.2 1.8 8.9 2.1 8.7 2.4 8.5 2.8 8.3 3.2 8.1 3.6 8.1 3.9 8 4.2 8 4.5 8 4.6 8 4.8 8 4.9 8.1L6.8 8.5C6.8 8.4 6.8 8.4 6.8 8.4 6.9 8.2 7.1 8 7.2 7.8 7.5 7.5 7.7 7.3 8 7.1 8.4 6.9 8.7 6.8 9.1 6.7 9.5 6.7 10 6.7 10.4 6.8 10.8 6.8 11.2 7 11.5 7.2 11.8 7.5 12.1 7.7 12.4 8 12.6 8.3 12.7 8.6 12.8 8.9 12.9 9.2 13 9.4 13 9.7 13 9.7 13 9.8 13 9.8 13.6 9.9 14.2 10.1 14.9 10.2 15 10.2 15 10.2 15.1 10.2 15.3 10.2 15.4 10.2 15.6 10.2 15.8 10.1 16 10 16.2 9.9 16.4 9.8 16.5 9.6 16.6 9.5 16.8 9.2 16.9 8.8 16.9 8.5 16.9 8.3 16.9 8.2 16.8 8 16.8 7.8 16.7 7.7 16.6 7.5 16.5 7.3 16.3 7.2 16.2 7.1 16 7 15.9 6.9 15.8 6.9 15.7 6.9 15.6 6.8 15.5 6.8L6.2 4.8C6.2 5 6 5.2 5.9 5.3 5.7 5.6 5.5 5.8 5.3 6 4.9 6.2 4.5 6.4 4.1 6.5 3.8 6.6 3.5 6.6 3.2 6.6 3 6.6 2.8 6.6 2.7 6.6 2.6 6.6 2.6 6.5 2.6 6.5 2.5 6.5 2.3 6.5 2.1 6.4 1.8 6.3 1.6 6.1 1.3 6 1 5.7 0.7 5.4 0.5 5 0.3 4.7 0.2 4.4 0.1 4.1 0 3.8 0 3.6 0 3.3 0 2.8 0.1 2.2 0.4 1.7 0.5 1.5 0.7 1.3 0.8 1.1 1.1 0.8 1.3 0.6 1.6 0.5 2 0.3 2.3 0.1 2.7 0.1 3.1 0 3.6 0 4 0.1 4.4 0.2 4.8 0.3 5.1 0.5 5.5 0.8 5.7 1 6 1.3 6.2 1.6 6.3 1.9 6.4 2.3 6.5 2.5 6.6 2.7 6.6 3 6.6 3 6.6 3.1 6.6 3.1 9.7 3.8 12.8 4.4 15.9 5.1 16.1 5.1 16.2 5.2 16.4 5.2 16.7 5.3 16.9 5.5 17.2 5.6 17.5 5.9 17.8 6.2 18.1 6.5 18.3 6.8 18.4 7.2 18.6 7.5 18.6 7.9 18.7 8.2 18.7 8.6 18.7 9 18.6 9.4 18.4 9.8 18.3 10.1 18.2 10.3 18 10.6 17.8 10.9 17.5 11.1 17.3 11.3 16.9 11.6 16.5 11.8 16 11.9 15.7 12 15.3 12 15 12 14.8 12 14.7 12 14.5 11.9 13.9 11.8 13.3 11.7 12.6 11.5 12.5 11.7 12.4 11.9 12.3 12 12.1 12.3 11.9 12.5 11.7 12.7 11.3 12.9 10.9 13.1 10.5 13.2 10.2 13.3 9.9 13.3 9.6 13.3 9.4 13.3 9.2 13.3 9 13.2 9 13.2 9 13.2 9 13.2 8.8 13.2 8.7 13.2 8.5 13.1 8.2 13 8 12.8 7.7 12.6 7.4 12.4 7.1 12 6.8 11.7 6.7 11.4 6.6 11.1 6.5 10.8 6.4 10.6 6.4 10.4 6.4 10.2 5.8 10.1 5.2 9.9 4.5 9.8 4.4 9.8 4.4 9.8 4.3 9.8 4.1 9.8 4 9.8 3.8 9.8 3.6 9.9 3.4 10 3.2 10.1 3 10.2 2.9 10.4 2.8 10.5 2.6 10.8 2.5 11.1 2.5 11.5 2.5 11.6 2.5 11.8 2.6 12 2.6 12.1 2.7 12.3 2.8 12.5 2.9 12.6 3.1 12.8 3.2 12.9 3.3 13 3.5 13.1 3.6 13.1 3.7 13.1 3.8 13.2 3.9 13.2L13.1 15.2 13.1 15.2Z"/></g></svg><span>Tutorials</span></a></li><li class="nav-offers flyout-parent"><a href="#" class="l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="20" height="20" version="1.1" fill="#4A3C31"><desc>offers icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M35.9 20.6L27 15.5C26.1 15 24.7 15 23.7 15.5L14.9 20.6C13.9 21.1 13.2 22.4 13.2 23.4L13.2 41.4C13.2 42.4 13.9 43.7 14.9 44.2L23.3 49C24.2 49.5 25.6 49.5 26.6 49L35.9 43.6C36.8 43.1 37.6 41.8 37.6 40.8L37.6 23.4C37.6 22.4 36.8 21.1 35.9 20.6L35.9 20.6ZM40 8.2C39.1 7.6 37.6 7.6 36.7 8.2L30.2 11.9C29.3 12.4 29.3 13.2 30.2 13.8L39.1 18.8C40 19.4 40.7 20.6 40.7 21.7L40.7 39C40.7 40.1 41.4 40.5 42.4 40L48.2 36.6C49.1 36.1 49.8 34.9 49.8 33.8L49.8 15.6C49.8 14.6 49.1 13.3 48.2 12.8L40 8.2 40 8.2ZM27 10.1L33.6 6.4C34.5 5.9 34.5 5 33.6 4.5L26.6 0.5C25.6 0 24.2 0 23.3 0.5L16.7 4.2C15.8 4.7 15.8 5.6 16.7 6.1L23.7 10.1C24.7 10.6 26.1 10.6 27 10.1ZM10.1 21.7C10.1 20.6 10.8 19.4 11.7 18.8L20.6 13.8C21.5 13.2 21.5 12.4 20.6 11.9L13.6 7.9C12.7 7.4 11.2 7.4 10.3 7.9L1.6 12.8C0.7 13.3 0 14.6 0 15.6L0 33.8C0 34.9 0.7 36.1 1.6 36.6L8.4 40.5C9.3 41 10.1 40.6 10.1 39.6L10.1 21.7 10.1 21.7Z"/></g></svg><span>Offers & Deals</span></a><ul class="flyout"><li><a href="https://get.oreilly.com/email-signup.html" target="_blank" class="l2 nav-icn"><span>Newsletters</span></a></li></ul></li><li class="nav-highlights"><a href="/u/fee1bd59-4e02-48a4-a7b4-152ec4c157ac/" class="t-highlights-nav l1 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 35" width="20" height="20" version="1.1" fill="#4A3C31"><desc>highlights icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M13.325 18.071L8.036 18.071C8.036 11.335 12.36 7.146 22.5 5.594L22.5 0C6.37 1.113 0 10.632 0 22.113 0 29.406 3.477 35 10.403 35 15.545 35 19.578 31.485 19.578 26.184 19.578 21.556 17.211 18.891 13.325 18.071L13.325 18.071ZM40.825 18.071L35.565 18.071C35.565 11.335 39.86 7.146 50 5.594L50 0C33.899 1.113 27.5 10.632 27.5 22.113 27.5 29.406 30.977 35 37.932 35 43.045 35 47.078 31.485 47.078 26.184 47.078 21.556 44.74 18.891 40.825 18.071L40.825 18.071Z"/></g></svg><span>Highlights</span></a></li><li><a href="/u/" class="t-settings-nav l1 js-settings nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a></li><li><a href="https://www.safaribooksonline.com/public/support" class="l1 no-icon">Support</a></li><li><a href="/accounts/logout/" class="l1 no-icon">Sign Out</a></li></ul><ul class="profile"><li><a href="/u/" class="l2 nav-icn None"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 53" width="20" height="20" version="1.1" fill="#4A3C31"><desc>settings icon</desc><g stroke="none" stroke-width="1" fill-rule="evenodd"><path d="M44.6 29.6C44.7 28.6 44.8 27.5 44.8 26.5 44.8 25.5 44.7 24.4 44.6 23.4L49.6 19C50 18.8 50.1 18.3 49.9 17.9 48.9 14.7 47.1 11.7 44.9 9.1 44.6 8.8 44.2 8.7 43.8 8.8L37.4 11.1C35.8 9.8 34 8.7 32.1 8L30.9 1.4C30.8 0.9 30.4 0.6 30 0.5 26.7-0.2 23.3-0.2 20 0.5 19.6 0.6 19.2 0.9 19.1 1.4L17.9 8C16 8.7 14.1 9.8 12.6 11.1L6.2 8.8C5.8 8.7 5.4 8.8 5.1 9.1 2.9 11.7 1.1 14.7 0.1 17.9 -0.1 18.3 0 18.8 0.4 19L5.4 23.4C5.3 24.4 5.2 25.5 5.2 26.5 5.2 27.5 5.3 28.6 5.4 29.6L0.4 34C0 34.2-0.1 34.7 0.1 35.1 1.1 38.3 2.9 41.4 5.1 43.9 5.4 44.2 5.8 44.4 6.2 44.2L12.6 42C14.1 43.2 16 44.3 17.9 45L19.1 51.7C19.2 52.1 19.6 52.5 20 52.5 21.6 52.8 23.3 53 25 53 26.7 53 28.4 52.8 30 52.5 30.4 52.5 30.8 52.1 30.9 51.7L32.1 45C34 44.3 35.8 43.2 37.4 42L43.8 44.2C44.2 44.4 44.6 44.2 44.9 43.9 47.1 41.4 48.9 38.3 49.9 35.1 50.1 34.7 50 34.2 49.6 34L44.6 29.6ZM25 36.4C19.6 36.4 15.2 32 15.2 26.5 15.2 21 19.6 16.6 25 16.6 30.4 16.6 34.8 21 34.8 26.5 34.8 32 30.4 36.4 25 36.4Z"/></g></svg><span>Settings</span></a><span class="l2 t-nag-notification"  id="nav-nag" ><strong class="trial-green">6</strong> days left in your trial.
+  
+  
+
+  
+    
+      
+
+<a class="" href="/subscribe/">Subscribe</a>.
+
+
+    
+  
+
+  
+
+</span></li><li><a href="https://www.safaribooksonline.com/public/support" class="l2">Support</a></li><li><a href="/accounts/logout/" class="l2">Sign Out</a></li></ul></div></li></ul></nav></header>
+
+
+      </div>
+      <div id="container" class="application">
+        
+          <div class="nav-container clearfix">
+            
+
+
+            
+            
+          </div>
+
+          
+
+  <div class="js-toc">
+    
+      <div class="sbo-reading-menu sbo-menu-top"><section class="sbo-toc-container toc-menu"><a href="#" class="sbo-toc-thumb"><span class="sbo-title ss-list"><h1><div class="visuallyhidden">Table of Contents for </div>
+      
+      Data Visualization with Python and JavaScript
+      
+    </h1></span></a><div class="toc-contents"></div></section></div>
+
+    
+
+    <div class="interface-controls interface-controls-top">
+      <ul class="interface-control-btns js-bitlist js-reader">
+        <li class="js-search-in-archive search-in-archive t-search-in-archive"><a href="#" title="Search in archive" class="js-search-controls search-controls"><span class="icon">Search in book...</span></a><form class="search-archive-bar js-search-form"><input type="search" name="query" placeholder="Search inside this book..." autocomplete="off"></form><div class="search-archive-results"><div class="js-sitb-results-region"></div></div></li><li class="queue-control"><div class="js-content-uri" data-content-uri="/api/v1/book/9781491920565/chapter/ch04.html"><div class="js-collections-dropdown collections-dropdown menu-bit-cards"></div></div></li><li class="js-font-control-panel font-control-activator"><a href="#" data-push-state="false" id="font-controls" title="Change font size" aria-label="Change font size"><span class="icon">Toggle Font Controls</span></a></li><li class="dropdown sharing-controls"><a href="#" class="trigger" data-push-state="false" title="Share" aria-label="Share"><i class="fa fa-share"></i></a><ul class="social-sharing dropdown-menu"><li><a
+        class="twitter share-button t-twitter"
+        target="_blank"
+        aria-label="Share this section on Twitter"
+        title="Share this section on Twitter"
+      
+        href="https://twitter.com/share?url=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch04.html&text=Data%20Visualization%20with%20Python%20and%20JavaScript&via=safari"
+      ><span>Twitter</span></a></li><li><a
+        class="facebook share-button t-facebook"
+        target="_blank"
+        aria-label="Share this section on Facebook"
+        title="Share this section on Facebook"
+        href="https://www.facebook.com/sharer/sharer.php?u=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch04.html"
+      ><span>Facebook</span></a></li><li><a
+        class="googleplus share-button t-googleplus"
+        target="_blank"
+        aria-label="Share this secton on Google Plus"
+        title="Share this secton on Google Plus"
+        href="https://plus.google.com/share?url=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch04.html"
+      ><span>Google Plus</span></a></li><li><a
+        class="email share-button t-email"
+        aria-label="Share this section via email"
+        title="Share this section via email"
+      
+        href="mailto:?subject=Safari: 4.%20Webdev%20101&body=https://www.safaribooksonline.com/library/view/data-visualization-with/9781491920565/ch04.html%0D%0Afrom Data%20Visualization%20with%20Python%20and%20JavaScript%0D%0A"
+      ><span>Email</span></a></li></ul></li>
+      </ul>
+    </div>
+
+    <section role="document">
+        
+        
+
+
+
+ <!--[if lt IE 9]>
+  
+<![endif]-->
+
+
+
+  <script defer src="/static/js/build/djangoMessagesPage.893631b34e7a.js"></script>
+
+
+        
+	  <div class="t-sbo-prev sbo-prev sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch03.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">3. Reading and Writing Data with Python</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-top">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/part02.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">II. Getting Your Data</div>
+        </a>
+    
+  
+  </div>
+
+
+
+<div id="sbo-rt-content"><section data-type="chapter" epub:type="chapter" data-pdf-bookmark="Chapter 4. Webdev 101"><div class="chapter" id="chapter_webdev101">
+<h1><span class="label">Chapter 4. </span>Webdev 101</h1>
+
+
+<p>This chapter introduces the core web-development knowledge you will need to understand the web pages you scrape for data and to structure those you want to deliver as the skeleton of your JavaScripted visualizations. As you’ll see, a little knowledge goes a long way in modern webdev, particularly when your focus is building self-contained visualizations and not entire websites (see <a data-type="xref" href="#spas">“Single-Page Apps”</a> for more details).</p>
+
+<p>The usual caveats apply: this chapter is part reference, part tutorial.  There will probably be stuff here you know already, so feel free to skip over it and get to the new material.</p>
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="The Big Picture"><div class="sect1" id="idm140319434384720">
+<h1>The Big Picture</h1>
+
+<p><a data-type="indexterm" data-primary="web development" data-secondary="overview of" id="idm140319434383520"></a>The humble web page, the basic building block of the World Wide Web (WWW)—that fraction of the Internet consumed by humans—is constructed from files of various types. Apart from the multimedia files (images, videos, sound, etc.), the key elements are textual, consisting of Hypertext Markup Language (HTML), Cascading Style Sheets (CSS), and JavaScript.  These three, along with any necessary data files, are delivered using the Hypertext Transfer Protocol (HTTP) and used to build the page you see and interact with in your browser window, which is described by the Document Object Model (DOM), a hierarchical tree off which your content hangs. A basic understanding of how these elements interact is vital to building modern web visualizations, and the aim of this chapter is to get you quickly up to speed.</p>
+
+<p>Web development is a big field, and the aim here is not to turn you into a full-fledged web developer. I assume you want to limit the amount of webdev you have to do as much as possible, focusing only on that fraction necessary to build a modern visualization. In order to build the sort of visualizations showcased at <a class="orm:hideurl" href="http://d3js.org/">d3js.org</a>, published in the <em>New York Times</em>, or incorporated in basic interactive data dashboards, you actually need surprisingly little webdev fu. The result of your labors should be easy to add to a larger website by someone dedicated to that job. In the case of small, personal websites, it’s easy enough to incorporate the visualization yourself.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Single-Page Apps"><div class="sect1" id="spas">
+<h1>Single-Page Apps</h1>
+
+<p><em>Single-page applications</em> (SPAs) <a data-type="indexterm" data-primary="web development" data-secondary="SPAs" id="idm140319434376816"></a><a data-type="indexterm" data-primary="single-page applications (SPAs)" id="idm140319434375840"></a>are web applications (or whole sites) that are dynamically assembled using JavaScript, often building upon a lightweight HTML backbone and CSS styles that can be applied dynamically using class and id attributes. Many modern data visualizations fit this description, including the Nobel Prize visualization this book builds toward.</p>
+
+<p>Often self-contained, the SPA’s root folder can be easily incorporated in an existing website or stand alone, requiring only an HTTP server such as Apache or Nginx.</p>
+
+<p>Thinking of our data visualizations in terms of SPAs removes a lot of the cognitive overhead from the webdev aspect of JavaScript visualizations, allowing us to focus on programming challenges. The skills required to put the visualization on the Web are still fairly basic and quickly amortized. Often it will be someone else’s job.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Tooling Up"><div class="sect1" id="idm140319434373264">
+<h1>Tooling Up</h1>
+
+<p><a data-type="indexterm" data-primary="web development" data-secondary="tools required" id="WDtools4"></a><a data-type="indexterm" data-primary="Chrome/Chromium" data-secondary="web-developer kit" id="idm140319434370704"></a>As you’ll see, the webdev needed to make modern data visualizations requires no more than a decent text editor, modern browser, and a terminal (<a data-type="xref" href="#webdev101_tools">Figure 4-1</a>). I’ll cover what I see as the minimal requirements for a webdev-ready editor and nonessential but nice-to-have features.</p>
+
+<figure><div id="webdev101_tools" class="figure">
+<img src="dvpj_0401.png" alt="dvpj 0401" width="1327" height="2282">
+<h6><span class="label">Figure 4-1. </span>Primary webdev tools</h6>
+</div></figure>
+
+<p>My browser development tools of choice are <a href="https://developers.google.com/web/tools/chrome-devtools/">Chrome’s web-developer kit</a>, freely available on all platforms. It has a lot of tab-delineated functionality, the following of which I’ll cover in this chapter:</p>
+
+<ul>
+<li>
+<p>The <em>Elements</em> tab, which allows you to explore the structure of a web page, its HTML content, CSS styles, and DOM <span class="keep-together">presentation</span></p>
+</li>
+<li>
+<p>The <em>Sources</em> tab, where most of your JavaScript debugging will take place</p>
+</li>
+</ul>
+
+<p>You’ll need a terminal for output, starting your local web server, and sketching ideas with the IPython interpreter.</p>
+
+<p>Before dealing with what you do need, let’s deal with a few things you don’t need when setting out, laying a couple of myths to rest on the way.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="The Myth of IDEs, Frameworks, and Tools"><div class="sect2" id="myth_ides">
+<h2>The Myth of IDEs, Frameworks, and Tools</h2>
+
+<p><a data-type="indexterm" data-primary="Intelligent Development Environment (IDE)" id="idm140319434358672"></a><a data-type="indexterm" data-primary="frameworks" id="idm140319434358000"></a>There is a common assumption among the prospective JavaScripter that to program for the Web requires a complex toolset, primarily an Intelligent Development Environment (IDE), as used by enterprise—and other—coders everywhere. This is potentially expensive and presents another learning curve. The good news is that not only have I never used an IDE to program for the Web, but I can’t think of anyone I know in the discipline who does. In all probability, the wonderful web visualizations you have seen, which may have <span class="keep-together">spurred</span> you to pick up this book, were created with nothing more than a humble text editor, a modern web browser for viewing and debugging, and a console or terminal for logging and output.</p>
+
+<p>There is also a common myth that one cannot be productive in JavaScript without using a framework of some kind. At the moment, a number of these frameworks are vying for control of the JS ecosystem, sponsored  by the various huge companies that created them. These frameworks come and go at a dizzying rate, and my advice for anyone starting out in JavaScript is to ignore them entirely while you develop your core skills. Use small, targeted libraries, such as those in the jQuery ecosystem or Underscore’s functional programming extensions, and see how far you can get before needing a <em>my way or the highway</em> framework. Only lock yourself into a framework to meet a clear and present need, not because the current JS groupthink is raving about how great it is.<sup><a data-type="noteref" id="idm140319434354192-marker" href="ch04.html#idm140319434354192">1</a></sup>  Another important consideration is that D3, the prime web dataviz library, doesn’t really play well with any of the bigger frameworks I know, particularly the ones that want control over the DOM.</p>
+
+<p>Another thing you’ll find if you hang around webdev forums, Reddit lists, and Stack Overflow is a huge range of tools constantly clamoring for attention. There are JS+CSS minifiers, watchers to automatically detect file changes and reload web pages during development, among others. While a few of these have their place, in my experience there are a lot of flaky tools that probably cost more time in hair-tearing than they gain in productivity. To reiterate, you can be very productive without these things and should only reach for one to scratch an urgent itch. Some are keepers, but very few are even remotely essential for data visualization work.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="A Text-Editing Workhorse"><div class="sect2" id="idm140319434352112">
+<h2>A Text-Editing Workhorse</h2>
+
+<p><a data-type="indexterm" data-primary="text editors, selecting" id="idm140319434350704"></a><a data-type="indexterm" data-primary="code-linting" id="idm140319434350000"></a>First and foremost among your webdev tools is a text editor that you are comfortable with and which can, at the very least, do syntax highlighting for multiple languages—in our case, HTML, CSS, JavaScript, and Python. You can get away with a plain, nonhighlighting editor, but in the long run it will prove to be a pain. Things like syntax highlighting, code linting, intelligent indentation, and the like remove a huge cognitive load from the process of programming, so much so that I see their absence as a limiting factor. These are my minimal requirements for a text editor:</p>
+
+<ul>
+<li>
+<p>Syntax highlighting for all languages you use</p>
+</li>
+<li>
+<p>Configurable indentation levels and types for languages (e.g., Python 4 soft tabs, JavaScript 2 soft tabs)</p>
+</li>
+<li>
+<p>Multiple windows/panes/tabs to allow easy navigation around your code base</p>
+</li>
+</ul>
+
+<p>If you are using a relatively advanced text editor, all the above should come as standard with the exception of code linting, which will probably require a bit of configuration.</p>
+
+<p><a data-type="indexterm" data-primary="linter" id="idm140319434344576"></a>My leading candidate for <em>nice to have</em> is a decent <a href="https://en.wikipedia.org/wiki/Lint_%28software%29">code linter</a>. If the mark of a useful tool is how much you would miss its absence, then code linting is easily in my top five. For scripting languages like Python and JavaScript, there’s only so much intelligent code analysis that can be achieved syntactically, but just sanity-checking the obvious syntax errors can be a huge time saver. In JavaScript in particular, some mistakes are transparent, in the sense that things will run in spite of them, and will quite often produce confusing error messages. A code linter can save you time here and enforce good practice. <a data-type="xref" href="#webdev101_linter">Figure 4-2</a> shows a contrived example of a JavaScript code linter in action.</p>
+
+<figure><div id="webdev101_linter" class="figure">
+<img src="dvpj_0402.png" alt="dvpj 0402" width="600" height="400">
+<h6><span class="label">Figure 4-2. </span>A running code linter analyzes the JavaScript continuously, highlighting syntax errors in red and adding a ! to the left of the offending line</h6>
+</div></figure>
+
+<p>A recent addition to Ecmascript 5<sup><a data-type="noteref" id="idm140319434338464-marker" href="ch04.html#idm140319434338464">2</a></sup> is a <em>strict</em> mode, which enforces a modern JavaScript context. This mode is recognized by most linters and you can invoke it by placing <code>'use strict'</code> at the top of your program or within a function, to restrict it to that context. Modern browsers should also honor strict mode, throwing errors for non-compliance. In strict mode, trying to assign <code>foo = "bar";</code> will fail if <code>foo</code> hasn’t been previously defined. See John Resig’s <a href="http://ejohn.org/blog/ecmascript-5-strict-mode-json-and-more/">blog</a> for a nice explanation of strict mode.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Browser with Development Tools"><div class="sect2" id="idm140319434335072">
+<h2>Browser with Development Tools</h2>
+
+<p><a data-type="indexterm" data-primary="Chrome/Chromium" data-secondary="web-developer kit" id="idm140319434333904"></a><a data-type="indexterm" data-primary="integrated development environments (IDEs)" data-secondary="vs. browser tools" id="idm140319434332928"></a>One of the reasons an IDE is pretty much redundant in modern webdev is that the best place to do debugging is in the web browser itself, and such is the pace of change there that any IDE attempting to emulate that context will have its work cut out for it. On top of this, modern web browsers have evolved a powerful set of debugging and development tools. Firefox’s Firebug led the way but has since been surpassed by Chrome Developer, which offers a huge amount of functionality, from sophisticated (certainly to a Pythonista) debugging (parametric breakpoints, variable watches, etc.) to memory and processor optimization profiling, device emulation (want to know what your web page looks like on a smartphone or tablet?), and a whole lot more. Chrome Developer is my debugger of choice and will be used in this book. Like everything covered, it’s free as in beer.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Terminal or Command Prompt"><div class="sect2" id="idm140319434330624">
+<h2>Terminal or Command Prompt</h2>
+
+<p><a data-type="indexterm" data-primary="Terminal (xterm)" id="idm140319434329440"></a><a data-type="indexterm" data-primary="xterm (Terminal)" id="idm140319434328736"></a><a data-type="indexterm" data-primary="IPython" data-secondary="interpreter" id="idm140319434328064"></a><a data-type="indexterm" data-primary="command prompt" id="idm140319434327120"></a>The terminal or command line is where you initiate the various servers and probably output useful logging information. It’s also where you’ll try out Python modules or run a Python interpreter (<em>IPython</em> being in many ways the best).</p>
+
+<p>In OS X and Linux, this window is called a Terminal or xterm. In Windows, it’s a command prompt that should be available through clicking Start→All Programs→Accessories.<a data-type="indexterm" data-primary="" data-startref="WDtools4" id="idm140319434325072"></a></p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Building a Web Page"><div class="sect1" id="HTTP_delivery">
+<h1>Building a Web Page</h1>
+
+<p><a data-type="indexterm" data-primary="web development" data-secondary="building web pages" id="WDwebpages4"></a><a data-type="indexterm" data-primary="web visualizations" data-secondary="elements of" id="idm140319434320880"></a>There are four elements to a typical web visualization:</p>
+
+<ul>
+<li>
+<p>An HTML skeleton, with placeholders for our programmatic visualization</p>
+</li>
+<li>
+<p>Cascading Style Sheets (CSS), which define the look and feel (e.g., border widths, colors, font sizes, placement of content blocks).</p>
+</li>
+</ul>
+
+<ul class="pagebreak-before">
+<li>
+<p>JavaScript to build the visualization</p>
+</li>
+<li>
+<p>Data to be transformed</p>
+</li>
+</ul>
+
+<p>The first three of these are just text files, created using our favorite editor and delivered to the browser by the web server (see <a data-type="xref" href="ch12.html#chapter_delivery_intro">Chapter 12</a>). Let’s examine each in turn.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Serving Pages with HTTP"><div class="sect2" id="idm140319434313424">
+<h2>Serving Pages with HTTP</h2>
+
+<p><a data-type="indexterm" data-primary="web visualizations" data-secondary="serving pages with HTTP" id="idm140319434312016"></a><a data-type="indexterm" data-primary="HTTP (Hypertext Transfer Protocol)" data-secondary="serving web pages with" id="idm140319434311040"></a>The delivery of the HTML, CSS, and JS files that are used to make a particular web page (and any related data files, multimedia, etc.) is negotiated between a server and browser using the Hypertext Transfer Protocol. HTTP provides a number of methods, the most commonly used being GET, which requests a web resource, retrieving data from the server if all goes well or throwing an error if it doesn’t. We’ll be using GET, along with Python’s requests module, to scrape some web page content in <a data-type="xref" href="ch06.html#chapter_heavy_scraping">Chapter 6</a>.</p>
+
+<p>To negotiate the browser-generated HTTP requests, you’ll need a server. In development, you can run a little server locally using Python’s command-line initialized <code>SimpleHTTPServer</code>, like this:</p>
+
+<pre data-type="programlisting">$ python -m SimpleHTTPServer
+Serving HTTP on 0.0.0.0 port 8000 ...</pre>
+
+<p>This server is now serving content locally on port 8000. You can access the site it is serving by going to the URL <em><a href="http://localhost:8000"><em class="hyperlink">http://localhost:8000</em></a></em> in your browser.</p>
+
+<p><code>SimpleHTTPServer</code> is a nice thing to have and OK for demos and the like, but it lacks a lot of basic functionality. For this reason, as we’ll see in <a data-type="xref" href="part04.html#part_delivery">Part IV</a>, it’s better to master the use of a proper development (and production) server like Flask (this book’s server of choice).</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="The DOM"><div class="sect2" id="idm140319434303008">
+<h2>The DOM</h2>
+
+<p><a data-type="indexterm" data-primary="web visualizations" data-secondary="DOM manipulations" id="idm140319434301952"></a><a data-type="indexterm" data-primary="Document Object Model (DOM)" id="idm140319434300976"></a><a data-type="indexterm" data-primary="HTML (Hypertext Markup Language)" data-secondary="conversion to DOM" id="idm140319434300288"></a>The HTML files you send through HTTP are converted at the browser end into a Document Object Model, or DOM, which can in turn be adapted by JavaScript because this programmatic DOM is the basis of dataviz libraries like D3. The DOM is a tree structure, represented by hierarchical nodes, the top node being the main web page or document.</p>
+
+<p>Essentially, the HTML you write or generate with a template is converted by the browser into a tree hierarchy of nodes, each one representing an HTML element. The top node is called the <em>Document Object</em> and all other nodes descend in a parent-child fashion. Programmatically manipulating the DOM is at the heart of such libraries as jQuery and the mighty D3, so it’s vital to have a good mental model of what’s going on. A great way to get the feel for the DOM is to use a web tool such as <em>Chrome Developer</em> (my recommended toolset) to inspect branches of the tree.</p>
+
+<p>Whatever you see rendered on the web page, the bookkeeping of the object’s state (displayed or hidden, matrix transform, etc.) is being done with the DOM. D3’s powerful innovation was to attach data directly to the DOM and use it to drive visual changes (Data-Driven Documents).</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="The HTML Skeleton"><div class="sect2" id="idm140319434296144">
+<h2>The HTML Skeleton</h2>
+
+<p><a data-type="indexterm" data-primary="web visualizations" data-secondary="HTML skeleton for" id="idm140319434294544"></a><a data-type="indexterm" data-primary="HTML (Hypertext Markup Language)" data-secondary="web visualization skeleton" id="idm140319434293568"></a>A typical web visualization uses an HTML skeleton, and builds the visualization on top of it using JavaScript.</p>
+
+<p>HTML is the language used to describe the content of a web page. It was first proposed by physicist Tim Berners-Lee in 1980 while he was working at the CERN particle accelerator complex in Switzerland. It uses tags such as <code>&lt;div&gt;</code>, <code>&lt;image&gt;</code>, and <code>&lt;h&gt;</code> to structure the content of the page, while CSS is used to define the look and feel.<sup><a data-type="noteref" id="idm140319434290400-marker" href="ch04.html#idm140319434290400">3</a></sup> The advent of HTML5 has reduced the boilerplate considerably, but the essence has remained essentially unchanged over those thirty years.</p>
+
+<p>Fully specced HTML used to involve a lot of rather confusing header tags, but with HTML5 some thought was put into a more user-friendly minimalism. This is pretty much the minimal requirement for a starting template:<sup><a data-type="noteref" id="idm140319434288400-marker" href="ch04.html#idm140319434288400">4</a></sup></p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="cp">&lt;!DOCTYPE html&gt;</code>
+<code class="nt">&lt;meta</code> <code class="na">charset=</code><code class="s">"utf-8"</code><code class="nt">&gt;</code>
+<code class="nt">&lt;body&gt;</code>
+    <code class="c">&lt;!-- page content --&gt;</code>
+<code class="nt">&lt;/body&gt;</code></pre>
+
+<p>So we need only declare the document HTML, our character-set 8-bit Unicode, and a <code>&lt;body&gt;</code> tag below which to add our page content. This is a big improvement on the bookkeeping required before and provides a very low threshold to entry as far as creating the documents that will be turned into web pages goes. Note the comment tag form: <code>&lt;!-- comment --&gt;</code>.</p>
+
+<p>More realistically, we would probably want to add some CSS and JavaScript. You can add both directly to an HTML document by using the <code>&lt;style&gt;</code> and <code>&lt;script&gt;</code> tags like this:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="cp">&lt;!DOCTYPE html&gt;</code>
+<code class="nt">&lt;meta</code> <code class="na">charset=</code><code class="s">"utf-8"</code><code class="nt">&gt;</code>
+<code class="nt">&lt;style&gt;</code>
+    <code class="o">&lt;!--</code> <code class="n">CSS</code>  <code class="o">--&gt;</code>
+<code class="nt">&lt;/style&gt;</code>
+<code class="nt">&lt;body&gt;</code>
+    <code class="c">&lt;!-- page content --&gt;</code>
+    <code class="nt">&lt;script&gt;</code>
+        <code class="c">&lt;!--</code> <code class="nx">JavaScript</code> <code class="o">--&gt;</code>
+    <code class="nt">&lt;/script&gt;</code>
+<code class="nt">&lt;/body&gt;</code></pre>
+
+<p>This single-page HTML form is often used in examples such as the visualizations at d3js.org. It’s convenient to have a single page to deal with when demonstrating code or keeping track of files, but generally I’d suggest separating the HTML, CSS, and JavaScript elements into separate files. The big win here, apart from easier navigation as the code base gets larger, is that you can take full advantage of your editor’s specific language enhancements such as solid syntax highlighting and code linting (essentially syntax checking on the fly). While some editors and libraries claim to deal with embedded CSS and JavaScript, I haven’t found an adequate one.</p>
+
+<p>To use CSS and JavaScript files, we just include them in the HTML using <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> tags like this:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="cp">&lt;!DOCTYPE html&gt;</code>
+<code class="nt">&lt;meta</code> <code class="na">charset=</code><code class="s">"utf-8"</code><code class="nt">&gt;</code>
+<code class="nt">&lt;link</code> <code class="na">rel=</code><code class="s">"stylesheet"</code> <code class="na">href=</code><code class="s">"style.css"</code> <code class="nt">/&gt;</code>
+<code class="nt">&lt;body&gt;</code>
+    <code class="c">&lt;!-- page content --&gt;</code>
+    <code class="nt">&lt;script </code><code class="na">type=</code><code class="s">"text/javascript"</code> <code class="na">src=</code><code class="s">"script.js"</code><code class="nt">&gt;&lt;/script&gt;</code>
+<code class="nt">&lt;/body&gt;</code></pre>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Marking Up Content"><div class="sect2" id="idm140319441815024">
+<h2>Marking Up Content</h2>
+
+<p><a data-type="indexterm" data-primary="web visualizations" data-secondary="content markup" id="WVcontent4"></a><a data-type="indexterm" data-primary="HTML (Hypertext Markup Language)" data-secondary="markup tags" id="HTMLmarkup4"></a>Visualizations often use a small subset of the available HTML tags, usually building the page programmatically by attaching elements to the DOM tree.</p>
+
+<p>The most common tag is the <code>&lt;div&gt;</code>, marking a block of content. <code>&lt;div&gt;</code>s can contain other <code>&lt;div&gt;</code>s, allowing for a tree hierarchy, the branches of which are used during element selection and to propagate user interface (UI) events such as mouse clicks. Here’s a simple <code>&lt;div&gt;</code> hierarchy:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"my-chart-wrapper"</code> <code class="na">class=</code><code class="s">"chart-holder dev"</code><code class="nt">&gt;</code>
+    <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"my-chart"</code> <code class="na">class=</code><code class="s">"bar chart"</code><code class="nt">&gt;</code>
+         this is a placeholder, with parent #my-chart-wrapper
+    <code class="nt">&lt;/div&gt;</code>
+<code class="nt">&lt;/div&gt;</code></pre>
+
+<p>Note the use of <code>id</code> and <code>class</code> attributes. These are used when you’re selecting DOM elements and to apply CSS styles. IDs are unique identifiers; each element should have only one and there should be only one occurrence of any particular id per page. The class can be applied to multiple elements, allowing bulk selection, and each element can have multiple classes.</p>
+
+<p>For textual content, the main tags are <code>&lt;p&gt;</code>, <code>&lt;h*&gt;</code>, and <code>&lt;br&gt;</code>. You’ll be using these a lot. This code produces <a data-type="xref" href="#webdev101_h2">Figure 4-3</a>:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;h2&gt;</code>A Level-2 Header<code class="nt">&lt;/h2&gt;</code>
+<code class="nt">&lt;p&gt;</code>A paragraph of body text with a line break here..<code class="nt">&lt;/br&gt;</code>
+and a second paragraph...<code class="nt">&lt;/p&gt;</code></pre>
+
+<figure><div id="webdev101_h2" class="figure">
+<img src="dvpj_0403.png" alt="dvpj 0403" width="718" height="116">
+<h6><span class="label">Figure 4-3. </span>An h2 header and text</h6>
+</div></figure>
+
+<p>Header tags are reverse-ordered by size from the largest <code>&lt;h1&gt;</code>.</p>
+
+<p><code>&lt;div&gt;</code>, <code>&lt;h*&gt;</code>, and <code>&lt;p&gt;</code> are what is known as <em>block elements</em>. They normally begin and end with a new line. The other class of tag is <em>inline elements</em>, which display without line breaks. Images <code>&lt;img&gt;</code>, hyperlinks <code>&lt;a&gt;</code>, and table cells <code>&lt;td&gt;</code> are among these, which include the <code>&lt;span&gt;</code> tag for inline text:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;div</code><code> </code><code class="na">id=</code><code class="s">"inline-examples"</code><code class="nt">&gt;</code><code>
+    </code><code class="nt">&lt;img</code><code> </code><code class="na">src=</code><code class="s">"path/to/image.png"</code><code> </code><code class="na">id=</code><code class="s">"prettypic"</code><code class="nt">&gt;</code><code> </code><a class="co" id="co_webdev_101_CO1-1" href="#callout_webdev_101_CO1-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+    </code><code class="nt">&lt;p</code><code class="nt">&gt;</code><code>This is a </code><code class="nt">&lt;a</code><code> </code><code class="na">href=</code><code class="s">"link-url"</code><code class="nt">&gt;</code><code>link</code><code class="nt">&lt;/a&gt;</code><code> to
+        </code><code class="nt">&lt;span</code><code> </code><code class="na">class=</code><code class="s">"url"</code><code class="nt">&gt;</code><code>link-url</code><code class="nt">&lt;/span&gt;</code><code class="nt">&lt;/p&gt;</code><code> </code><a class="co" id="co_webdev_101_CO1-2" href="#callout_webdev_101_CO1-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code class="nt">&lt;/div&gt;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_webdev_101_CO1-1" href="#co_webdev_101_CO1-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Note that we don’t need a closing tag for images.</p></dd>
+<dt><a class="co" id="callout_webdev_101_CO1-2" href="#co_webdev_101_CO1-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>The span and link are continuous in the text.</p></dd>
+</dl>
+
+<p>Other useful tags include lists, ordered <code>&lt;ol&gt;</code> and unordered <code>&lt;ul&gt;</code>:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;ol&gt;</code>
+    <code class="nt">&lt;li&gt;</code>First item<code class="nt">&lt;/li&gt;</code>
+    <code class="nt">&lt;li&gt;</code>Second item<code class="nt">&lt;/li&gt;</code>
+<code class="nt">&lt;/ol&gt;</code></pre>
+
+<p>HTML also has a dedicated <code>&lt;table&gt;</code> tag, useful if you want to present raw data in your visualization. This HTML produces the header and row in <a data-type="xref" href="#webdev101_table">Figure 4-4</a>:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code> </code><code class="nt">&lt;table</code><code> </code><code class="na">id=</code><code class="s">"chart-data"</code><code class="nt">&gt;</code><code>
+  </code><code class="nt">&lt;tr</code><code class="nt">&gt;</code><code> </code><a class="co" id="co_webdev_101_CO2-1" href="#callout_webdev_101_CO2-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+    </code><code class="nt">&lt;th</code><code class="nt">&gt;</code><code>Name</code><code class="nt">&lt;/th&gt;</code><code>
+    </code><code class="nt">&lt;th</code><code class="nt">&gt;</code><code>Category</code><code class="nt">&lt;/th&gt;</code><code>
+    </code><code class="nt">&lt;th</code><code class="nt">&gt;</code><code>Country</code><code class="nt">&lt;/th&gt;</code><code>
+  </code><code class="nt">&lt;/tr&gt;</code><code>
+  </code><code class="nt">&lt;tr</code><code class="nt">&gt;</code><code> </code><a class="co" id="co_webdev_101_CO2-2" href="#callout_webdev_101_CO2-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+    </code><code class="nt">&lt;td</code><code class="nt">&gt;</code><code>Albert Einstein</code><code class="nt">&lt;/td&gt;</code><code>
+    </code><code class="nt">&lt;td</code><code class="nt">&gt;</code><code>Physics</code><code class="nt">&lt;/td&gt;</code><code>
+    </code><code class="nt">&lt;td</code><code class="nt">&gt;</code><code>Switzerland</code><code class="nt">&lt;/td&gt;</code><code>
+  </code><code class="nt">&lt;/tr&gt;</code><code>
+</code><code class="nt">&lt;/table&gt;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_webdev_101_CO2-1" href="#co_webdev_101_CO2-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>The header row</p></dd>
+<dt><a class="co" id="callout_webdev_101_CO2-2" href="#co_webdev_101_CO2-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>The first row of data</p></dd>
+</dl>
+
+<figure><div id="webdev101_table" class="figure">
+<img src="dvpj_0404.png" alt="dvpj 0404" width="683" height="66">
+<h6><span class="label">Figure 4-4. </span>An HTML table</h6>
+</div></figure>
+
+<p>When you are making web visualizations, the most often used of the tags above are the textual tags, which provide instructions, information boxes, and so on. But the meat of our JavaScript efforts will probably be devoted to building DOM branches rooted on the Scalable Vector Graphics (SVG) <code>&lt;svg&gt;</code> and <code>&lt;canvas&gt;</code> tags. On most modern browsers, the <code>&lt;canvas&gt;</code> tag also supports a 3D <em>WebGL</em> context, allowing <em>OpenGL</em> visualizations to be embedded in the page.</p>
+
+<p>We’ll deal with SVG, the focus of this book and the format used by the mighty D3 library, in <a data-type="xref" href="#sect_svg">“Scalable Vector Graphics”</a>. Now let’s look at how we add style to our content blocks.<a data-type="indexterm" data-primary="" data-startref="HTMLmarkup4" id="idm140319456555312"></a><a data-type="indexterm" data-primary="" data-startref="WVcontent4" id="idm140319456554368"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="CSS"><div class="sect2" id="idm140319456456512">
+<h2>CSS</h2>
+
+<p><em>CSS</em>, <a data-type="indexterm" data-primary="web visualizations" data-secondary="CSS application" id="WVcss4"></a><a data-type="indexterm" data-primary="CSS (Cascading Style Sheets)" data-secondary="applying to HTML" id="CSS4"></a><a data-type="indexterm" data-primary="HTML (Hypertext Markup Language)" data-secondary="CSS application" id="HTMLcss4"></a>short for Cascading Style Sheets, is a language for describing the look and feel of a web page. Though you can hardcode style attributes into your HTML, it’s generally considered bad practice.<sup><a data-type="noteref" id="idm140319456547168-marker" href="ch04.html#idm140319456547168">5</a></sup> It’s much better to label your tag with an <code>id</code> or <code>class</code> and use that to apply styles in the stylesheet.</p>
+
+<p>The key word in CSS is <em>cascading</em>. CSS follows a precedence rule so that in the case of a clash, the latest style overrides earlier ones. This means the order of inclusion for sheets is important. Usually, you want your stylesheet to be loaded last so that you can override both the browser defaults and styles defined by any libraries you are using.</p>
+
+<p><a data-type="xref" href="#css">Figure 4-5</a> shows how CSS is used to apply styles to the HTML elements. First you select the element using hashes (#) to indicate a unique ID and dots (.) to select members of a class. You then define one or more property/value pairs. Note that the <code>font-family</code> property can be a list of fallbacks, in order of preference. Here we want the browser default <code>font-family</code> of <code>serif</code> (capped strokes) to be replaced with the more modern <code>sans-serif</code>, with <code>Helvetica Neue</code> as our first choice.</p>
+
+<figure><div id="css" class="figure">
+<img src="dvpj_0405.png" alt="dvpj 0405" width="1497" height="976">
+<h6><span class="label">Figure 4-5. </span>Styling the page with CSS</h6>
+</div></figure>
+
+<p>Understanding CSS precedence rules is key to successfully applying styles. In a nutshell, the order is:</p>
+<ol>
+<li>
+<p><code>!important</code> after CSS property trumps all.</p>
+</li>
+<li>
+<p>The more specific the better (i.e., ids override classes).</p>
+</li>
+<li>
+<p>The order of declaration: last declaration wins, subject to <em>1</em> and <em>2</em>.</p>
+</li>
+
+</ol>
+
+<p>So, for example, say we have a <code>&lt;span&gt;</code> of class <code>alert</code>:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;span</code> <code class="na">class=</code><code class="s">"alert"</code> <code class="na">id=</code><code class="s">"special-alert"</code><code class="nt">&gt;</code>
+something to be alerted to<code class="nt">&lt;/span&gt;</code></pre>
+
+<p>Putting the following in our <em>style.css</em> file will make the alert text red and bold:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nc">.alert</code> <code class="p">{</code> <code class="k">font-weight</code><code class="o">:</code><code class="nb">bold</code><code class="p">;</code> <code class="k">color</code><code class="o">:</code><code class="nb">red</code> <code class="p">}</code></pre>
+
+<p>If we then add this to the <em>style.css</em>, the id color black will override the class color red, while the class <code>font-weight</code> remains bold:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nf">#special-alert</code> <code class="p">{</code><code class="k">background</code><code class="o">:</code> <code class="nb">yellow</code><code class="p">;</code> <code class="k">color</code><code class="o">:</code><code class="nb">black</code><code class="p">}</code></pre>
+
+<p>To enforce the color red for alerts, we can use the <code>!important</code> directive:<sup><a data-type="noteref" id="idm140319455003376-marker" href="ch04.html#idm140319455003376">6</a></sup></p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nc">.alert</code> <code class="p">{</code> <code class="k">font-weight</code><code class="o">:</code><code class="nb">bold</code><code class="p">;</code> <code class="k">color</code><code class="o">:</code><code class="nb">red</code> <code class="cp">!important</code> <code class="p">}</code></pre>
+
+<p>If we then add another stylesheet, <em>style2.css</em>, after <em>style.css</em>:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;link</code> <code class="na">rel=</code><code class="s">"stylesheet"</code> <code class="na">href=</code><code class="s">"style.css"</code> <code class="na">type=</code><code class="s">"text/css"</code> <code class="nt">/&gt;</code>
+<code class="nt">&lt;link</code> <code class="na">rel=</code><code class="s">"stylesheet"</code> <code class="na">href=</code><code class="s">"style2.css"</code> <code class="na">type=</code><code class="s">"text/css"</code> <code class="nt">/&gt;</code></pre>
+
+<p>with <em>style2.css</em> containing the following:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nc">.alert</code> <code class="p">{</code> <code class="k">font-weight</code><code class="o">:</code><code class="n">normal</code> <code class="p">}</code></pre>
+
+<p>then the <code>font-weight</code> of the alert will be reverted to <code>normal</code> because the new class style was declared last.<a data-type="indexterm" data-primary="" data-startref="CSS4" id="idm140319455139248"></a><a data-type="indexterm" data-primary="" data-startref="WVcss4" id="idm140319455138336"></a><a data-type="indexterm" data-primary="" data-startref="HTMLcss4" id="idm140319455137392"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="JavaScript"><div class="sect2" id="idm140319456552512">
+<h2>JavaScript</h2>
+
+<p><a data-type="indexterm" data-primary="web visualizations" data-secondary="JavaScript for" id="idm140319456407440"></a><a data-type="indexterm" data-primary="JavaScript" data-secondary="for web visualizations" data-secondary-sortas="web visualizations" id="idm140319456406576"></a>JavaScript is the only first-class, browser-based programming language. In order to do anything remotely advanced (and that includes all modern web visualizations), you should have a JavaScript grounding. Other languages that claim to make client-side/browser programming easier, such as Typescript, Coffeescript, and the like, compile to JavaScript, which means debugging either uses (generally flaky) mapping files or involves understanding the automated JavaScript. 99% of all web visualization examples, the ones you should aim to be learning from, are in JavaScript, and voguish alternatives have a way of fading with time. In essence, good competence in (if not mastery of) JavaScript is a prerequisite for interesting web visualizations.</p>
+
+<p>The good news for Pythonistas is that JavaScript is actually quite a nice language once you’ve tamed a few of its more awkward quirks.<sup><a data-type="noteref" id="idm140319456403920-marker" href="ch04.html#idm140319456403920">7</a></sup> As I showed in <a data-type="xref" href="ch02.html#chapter_language_bridge">Chapter 2</a>, JavaScript and Python have a lot in common and it’s usually easy to translate from one to the other.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Data"><div class="sect2" id="sect_data">
+<h2>Data</h2>
+
+<p><a data-type="indexterm" data-primary="web visualizations" data-secondary="data formats" id="idm140319455179008"></a>The data needed to fuel your web visualization will be provided by the web server as static files (e.g., JSON or CSV files) or dynamically through some kind of web API (e.g., <a href="https://en.wikipedia.org/wiki/Representational_state_transfer">RESTful APIs</a>), usually retrieving the data server-side from a database. We’ll be covering all these forms in <a data-type="xref" href="part04.html#part_delivery">Part IV</a>.</p>
+
+<p>Although a lot of data used to be delivered in <a href="https://en.wikipedia.org/wiki/XML">XML</a> form, modern web visualization is predominantly about JSON and, to a lesser extent, CSV or TSV files.</p>
+
+<p><a href="https://en.wikipedia.org/wiki/JSON">JSON</a> <a data-type="indexterm" data-primary="JSON (JavaScript Object Notation)" data-secondary="for web visualizations" data-secondary-sortas="web visualizations" id="idm140319455173920"></a>(short for JavaScript Object Notation) is the de facto web visualization data standard and I recommend you learn to love it. It obviously plays very nicely with JavaScript, but its structure will also be familiar to Pythonistas. As we saw in <a data-type="xref" href="ch03.html#read_write_json">“JSON”</a>, reading and writing JSON data with Python is a snap.<a data-type="indexterm" data-primary="" data-startref="WDwebpages4" id="idm140319455242640"></a> Here’s a little example of some JSON data:</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="p">{</code>
+  <code class="s2">"firstName"</code><code class="o">:</code> <code class="s2">"Groucho"</code><code class="p">,</code>
+  <code class="s2">"lastName"</code><code class="o">:</code> <code class="s2">"Marx"</code><code class="p">,</code>
+  <code class="s2">"siblings"</code><code class="o">:</code> <code class="p">[</code><code class="s2">"Harpo"</code><code class="p">,</code> <code class="s2">"Chico"</code><code class="p">,</code> <code class="s2">"Gummo"</code><code class="p">,</code> <code class="s2">"Zeppo"</code><code class="p">],</code>
+  <code class="s2">"nationality"</code><code class="o">:</code> <code class="s2">"American"</code><code class="p">,</code>
+  <code class="s2">"yearOfBirth"</code><code class="o">:</code> <code class="mi">1890</code>
+<code class="p">}</code></pre>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Chrome’s Developer Tools"><div class="sect1" id="chrome_tab">
+<h1>Chrome’s Developer Tools</h1>
+
+<p><a data-type="indexterm" data-primary="web development" data-secondary="Chrome's Developer Tools" id="WDchrome4"></a><a data-type="indexterm" data-primary="Chrome/Chromium" data-secondary="web-developer kit" id="CCwebdev4"></a>The arms race in JavaScript engines in recent years, which has produced huge increases in performance, has been matched by an increasingly sophisticated range of development tools built in to the various browers. Firefox’s Firebug led the pack for a while but  Chrome’s Developer Tools have surpassed it, and are adding functionality all the time. There’s now a huge amount you can do with Chrome’s tabbed tools, but here I’ll introduce the two most useful tabs, the HTML+CSS-focused <em>Elements</em> and the JavaScript-focused <em>Sources</em>. Both of these work in complement to Chrome’s developer console, demonstrated in <a data-type="xref" href="ch02.html#bridge_js_interact">“JavaScript”</a>.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="The Elements Tab"><div class="sect2" id="chrome_elements">
+<h2>The Elements Tab</h2>
+
+<p><a data-type="indexterm" data-primary="Elements tab (Chrome)" id="idm140319455207824"></a>To access the Elements tab, select More Tools→Developer Tools from the righthand options menu or use the Ctrl-Shift-I keyboard shortcut.</p>
+
+<p><a data-type="xref" href="#webdev101_elements">Figure 4-6</a> shows the Elements tab at work. You can select DOM elements on the page by using the lefthand magnifying glass and see their HTML branch in the left panel. The right panel allows you to see CSS styles applied to the element and look at any event listeners that are attached or DOM properties.</p>
+
+<figure><div id="webdev101_elements" class="figure">
+<img src="dvpj_0406.png" alt="dvpj 0406" width="656" height="487">
+<h6><span class="label">Figure 4-6. </span>Chrome Developer Tools Elements tab</h6>
+</div></figure>
+
+<p>One really cool feature of the Elements tab is that you can interactively change element styling for both CSS styles and attributes.<sup><a data-type="noteref" id="idm140319455202944-marker" href="ch04.html#idm140319455202944">8</a></sup> This is a great way to refine the look and feel of your data visualizations.</p>
+
+<p>Chrome’s Elements tab provides a great way to explore the structure of a page, finding out how the different elements are positioned. This is  good way to get your head around positioning content blocks with the <code>position</code> and <code>float</code> properties. Seeing how the pros apply CSS styles is a really good way to up your game and learn some useful tricks.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="The Sources Tab"><div class="sect2" id="idm140319455200400">
+<h2>The Sources Tab</h2>
+
+<p><a data-type="indexterm" data-primary="Sources tab (Chrome)" id="idm140319456384272"></a>The Sources tab allows you to see any JavaScript included in the page. <a data-type="xref" href="#webdev101_sources">Figure 4-7</a> shows the tab at work. In the lefthand panel, you can select a script or an HTML file with embedded <code>&lt;script&gt;</code> tagged JavaScript. As shown, you can place a breakpoint in the code, load the page, and, on break, see the call stack and any scoped or global variables. These breakpoints are parametric, so you can set conditions for them to trigger, which is handy if you want to catch and step through a particular configuration. On break, you have the standard to step in, out, and over functions, and so on.</p>
+
+<figure><div id="webdev101_sources" class="figure">
+<img src="dvpj_0407.png" alt="dvpj 0407" width="653" height="478">
+<h6><span class="label">Figure 4-7. </span>Chrome Developer Tools Sources tab</h6>
+</div></figure>
+
+<p>The Sources tab is a fantastic resource and is the main reason why I hardly ever turn to console logging when trying to debug JavaScript. In fact, where JS debugging was once a hit-and-miss black art, it is now almost a pleasure.<a data-type="indexterm" data-primary="" data-startref="WDchrome4" id="idm140319456379040"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Other Tools"><div class="sect2" id="idm140319456377808">
+<h2>Other Tools</h2>
+
+<p>There’s a huge amount of functionality in those Chrome Developer Tools tabs and they are being updated almost daily. You can do memory and CPU timelines and profiling, monitor your network downloads, and test out your pages for different form factors. But you’ll spend 99% of your time as a data visualizer in the Elements and Sources tabs.<a data-type="indexterm" data-primary="" data-startref="CCwebdev4" id="idm140319456376144"></a></p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="A Basic Page with Placeholders"><div class="sect1" id="webdev101_basic_page">
+<h1>A Basic Page with Placeholders</h1>
+
+<p><a data-type="indexterm" data-primary="web development" data-secondary="basic pages" id="WDbasic4"></a><a data-type="indexterm" data-primary="web visualizations" data-secondary="basic pages" id="WVbasic4"></a>Now that we have covered the major elements of a web page, let’s put them together. Most web visualizations start off as HTML and CSS skeletons, with placeholder elements ready to be fleshed out with a little JavaScript plus data (see <a data-type="xref" href="#spas">“Single-Page Apps”</a>).</p>
+
+<p>We’ll first need our HTML skeleton, using the code in <a data-type="xref" href="#skel_html">Example 4-1</a>. This consists of a tree of <code>&lt;div&gt;</code> content blocks defining three chart-elements: a header, main, and sidebar section. We’ll save this file as <em>index.html</em>.</p>
+<div id="skel_html" data-type="example">
+<h5><span class="label">Example 4-1. </span>The file index.html, our HTML skeleton</h5>
+
+<pre data-type="programlisting" data-code-language="html"><code class="cp">&lt;!DOCTYPE html&gt;</code>
+<code class="nt">&lt;meta</code> <code class="na">charset=</code><code class="s">"utf-8"</code><code class="nt">&gt;</code>
+
+<code class="nt">&lt;link</code> <code class="na">rel=</code><code class="s">"stylesheet"</code> <code class="na">href=</code><code class="s">"style.css"</code> <code class="na">type=</code><code class="s">"text/css"</code> <code class="nt">/&gt;</code>
+
+<code class="nt">&lt;body&gt;</code>
+
+  <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"chart-holder"</code> <code class="na">class=</code><code class="s">"dev"</code><code class="nt">&gt;</code>
+    <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"header"</code><code class="nt">&gt;</code>
+      <code class="nt">&lt;h2&gt;</code>A Catchy Title Coming Soon...<code class="nt">&lt;/h2&gt;</code>
+      <code class="nt">&lt;p&gt;</code>Some body text describing what this visualization is all
+      about and why you should care.<code class="nt">&lt;/p&gt;</code>
+    <code class="nt">&lt;/div&gt;</code>
+    <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"chart-components"</code><code class="nt">&gt;</code>
+      <code class="nt">&lt;div</code> <code class="na">id=</code><code class="s">"main"</code><code class="nt">&gt;</code>
+        A placeholder for the main chart.
+      <code class="nt">&lt;/div&gt;&lt;div</code> <code class="na">id=</code><code class="s">"sidebar"</code><code class="nt">&gt;</code>
+        <code class="nt">&lt;p&gt;</code>Some useful information about the chart,
+          probably changing with user interaction.<code class="nt">&lt;/p&gt;</code>
+      <code class="nt">&lt;/div&gt;</code>
+    <code class="nt">&lt;/div&gt;</code>
+  <code class="nt">&lt;/div&gt;</code>
+
+  <code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"script.js"</code><code class="nt">&gt;&lt;/script&gt;</code>
+<code class="nt">&lt;/body&gt;</code></pre></div>
+
+<p>Now we have our HTML skeleton, we want to style it using some CSS. This will use the classes and ids of our content blocks to adjust size, position, background color, etc. To apply our CSS, in <a data-type="xref" href="#skel_html">Example 4-1</a> we import a <em>style.css</em> file, shown in <a data-type="xref" href="#skel_css">Example 4-2</a>.</p>
+<div id="skel_css" data-type="example">
+<h5><span class="label">Example 4-2. </span>The style.css file, providing our CSS styling</h5>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nt">body</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">background</code><code class="o">:</code><code> </code><code class="m">#ccc</code><code class="p">;</code><code>
+    </code><code class="k">font-family</code><code class="o">:</code><code> </code><code class="n">Sans</code><code class="o">-</code><code class="nb">serif</code><code class="p">;</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nt">div</code><code class="nc">.dev</code><code> </code><code class="p">{</code><code> </code><a class="co" id="co_webdev_101_CO3-1" href="#callout_webdev_101_CO3-1"><img src="1.png" alt="1" width="12" height="12"></a><code>
+    </code><code class="k">border</code><code class="o">:</code><code> </code><code class="nb">solid</code><code> </code><code class="m">1px</code><code> </code><code class="nb">red</code><code class="p">;</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nt">div</code><code class="nc">.dev</code><code> </code><code class="nt">div</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">border</code><code class="o">:</code><code> </code><code class="nb">dashed</code><code> </code><code class="m">1px</code><code> </code><code class="nb">green</code><code class="p">;</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nt">div</code><code class="nf">#chart-holder</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">600px</code><code class="p">;</code><code>
+    </code><code class="k">background</code><code> </code><code class="o">:</code><code class="nb">white</code><code class="p">;</code><code>
+    </code><code class="k">margin</code><code class="o">:</code><code> </code><code class="nb">auto</code><code class="p">;</code><code>
+    </code><code class="k">font-size</code><code> </code><code class="o">:</code><code class="m">16px</code><code class="p">;</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nt">div</code><code class="nf">#chart-components</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">height</code><code> </code><code class="o">:</code><code class="m">400px</code><code class="p">;</code><code>
+    </code><code class="k">position</code><code> </code><code class="o">:</code><code class="nb">relative</code><code class="p">;</code><code> </code><a class="co" id="co_webdev_101_CO3-2" href="#callout_webdev_101_CO3-2"><img src="2.png" alt="2" width="12" height="12"></a><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nt">div</code><code class="nf">#main</code><code class="o">,</code><code> </code><code class="nt">div</code><code class="nf">#sidebar</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">position</code><code class="o">:</code><code> </code><code class="nb">absolute</code><code class="p">;</code><code> </code><a class="co" id="co_webdev_101_CO3-3" href="#callout_webdev_101_CO3-3"><img src="3.png" alt="3" width="12" height="12"></a><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nt">div</code><code class="nf">#main</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">75%</code><code class="p">;</code><code>
+    </code><code class="k">height</code><code class="o">:</code><code> </code><code class="m">100%</code><code class="p">;</code><code>
+    </code><code class="k">background</code><code class="o">:</code><code> </code><code class="m">#eee</code><code class="p">;</code><code>
+</code><code class="p">}</code><code>
+
+</code><code class="nt">div</code><code class="nf">#sidebar</code><code> </code><code class="p">{</code><code>
+    </code><code class="k">right</code><code class="o">:</code><code> </code><code class="m">0</code><code class="p">;</code><code> </code><a class="co" id="co_webdev_101_CO3-4" href="#callout_webdev_101_CO3-4"><img src="4.png" alt="4" width="12" height="12"></a><code>
+    </code><code class="k">width</code><code class="o">:</code><code> </code><code class="m">25%</code><code class="p">;</code><code>
+    </code><code class="k">height</code><code class="o">:</code><code> </code><code class="m">100%</code><code class="p">;</code><code>
+</code><code class="p">}</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_webdev_101_CO3-1" href="#co_webdev_101_CO3-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>This <code>dev</code> class is a handy way to see the border of any visual blocks, which is useful for visualization work.</p></dd>
+<dt><a class="co" id="callout_webdev_101_CO3-2" href="#co_webdev_101_CO3-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>Makes <code>chart-components</code> the relative parent.</p></dd>
+<dt><a class="co" id="callout_webdev_101_CO3-3" href="#co_webdev_101_CO3-3"><img src="3.png" alt="3" width="12" height="12"></a></dt>
+<dd><p>Makes the <code>main</code> and <code>sidebar</code> positions relative to <code>chart-components</code>.</p></dd>
+<dt><a class="co" id="callout_webdev_101_CO3-4" href="#co_webdev_101_CO3-4"><img src="4.png" alt="4" width="12" height="12"></a></dt>
+<dd><p>Positions this block flush with the right wall of <code>chart-components</code>.</p></dd>
+</dl></div>
+
+<p>We use absolute positioning of the main and sidebar chart elements (<a data-type="xref" href="#skel_css">Example 4-2</a>). There are various ways to position the content blocks with CSS, but absolute positioning gives you explicit control over their placement, which is a must if you want to get the look just right.</p>
+
+<p>After specifying the size of the <code>chart-components</code> container, the <code>main</code> and <code>sidebar</code> child elements are sized and positioned using percentages of their parent. This means any changes to the size of <code>chart-components</code> will be reflected in its children.</p>
+
+<p>With our HTML and CSS defined, we can examine the skeleton by firing up Python’s single-line <code>SimpleHTTPServer</code> in the project directory containing the <em>index.html</em> and <em>style.css</em> files defined in Examples <a data-type="xref" data-xrefstyle="select:labelnumber" href="#skel_html">4-1</a> and <a data-type="xref" data-xrefstyle="select:labelnumber" href="#skel_css">4-2</a>, like so:</p>
+
+<pre data-type="programlisting" data-code-language="bash"><code class="nv">$ </code>python -m SimpleHTTPServer
+Serving HTTP on 0.0.0.0 port <code class="m">8000</code> ...</pre>
+
+<p><a data-type="xref" href="#placeholder">Figure 4-8</a> shows the resulting page with the Elements tab open, displaying the page’s DOM tree.</p>
+
+<p>The chart’s content blocks are now positioned and sized correctly, ready for JavaScript to add some engaging content.<a data-type="indexterm" data-primary="" data-startref="WDbasic4" id="idm140319456199680"></a><a data-type="indexterm" data-primary="" data-startref="WVbasic4" id="idm140319456214784"></a></p>
+
+<figure><div id="placeholder" class="figure">
+<img src="dvpj_0408.png" alt="dvpj 0408" width="958" height="735">
+<h6><span class="label">Figure 4-8. </span>Building a basic web page</h6>
+</div></figure>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Filling the Placeholders with Content"><div class="sect2" id="idm140319456211776">
+<h2>Filling the Placeholders with Content</h2>
+
+<p><a data-type="indexterm" data-primary="web development" data-secondary="adding content" id="idm140319456210368"></a><a data-type="indexterm" data-primary="web visualizations" data-secondary="adding content" id="idm140319456209392"></a><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="for web page contents" data-secondary-sortas="web page contents" id="idm140319456208448"></a>With our content blocks defined in HTML and positioned with CSS, a modern data visualization uses JavaScript to construct its interactive charts, menus, tables, and the like. There are many ways to create visual content (aside from image or multimedia tags) in your modern browser, the main ones being:</p>
+
+<ul>
+<li>
+<p>Scalable Vector Graphics (SVG) using special HTML tags</p>
+</li>
+<li>
+<p>Drawing to a 2D <code>canvas</code> context</p>
+</li>
+<li>
+<p>Drawing to a 3D <code>canvas</code> WebGL context, allowing a subset of OpenGL commands</p>
+</li>
+<li>
+<p>Using modern CSS to create animations, graphic primitives, and more.</p>
+</li>
+</ul>
+
+<p>Because SVG is the language of choice for D3, in many ways the biggest JavaScript dataviz library, many of the cool web data visualizations you have seen, such as those by the <em>New York Times</em>, are built using it.  Broadly speaking, unless you anticipate having lots (&gt;1,000) of moving elements in your visualization or need to use a specific <code>canvas</code>-based library, SVG is probably the way to go.</p>
+
+<p>By using vectors instead of pixels to express its primitives, SVG will generally produce cleaner graphics that respond smoothly to scaling operations. It’s also much better at handling text, a crucial consideration for many visualizations. Another key advantage of SVG is that user interaction (e.g., mouse hovering or clicking) is native to the browser, being part of the standard DOM event handling.<sup><a data-type="noteref" id="idm140319455977344-marker" href="ch04.html#idm140319455977344">9</a></sup>   A final point in its favor is that because the graphic components are built on the DOM, you can inspect and adapt them using your browser’s development tools (see <a data-type="xref" href="#chrome_tab">“Chrome’s Developer Tools”</a>). This can make debugging and refining your visualizations much easier than trying to find errors in the <code>canvas</code>’s relatively black box.</p>
+
+<p><code>canvas</code> graphics contexts come into their own when you need to move beyond simple graphic primitives like circles and lines, such as when incorporating images like PNGs and JPGs. <code>canvas</code> is usually considerably more performant  than SVG, so anything with lots of moving elements<sup><a data-type="noteref" id="idm140319455972560-marker" href="ch04.html#idm140319455972560">10</a></sup>  is better off rendered to a canvas. If you want to be really ambitious or move beyond 2D graphics, you can even unleash the awesome power of modern graphics cards by using a special form of canvas context, the OpenGL-based WebGL context.  Just bear in mind that what would be simple user interaction with SVG (e.g., clicking on a visual element) often has to be derived from mouse coordinates manually, which adds a tricky layer of complexity.</p>
+
+<p>The Nobel Prize data visualization realized at the end of this book’s toolchain is built primarily with D3, so SVG graphics are the focus of this book. Being comfortable with SVG is fundamental to modern web-based dataviz, so let’s take a little primer.</p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Scalable Vector Graphics"><div class="sect1" id="sect_svg">
+<h1>Scalable Vector Graphics</h1>
+
+<p><a data-type="indexterm" data-primary="web development" data-secondary="SVG for" id="WDsvg4"></a><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="resurgence of" id="idm140319455967648"></a>It doesn’t seem long ago that Scalable Vector Graphics seemed all washed up. Browser coverage was spotty and few big libraries were using it. It seemed inevitable that the <code>canvas</code> tag would act as a gateway to full-fledged, rendered graphics based on leveraging the awesome power of modern graphics cards. Pixels—not vectors—would be the building block of web graphics and SVG would go down in history as a valiant but ultimately doomed “nice idea.”</p>
+
+<p>D3 might not single-handedly have rescued SVG in the browser, but it must take the lion’s share of responsibility. By demonstrating what can be done by using data to manipulate or drive the web page’s DOM, it has provided a compelling use case for SVG. D3 really needs its graphic primitives to be part of the document hierarchy, in the same domain as the other HTML content. In this sense it needed SVG as much as SVG needed it.</p>
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="The &lt;svg&gt; Element"><div class="sect2" id="idm140319455964656">
+<h2>The &lt;svg&gt; Element</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="svg elements" id="idm140319455963456"></a>All SVG creations start with an <code>&lt;svg&gt;</code> root tag. All graphical elements, such as circles and lines, and groups thereof, are defined on this branch of the DOM tree. <a data-type="xref" href="#webdev_svg_tag">Example 4-3</a> shows  a little SVG context we’ll use in upcoming demonstrations, a light-gray rectangle with id <code>chart</code>. We also include the D3 library, loaded from d3js.org and a <em>script.js</em> JavaScript file in the project folder.</p>
+<div id="webdev_svg_tag" data-type="example">
+<h5><span class="label">Example 4-3. </span>A basic SVG context</h5>
+
+<pre data-type="programlisting" data-code-language="html"><code class="cp">&lt;!DOCTYPE html&gt;</code>
+<code class="nt">&lt;meta</code> <code class="na">charset=</code><code class="s">"utf-8"</code><code class="nt">&gt;</code>
+<code class="c">&lt;!-- A few CSS style rules --&gt;</code>
+<code class="nt">&lt;style&gt;</code>
+  <code class="nt">svg</code><code class="nf">#chart</code> <code class="p">{</code>
+  <code class="k">background</code><code class="o">:</code> <code class="n">lightgray</code><code class="p">;</code>
+  <code class="p">}</code>
+<code class="nt">&lt;/style&gt;</code>
+
+<code class="nt">&lt;svg</code> <code class="na">id=</code><code class="s">"chart"</code> <code class="na">width=</code><code class="s">"300"</code> <code class="na">height=</code><code class="s">"225"</code><code class="nt">&gt;</code>
+<code class="nt">&lt;/svg&gt;</code>
+
+<code class="c">&lt;!-- Third-party libraries and our JS script. --&gt;</code>
+<code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"http://d3js.org/d3.v3.min.js"</code><code class="nt">&gt;&lt;/script&gt;</code>
+<code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"script.js"</code><code class="nt">&gt;&lt;/script&gt;</code></pre></div>
+
+<p>Now that we’ve got our little SVG canvas in place, let’s start doing some drawing.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="The &lt;g&gt; Element"><div class="sect2" id="idm140319455956624">
+<h2>The &lt;g&gt; Element</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="&lt;g&gt; elements" id="idm140319455928832"></a><a data-type="indexterm" data-primary="&lt;g&gt; element (SVG)" data-primary-sortas="g element" id="idm140319455927888"></a>We can group shapes within our <code>&lt;svg&gt;</code> element by using the group <code>&lt;g&gt;</code> element. As we’ll see in <a data-type="xref" href="#sect_groups">“Working with Groups”</a>, shapes contained in a group can be manipulated together, including changing their position, scale, or opacity.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Circles"><div class="sect2" id="idm140319455924704">
+<h2>Circles</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="circles" id="idm140319455923296"></a><a data-type="indexterm" data-primary="circles, creating in SVG" id="idm140319455922144"></a>Creating SVG visualizations, from the humblest little static bar chart to full-fledged interactive, geographic masterpieces, involves putting together elements from a fairly small set of graphical primitives such as lines, circles, and the very powerful paths. Each of these elements will have its own DOM tag, which will update as it changes.<sup><a data-type="noteref" id="idm140319455920976-marker" href="ch04.html#idm140319455920976">11</a></sup> For example,  its <em>x</em> and <em>y</em> attributes will change to reflect any translations within its <code>&lt;svg&gt;</code> or group (<code>&lt;g&gt;</code>) context.</p>
+
+<p>Let’s add a circle to our <code>&lt;svg&gt;</code> context to demonstrate:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;svg</code> <code class="na">id=</code><code class="s">"chart"</code> <code class="na">width=</code><code class="s">"300"</code> <code class="na">height=</code><code class="s">"225"</code><code class="nt">&gt;</code>
+  <code class="nt">&lt;circle</code> <code class="na">r=</code><code class="s">"15"</code> <code class="na">cx=</code><code class="s">"100"</code> <code class="na">cy=</code><code class="s">"50"</code><code class="nt">&gt;&lt;/circle&gt;</code>
+<code class="nt">&lt;/svg&gt;</code></pre>
+
+<p>This produces <a data-type="xref" href="#svg_circle">Figure 4-9</a>. Note that the <em>y</em> coordinate is measured from the top of the <code>&lt;svg&gt;</code> <code>'#chart'</code> container, a common graphic <span class="keep-together">convention</span>.</p>
+
+<figure><div id="svg_circle" class="figure">
+<img src="dvpj_0409.png" alt="dvpj 0409" width="1275" height="812">
+<h6><span class="label">Figure 4-9. </span>An SVG circle</h6>
+</div></figure>
+
+<p>Now let’s see how we go about applying styles to SVG elements.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Applying CSS Styles"><div class="sect2" id="idm140319455885584">
+<h2>Applying CSS Styles</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="CSS application" id="idm140319455883984"></a><a data-type="indexterm" data-primary="CSS (Cascading Style Sheets)" data-secondary="applying to SVG" id="idm140319455883040"></a>The circle in <a data-type="xref" href="#svg_circle">Figure 4-9</a> is fill-colored light blue using CSS styling rules:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nf">#chart</code> <code class="nt">circle</code><code class="p">{</code> <code class="k">fill</code><code class="o">:</code> <code class="nb">lightblue</code> <code class="p">}</code></pre>
+
+<p>In modern browsers, you can set most visual SVG styles using CSS, including <code>fill</code>, <code>stroke</code>, <code>stroke-width</code>, and <code>opacity</code>. So if we wanted a thick, semi-transparent green line (with id <code>total</code>) we could use the following CSS:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nf">#chart</code> <code class="nt">line</code><code class="nf">#total</code> <code class="p">{</code>
+    <code class="k">stroke</code><code class="o">:</code> <code class="nb">green</code><code class="p">;</code>
+    <code class="k">stroke-width</code><code class="o">:</code> <code class="m">3px</code><code class="p">;</code>
+    <code class="k">opacity</code><code class="o">:</code> <code class="m">0</code><code class="o">.</code><code class="m">5</code><code class="p">;</code>
+<code class="p">}</code></pre>
+
+<p>You can also set the styles as attributes of the tags, though CSS is generally preferable.</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;circle</code> <code class="na">r=</code><code class="s">"15"</code> <code class="na">cx=</code><code class="s">"100"</code> <code class="na">cy=</code><code class="s">"50"</code> <code class="na">fill=</code><code class="s">"lightblue"</code><code class="nt">&gt;&lt;/circle&gt;</code></pre>
+<div data-type="tip"><h6>Tip</h6>
+<p>Which SVG features can be set by CSS and which can’t is a source of some confusion and plenty of gotchas. The SVG spec distinguishes between element <a href="http://bit.ly/28RR1Ne">properties</a> and attributes, the former being more likely to be found among the valid CSS styles. You can investigate the valid CSS properties using Chrome’s Elements tab and its autocomplete. Also, be prepared for some surprises. For example, SVG text is colored by the <code>fill</code>, not <code>color</code>, property.</p>
+</div>
+
+<p>For <code>fill</code> and <code>stroke</code>, there are various color conventions you can use:</p>
+
+<ul>
+<li>
+<p>Named HTML colors, such as lightblue</p>
+</li>
+<li>
+<p>Using HTML hex codes (#RRGGBB); for example, white is #FFFFFF</p>
+</li>
+</ul>
+
+<ul class="pagebreak-before">
+<li>
+<p>RGB values; for example, red = rgb(255, 0, 0)</p>
+</li>
+<li>
+<p>RGBA values, where A is an alpha channel (0–1); for example, half-transparent blue is rgba(0, 0, 255, 0.5)</p>
+</li>
+</ul>
+
+<p>In addition to adjusting the color’s alpha channel with RGBA, you can fade the SVG elements using their <code>opacity</code> property. Opacity is used a lot in D3 animations.</p>
+
+<p>Stroke width is measured in pixels by default but can use points.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Lines, Rectangles, and Polygons"><div class="sect2" id="idm140319455884960">
+<h2>Lines, Rectangles, and Polygons</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="lines, rectangle, and polygons" id="idm140319455845280"></a><a data-type="indexterm" data-primary="lines, creating in SVG" id="idm140319455844368"></a><a data-type="indexterm" data-primary="rectangles, creating in SVG" id="idm140319455843696"></a><a data-type="indexterm" data-primary="polygons, creating in SVG" id="idm140319455843056"></a>We’ll add a few more elements to our chart to produce <a data-type="xref" href="#svg_axes">Figure 4-10</a>.</p>
+
+<figure><div id="svg_axes" class="figure">
+<img src="dvpj_0410.png" alt="dvpj 0410" width="350" height="218">
+<h6><span class="label">Figure 4-10. </span>Adding a few elements to our dummy chart</h6>
+</div></figure>
+
+<p>First we’ll add a couple of simple axis lines to our chart, using the <code>&lt;line&gt;</code> tag. Line positions are defined by a start coordinate (x1, y1) and an end one (x2, y2):</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;line</code> <code class="na">x1=</code><code class="s">"20"</code> <code class="na">y1=</code><code class="s">"20"</code> <code class="na">x2=</code><code class="s">"20"</code> <code class="na">y2=</code><code class="s">"130"</code><code class="nt">&gt;&lt;/line&gt;</code>
+<code class="nt">&lt;line</code> <code class="na">x1=</code><code class="s">"20"</code> <code class="na">y1=</code><code class="s">"130"</code> <code class="na">x2=</code><code class="s">"280"</code> <code class="na">y2=</code><code class="s">"130"</code><code class="nt">&gt;&lt;/line&gt;</code></pre>
+
+<p>We’ll also add a dummy legend box in the top-right corner using an SVG rectangle. Rectangles are defined by <em>x</em> and <em>y</em> coordinates relative to their parent container, and a width and height:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;rect</code> <code class="na">x=</code><code class="s">"240"</code> <code class="na">y=</code><code class="s">"5"</code> <code class="na">width=</code><code class="s">"55"</code> <code class="na">height=</code><code class="s">"30"</code><code class="nt">&gt;&lt;/rect&gt;</code></pre>
+
+<p>You can create irregular polygons using the <code>&lt;polygon&gt;</code> tag, which takes a list of coordinate pairs. Let’s make a triangle marker in the bottom right of our chart:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;polygon</code> <code class="na">points=</code><code class="s">"210,100, 230,100, 220,80"</code><code class="nt">&gt;&lt;/polygon&gt;</code></pre>
+
+<p>We’ll style the elements with a little CSS:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nf">#chart</code> <code class="nt">circle</code> <code class="p">{</code><code class="k">fill</code><code class="o">:</code> <code class="nb">lightblue</code><code class="p">}</code>
+<code class="nf">#chart</code> <code class="nt">line</code> <code class="p">{</code><code class="k">stroke</code><code class="o">:</code> <code class="m">#555555</code><code class="p">;</code> <code class="k">stroke-width</code><code class="o">:</code> <code class="m">2</code><code class="p">}</code>
+<code class="nf">#chart</code> <code class="nt">rect</code> <code class="p">{</code><code class="k">stroke</code><code class="o">:</code> <code class="nb">red</code><code class="p">;</code> <code class="k">fill</code><code class="o">:</code> <code class="nb">white</code><code class="p">}</code>
+<code class="nf">#chart</code> <code class="nt">polygon</code> <code class="p">{</code><code class="k">fill</code><code class="o">:</code> <code class="nb">green</code><code class="p">}</code></pre>
+
+<p>Now that we’ve got a few graphical primitives in place, let’s see how we add some text to our dummy chart.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Text"><div class="sect2" id="idm140319455846352">
+<h2>Text</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="text handling in" id="SVGtext4"></a><a data-type="indexterm" data-primary="text" data-secondary="SVG vs. rasterized canvas context" id="TXTsvg4"></a>One of the key strengths of SVG over the rasterized <code>canvas</code> context is how it handles text. Vector-based text tends to look a lot clearer than its pixelated counterparts and benefits from smooth scaling, too. You can also adjust stroke and fill properties, just like any SVG element.</p>
+
+<p>Let’s add a bit of text to our dummy chart: a title and labeled y-axis (see <a data-type="xref" href="#svg_text">Figure 4-11</a>).</p>
+
+<p>We place text using <em>x</em> and <em>y</em> coordinates. One important property is the <code>text-anchor</code>, which stipulates where the text is placed relative to its x position. The options are <code>start</code>, <code>middle</code>, and <code>end</code>; <code>start</code> is the default.</p>
+
+<p>We can use the <code>text-anchor</code> property to center our chart title. We set the <em>x</em> coordinates at half the chart width and then set the <code>text-anchor</code> to <code>middle</code>:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;text</code> <code class="na">id=</code><code class="s">"title"</code> <code class="na">text-anchor=</code><code class="s">"middle"</code> <code class="na">x=</code><code class="s">"150"</code> <code class="na">y=</code><code class="s">"20"</code><code class="nt">&gt;</code>
+  A Dummy Chart
+<code class="nt">&lt;/text&gt;</code></pre>
+
+<p>As with all SVG primitives, we can apply scaling and rotation transforms to our text. To label our y-axis, we’ll need to rotate the text to the vertical (<a data-type="xref" href="#svg_text_rotate">Example 4-4</a>). By convention, rotations are clockwise by degree so we’ll want a counterclockwise, –90 degree rotation. By default rotations are around the (0,0) point of the element’s container (<code>&lt;svg&gt;</code> or group <code>&lt;g&gt;</code>). We want to rotate our text around its own position, so first translate the rotation point using the extra arguments to the <code>rotate</code> function. We also want to first set the <code>text-anchor</code> to the end of the <code>y axis label</code> string to rotate about its end point.</p>
+<div id="svg_text_rotate" data-type="example">
+<h5><span class="label">Example 4-4. </span>Rotating text</h5>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;text</code> <code class="na">x=</code><code class="s">"20"</code> <code class="na">y=</code><code class="s">"20"</code> <code class="na">transform=</code><code class="s">"rotate(-90,20,20)"</code>
+      <code class="na">text-anchor=</code><code class="s">"end"</code> <code class="na">dy=</code><code class="s">"0.71em"</code><code class="nt">&gt;</code>y axis label<code class="nt">&lt;/text&gt;</code></pre></div>
+
+<p>In <a data-type="xref" href="#svg_text_rotate">Example 4-4</a>, we make use of the text’s <code>dy</code> attribute, which, along with <code>dx</code>, can be used to make fine adjustments to the text’s position. In this case, we want to lower it so that when rotated counterclockwise it will be to the right of the y-axis.</p>
+
+<p>SVG text elements can also be styled with CSS. Here we set the <code>font-family</code> of the chart to <code>sans-serif</code> and the <code>font-size</code> to <code>16px</code>, using the <code>title</code> id to make that a little bigger:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nf">#chart</code> <code class="p">{</code>
+<code class="k">background</code><code class="o">:</code> <code class="m">#eee</code><code class="p">;</code>
+<code class="k">font-family</code><code class="o">:</code> <code class="nb">sans-serif</code><code class="p">;</code>
+<code class="p">}</code>
+<code class="nf">#chart</code> <code class="nt">text</code><code class="p">{</code> <code class="k">font-size</code><code class="o">:</code> <code class="m">16px</code> <code class="p">}</code>
+<code class="nf">#chart</code> <code class="nt">text</code><code class="nf">#title</code><code class="p">{</code> <code class="k">font-size</code><code class="o">:</code> <code class="m">18px</code> <code class="p">}</code></pre>
+
+<figure><div id="svg_text" class="figure">
+<img src="dvpj_0411.png" alt="dvpj 0411" width="352" height="221">
+<h6><span class="label">Figure 4-11. </span>Some SVG text</h6>
+</div></figure>
+
+<p>Note that the <code>text</code> elements inherit <code>font-family</code> and <code>font-size</code> from the chart’s CSS; you don’t have to specify a <code>text</code> element.<a data-type="indexterm" data-primary="" data-startref="SVGtext4" id="idm140319433873152"></a><a data-type="indexterm" data-primary="" data-startref="TXTsvg4" id="idm140319433872144"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Paths"><div class="sect2" id="idm140319434068224">
+<h2>Paths</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="paths" id="SVGpath4"></a><a data-type="indexterm" data-primary="paths (SVG)" id="paths4"></a>Paths are the most complicated and powerful SVG element, enabling the creation of multiline, multicurve component paths that can be closed and filled, creating pretty much any shape you want. A simple example is adding a little chart line to our dummy chart to produce <a data-type="xref" href="#svg_path">Figure 4-12</a>.</p>
+
+<figure><div id="svg_path" class="figure">
+<img src="dvpj_0412.png" alt="dvpj 0412" width="351" height="220">
+<h6><span class="label">Figure 4-12. </span>A red line path from the chart axis</h6>
+</div></figure>
+
+<p>The red path in <a data-type="xref" href="#svg_path">Figure 4-12</a> is produced by the following SVG:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;path</code> <code class="na">d=</code><code class="s">"M20 130L60 70L110 100L160 45"</code><code class="nt">&gt;&lt;/path&gt;</code></pre>
+
+<p>The <code>path</code>’s <code>d</code> attribute specifies the series of operations needed to make the red line. Let’s break it down:</p>
+
+<ul>
+<li>
+<p>“M20  130”: move to coordinate (20, 130)</p>
+</li>
+<li>
+<p>“L60  70”: draw a line to (60, 70)</p>
+</li>
+<li>
+<p>“L110  100”: draw a line to (110, 100)</p>
+</li>
+<li>
+<p>“L160  45”: draw a line to (160, 45)</p>
+</li>
+</ul>
+
+<p>You can imagine <code>d</code> as a set of instructions to a pen to move to a point with <code>M</code> raising the pen from the canvas.</p>
+
+<p>A little CSS styling is needed. Note that the <code>fill</code> is set to <code>none</code>; otherwise, to create a fill area, the path would be closed, drawing a line from its end to beginning points, and any enclosed areas filled in with the default color black:</p>
+
+<pre data-type="programlisting" data-code-language="css"><code class="nf">#chart</code> <code class="nt">path</code> <code class="p">{</code><code class="k">stroke</code><code class="o">:</code> <code class="nb">red</code><code class="p">;</code> <code class="k">fill</code><code class="o">:</code> <code class="nb">none</code><code class="p">}</code></pre>
+
+<p>As well as the <code>moveto 'M'</code> and <code>lineto 'L'</code>, the path has a number of other commands to draw arcs, Bézier curves, and the like. SVG arcs and curves are commonly used in dataviz work, with many of D3’s libraries making use of them.<sup><a data-type="noteref" id="idm140319433999488-marker" href="ch04.html#idm140319433999488">12</a></sup> <a data-type="xref" href="#svg_arc">Figure 4-13</a> shows some SVG elliptical arcs created by the following code:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;svg</code><code> </code><code class="na">id=</code><code class="s">"chart"</code><code> </code><code class="na">width=</code><code class="s">"300"</code><code> </code><code class="na">height=</code><code class="s">"150"</code><code class="nt">&gt;</code><code>
+  </code><code class="nt">&lt;path</code><code> </code><code class="na">d=</code><code class="s">"M40 40
+           A30 40  </code><a class="co" id="co_webdev_101_CO4-1" href="#callout_webdev_101_CO4-1"><img src="1.png" alt="1" width="12" height="12"></a><code class="s">
+           0 0 1  </code><a class="co" id="co_webdev_101_CO4-2" href="#callout_webdev_101_CO4-2"><img src="2.png" alt="2" width="12" height="12"></a><code class="s">
+           80 80
+           A50 50  0 0 1  160  80
+           A30 30  0 0 1  190  80
+"</code><code class="nt">&gt;</code><code>
+</code><code class="nt">&lt;/svg&gt;</code></pre>
+<dl class="calloutlist">
+<dt><a class="co" id="callout_webdev_101_CO4-1" href="#co_webdev_101_CO4-1"><img src="1.png" alt="1" width="12" height="12"></a></dt>
+<dd><p>Having moved to position (40, 40), draw an elliptical arc with x-radius 30, y-radius 40, and end point (80, 80).</p></dd>
+<dt><a class="co" id="callout_webdev_101_CO4-2" href="#co_webdev_101_CO4-2"><img src="2.png" alt="2" width="12" height="12"></a></dt>
+<dd><p>The last two flags (0, 1) are <code>large-arc-flag</code>, specifying which arc of the ellipse to use and <code>sweep-flag</code>, which specifies which of the two possible ellipses defined by start and end points to use.</p></dd>
+</dl>
+
+<figure><div id="svg_arc" class="figure">
+<img src="dvpj_0413.png" alt="dvpj 0413" width="356" height="234">
+<h6><span class="label">Figure 4-13. </span>Some SVG elliptical arcs</h6>
+</div></figure>
+
+<p>The key flags used in the elliptical arc (<code>large-arc-flag</code> and <code>sweep-flag</code>) are, like most things geometric, better demonstrated than described. <a data-type="xref" href="#svg_arc_flags">Figure 4-14</a> shows the effect of changing the flags for the same relative beginning and end points, like so:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;svg</code> <code class="na">id=</code><code class="s">"chart"</code> <code class="na">width=</code><code class="s">"300"</code> <code class="na">height=</code><code class="s">"150"</code><code class="nt">&gt;</code>
+  <code class="nt">&lt;path</code> <code class="na">d=</code><code class="s">"M40 80</code>
+<code class="s">           A30 40  0 0 1  80 80</code>
+<code class="s">           A30 40  0 0 0  120  80</code>
+<code class="s">           A30 40  0 1 0  160  80</code>
+<code class="s">           A30 40  0 1 1  200  80</code>
+<code class="s">"</code><code class="nt">&gt;</code>
+<code class="nt">&lt;/svg&gt;</code></pre>
+
+<figure><div id="svg_arc_flags" class="figure">
+<img src="dvpj_0414.png" alt="dvpj 0414" width="350" height="222">
+<h6><span class="label">Figure 4-14. </span>Changing the elliptic-arc flags</h6>
+</div></figure>
+
+<p>As well as lines and arcs, the <code>path</code> element offers a number of Bézier curves, including quadratic, cubic, and compounds of the two. With a little work, these can create any line path you want. There’s a nice run-through <a href="http://www.sitepoint.com/closer-look-svg-path-data/">on SitePoint</a> with good illustrations.</p>
+
+<p>For the definitive list of <code>path</code> elements and their arguments, go <a href="http://www.w3.org/TR/SVG/paths.html">to the w3 source</a>. And for a nice round-up, see <a href="http://tutorials.jenkov.com/svg/path-element.html">Jakob Jenkov’s introduction</a>.<a data-type="indexterm" data-primary="" data-startref="paths4" id="idm140319433745264"></a><a data-type="indexterm" data-primary="" data-startref="SVGpath4" id="idm140319433744288"></a></p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Scaling and Rotating"><div class="sect2" id="idm140319433870736">
+<h2>Scaling and Rotating</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="geometric operations on" id="idm140319433741936"></a><a data-type="indexterm" data-primary="scaling (SVG)" id="idm140319433740784"></a><a data-type="indexterm" data-primary="rotating (SVG)" id="idm140319433740112"></a><a data-type="indexterm" data-primary="translating (SVG)" id="idm140319433739440"></a><a data-type="indexterm" data-primary="skewing (SVG)" id="idm140319433738768"></a><a data-type="indexterm" data-primary="matrix transformations (SVG)" id="idm140319433738096"></a>As befits their vector nature, all SVG elements can be transformed by geometric operations. The most commonly used are <code>rotate</code>, <code>translate</code>, and <code>scale</code>, but you can also apply skewing using <code>skewX</code> and <code>skewY</code>  or use the powerful, multipurpose <em>matrix</em> transform.</p>
+
+<p>Let’s demonstrate the most popular transforms, using a set of identical rectangles. The transformed rectangles in <a data-type="xref" href="#svg_transform">Figure 4-15</a> are achieved like so:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;svg</code> <code class="na">id=</code><code class="s">"chart"</code> <code class="na">width=</code><code class="s">"300"</code> <code class="na">height=</code><code class="s">"150"</code><code class="nt">&gt;</code>
+  <code class="nt">&lt;rect</code> <code class="na">width=</code><code class="s">"20"</code> <code class="na">height=</code><code class="s">"40"</code> <code class="na">transform=</code><code class="s">"translate(60, 55)"</code>
+        <code class="na">fill=</code><code class="s">"blue"</code><code class="nt">/&gt;</code>
+  <code class="nt">&lt;rect</code> <code class="na">width=</code><code class="s">"20"</code> <code class="na">height=</code><code class="s">"40"</code> <code class="na">transform=</code><code class="s">"translate(120, 55),</code>
+<code class="s">        rotate(45)"</code> <code class="na">fill=</code><code class="s">"blue"</code><code class="nt">/&gt;</code>
+  <code class="nt">&lt;rect</code> <code class="na">width=</code><code class="s">"20"</code> <code class="na">height=</code><code class="s">"40"</code> <code class="na">transform=</code><code class="s">"translate(180, 55),</code>
+<code class="s">        scale(0.5)"</code> <code class="na">fill=</code><code class="s">"blue"</code><code class="nt">/&gt;</code>
+  <code class="nt">&lt;rect</code> <code class="na">width=</code><code class="s">"20"</code> <code class="na">height=</code><code class="s">"40"</code> <code class="na">transform=</code><code class="s">"translate(240, 55),</code>
+<code class="s">        rotate(45),scale(0.5)"</code> <code class="na">fill=</code><code class="s">"blue"</code><code class="nt">/&gt;</code>
+<code class="nt">&lt;/svg&gt;</code></pre>
+
+<figure><div id="svg_transform" class="figure">
+<img src="dvpj_0415.png" alt="dvpj 0415" width="347" height="227">
+<h6><span class="label">Figure 4-15. </span>Some SVG transforms: rotate(45), scale(0.5), scale(0.5), then rotate(45)</h6>
+</div></figure>
+<div data-type="note" epub:type="note"><h6>Note</h6>
+<p>The order in which transforms are applied is important. A rotation of 45 degrees clockwise folllowed by a translation along the x-axis will see the element moved southeasterly, whereas the reverse operation moves it to the left and then rotates it.</p>
+</div>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Working with Groups"><div class="sect2" id="sect_groups">
+<h2>Working with Groups</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="grouping/ungrouping elements" id="SVGgroup4"></a><a data-type="indexterm" data-primary="grouping/ungrouping elements (SVG)" id="group4"></a>Often when you are constructing a visualization, it’s helpful to group the visual elements. A couple of particular uses are:</p>
+
+<ul>
+<li>
+<p>When you require local coordinate schemes (e.g., if you have a text label for an icon and you want to specify its position relative to the icon, not the whole <code>&lt;svg&gt;</code> canvas).</p>
+</li>
+<li>
+<p>If you want to apply a scaling and/or rotation transformation to a subset of the visual elements.</p>
+</li>
+</ul>
+
+<p>SVG has a group <code>&lt;g&gt;</code> tag for this, which you can think of as a mini canvas within the <code>&lt;svg&gt;</code> canvas. Groups can contain groups, allowing for very flexible geometric mappings.<sup><a data-type="noteref" id="idm140319433680320-marker" href="ch04.html#idm140319433680320">13</a></sup></p>
+
+<p><a data-type="xref" href="#svg_group_code">Example 4-5</a>  groups shapes in the center of the canvas, producing <a data-type="xref" href="#svg_group">Figure 4-16</a>. Note that the position of <code>circle</code>, <code>rect</code>, and <code>path</code> elements is relative to the translated group.</p>
+<div id="svg_group_code" data-type="example">
+<h5><span class="label">Example 4-5. </span>Grouping SVG shapes</h5>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;svg</code> <code class="na">id=</code><code class="s">"chart"</code> <code class="na">width=</code><code class="s">"300"</code> <code class="na">height=</code><code class="s">"150"</code><code class="nt">&gt;</code>
+  <code class="nt">&lt;g</code> <code class="na">id=</code><code class="s">"shapes"</code> <code class="na">transform=</code><code class="s">"translate(150,75)"</code><code class="nt">&gt;</code>
+    <code class="nt">&lt;circle</code> <code class="na">cx=</code><code class="s">"50"</code> <code class="na">cy=</code><code class="s">"0"</code> <code class="na">r=</code><code class="s">"25"</code> <code class="na">fill=</code><code class="s">"red"</code> <code class="nt">/&gt;</code>
+    <code class="nt">&lt;rect</code> <code class="na">x=</code><code class="s">"30"</code> <code class="na">y=</code><code class="s">"10"</code> <code class="na">width=</code><code class="s">"40"</code> <code class="na">height=</code><code class="s">"20"</code> <code class="na">fill=</code><code class="s">"blue"</code> <code class="nt">/&gt;</code>
+    <code class="nt">&lt;path</code> <code class="na">d=</code><code class="s">"M-20 -10L50 -10L10 60Z"</code> <code class="na">fill=</code><code class="s">"green"</code> <code class="nt">/&gt;</code>
+    <code class="nt">&lt;circle</code> <code class="na">r=</code><code class="s">"10"</code> <code class="na">fill=</code><code class="s">"yellow"</code><code class="nt">&gt;</code>
+  <code class="nt">&lt;/g&gt;</code>
+<code class="nt">&lt;/svg&gt;</code></pre></div>
+
+<figure><div id="svg_group" class="figure">
+<img src="dvpj_0416.png" alt="dvpj 0416" width="349" height="222">
+<h6><span class="label">Figure 4-16. </span>Grouping shapes with SVG &lt;g&gt; tag</h6>
+</div></figure>
+
+<p><a data-type="indexterm" data-primary="" data-startref="group4" id="idm140319433589520"></a><a data-type="indexterm" data-primary="" data-startref="SVGgroup4" id="idm140319433588544"></a>If we now apply a transform to the group, all shapes within it will be affected. <a data-type="xref" href="#svg_group_transform">Figure 4-17</a> shows the result of scaling <a data-type="xref" href="#svg_group">Figure 4-16</a> by a factor of 0.75 and then rotating it 90 degrees, which we achieve by adapting the transform attribute, like so:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;svg</code> <code class="na">id=</code><code class="s">"chart"</code> <code class="na">width=</code><code class="s">"300"</code> <code class="na">height=</code><code class="s">"150"</code><code class="nt">&gt;</code>
+  <code class="nt">&lt;g</code> <code class="na">id=</code><code class="s">"shapes"</code><code class="err">,</code>
+     <code class="na">transform =</code> <code class="s">"translate(150,75),scale(0.5),rotate(90)"</code><code class="nt">&gt;</code>
+     ...
+<code class="nt">&lt;/svg&gt;</code></pre>
+
+<figure><div id="svg_group_transform" class="figure">
+<img src="dvpj_0417.png" alt="dvpj 0417" width="352" height="223">
+<h6><span class="label">Figure 4-17. </span>Transforming an SVG group</h6>
+</div></figure>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="Layering and Transparency"><div class="sect2" id="sect_svg_layering">
+<h2>Layering and Transparency</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="layering/transparency" id="idm140319433577056"></a><a data-type="indexterm" data-primary="layering elements (SVG)" id="idm140319433576112"></a><a data-type="indexterm" data-primary="transparency (SVG)" id="idm140319433575440"></a>The order in which the SVG elements are added to the DOM tree is important, with later elements taking precedence, layering over others. In <a data-type="xref" href="#svg_group">Figure 4-16</a>, for example, the triangle path obscures the red circle and blue rectangle and is in turn obscured by the yellow circle.</p>
+
+<p>Manipulating the DOM ordering is an important part of JavaScripted dataviz (e.g., D3’s <code>insert</code> method allows you to place an SVG element before an existing one).</p>
+
+<p>Element transparency can be manipulated using the alpha channel of <code>rgba(R,G,B,A)</code> colors or the more convenient <code>opacity</code> property. Both can be set using CSS. For overlaid elements, opacity is cumulative, as demonstrated by the color triangle in <a data-type="xref" href="#svg_transparency">Figure 4-18</a>, produced by the following SVG:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="nt">&lt;style&gt;</code>
+  <code class="nf">#chart</code> <code class="nt">circle</code> <code class="p">{</code> <code class="k">opacity</code><code class="o">:</code> <code class="m">0</code><code class="o">.</code><code class="m">33</code> <code class="p">}</code>
+<code class="nt">&lt;/style&gt;</code>
+
+<code class="nt">&lt;svg</code> <code class="na">id=</code><code class="s">"chart"</code> <code class="na">width=</code><code class="s">"300"</code> <code class="na">height=</code><code class="s">"150"</code><code class="nt">&gt;</code>
+  <code class="nt">&lt;g</code> <code class="na">transform=</code><code class="s">"translate(150, 75)"</code><code class="nt">&gt;</code>
+    <code class="nt">&lt;circle</code> <code class="na">cx=</code><code class="s">"0"</code> <code class="na">cy=</code><code class="s">"-20"</code> <code class="na">r=</code><code class="s">"30"</code> <code class="na">fill=</code><code class="s">"red"</code><code class="nt">/&gt;</code>
+    <code class="nt">&lt;circle</code> <code class="na">cx=</code><code class="s">"17.3"</code> <code class="na">cy=</code><code class="s">"10"</code> <code class="na">r=</code><code class="s">"30"</code> <code class="na">fill=</code><code class="s">"green"</code><code class="nt">/&gt;</code>
+    <code class="nt">&lt;circle</code> <code class="na">cx=</code><code class="s">"-17.3"</code> <code class="na">cy=</code><code class="s">"10"</code> <code class="na">r=</code><code class="s">"30"</code> <code class="na">fill=</code><code class="s">"blue"</code><code class="nt">/&gt;</code>
+  <code class="nt">&lt;/g&gt;</code>
+<code class="nt">&lt;/svg&gt;</code></pre>
+
+<figure><div id="svg_transparency" class="figure">
+<img src="dvpj_0418.png" alt="dvpj 0418" width="346" height="219">
+<h6><span class="label">Figure 4-18. </span>Manipulating opacity with SVG</h6>
+</div></figure>
+
+<p>The SVG elements demonstrated here were handcoded in HTML, but in data visualization work they are almost always added programmatically. Thus the basic D3 workflow is to add SVG elements to a visualization, using data files to specify their attributes and properties.</p>
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect2" data-pdf-bookmark="JavaScripted SVG"><div class="sect2" id="idm140319433448816">
+<h2>JavaScripted SVG</h2>
+
+<p><a data-type="indexterm" data-primary="SVG (Scalable Vector Graphics)" data-secondary="JavaScripted SVG" id="SVGjava4"></a><a data-type="indexterm" data-primary="JavaScript" data-secondary="for SVG" data-secondary-sortas="SVG" id="JSsvg4"></a>The fact that SVG graphics are described by DOM tags has a number of advantages over a black box such as the <code>&lt;canvas&gt;</code> context. For example, it allows nonprogrammers to create or adapt graphics and is a boon for debugging.</p>
+
+<p>In web dataviz, pretty much all your SVG elements will be created with JavaScript, through a library such as D3. You can inspect the results of this scripting using the browser’s Elements tab (see <a data-type="xref" href="#chrome_tab">“Chrome’s Developer Tools”</a>), which is a great way to refine and debug your work (e.g., nailing an annoying visual glitch).</p>
+
+<p>As a little taster for things to come, let’s use D3 to scatter a few red circles on an SVG canvas. The dimensions of the canvas and circles are contained in a <code>data</code> object sent to a <code>chartCircles</code> function.</p>
+
+<p>We use a little HTML placeholder for the <code>&lt;svg&gt;</code> element:</p>
+
+<pre data-type="programlisting" data-code-language="html"><code class="cp">&lt;!DOCTYPE html&gt;</code>
+<code class="nt">&lt;meta</code> <code class="na">charset=</code><code class="s">"utf-8"</code><code class="nt">&gt;</code>
+
+<code class="nt">&lt;style&gt;</code>
+  <code class="nf">#chart</code> <code class="nt">circle</code> <code class="p">{</code><code class="k">fill</code><code class="o">:</code> <code class="nb">red</code><code class="p">}</code>
+<code class="nt">&lt;/style&gt;</code>
+
+<code class="nt">&lt;body&gt;</code>
+  <code class="nt">&lt;svg</code> <code class="na">id=</code><code class="s">"chart"</code><code class="nt">&gt;&lt;/svg&gt;</code>
+
+  <code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"http://d3js.org/d3.v3.min.js"</code><code class="nt">&gt;&lt;/script&gt;</code>
+  <code class="nt">&lt;script </code><code class="na">src=</code><code class="s">"script.js"</code><code class="nt">&gt;&lt;/script&gt;</code>
+<code class="nt">&lt;/body&gt;</code></pre>
+
+<p>With our placeholder SVG <code>chart</code> element in place, a little D3 in the <em>script.js</em> file is used to turn some data into the scattered circles (see <a data-type="xref" href="#webdev101_d3_circles">Figure 4-19</a>):</p>
+
+<pre data-type="programlisting" data-code-language="js"><code class="c1">// script.js</code>
+
+<code class="kd">var</code> <code class="nx">chartCircles</code> <code class="o">=</code> <code class="kd">function</code><code class="p">(</code><code class="nx">data</code><code class="p">)</code> <code class="p">{</code>
+
+    <code class="kd">var</code> <code class="nx">chart</code> <code class="o">=</code> <code class="nx">d3</code><code class="p">.</code><code class="nx">select</code><code class="p">(</code><code class="s1">'#chart'</code><code class="p">);</code>
+    <code class="c1">// Set the chart height and width from data</code>
+    <code class="nx">chart</code><code class="p">.</code><code class="nx">attr</code><code class="p">(</code><code class="s1">'height'</code><code class="p">,</code> <code class="nx">data</code><code class="p">.</code><code class="nx">height</code><code class="p">).</code><code class="nx">attr</code><code class="p">(</code><code class="s1">'width'</code><code class="p">,</code> <code class="nx">data</code><code class="p">.</code><code class="nx">width</code><code class="p">);</code>
+    <code class="c1">// Create some circles using the data</code>
+    <code class="nx">chart</code><code class="p">.</code><code class="nx">selectAll</code><code class="p">(</code><code class="s1">'circle'</code><code class="p">).</code><code class="nx">data</code><code class="p">(</code><code class="nx">data</code><code class="p">.</code><code class="nx">circles</code><code class="p">)</code>
+        <code class="p">.</code><code class="nx">enter</code><code class="p">()</code>
+        <code class="p">.</code><code class="nx">append</code><code class="p">(</code><code class="s1">'circle'</code><code class="p">)</code>
+        <code class="p">.</code><code class="nx">attr</code><code class="p">(</code><code class="s1">'cx'</code><code class="p">,</code> <code class="kd">function</code><code class="p">(</code><code class="nx">d</code><code class="p">)</code> <code class="p">{</code> <code class="k">return</code> <code class="nx">d</code><code class="p">.</code><code class="nx">x</code> <code class="p">})</code>
+        <code class="p">.</code><code class="nx">attr</code><code class="p">(</code><code class="s1">'cy'</code><code class="p">,</code> <code class="kd">function</code><code class="p">(</code><code class="nx">d</code><code class="p">)</code> <code class="p">{</code> <code class="k">return</code> <code class="nx">d</code><code class="p">.</code><code class="nx">y</code> <code class="p">})</code>
+        <code class="p">.</code><code class="nx">attr</code><code class="p">(</code><code class="s1">'r'</code><code class="p">,</code> <code class="kd">function</code><code class="p">(</code><code class="nx">d</code><code class="p">)</code> <code class="p">{</code> <code class="k">return</code> <code class="nx">d</code><code class="p">.</code><code class="nx">r</code> <code class="p">});</code>
+<code class="p">};</code>
+
+<code class="kd">var</code> <code class="nx">data</code> <code class="o">=</code> <code class="p">{</code>
+    <code class="nx">width</code><code class="o">:</code> <code class="mi">300</code><code class="p">,</code> <code class="nx">height</code><code class="o">:</code> <code class="mi">150</code><code class="p">,</code>
+    <code class="nx">circles</code><code class="o">:</code> <code class="p">[</code>
+        <code class="p">{</code><code class="s1">'x'</code><code class="o">:</code> <code class="mi">50</code><code class="p">,</code> <code class="s1">'y'</code><code class="o">:</code> <code class="mi">30</code><code class="p">,</code> <code class="s1">'r'</code><code class="o">:</code> <code class="mi">20</code><code class="p">},</code>
+        <code class="p">{</code><code class="s1">'x'</code><code class="o">:</code> <code class="mi">70</code><code class="p">,</code> <code class="s1">'y'</code><code class="o">:</code> <code class="mi">80</code><code class="p">,</code> <code class="s1">'r'</code><code class="o">:</code> <code class="mi">10</code><code class="p">},</code>
+        <code class="p">{</code><code class="s1">'x'</code><code class="o">:</code> <code class="mi">160</code><code class="p">,</code> <code class="s1">'y'</code><code class="o">:</code> <code class="mi">60</code><code class="p">,</code> <code class="s1">'r'</code><code class="o">:</code> <code class="mi">10</code><code class="p">},</code>
+        <code class="p">{</code><code class="s1">'x'</code><code class="o">:</code> <code class="mi">200</code><code class="p">,</code> <code class="s1">'y'</code><code class="o">:</code> <code class="mi">100</code><code class="p">,</code> <code class="s1">'r'</code><code class="o">:</code> <code class="mi">5</code><code class="p">},</code>
+    <code class="p">]</code>
+<code class="p">};</code>
+
+<code class="nx">chartCircles</code><code class="p">(</code><code class="nx">data</code><code class="p">);</code></pre>
+
+<figure><div id="webdev101_d3_circles" class="figure">
+<img src="dvpj_0419.png" alt="dvpj 0419" width="497" height="214">
+<h6><span class="label">Figure 4-19. </span>D3-generated circles</h6>
+</div></figure>
+
+<p>We’ll see exactly how D3 works its magic in <a data-type="xref" href="ch16.html#chapter_d3_intro">Chapter 16</a>. For now, let’s summarize what we’ve learned in this chapter.<a data-type="indexterm" data-primary="" data-startref="WDsvg4" id="idm140319433165424"></a><a data-type="indexterm" data-primary="" data-startref="JSsvg4" id="idm140319433164480"></a><a data-type="indexterm" data-primary="" data-startref="SVGjava4" id="idm140319433163536"></a></p>
+</div></section>
+
+
+
+
+
+</div></section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section data-type="sect1" data-pdf-bookmark="Summary"><div class="sect1" id="idm140319455970128">
+<h1>Summary</h1>
+
+<p>This chapter provided a basic set of modern web-development skills for the budding data visualizer. It showed how the various elements of a web page (HTML, CSS stylesheets, JavaScript, and media files) are delivered by HTTP and, on being received by the browser, combined to become the web page the user sees. We saw how content blocks are described, using HTML tags such as <code>div</code> and <code>p</code>, and then styled and positioned using CSS. We also covered Chrome’s Elements and Sources tabs, which are the key browser development tools.  Finally we had a little  primer in SVG, the language in which most modern web data visualizations are expressed. These skills will be extended when our toolchain reaches its D3 visualization and new ones will be introduced in context.</p>
+</div></section>
+
+
+
+
+
+
+
+<div data-type="footnotes"><p data-type="footnote" id="idm140319434354192"><sup><a href="ch04.html#idm140319434354192-marker">1</a></sup> I bear the scars so you don’t have to.</p><p data-type="footnote" id="idm140319434338464"><sup><a href="ch04.html#idm140319434338464-marker">2</a></sup> The specification for modern JavaScript is defined by the Ecmascript lineage.</p><p data-type="footnote" id="idm140319434290400"><sup><a href="ch04.html#idm140319434290400-marker">3</a></sup> You can code style in HTML tags using the <code>style</code> attribute,  but it’s generally bad practice. It’s better to use classes and ids defined in CSS.</p><p data-type="footnote" id="idm140319434288400"><sup><a href="ch04.html#idm140319434288400-marker">4</a></sup> As demonstrated <a href="http://bost.ocks.org/mike/d3/workshop/#8">by Mike Bostock</a>, with a hat-tip to Paul Irish.</p><p data-type="footnote" id="idm140319456547168"><sup><a href="ch04.html#idm140319456547168-marker">5</a></sup> This is not the same as programmatically setting styles, which is a hugely powerful technique that allows styles to adapt to user interaction.</p><p data-type="footnote" id="idm140319455003376"><sup><a href="ch04.html#idm140319455003376-marker">6</a></sup> This is generally considered bad practice and is usually an indication of poorly structured CSS. Use with extreme caution, as it can make life very difficult for codevelopers.</p><p data-type="footnote" id="idm140319456403920"><sup><a href="ch04.html#idm140319456403920-marker">7</a></sup> These are succinctly discussed in Douglas Crockford’s famously short <em>JavaScript: The Good Parts</em> (O’Reilly).</p><p data-type="footnote" id="idm140319455202944"><sup><a href="ch04.html#idm140319455202944-marker">8</a></sup> Being able to play with attributes is particularly useful when trying to get Scalable Vector Graphics (SVG) to work.</p><p data-type="footnote" id="idm140319455977344"><sup><a href="ch04.html#idm140319455977344-marker">9</a></sup> With a <code>canvas</code> graphic context, you generally have to contrive your own event <span class="keep-together">handling</span>.</p><p data-type="footnote" id="idm140319455972560"><sup><a href="ch04.html#idm140319455972560-marker">10</a></sup> This number changes with time and the browser in question, but as a rough rule of thumb, SVG often starts to strain in the low thousands.</p><p data-type="footnote" id="idm140319455920976"><sup><a href="ch04.html#idm140319455920976-marker">11</a></sup> You should be able to use your browser’s development tools to see the tag attributes updating in real time.</p><p data-type="footnote" id="idm140319433999488"><sup><a href="ch04.html#idm140319433999488-marker">12</a></sup> <a href="http://bl.ocks.org/mbostock/4062006">Mike Bostock’s chord diagram</a> is a nice example, and uses D3’s <code>chord</code> function.</p><p data-type="footnote" id="idm140319433680320"><sup><a href="ch04.html#idm140319433680320-marker">13</a></sup> For example, a body group can contain an arm group, which can contain a hand group, which can contain finger elements.</p></div></div></section></div>
+
+
+
+  <div class="t-sbo-prev sbo-prev sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/ch03.html" class="prev nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-prev-label">Prev</span>
+          <span class="visuallyhidden">Previous Chapter</span>
+          <div class="pagination-title t-prev-title">3. Reading and Writing Data with Python</div>
+        </a>
+    
+  
+  </div>
+
+  <div class="t-sbo-next sbo-next sbo-nav-bottom">
+  
+    
+      
+        <a href="/library/view/data-visualization-with/9781491920565/part02.html" class="next nav-link">
+      
+          <span aria-hidden="true" class="pagination-label t-next-label">Next</span>
+          <span class="visuallyhidden">Next Chapter</span>
+          <div class="pagination-title t-next-title">II. Getting Your Data</div>
+        </a>
+    
+  
+  </div>
+
+
+        
+    </section>
+  </div>
+<section class="sbo-saved-archives"></section>
+
+
+
+          
+          
+  
+
+
+
+
+    
+    
+      <div id="js-subscribe-nag" class="subscribe-nag clearfix trial-panel t-subscribe-nag">
+        
+        
+          
+          
+
+          
+            <p>You have 6 days left in your trial, Flankpeter. Subscribe today. <a href="/subscribe/" class="ga-active-trial-subscribe-nag">See pricing options.</a></p>
+          
+        
+        
+
+      </div>
+
+    
+    
+
+
+
+        
+      </div>
+      
+
+
+
+
+  <footer class="pagefoot t-pagefoot">
+    <a href="#" class="icon-up"><div class="visuallyhidden">Back to top</div></a>
+    <ul class='js-footer-nav'>
+      
+        <li><a class="t-recommendations-footer" href="/r/">Recommended</a></li>
+      
+      <li>
+      
+      <a class="t-queue-footer" href="/playlists/">Playlists</a>
+      
+      </li>
+      
+        <li><a class="t-recent-footer" href="/history/">History</a></li>
+        <li><a class="t-topics-footer" href="/topics?q=*&limit=21">Topics</a></li>
+      
+      
+        <li><a class="t-tutorials-footer" href="/tutorials/">Tutorials</a></li>
+      
+      <li><a class="t-settings-footer js-settings" href="/u/">Settings</a></li>
+      <li class="full-support"><a href="https://www.safaribooksonline.com/public/support">Support</a></li>
+      <li><a href="https://www.safaribooksonline.com/apps/">Get the App</a></li>
+      <li><a href="/accounts/logout/">Sign Out</a></li>
+    </ul>
+    <span class="copyright">&#169; 2018 <a href="https://www.safaribooksonline.com" target="_blank">Safari</a>.</span>
+    <a href="/terms/">Terms of Service</a> /
+    <a href="/privacy/">Privacy Policy</a>
+  </footer>
+
+
+
+
+    
+
+    <script src="/jsi18n/web/" charset="utf-8"></script>
+    <script src="/library/jsi18n/appcache/" charset="utf-8"></script>
+  </body>
+</html>
